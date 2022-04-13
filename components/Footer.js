@@ -52,7 +52,7 @@ function Footer() {
         
          <div className="col-lg-8 col-md-9 col-sm-12 footer_bottom_column">
           <ul> 
-            <li><a to="/Privacypolicy">Privacy Policy </a></li>
+            <li><a href='/Privacypolicy'>Privacy Policy </a></li>
             <li><a to="/Termsandconditions">Terms and Conditions </a></li>
             <li><a to="/Cancellationpolicy">Cancellation & Refund Policy </a></li>
             <li><a to="/Disclaimer">Disclaimer</a></li>

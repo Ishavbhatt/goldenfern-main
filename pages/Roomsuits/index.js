@@ -1,26 +1,36 @@
-import React from 'react'
-import Link from 'next/link'
-import Head from 'next/head'
+import React from "react";
+import Link from "next/link";
+import Head from "next/head";
 function Roomsuits() {
-    return (
-        <>
-         <Head>
-             <title>Luxurious Rooms & Suites In Shimla | Golden Fern Resort</title>
-          <meta property="og:title" content="Luxurious Rooms & Suites In Shimla | Golden Fern Resort" />
-          <meta property="og:description" content="We offer super luxurious and spacious rooms and suites at very reasonable prices in the area. Check out our varieties of rooms for detailed | Golden Fern Resort" />              
-          </Head> 
+  return (
+    <>
+      <Head>
+        <title>Luxurious Rooms & Suites In Shimla | Golden Fern Resort</title>
+        <meta
+          property="og:title"
+          content="Luxurious Rooms & Suites In Shimla | Golden Fern Resort"
+        />
+        <meta
+          property="og:description"
+          content="We offer super luxurious and spacious rooms and suites at very reasonable prices in the area. Check out our varieties of rooms for detailed | Golden Fern Resort"
+        />
+      </Head>
 
-<section className="common_page_header common_padding">
+      <section className="common_page_header common_padding">
         <div className="container">
           <div className="row">
-            <div className="col-lg-10 col-md-10 col-sm-12 common_page_header_title">
+            <div className="col-lg-10 col-md-10 col-sm-12 common_page_header_title padding-t-b-40">
               <h1 className="common_title white">Rooms & Suits</h1>
-              <p>The rooms at Golden Fern are designed with simple, timeless lines. Here you may find all the commodities needed for a comfortable stay. All rooms are non-smoking.</p>
-            </div>               
+              <p>
+                The rooms at Golden Fern are designed with simple, timeless
+                lines. Here you may find all the commodities needed for a
+                comfortable stay. All rooms are non-smoking.
+              </p>
+            </div>
           </div>
         </div>
-</section>
-<section className="attraction_section common_padding pt-0 scrool_section" id="rooms_suits">
+      </section>
+      <section className="attraction_section common_padding pt-0 scrool_section" id="rooms_suits">
        
   <div className="container">
   <div className="row">
@@ -125,11 +135,8 @@ function Roomsuits() {
 </div>
 
   </section>
-
-
-
-        </>
-    )
+    </>
+  );
 }
 
-export default Roomsuits
+export default Roomsuits;

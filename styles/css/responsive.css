@@ -1,4 +1,11 @@
 @media(min-width:320px) and (max-width:767px) {
+  .header {
+    padding: 16px 0;
+  }
+  /* .banner {
+    background-size: cover;
+    height: 100vh;
+} */
   .panel_sidebar {
   position: relative;
 }
@@ -48,7 +55,7 @@ body .common_title {
     top: 0;
   }
   .header_right {
-  margin-top: -36px;
+  /* margin-top: -36px; */
 }
   .header .navbar {
   transform: none;
@@ -130,10 +137,6 @@ body .common_title {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.banner {
-  height: 450px;
-  background-size: cover;
 }
  .banner_text h1 {
   font-size: 35px;
