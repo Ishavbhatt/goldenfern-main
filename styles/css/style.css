@@ -167,11 +167,15 @@ section {
 .golden_color {
   color: #e29554;
 }
+.gallery-item-heading {
+  color: #e29554;
+  padding-bottom: 10px;
+}
 .common_padding {
   padding: 80px 0px;
 }
 .padding-t-b-40 {
-padding: 30px 0;
+padding: 40px 0;
 }
 .padding-t-80 {
   padding-top: 80px;
@@ -449,6 +453,33 @@ body .header .navbar-collapse {
   width: 100%;
   background-color: #00000054;
 }
+.single-room-banner {
+  background-color: #000000;
+  height: 90vh;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.exec-singleroom-banner {
+  background-image: url('/executive-room.jpg');
+}
+.clas-singleroom-banner {
+  background-image: url('/classic-room.jpg');
+}
+.del-singleroom-banner {
+  background-image: url('/deluxe-room.jpg');
+}
+.lux-singleroom-banner {
+  background-image: url('/luxury.jpg');
+}
+.single-room-banner::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #00000054;
+}
 .banner_text {
   position: relative;
   height: 100%;
@@ -463,6 +494,83 @@ body .header .navbar-collapse {
   color: #fff;
   font-size: 78px;
 }
+.bnr-booking {
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+}
+.date-picker input::placeholder {
+  color: black;
+  font-weight: 700;
+}
+.check-in-out-container {
+  background-color: white;
+  width: 300px;
+  padding: 10px;
+  height: auto;
+  display: flex;
+}
+.banner-book-btn {
+  background-color: #000000;
+  width: 100px;
+  height: auto;
+}
+ .check-in-out-container .pick-dates {
+  width: 100px;
+}
+.popup-book-btn {
+  background-color: black;
+}
+.banner-book-btn .common_arrow {
+  top: 25px;
+}
+.people-btn {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.popup-book-btn .common_arrow::after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #e29554;
+  top: -5px;
+  transition: all ease-in-out 0.4s;
+  transform: rotate(-45deg);
+}
+.popup-book-btn .common_arrow img {
+max-width:45px;
+}
+.check-in-out-container .vr-line {
+  border-right: 1px solid rgb(204, 191, 191);
+}
+.date-picker input{
+  width: 80px;
+  border: none; 
+}
+.date-picker input:focus{
+  outline: none;
+}
+.check-in-out-container button {
+  border: none;
+  background: transparent;
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+.check-in-out-container button img {
+  width: 16px;
+  vertical-align: top;
+}
+ .check-in-out-container label {
+  color: #e29554;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .about_hotel {
   padding-bottom: 110px;
 }
@@ -505,6 +613,9 @@ body .header .navbar-collapse {
 .about_hotel_text .common_arrow {
   top: -6px;
 }
+.about_hotel_text .common_arrow::after {
+  top: -6px;
+}
 .testimonials_section.room_suites {
   padding-bottom: 0;
 }
@@ -532,7 +643,7 @@ body .header .navbar-collapse {
   background-color: #e29554;
   right: -1px;
   z-index: 1;
-  padding: 7px 15px;
+  padding: 3px 12px;
   transition: all ease-in-out 0.8s;
   transform: translateX(100%);
   right: 40%;
@@ -878,7 +989,7 @@ body .testimonials_section .owl-dots button {
 }
 .attraction_section .common_title {
   font-size: 40px;
-  margin-bottom: 30px !important;
+  /* margin-bottom: 30px !important; */
 }
 .attraction_column, .singleroom_column {
   height: 460px;
@@ -947,20 +1058,76 @@ body .testimonials_section .owl-dots button {
 }
 .attraction_section .owl-nav {
   position: absolute;
-  top: -69px;
-  right: 0px;
+  top: -60px;
+  right: 10px;
   margin: 0px !important;
 }
-.single_room_banner {
-  height: 90vh;
+.gallery-sec .owl-nav{
+  position: absolute;
+  right: 16%;
+  margin: 0px !important;
+}
+.single-room-sec .owl-nav{
+  position: absolute;
+  /* left: 50%; */  
+  background: transparent;
+}
+.gallery-sec .owl-nav button {
+  background-image: url("/left-arrows.png") !important;
+  background-repeat: no-repeat !important;
+  color: white;
+  width: 40px;
+  height: 16px;
+  background-size: 20px !important;
+  background-position: center !important;
+  background-color: transparent !important;
+  outline: none !important;
+  margin: 20px 0;
+}
+.gallery-sec .owl-nav button.owl-next {
+  background-image: url("/right-arrows.png") !important;
+}
+.single-room-sec .owl-nav button {
+  background-image: url("/white-arrow-left.png") !important;
+  background-repeat: no-repeat !important;
+  color: white;
+  width: 50px;
+  height: 16px;
+  background-size: 40px !important;
+  background-position: center !important;
+  background-color: transparent !important;
+  outline: none !important;
+  margin: 20px 0;
+}
+.single-room-sec .owl-nav button.owl-next {
+  background-image: url("../images/white-arrow-right.png") !important;
+}
+.single-room-sec .owl-nav button span, 
+.gallery-sec .owl-nav button span{
+  display: none;
+}
+
+.activities_slider .attraction_column .attraction_column_title {
+  bottom: 15px;
+  height: auto;
+  background-color: #e2955499 !important;
+  background: no-repeat;
+  width: 95%;
+  margin: 0px auto;
+  left: 0;
+  right: 0;
+  padding: 15px 20px;
+}
+.activities_slider .attraction_column .attraction_column_title p {
+  opacity: 1;
 }
 .attraction_section .owl-nav button,
 .single_room_banner_slider .owl-nav button {
   background-image: url("/white-arrow-left.png") !important;
   background-repeat: no-repeat !important;
-  width: 60px;
-  height: 30px;
-  background-size: 42px !important;
+  width: 50px;
+  height: 50px;
+  background-size: 40px !important;
   background-position: center !important;
   background-color: transparent !important;
   outline: none !important;
@@ -1200,6 +1367,9 @@ body .testimonials_section .owl-dots button {
   background-color: #e29554;
   border-color: #e29554;
 }
+.singleroom-item {
+  background-image: url('/about-img.jpg');
+}
 
 .single_room_banner_column {
   background-size: cover;
@@ -1212,7 +1382,7 @@ body .testimonials_section .owl-dots button {
   .attraction_column
   .attraction_column_title {
   width: auto;
-  max-width: 260px;
+  max-width: 300px;
   margin: 0;
   left: 15px;
 }
@@ -1248,7 +1418,7 @@ body .testimonials_section .owl-dots button {
   display: block;
   transform: none;
   bottom: auto;
-  right: 0;
+  /* right: 0; */
 }
 .room_page_desc .about_hotel_text .room_price h2 {
   font-size: 20px;
@@ -1281,11 +1451,11 @@ body .testimonials_section .owl-dots button {
 .facilities_column span img {
   max-width: 45px;
 }
-/* .single_room_banner_slider,
+._room_banner_slider,
 .single_room_banner_slider .owl-stage-outer,
 .single_room_banner_slider .owl-stage-outer div {
   height: 100%;
-} */
+}
 
 .single_room_banner_column::before {
   content: "";
@@ -1317,7 +1487,6 @@ body .testimonials_section .owl-dots button {
   width: 100%;
   background-size: cover;
   background-position: center;
-  /* margin-left: 20px; */
 }
 .singleroom_slider_col {
   height: 500px;
@@ -1328,9 +1497,6 @@ body .testimonials_section .owl-dots button {
 }
 .gallery_slider {
   margin-top: 25px;
-}
-.gallery_section .owl-nav {
-  top: -62px;
 }
 .privacy_column {
   margin-top: 30px;
@@ -1503,11 +1669,11 @@ div.wpcf7 .ajax-loader {
 }
 .item_4 {
   background-image: url("/trekking.jpg");
-  width: 450px;
+  /* width: 450px; */
 }
 .item_5 {
   background-image: url("/cycling.jpg");
-  width: 450px;
+  /* width: 450px; */
 }
 
 .white {
@@ -1730,22 +1896,27 @@ div#sidebar {
   justify-content: center;
   margin: auto;
 }
-.activity-item{
+/* .activity-item, .other-item{
   width: 450px;
-}
-.activity-owl {
+} */
+/* .activity-owl, .other-room-owl {
   display: flex;
   justify-content: space-between;
-}
+} */
+
 .gallery-owl-theme{
   display: flex;
   flex-wrap: wrap;
 }
 .gallery-col-md-12 {
   background-color: white;
-  padding: 40px;
+  padding: 40px 0 40px 40px; 
+  /* margin-right: 20px; */
 }
 .gallery-row {
   padding-left: 30px;
   padding-right: 0px;
+}
+.active_sidebar {
+  color: red;
 }

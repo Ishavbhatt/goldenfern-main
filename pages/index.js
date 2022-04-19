@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Carousel } from "react-responsive-carousel";
-// import Slider from "react-slick";
+import DatePicker from "react-datepicker";
+import moment from "moment";
 
 var $ = require("jquery");
 if (typeof window !== "undefined") {
@@ -11,27 +12,59 @@ import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
   ssr: false,
 });
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+import "react-datepicker/dist/react-datepicker.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+const datenmonth = new Date().toLocaleDateString("en-MS", {
+  day: "2-digit",
+  month: "short",
+});
+let curruntDate = new Date().toLocaleDateString("en-us", {
+  year: "numeric",
+  month: "long",
+  weekday: "long",
+});
 
 import Head from "next/head";
-// import Image from "next/image";
-// import Navbar from "../components/Navbar";
-// import styles from "../styles/Home.module.css";
-// import Link from "next/link";
 
 export default function Home() {
+  const [people, setPeople] = useState(1);
+  const [checkInDate, setCheckInDate] = useState(null);
+  const [checkOutDate, setCheckOutDate] = useState(null);
+
   const rooms = {
     items: 1,
+  };
+
+  // define handler change function on check-in date
+  const handleCheckInDate = (date) => {
+    setCheckInDate(date);
+    setCheckOutDate(null);
+  };
+
+  // define handler change function on check-out date
+  const handleCheckOutDate = (date) => {
+    setCheckOutDate(date);
+  };
+
+  // Increment People
+  const incPeople = () => {
+    setPeople(people + 1);
+  };
+
+  // Decrement People
+  const decPeople = () => {
+    if (people === 1) {
+      return;
+    }
+    setPeople(people - 1);
   };
 
   return (
     <>
       <Head>
-      <link rel="icon" href="logo.png" />
+        <link rel="icon" href="logo.png" />
         <title>Golden Fern</title>
       </Head>
 
@@ -44,7 +77,57 @@ export default function Home() {
                   Hotels for the elite passionate about luxury
                 </h1>
               </div>
+              <div>
+                <div className="bnr-booking">
+                  <div className="check-in-out-container">
+                    <div className="pick-dates vr-line">
+                      <label>Check-in</label>
+                      <DatePicker
+                        wrapperClassName="date-picker"
+                        placeholderText={`${datenmonth} ${<img src="/arrow-down.png" alt="" />}`}
+                        selected={checkInDate}
+                        minDate={new Date()}
+                        onChange={handleCheckInDate}
+                      />
+                    </div>
+                    <div className="pick-dates vr-line">
+                      <label>Check-out</label>
+                      <DatePicker
+                        wrapperClassName="date-picker"
+                        placeholderText={datenmonth}
+                        selected={checkOutDate}
+                        minDate={checkInDate}
+                        onChange={handleCheckOutDate}
+                      />
+                    </div>
+                    <div className="pick-dates">
+                      <label>People</label>
+                      <div className="people-btn">
+                        <p>{people}</p>
+                        <div>
+                          <button onClick={incPeople}>
+                            <img src="/arrow-up.png" alt="" />
+                          </button>
+                          <button onClick={decPeople}>
+                            <img src="/arrow-down.png" alt="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="banner-book-btn popup-book-btn">
+                    <div className="common_arrow">
+                      <img src="/images/arrow.svg" alt="Icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+        <div className="weather_div">
+          <div className="fixedweather">
+            <p>{curruntDate}</p>
           </div>
         </div>
       </section>
@@ -85,7 +168,7 @@ export default function Home() {
               </p>
             </div>
             <div className="col-md-12 rooms_slider">
-              <OwlCarousel className="gallery-owl-theme" {... rooms}>
+              <OwlCarousel className="gallery-owl-theme" {...rooms}>
                 <div className="index-room-item">
                   <div className="rooms_slider_column row">
                     <div className="col-md-7 columns ">

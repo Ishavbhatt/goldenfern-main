@@ -16,15 +16,29 @@ import Head from "next/head";
 
 function Attractionactivities() {
   const attraction = {
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
+    items:3,
     margin: 20,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:1,
+            nav:false
+        },
+        1000:{
+            items:3,
+            nav:true,
+            loop:false
+        }
+      }
   };
 
   const activty = {
     items: 2,
+    margin: 20,
   };
 
   return (
@@ -46,7 +60,7 @@ function Attractionactivities() {
       </Head>
 
       <section className="common_page_header common_padding">
-        <div className="container">
+        <div className="container padding-t-80">
           <div className="row pages-info">
             <div className="col-lg-10 col-md-10 col-sm-12 common_page_header_title">
               <h1 className="common_title  white">Attraction & Activities</h1>
@@ -66,67 +80,73 @@ function Attractionactivities() {
             <div className="col-md-12 col-sm-12 text-left">
               <h2 className="common_title color_white">Attraction</h2>
             </div>
+            <div className="owl-carousel owl-theme owl-loaded attraction_slider">
+              <OwlCarousel
+                className="owl-theme"
+                responsiveClass={true}
+                nav
+                {...attraction}
+              >
+                <div className="attraction_column item_1">
+                  <div className="attraction_column_title">
+                    <h3>The Ridge</h3>
+                    <p>
+                      The Ridge road is a large open space, located in the
+                      center of Shimla. The Ridge is the hub of all cultural
+                      activities of Shimla. It runs east to west alongside Mall
+                      Road. It is only 18 minutes distance from us.
+                    </p>
+                  </div>
+                </div>
+                <div className="attraction_column item_2">
+                  <div className="attraction_column_title">
+                    <h3>Jakhu Temple</h3>
+                    <p>
+                      Jakhu Temple is Dedicated to Lord Hanuman, it houses a
+                      108-foot-tall idol of the deity. It offers sweeping views
+                      of the Shivalik ranges. The temple is situated at Jakhu
+                      Hills about 2.5 km away from the Ridge in Shimla.
+                    </p>
+                  </div>
+                </div>
 
-            <OwlCarousel className="owl-theme" responsiveClass={true} nav>
-              <div className="attraction_column item_1">
-                <div className="attraction_column_title">
-                  <h3>The Ridge</h3>
-                  <p>
-                    The Ridge road is a large open space, located in the center
-                    of Shimla. The Ridge is the hub of all cultural activities
-                    of Shimla. It runs east to west alongside Mall Road. It is
-                    only 18 minutes distance from us.
-                  </p>
+                <div className="attraction_column item_3">
+                  <div className="attraction_column_title">
+                    <h3>Fagu</h3>
+                    <p>
+                      Fagu is Cuddling in the Majestic Himalayan Range. This
+                      place looks magical as it is always enveloped in snow &
+                      fog. The clouds are so close to the surface that at times
+                      it feels as if you are walking on clouds.{" "}
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="attraction_column item_2">
-                <div className="attraction_column_title">
-                  <h3>Jakhu Temple</h3>
-                  <p>
-                    Jakhu Temple is Dedicated to Lord Hanuman, it houses a
-                    108-foot-tall idol of the deity. It offers sweeping views of
-                    the Shivalik ranges. The temple is situated at Jakhu Hills
-                    about 2.5 km away from the Ridge in Shimla.
-                  </p>
-                </div>
-              </div>
 
-              <div className="attraction_column item_3">
-                <div className="attraction_column_title">
-                  <h3>Fagu</h3>
-                  <p>
-                    Fagu is Cuddling in the Majestic Himalayan Range. This place
-                    looks magical as it is always enveloped in snow & fog. The
-                    clouds are so close to the surface that at times it feels as
-                    if you are walking on clouds.{" "}
-                  </p>
+                <div className="attraction_column item_2">
+                  <div className="attraction_column_title">
+                    <h3>Jakhu Temple</h3>
+                    <p>
+                      Jakhu Temple is Dedicated to Lord Hanuman, it houses a
+                      108-foot-tall idol of the deity. It offers sweeping views
+                      of the Shivalik ranges. The temple is situated at Jakhu
+                      Hills about 2.5 km away from the Ridge in Shimla.
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              <div className="attraction_column item_2">
-                <div className="attraction_column_title">
-                  <h3>Jakhu Temple</h3>
-                  <p>
-                    Jakhu Temple is Dedicated to Lord Hanuman, it houses a
-                    108-foot-tall idol of the deity. It offers sweeping views of
-                    the Shivalik ranges. The temple is situated at Jakhu Hills
-                    about 2.5 km away from the Ridge in Shimla.
-                  </p>
+                <div className="attraction_column item_3">
+                  <div className="attraction_column_title">
+                    <h3>Fagu</h3>
+                    <p>
+                      Fagu is Cuddling in the Majestic Himalayan Range. This
+                      place looks magical as it is always enveloped in snow &
+                      fog. The clouds are so close to the surface that at times
+                      it feels as if you are walking on clouds.{" "}
+                    </p>
+                  </div>
                 </div>
-              </div>
-
-              <div className="attraction_column item_3">
-                <div className="attraction_column_title">
-                  <h3>Fagu</h3>
-                  <p>
-                    Fagu is Cuddling in the Majestic Himalayan Range. This place
-                    looks magical as it is always enveloped in snow & fog. The
-                    clouds are so close to the surface that at times it feels as
-                    if you are walking on clouds.{" "}
-                  </p>
-                </div>
-              </div>
-            </OwlCarousel>
+              </OwlCarousel>
+            </div>
           </div>
         </div>
       </section>
@@ -137,60 +157,62 @@ function Attractionactivities() {
             <div className="col-md-12 col-sm-12 text-left">
               <h2 className="common_title color_white">Activities</h2>
             </div>
-            <OwlCarousel
-              className="activity-owl"
-              responsiveClass={true}
-              nav
-              {...activty}
-            >
-              <div className="activity-item">
-                <div className="attraction_column item_4">
-                  <div className="attraction_column_title">
-                    <h3>Trekking Tour</h3>
-                    <p>
-                      Himachal Pradesh is a state in Northern India. Literally
-                      translated it means in the Lap of Himalayas.
-                    </p>
+            <div className="activities_slider">
+              <OwlCarousel
+                className="activity-owl"
+                responsiveClass={true}
+                nav
+                {...activty}
+              >
+                <div className="activity-item">
+                  <div className="attraction_column item_4">
+                    <div className="attraction_column_title">
+                      <h3>Trekking Tour</h3>
+                      <p>
+                        Himachal Pradesh is a state in Northern India. Literally
+                        translated it means in the Lap of Himalayas.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div className="activity-item">
-                <div className="attraction_column item_5">
-                  <div className="attraction_column_title">
-                    <h3>Cycling Tour</h3>
-                    <p>
-                      These biking routes cater congenial bike ride experience
-                      in the midst of arresting backdrop.
-                    </p>
+                <div className="activity-item">
+                  <div className="attraction_column item_5">
+                    <div className="attraction_column_title">
+                      <h3>Cycling Tour</h3>
+                      <p>
+                        These biking routes cater congenial bike ride experience
+                        in the midst of arresting backdrop.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div className="activity-item">
-                <div className="attraction_column item_4">
-                  <div className="attraction_column_title">
-                    <h3>Trekking Tour</h3>
-                    <p>
-                      Himachal Pradesh is a state in Northern India. Literally
-                      translated it means in the Lap of Himalayas.
-                    </p>
+                <div className="activity-item">
+                  <div className="attraction_column item_4">
+                    <div className="attraction_column_title">
+                      <h3>Trekking Tour</h3>
+                      <p>
+                        Himachal Pradesh is a state in Northern India. Literally
+                        translated it means in the Lap of Himalayas.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div className="activity-item">
-                <div className="attraction_column item_5">
-                  <div className="attraction_column_title">
-                    <h3>Cycling Tour</h3>
-                    <p>
-                      These biking routes cater congenial bike ride experience
-                      in the midst of arresting backdrop.
-                    </p>
+                <div className="activity-item">
+                  <div className="attraction_column item_5">
+                    <div className="attraction_column_title">
+                      <h3>Cycling Tour</h3>
+                      <p>
+                        These biking routes cater congenial bike ride experience
+                        in the midst of arresting backdrop.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </OwlCarousel>
+              </OwlCarousel>
+            </div>
           </div>
         </div>
       </section>

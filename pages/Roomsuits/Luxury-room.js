@@ -1,5 +1,5 @@
 import React from "react";
-import Slider from "react-slick";
+
 var $ = require("jquery");
 if (typeof window !== "undefined") {
   window.$ = window.jQuery = require("jquery");
@@ -13,22 +13,13 @@ const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import Head from "next/head";
-import Link from "next/link";
+
 function LuxuryRoom() {
-  const Bannerslider = {
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
   const luxury = {
-    navigation: true,
-    singleItem: true,
     items: 1,
   };
 
   const otherroom = {
-    nav: true,
     items: 2,
     margin: 40,
   };
@@ -47,33 +38,11 @@ function LuxuryRoom() {
         />
       </Head>
 
-      <section className="banner single_room_banner">
-        <div className="owl-carousel owl-theme owl-loaded single_room_banner_slider">
-          <div className="owl-stage-outer">
-            <div className="owl-stage">
-              <Slider {...Bannerslider}>
-                <div className="owl-item">
-                  <div
-                    className="single_room_banner_column"
-                    style={{ backgroundImage: "url('/banner.jpg')" }}
-                  ></div>
-                </div>
-
-                <div className="owl-item">
-                  <div
-                    className="single_room_banner_column"
-                    style={{ backgroundImage: "url('/banner.jpg')" }}
-                  ></div>
-                </div>
-              </Slider>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="single-room-banner lux-singleroom-banner"></div>
 
       <section className="about_hotel room_page_desc common_padding pb-0">
         <div className="container">
-          <div className="row">
+          <div className="row padding-t-b-40">
             <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
               <div className="room_price">
                 <p>rates from</p>
@@ -157,7 +126,7 @@ function LuxuryRoom() {
         </div>
       </section>
 
-      <section className="attraction_section other_room_section common_padding">
+      <section className="single-room-sec other_room_section common_padding">
         <div className="container">
           <div className="row">
             <div id="" className="executive-room-section">
@@ -253,10 +222,14 @@ function LuxuryRoom() {
             <div className="col-md-12 col-sm-12 text-left">
               <h2 className="common_title color_white">Other Room Types</h2>
             </div>
-
-            <div className="col-md-12">
-              <OwlCarousel {...otherroom}>
-                <div className="">
+            <div className="activities_slider">
+              <OwlCarousel
+                className="other-room-owl"
+                responsiveClass={true}
+                nav
+                {...otherroom}
+              >
+                <div className="other-item">
                   <div
                     className="attraction_column"
                     style={{ backgroundImage: "url('/deluxe-room.jpg')" }}
@@ -269,7 +242,7 @@ function LuxuryRoom() {
                   </div>
                 </div>
 
-                <div className="">
+                <div className="other-item">
                   <div
                     className="attraction_column"
                     style={{ backgroundImage: "url('/classic-room.jpg')" }}
@@ -282,7 +255,7 @@ function LuxuryRoom() {
                   </div>
                 </div>
 
-                <div className="">
+                <div className="other-item">
                   <div
                     className="attraction_column"
                     style={{ backgroundImage: "url('/classic-room.jpg')" }}

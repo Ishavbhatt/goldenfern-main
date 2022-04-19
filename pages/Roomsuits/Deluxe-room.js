@@ -18,21 +18,12 @@ import Link from "next/link";
 import Head from "next/head";
 
 function DeluxeRoom() {
-  const Bannerslider = {
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
 
   const deluxe = {
-    navigation: true,
-    singleItem: true,
     items: 1,
   };
 
   const otherroom = {
-    nav: true,
     items: 2,
     margin: 40,
   };
@@ -51,33 +42,12 @@ function DeluxeRoom() {
         />
       </Head>
 
-      <section className="banner single_room_banner">
-        <div className="owl-carousel owl-theme owl-loaded single_room_banner_slider">
-          <div className="owl-stage-outer">
-            <div className="owl-stage">
-              <Slider {...Bannerslider}>
-                <div className="owl-item">
-                  <div
-                    className="single_room_banner_column"
-                    style={{ backgroundImage: "url('/banner.jpg')" }}
-                  ></div>
-                </div>
-
-                <div className="owl-item">
-                  <div
-                    className="single_room_banner_column"
-                    style={{ backgroundImage: "url('/banner.jpg')" }}
-                  ></div>
-                </div>
-              </Slider>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="single-room-banner del-singleroom-banner">
+      </div>
 
       <section className="about_hotel room_page_desc common_padding pb-0">
         <div className="container">
-          <div className="row">
+          <div className="row padding-t-b-40">
             <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
               <div className="room_price">
                 <p>rates from</p>
@@ -161,7 +131,7 @@ function DeluxeRoom() {
         </div>
       </section>
 
-      <section className="attraction_section other_room_section common_padding">
+      <section className="single-room-sec other_room_section common_padding">
         <div className="container">
           <div className="row">
             <div id="" className="executive-room-section">
@@ -257,10 +227,11 @@ function DeluxeRoom() {
             <div className="col-md-12 col-sm-12 text-left">
               <h2 className="common_title color_white">Other Room Types</h2>
             </div>
-
-            <div className="col-md-12">
-              <OwlCarousel {...otherroom}>
-                <div className="">
+            <div className="activities_slider">
+              <OwlCarousel  className="other-room-owl"
+                responsiveClass={true}
+                nav {...otherroom}>
+                <div className="other-item">
                   <div
                     className="attraction_column"
                     style={{ backgroundImage: "url('/luxury.jpg')" }}
@@ -273,7 +244,7 @@ function DeluxeRoom() {
                   </div>
                 </div>
 
-                <div className="">
+                <div className="other-item">
                   <div
                     className="attraction_column"
                     style={{ backgroundImage: "url('/classic-room.jpg')" }}
@@ -286,7 +257,7 @@ function DeluxeRoom() {
                   </div>
                 </div>
 
-                <div className="">
+                <div className="other-item">
                   <div
                     className="attraction_column"
                     style={{ backgroundImage: "url('/classic-room.jpg')" }}

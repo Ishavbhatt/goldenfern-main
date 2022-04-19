@@ -16,7 +16,7 @@ function Healthsafety() {
       </Head>
 
       <section className="common_page_header common_padding">
-        <div className="container">
+        <div className="container padding-t-80">
           <div className="row pages-info">
             <div className="col-lg-10 col-md-10 col-sm-12 common_page_header_title">
               <h1 className="common_title white">Health & Safety Assurance</h1>

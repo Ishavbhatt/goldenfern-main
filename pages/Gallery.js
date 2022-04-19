@@ -17,15 +17,19 @@ import Link from "next/link";
 
 function Gallery() {
   const options = {
-    // center: true,
-    // loop:true,
-    nav: true,
+    loop: true,
     items: 1.2,
-    navText: [
-      "<div className='nav-btn-gallery prev-slide'><</div>",
-      "<div className='nav-btn-gallery next-slide'>></div>",
-    ],
-    margin: 10,
+    margin: 30,
+  };
+  const restraunt = {
+    loop: true,
+    items: 1.2,
+    margin: 30,
+  };
+  const hotel = {
+    loop: true,
+    items: 1.2,
+    margin: 30,
   };
 
   return (
@@ -57,10 +61,7 @@ function Gallery() {
         </div>
       </section>
 
-      <section
-        className="attraction_section common_padding pt-0 scrool_section"
-        id="rooms_suits"
-      >
+      <section className="common_padding pt-0 scrool_section" id="rooms_suits">
         <div className="container">
           <div className="row">
             <div className="panel_sidebar">
@@ -96,11 +97,12 @@ function Gallery() {
               className="scrollspy-example col-md-10 offset-md-2"
               tabIndex="0"
             >
-              <div id="room1" className="gallery_section">
-                <div className="container">
-                  <div className="row">
+              <section className="gallery-sec">
+                <div id="room1" className="gallery_section">
+                  <div className="container">
+                    {/* <div className="row"> */}
                     <div className="gallery-col-md-12">
-                      <h2 className="golden_color">Rooms</h2>
+                      <h2 className="gallery-item-heading">Rooms</h2>
 
                       <OwlCarousel
                         className="gallery-owl-theme"
@@ -188,16 +190,23 @@ function Gallery() {
                         </div>
                       </OwlCarousel>
                     </div>
+                    {/* </div> */}
                   </div>
                 </div>
-              </div>
+              </section>
 
-              <div id="room2" className="gallery_section">
-                <div className="container">
-                  <div className="row">
+              <section className="gallery-sec">
+                <div id="room2" className="gallery_section">
+                  <div className="container">
+                    {/* <div className="row"> */}
                     <div className="gallery-col-md-12">
-                      <h2 className="golden_color">Restaurant & Bar</h2>
-                      <OwlCarousel {...options}>
+                      <h2 className="gallery-item-heading">Restaurant & Bar</h2>
+
+                      <OwlCarousel
+                        className="gallery-owl-theme"
+                        nav
+                        {...restraunt}
+                      >
                         <div className="gallery-item">
                           <div
                             className="gallery_slider_column"
@@ -279,16 +288,23 @@ function Gallery() {
                         </div>
                       </OwlCarousel>
                     </div>
+                    {/* </div> */}
                   </div>
                 </div>
-              </div>
+              </section>
 
-              <div id="room3" className="gallery_section">
-                <div className="container">
-                  <div className="row">
+              <section className="gallery-sec">
+                <div id="room3" className="gallery_section">
+                  <div className="container">
+                    {/* <div className="row"> */}
                     <div className="gallery-col-md-12">
-                      <h2 className="golden_color">Hotel Area</h2>
-                      <OwlCarousel {...options}>
+                      <h2 className="gallery-item-heading">Hotel Area</h2>
+
+                      <OwlCarousel
+                        className="gallery-owl-theme"
+                        nav
+                        {...hotel}
+                      >
                         <div className="gallery-item">
                           <div
                             className="gallery_slider_column"
@@ -362,9 +378,11 @@ function Gallery() {
                         </div>
                       </OwlCarousel>
                     </div>
+                    {/* </div> */}
                   </div>
                 </div>
-              </div>
+              </section>
+
             </div>
           </div>
         </div>

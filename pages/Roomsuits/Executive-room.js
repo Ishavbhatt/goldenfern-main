@@ -1,5 +1,4 @@
 import React from "react";
-import Slider from "react-slick";
 
 var $ = require("jquery");
 if (typeof window !== "undefined") {
@@ -17,13 +16,6 @@ import Head from "next/head";
 
 function ExecutiveRoom() {
   const executive = {
-    items: 1,
-  };
-
-  const bannerslider = {
-    loop: true,
-    margin: 10,
-    nav: false,
     items: 1,
   };
 
@@ -46,27 +38,39 @@ function ExecutiveRoom() {
         />
       </Head>
 
-      <section className="banner single_room_banner">
-        <OwlCarousel {...bannerslider}>
-          <div className="owl-item">
-            <div
-              className="single_room_banner_column"
-              style={{ backgroundImage: "url('/exective-room.jpg')" }}
-            ></div>
-          </div>
+      <div className="single-room-banner exec-singleroom-banner">
+        {/* <div className="banner_text text-center"> */}
+        {/* <div className="container">
+            <div className="row"> */}
+        {/* <OwlCarousel {...bannerslider}>
+                  <div className="singleroom-item">
+                    <div
+                      className="single_room_banner_column"
+                      style={{ backgroundImage: "url('/executive-room.jpg')" }}
+                    ></div>
+                  </div>
 
-          <div className="owl-item">
-            <div
-              className="single_room_banner_column"
-              style={{ backgroundImage: "url('/banner.jpg')" }}
-            ></div>
-          </div>
-        </OwlCarousel>
-      </section>
+                  <div className="singleroom-item">
+                    <div
+                      className="single_room_banner_column"
+                      style={{ backgroundImage: "url('/banner.jpg')" }}
+                    ></div>
+                  </div>
+                  <div className="singleroom-item">
+                    <div
+                      className="single_room_banner_column"
+                      style={{ backgroundImage: "url('/banner.jpg')" }}
+                    ></div>
+                  </div>
+                </OwlCarousel> */}
+        {/* </div>
+          </div> */}
+        {/* </div> */}
+      </div>
 
       <section className="about_hotel room_page_desc common_padding pb-0">
         <div className="container">
-          <div className="row">
+          <div className="row padding-t-b-40">
             <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
               <div className="room_price">
                 <p>rates from</p>
@@ -153,7 +157,7 @@ function ExecutiveRoom() {
         </div>
       </section>
 
-      <section className="attraction_section other_room_section common_padding">
+      <section className="single-room-sec other_room_section common_padding">
         <div className="container">
           <div className="row">
             <div id="" className="executive-room-section">
@@ -243,58 +247,59 @@ function ExecutiveRoom() {
         </div>
       </section>
 
-      <section className="attraction_section other_room_section common_padding ">
+      <section className="attraction_section other_room_section common_padding">
         <div className="container">
           <div className="row">
             <div className="col-md-12 col-sm-12 text-left">
               <h2 className="common_title color_white">Other Room Types</h2>
             </div>
-
-            <OwlCarousel
-              className="other-room-owl"
-              responsiveClass={true}
-              nav
-              {...otherroom}
-            >
-              <div className="">
-                <div
-                  className="singleroom_column"
-                  style={{ backgroundImage: "url('/deluxe-room.jpg')" }}
-                >
-                  <a href="/Roomsuits/Deluxe-room">
-                    <div className="attraction_column_title">
-                      <h3>DELUXE ROOM</h3>
-                    </div>
-                  </a>
+            <div className="activities_slider">
+              <OwlCarousel
+                className="other-room-owl"
+                responsiveClass={true}
+                nav
+                {...otherroom}
+              >
+                <div className="other-item">
+                  <div
+                    className="attraction_column"
+                    style={{ backgroundImage: "url('/deluxe-room.jpg')" }}
+                  >
+                    <a href="/Roomsuits/Deluxe-room">
+                      <div className="attraction_column_title">
+                        <h3>DELUXE ROOM</h3>
+                      </div>
+                    </a>
+                  </div>
                 </div>
-              </div>
 
-              <div className="">
-                <div
-                  className="singleroom_column"
-                  style={{ backgroundImage: "url('/classic-room.jpg')" }}
-                >
-                  <a href="/Roomsuits/Classic-room">
-                    <div className="attraction_column_title">
-                      <h3>CLASSIC ROOM</h3>
-                    </div>
-                  </a>
+                <div className="other-item">
+                  <div
+                    className="attraction_column"
+                    style={{ backgroundImage: "url('/classic-room.jpg')" }}
+                  >
+                    <a href="/Roomsuits/Classic-room">
+                      <div className="attraction_column_title">
+                        <h3>CLASSIC ROOM</h3>
+                      </div>
+                    </a>
+                  </div>
                 </div>
-              </div>
 
-              <div className="">
-                <div
-                  className="singleroom_column"
-                  style={{ backgroundImage: "url('/luxury.jpg')" }}
-                >
-                  <a href="/Roomsuits/Luxury-room">
-                    <div className="attraction_column_title">
-                      <h3>LUXURY SUITE</h3>
-                    </div>
-                  </a>
+                <div className="other-item">
+                  <div
+                    className="attraction_column"
+                    style={{ backgroundImage: "url('/luxury.jpg')" }}
+                  >
+                    <a href="/Roomsuits/Luxury-room">
+                      <div className="attraction_column_title">
+                        <h3>LUXURY SUITE</h3>
+                      </div>
+                    </a>
+                  </div>
                 </div>
-              </div>
-            </OwlCarousel>
+              </OwlCarousel>
+            </div>
           </div>
         </div>
       </section>
