@@ -29,6 +29,9 @@ body .fixedweather {
   float: none;
   margin: 0px auto;
 }
+.weather-temp {
+  font-size: 20px;
+}
  .booked-wzsp-prime-data {
   display: flex;
   flex-direction: column;

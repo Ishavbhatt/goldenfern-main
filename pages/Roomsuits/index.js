@@ -3,21 +3,30 @@ import Link from "next/link";
 import Head from "next/head";
 
 function Roomsuits() {
-  const [panel, setPanel] = useState(false)
+  const [scroll, setScroll] = useState(false);
 
-  const changeBackground = () => {
-    console.log(window.scrollY)
-    if (window.scrollY >= 66) {
-      setPanel(true)
-    } else {
-      setPanel(false)
-    }
-  }
+  const [twoscroll, setTwoscroll] = useState(false);
+
+  const [threescroll, setThreescroll] = useState(false);
+
+  const [fourscroll, setFourscroll] = useState(false);
+
   useEffect(() => {
-    changeBackground()
-    // adding the event when scroll change background
-    window.addEventListener("scroll", changeBackground)
-  })
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 50 && window.scrollY < 250 );
+    });
+    window.addEventListener("twoscroll", () => {
+      setTwoscroll(window.scrollY > 300 && window.scrollY > 600 );
+      console.log("twoscrool" + window.scrollY)
+    });
+  }, []);
+
+  // useEffect(() => {
+  //   window.addEventListener("twoscroll", () => {
+  //     setTwoscroll(window.scrollY > 300 && window.scrollY > 600 );
+  //     console.log("twoscrool" + window.scrollY)
+  //   });
+  // }, []);
 
   return (
     <>
@@ -55,16 +64,16 @@ function Roomsuits() {
         <div className="container">
           <div className="row">
             <div className="panel_sidebar">
-              <div id="sidebar" className="list-group room_suit_left">
-                <li>
-                  <Link
+              <div id="sidebar" className="room_suit_left" >
+                <li className={scroll ? "one-scrool" : "scrool-items"}> 
+                  <Link 
                     className="list-group-item list-group-item-action"
                     href="/Roomsuits#room1"
                   >
                     EXECUTIVE ROOM
                   </Link>
                 </li>
-                <li className="">
+                <li className={twoscroll ? "two-scrool" : "scrool-items"}>
                   <Link
                     className="list-group-item list-group-item-action"
                     href="/Roomsuits#room2"
@@ -72,7 +81,7 @@ function Roomsuits() {
                     CLASSIC ROOM
                   </Link>
                 </li>
-                <li className="">
+                <li className={twoscroll ? "three-scrool" : "scrool-items"}>
                   <Link
                     className="list-group-item list-group-item-action"
                     href="/Roomsuits#room3"
@@ -80,7 +89,7 @@ function Roomsuits() {
                     LUXURY ROOM
                   </Link>
                 </li>
-                <li className="">
+                <li className={twoscroll ? "four-scrool" : "scrool-items"}>
                   <Link
                     className="list-group-item list-group-item-action"
                     href="/Roomsuits#room4"

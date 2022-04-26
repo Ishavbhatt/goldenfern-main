@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Carousel } from "react-responsive-carousel";
 import DatePicker from "react-datepicker";
+import Weather from '../pages/Weather';
 import moment from "moment";
 
 var $ = require("jquery");
@@ -12,18 +13,22 @@ import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
   ssr: false,
 });
+
 import "react-datepicker/dist/react-datepicker.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+
 const datenmonth = new Date().toLocaleDateString("en-MS", {
   day: "2-digit",
   month: "short",
 });
+
 let curruntDate = new Date().toLocaleDateString("en-us", {
-  year: "numeric",
-  month: "long",
   weekday: "long",
+  month: "long",
+  year: "numeric",
+
 });
 
 import Head from "next/head";
@@ -32,9 +37,15 @@ export default function Home() {
   const [people, setPeople] = useState(1);
   const [checkInDate, setCheckInDate] = useState(null);
   const [checkOutDate, setCheckOutDate] = useState(null);
+  const [data, setData] = useState([]);
+  const lat = 31.1048;
+  const long = 77.1734;
 
   const rooms = {
     items: 1,
+  };
+  const testmonials = {
+    items: 3,
   };
 
   // define handler change function on check-in date
@@ -61,7 +72,20 @@ export default function Home() {
     setPeople(people - 1);
   };
 
+  useEffect(() => {
+    const fetchData = async () => {
+      await fetch(`https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${long}&units=metric&APPID=afe83a2dbade6cad2645c7b7ec05a3a1`)
+      .then(res => res.json())
+      .then(result => {
+        setData(result)
+        console.log(result)
+      });
+    }
+    fetchData();
+  }, [])
+
   return (
+    
     <>
       <Head>
         <link rel="icon" href="logo.png" />
@@ -84,7 +108,7 @@ export default function Home() {
                       <label>Check-in</label>
                       <DatePicker
                         wrapperClassName="date-picker"
-                        placeholderText={`${datenmonth} ${<img src="/arrow-down.png" alt="" />}`}
+                        placeholderText={datenmonth}
                         selected={checkInDate}
                         minDate={new Date()}
                         onChange={handleCheckInDate}
@@ -127,7 +151,14 @@ export default function Home() {
         </div>
         <div className="weather_div">
           <div className="fixedweather">
-            <p>{curruntDate}</p>
+            <h6 className="weather-date">{curruntDate}</h6>
+            {data && (
+            <div>
+             {/* <h4 className="weather-status">{data.weather[0].description}</h4> */}
+             {/* <h1 className="weather-temp">{data.main.temp}<span>&#176;</span><span>C</span></h1> */}
+              <h6 className="weather-name">{data.name}, India</h6>
+            </div>
+            )}   
           </div>
         </div>
       </section>
@@ -309,7 +340,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="testimonials_section common_padding">
+      {/* <section className="testimonials_section common_padding">
         <div className="col-md-6 offset-md-3 col-sm-12 text-center">
           <h2 className="common_title">What People Say?</h2>
           <p>
@@ -367,7 +398,60 @@ export default function Home() {
             </div>
           </div>
         </Carousel>
-      </section>
+      </section> */}
+
+<section className="testimonials_section common_padding">
+          <div className="container">
+            <div className="row">
+               <div className="col-md-6 offset-md-3 col-sm-12 text-center">
+                 <h2 className="common_title">What People Say?</h2>
+                 <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+               </div>
+
+
+               <div className="col-md-12">
+               <OwlCarousel {...testmonials} className="testimonial-custom">
+                      <div className="test-item">
+                        <div className="testi_column text-center">
+                          <img src="/comma.png" alt="Icon"/>
+                          <p>One of the best boutique hotel we have in Shimla, I recommend it to every traveler who is coming to Shimla if they want to see history about how was Shimla they should stay at Golden Fern Resort Shimla.</p>
+                        </div> 
+                        <div className="triangle"></div>
+                        <div className="testi_profile text-center">
+                          <img src="/user.png" alt="Image"/>
+                          <h3>Bobby</h3>
+                          <p>From Kerala</p>
+                        </div>
+                      </div>
+                      <div className="test-item">
+                        <div className="testi_column text-center">
+                          <img src="/comma.png" alt="Icon"/>
+                          <p>Amazing stay here. The room and bathroom were very neat and clean. And the breakfast was also good. Good service and they will provide you a clean towel and bed linen. Ac and refrigerator also working properly.</p>
+                        </div> 
+                        <div className="triangle"></div>
+                        <div className="testi_profile text-center">
+                          <img src="/user.png" alt="Image"/>
+                          <h5>Vicky</h5>
+                          <p>From Kinnaur</p>
+                        </div>
+                      </div>
+                      <div className="test-item">
+                        <div className="testi_column text-center">
+                          <img src="/comma.png" alt="Icon"/>
+                          <p>Golden Fern Resort Shimla is a very pretty and amazing Hotel. I love the food, room, room service, view, everything. When I stay at Golden Fern Resort Shimla Hotel, I feel like I am at home. So thank you so much, guys. You are amazing.</p>
+                        </div> 
+                        <div className="triangle"></div>
+                        <div className="testi_profile text-center">
+                          <img src="/user.png" alt="Image"/>
+                          <h5>Arun</h5>
+                          <p>From Delhi</p>
+                        </div>
+                      </div>         
+                      </OwlCarousel>             
+                      </div>
+                    </div>
+                  </div>
+  </section>
 
       <section className="posts_section common_padding">
         <div className="container">

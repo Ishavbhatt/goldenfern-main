@@ -55,6 +55,27 @@ body .fixedweather {
   right: 0px;
   float: right;
 }
+.weather-date {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 0;
+  color: white;
+  line-height: 1;
+}
+.weather-status {
+  color: white;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.weather-temp {
+  color: white;
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.weather-name{
+  color: white;
+  padding: 5px 0;
+}
 body .booked-wzsp-prime-data {
   position: relative;
   width: 100%;
@@ -497,7 +518,13 @@ body .header .navbar-collapse {
 .bnr-booking {
   display: flex;
   justify-content: center;
-  bottom: 0;
+  /* position: absolute; */
+  bottom: 0px;
+  right: 0;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  left: 0;
+  /* min-width: 1200px; */
 }
 .date-picker input::placeholder {
   color: black;
@@ -620,7 +647,7 @@ max-width:45px;
   padding-bottom: 0;
 }
 .rooms_slider {
-  margin-top: 50px;
+  padding: 20px 0;
 }
 .rooms_slider_column {
   display: inline-block;
@@ -730,6 +757,12 @@ max-width:45px;
   background-color: #fff;
   padding-bottom: 130px;
 }
+.col-md-12 .owl-item {
+  width: 350px;
+}
+/* .test-item {
+  width: 300px;
+} */
 /* #testimonials_slider {
   margin-top: 50px;
 } */
@@ -762,14 +795,25 @@ max-width:45px;
   right: 0;
   margin: 0px auto;
 }
-/*.testi_column::after{
+/* .testi_column::after{
   content: "";
   width: 0; 
   height: 0; 
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;  
   border-top: 20px solid #f00;
-}*/
+} */
+.testi_column img {
+  margin: 0px auto 20px;
+  max-width: 40px;
+}
+.testi_profile img {
+  margin: 0px auto 0px;
+  width: 90px !important;
+}
+.testi_profile p {
+  color: #aca8a8;
+}
 .testimonials_section .owl-nav {
   display: none;
 }
@@ -1331,7 +1375,76 @@ body .testimonials_section .owl-dots button {
   bottom: -20px;
   left: auto;
 }
-.room_suit_left a {
+.room_suit_left li {
+  list-style: none;
+}
+
+.scrool-items a{
+  background-color: transparent !important;
+  border: none;
+  padding: 0px;
+  border-radius: 0px !important;
+  position: relative;
+  padding-left: 25px;
+  color: #fff !important;
+  transition: all ease-in-out 0.5s;
+  border-left: 1px solid #fff;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  list-style: none;
+}
+.scrool-items a::before {
+  position: absolute;
+  content: "";
+  width: 9px;
+  height: 9px;
+  border: 1px solid #fff;
+  left: -5px;
+  background-color: #202e27;
+  border-radius: 50%;
+  top: 16px;
+}
+.one-scrool a {
+  color: #e29554;
+  border-left: 1px solid #e29554;
+  position: relative;
+  padding-left: 25px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  list-style-type: none;
+}
+.one-scrool a::before {
+  position: absolute;
+  content: "";
+  width: 9px;
+  height: 9px;
+  border: 1px solid #fff;
+  left: -5px;
+  background-color: #202e27;
+  border-radius: 50%;
+  top: 16px;
+}
+.two-scrool a {
+  color: #e29554;
+  border-left: 1px solid #e29554;
+  position: relative;
+  padding-left: 25px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  list-style-type: none;
+}
+.two-scrool a::before {
+  position: absolute;
+  content: "";
+  width: 9px;
+  height: 9px;
+  border: 1px solid #fff;
+  left: -5px;
+  background-color: #202e27;
+  border-radius: 50%;
+  top: 16px;
+}
+/* .room_suit_left a {
   background-color: transparent !important;
   border: none;
   padding: 0px;
@@ -1366,11 +1479,21 @@ body .testimonials_section .owl-dots button {
 .room_suit_left li.active a::before {
   background-color: #e29554;
   border-color: #e29554;
-}
+} */
+
 .singleroom-item {
   background-image: url('/about-img.jpg');
 }
-
+.singlepage-bookbtn {
+  background: transparent;
+  border: 2px solid #e29554;
+  color: #e29554;
+  padding: 5px 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  border-radius: 3px;
+}
 .single_room_banner_column {
   background-size: cover;
   background-position: center;
@@ -1916,7 +2039,4 @@ div#sidebar {
 .gallery-row {
   padding-left: 30px;
   padding-right: 0px;
-}
-.active_sidebar {
-  color: red;
 }

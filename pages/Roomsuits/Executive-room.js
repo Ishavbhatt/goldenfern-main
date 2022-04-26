@@ -91,7 +91,7 @@ function ExecutiveRoom() {
                 space, a King-sized double bed, and Large comfortable seating or
                 sofa area.
               </p>
-              {/* <button className="common_arrow"><img src="/arrow.svg" alt="Icon"/></button> */}
+              <button className="singlepage-bookbtn">Book Now</button>
             </div>
 
             <div className="col-lg-6 offset-lg-1 col-md-6 offset-md-1 col-sm-12 about_hotel_right room_aminities text-center row">
