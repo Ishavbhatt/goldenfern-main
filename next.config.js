@@ -1,5 +1,8 @@
 const webpack = require('webpack');
 module.exports = {
+  future: {
+    webpack5: true
+  },
   reactStrictMode: true,
   
 webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
