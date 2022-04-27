@@ -18,8 +18,8 @@
     /* position: relative; */
     display: none;
   }
-  label .form-check-label {
-    color: red;
+  .bnr-booking {
+    display: none;
   }
   .room_suit_left.fixed {
     position: relative;
