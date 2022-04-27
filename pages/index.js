@@ -36,7 +36,7 @@ export default function Home() {
   const [people, setPeople] = useState(1);
   const [checkInDate, setCheckInDate] = useState(null);
   const [checkOutDate, setCheckOutDate] = useState(null);
-  const [data, setData] = useState([]);
+  const [data, setData] = useState(null);
   const lat = 31.1048;
   const long = 77.1734;
 
@@ -72,18 +72,15 @@ export default function Home() {
   };
 
   useEffect(() => {
-    const fetchData = async () => {
-      await fetch(
-        `https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${long}&units=metric&APPID=afe83a2dbade6cad2645c7b7ec05a3a1`
-      )
-        .then((res) => res.json())
-        .then((result) => {
-          setData(result);
-          console.log(result);
-        });
-    };
-    fetchData();
-  }, []);
+    fetch(
+       `https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${long}&units=metric&APPID=afe83a2dbade6cad2645c7b7ec05a3a1`
+     )
+       .then((res) => res.json())
+       .then((data) => {
+         setData(data);
+         console.log(data);
+       });
+ }, []);
 
   return (
     <>
