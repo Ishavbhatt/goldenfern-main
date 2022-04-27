@@ -37,7 +37,7 @@ function LuxuryRoom() {
         nav: true,
         loop: false,
       },
-    },s
+    },
   };
 
   return (
