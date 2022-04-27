@@ -22,6 +22,22 @@ function LuxuryRoom() {
   const otherroom = {
     items: 2,
     margin: 40,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true,
+      },
+      600: {
+        items: 1,
+        nav: false,
+      },
+      1000: {
+        items: 2,
+        nav: true,
+        loop: false,
+      },
+    },s
   };
 
   return (
@@ -50,7 +66,7 @@ function LuxuryRoom() {
                 <span>per night + 12% Tax</span>
               </div>
               <h2 className="common_title">
-                <span className="golden_color">Luxury</span>Room
+                <span className="golden_color">Luxury</span> Room
               </h2>
               <p>
                 Luxury Suites at Golden Fern Resort Shimla cover 750 square feet
@@ -63,7 +79,7 @@ function LuxuryRoom() {
               </p>
             </div>
 
-            <div className="col-lg-6 offset-lg-1 col-md-6 offset-md-1 col-sm-12 about_hotel_right room_aminities text-center row">
+            <div className="col-lg-6 offset-lg-1 col-md-6 offset-md-1 col-sm-12 about_hotel_right room_aminities facilities_section text-center row-room">
               <div className="col-md-12 col-sm-12 text-center">
                 <h2 className="common_title color_white">Room Facilities</h2>
               </div>

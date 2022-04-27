@@ -26,6 +26,22 @@ function DeluxeRoom() {
   const otherroom = {
     items: 2,
     margin: 40,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true,
+      },
+      600: {
+        items: 1,
+        nav: false,
+      },
+      1000: {
+        items: 2,
+        nav: true,
+        loop: false,
+      },
+    },
   };
 
   return (
@@ -55,7 +71,7 @@ function DeluxeRoom() {
                 <span>per night + 12% Tax</span>
               </div>
               <h2 className="common_title">
-                <span className="golden_color">Deluxe</span>Room
+                <span className="golden_color">Deluxe</span> Room
               </h2>
               <p>
                 Deluxe Rooms have been designed elegantly as per the requirement
@@ -66,9 +82,10 @@ function DeluxeRoom() {
                 come with Private Balcony with a Valley view overlooking the
                 city.
               </p>
+              <button className="singlepage-bookbtn">Book Now</button>
             </div>
 
-            <div className="col-lg-6 offset-lg-1 col-md-6 offset-md-1 col-sm-12 about_hotel_right room_aminities text-center row">
+            <div className="col-lg-6 offset-lg-1 col-md-6 offset-md-1 col-sm-12 about_hotel_right room_aminities facilities_section text-center row-room">
               <div className="col-md-12 col-sm-12 text-center">
                 <h2 className="common_title color_white">Room Facilities</h2>
               </div>
@@ -99,7 +116,14 @@ function DeluxeRoom() {
                   <p>FREE WIFI</p>
                 </div>
               </div>
-
+              <div className="col-md-4 col-sm-6">
+                <div className="facilities_column text-center">
+                  <span>
+                    <img src="/breakfast.svg" alt="Icon" />
+                  </span>
+                  <p>BREAK-FAST</p>
+                </div>
+              </div>
               <div className="col-md-4 col-sm-6">
                 <div className="facilities_column text-center">
                   <span>
@@ -115,15 +139,6 @@ function DeluxeRoom() {
                     <img src="/tv.svg" alt="Icon" />
                   </span>
                   <p>LCD WITHOUT HD CHANNEL</p>
-                </div>
-              </div>
-
-              <div className="col-md-4 col-sm-6">
-                <div className="facilities_column text-center">
-                  <span>
-                    <img src="/breakfast.svg" alt="Icon" />
-                  </span>
-                  <p>BREAK-FAST</p>
                 </div>
               </div>
             </div>

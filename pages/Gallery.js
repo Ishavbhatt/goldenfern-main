@@ -48,8 +48,8 @@ function Gallery() {
 
       <section className="common_page_header common_padding">
         <div className="container padding-t-80">
-          <div className="row pages-info">
-            <div className="col-lg-10 col-md-10 col-sm-12 common_page_header_title">
+          <div className="row">
+            <div className="col-lg-10 col-md-10 col-sm-12 common_page_header_title pages-info">
               <h1 className="common_title white">Gallery</h1>
               <p>
                 There are not enough words to describe the charm that transpires
@@ -99,290 +99,273 @@ function Gallery() {
             >
               <section className="gallery-sec">
                 <div id="room1" className="gallery_section">
-                  <div className="container">
-                    {/* <div className="row"> */}
-                    <div className="gallery-col-md-12">
-                      <h2 className="gallery-item-heading">Rooms</h2>
+                  {/* <div className="container"> */}
+                  {/* <div className="row"> */}
+                  <div className="gallery-col-md-12">
+                    <h2 className="gallery-item-heading">Rooms</h2>
 
-                      <OwlCarousel
-                        className="gallery-owl-theme"
-                        nav
-                        {...options}
-                      >
-                        <div className="gallery-item">
-                          <div
-                            className="gallery_slider_column"
-                            style={{
-                              backgroundImage: "url('/gallery-room-1.jpg')",
-                            }}
-                          ></div>
-                        </div>
-                        <div className="gallery-item">
-                          <div
-                            className="gallery_slider_column"
-                            style={{
-                              backgroundImage: "url('/gallery-room-2.jpg')",
-                            }}
-                          ></div>
-                        </div>
+                    <OwlCarousel className="gallery-owl-theme" nav {...options}>
+                      <div className="gallery-item">
+                        <div
+                          className="gallery_slider_column"
+                          style={{
+                            backgroundImage: "url('/gallery-room-1.jpg')",
+                          }}
+                        ></div>
+                      </div>
+                      <div className="gallery-item">
+                        <div
+                          className="gallery_slider_column"
+                          style={{
+                            backgroundImage: "url('/gallery-room-2.jpg')",
+                          }}
+                        ></div>
+                      </div>
 
-                        <div className="gallery-item">
-                          <div
-                            className="gallery_slider_column"
-                            style={{
-                              backgroundImage: "url('/gallery-room-3.jpg')",
-                            }}
-                          ></div>
-                        </div>
+                      <div className="gallery-item">
+                        <div
+                          className="gallery_slider_column"
+                          style={{
+                            backgroundImage: "url('/gallery-room-3.jpg')",
+                          }}
+                        ></div>
+                      </div>
 
-                        <div className="gallery-item">
-                          <div
-                            className="gallery_slider_column"
-                            style={{
-                              backgroundImage: "url('/gallery-room-4.jpg')",
-                            }}
-                          ></div>
-                        </div>
+                      <div className="gallery-item">
+                        <div
+                          className="gallery_slider_column"
+                          style={{
+                            backgroundImage: "url('/gallery-room-4.jpg')",
+                          }}
+                        ></div>
+                      </div>
 
-                        <div className="gallery-item">
-                          <div
-                            className="gallery_slider_column"
-                            style={{
-                              backgroundImage: "url('/gallery-room-5.jpg')",
-                            }}
-                          ></div>
-                        </div>
+                      <div className="gallery-item">
+                        <div
+                          className="gallery_slider_column"
+                          style={{
+                            backgroundImage: "url('/gallery-room-5.jpg')",
+                          }}
+                        ></div>
+                      </div>
 
-                        <div className="gallery-item">
-                          <div
-                            className="gallery_slider_column"
-                            style={{
-                              backgroundImage: "url('/gallery-room-6.jpg')",
-                            }}
-                          ></div>
-                        </div>
+                      <div className="gallery-item">
+                        <div
+                          className="gallery_slider_column"
+                          style={{
+                            backgroundImage: "url('/gallery-room-6.jpg')",
+                          }}
+                        ></div>
+                      </div>
 
-                        <div className="gallery-item">
-                          <div
-                            className="gallery_slider_column"
-                            style={{
-                              backgroundImage: "url('/gallery-room-7.jpg')",
-                            }}
-                          ></div>
-                        </div>
+                      <div className="gallery-item">
+                        <div
+                          className="gallery_slider_column"
+                          style={{
+                            backgroundImage: "url('/gallery-room-7.jpg')",
+                          }}
+                        ></div>
+                      </div>
 
-                        <div className="gallery-item">
-                          <div
-                            className="gallery_slider_column"
-                            style={{
-                              backgroundImage: "url('/gallery-room-8.jpg')",
-                            }}
-                          ></div>
-                        </div>
+                      <div className="gallery-item">
+                        <div
+                          className="gallery_slider_column"
+                          style={{
+                            backgroundImage: "url('/gallery-room-8.jpg')",
+                          }}
+                        ></div>
+                      </div>
 
-                        <div className="gallery-item">
-                          <div
-                            className="gallery_slider_column"
-                            style={{
-                              backgroundImage: "url('/gallery-room-9.jpg')",
-                            }}
-                          ></div>
-                        </div>
-                      </OwlCarousel>
-                    </div>
-                    {/* </div> */}
+                      <div className="gallery-item">
+                        <div
+                          className="gallery_slider_column"
+                          style={{
+                            backgroundImage: "url('/gallery-room-9.jpg')",
+                          }}
+                        ></div>
+                      </div>
+                    </OwlCarousel>
                   </div>
+                  {/* </div> */}
+                  {/* </div> */}
                 </div>
               </section>
 
               <section className="gallery-sec">
                 <div id="room2" className="gallery_section">
-                  <div className="container">
-                    {/* <div className="row"> */}
-                    <div className="gallery-col-md-12">
-                      <h2 className="gallery-item-heading">Restaurant & Bar</h2>
+                  {/* <div className="container"> */}
+                  {/* <div className="row"> */}
+                  <div className="gallery-col-md-12">
+                    <h2 className="gallery-item-heading">Restaurant & Bar</h2>
 
-                      <OwlCarousel
-                        className="gallery-owl-theme"
-                        nav
-                        {...restraunt}
-                      >
-                        <div className="gallery-item">
-                          <div
-                            className="gallery_slider_column"
-                            style={{
-                              backgroundImage:
-                                "url('/gallery-restaurant-1.jpg')",
-                            }}
-                          ></div>
-                        </div>
+                    <OwlCarousel
+                      className="gallery-owl-theme"
+                      nav
+                      {...restraunt}
+                    >
+                      <div className="gallery-item">
+                        <div
+                          className="gallery_slider_column"
+                          style={{
+                            backgroundImage: "url('/gallery-restaurant-1.jpg')",
+                          }}
+                        ></div>
+                      </div>
 
-                        <div className="gallery-item">
-                          <div
-                            className="gallery_slider_column"
-                            style={{
-                              backgroundImage:
-                                "url('/gallery-restaurant-2.jpg')",
-                            }}
-                          ></div>
-                        </div>
+                      <div className="gallery-item">
+                        <div
+                          className="gallery_slider_column"
+                          style={{
+                            backgroundImage: "url('/gallery-restaurant-2.jpg')",
+                          }}
+                        ></div>
+                      </div>
 
-                        <div className="gallery-item">
-                          <div
-                            className="gallery_slider_column"
-                            style={{
-                              backgroundImage:
-                                "url('/gallery-restaurant-3.jpg')",
-                            }}
-                          ></div>
-                        </div>
+                      <div className="gallery-item">
+                        <div
+                          className="gallery_slider_column"
+                          style={{
+                            backgroundImage: "url('/gallery-restaurant-3.jpg')",
+                          }}
+                        ></div>
+                      </div>
 
-                        <div className="gallery-item">
-                          <div
-                            className="gallery_slider_column"
-                            style={{
-                              backgroundImage:
-                                "url('/gallery-restaurant-4.jpg')",
-                            }}
-                          ></div>
-                        </div>
+                      <div className="gallery-item">
+                        <div
+                          className="gallery_slider_column"
+                          style={{
+                            backgroundImage: "url('/gallery-restaurant-4.jpg')",
+                          }}
+                        ></div>
+                      </div>
 
-                        <div className="gallery-item">
-                          <div
-                            className="gallery_slider_column"
-                            style={{
-                              backgroundImage:
-                                "url('/gallery-restaurant-5.jpg')",
-                            }}
-                          ></div>
-                        </div>
+                      <div className="gallery-item">
+                        <div
+                          className="gallery_slider_column"
+                          style={{
+                            backgroundImage: "url('/gallery-restaurant-5.jpg')",
+                          }}
+                        ></div>
+                      </div>
 
-                        <div className="gallery-item">
-                          <div
-                            className="gallery_slider_column"
-                            style={{
-                              backgroundImage:
-                                "url('/gallery-restaurant-6.jpg')",
-                            }}
-                          ></div>
-                        </div>
+                      <div className="gallery-item">
+                        <div
+                          className="gallery_slider_column"
+                          style={{
+                            backgroundImage: "url('/gallery-restaurant-6.jpg')",
+                          }}
+                        ></div>
+                      </div>
 
-                        <div className="gallery-item">
-                          <div
-                            className="gallery_slider_column"
-                            style={{
-                              backgroundImage:
-                                "url('/gallery-restaurant-7.jpg')",
-                            }}
-                          ></div>
-                        </div>
+                      <div className="gallery-item">
+                        <div
+                          className="gallery_slider_column"
+                          style={{
+                            backgroundImage: "url('/gallery-restaurant-7.jpg')",
+                          }}
+                        ></div>
+                      </div>
 
-                        <div className="gallery-item">
-                          <div
-                            className="gallery_slider_column"
-                            style={{
-                              backgroundImage:
-                                "url('/gallery-restaurant-8.jpg')",
-                            }}
-                          ></div>
-                        </div>
-                      </OwlCarousel>
-                    </div>
-                    {/* </div> */}
+                      <div className="gallery-item">
+                        <div
+                          className="gallery_slider_column"
+                          style={{
+                            backgroundImage: "url('/gallery-restaurant-8.jpg')",
+                          }}
+                        ></div>
+                      </div>
+                    </OwlCarousel>
                   </div>
+                  {/* </div> */}
+                  {/* </div> */}
                 </div>
               </section>
 
               <section className="gallery-sec">
                 <div id="room3" className="gallery_section">
-                  <div className="container">
-                    {/* <div className="row"> */}
-                    <div className="gallery-col-md-12">
-                      <h2 className="gallery-item-heading">Hotel Area</h2>
+                  {/* <div className="container"> */}
+                  {/* <div className="row"> */}
+                  <div className="gallery-col-md-12">
+                    <h2 className="gallery-item-heading">Hotel Area</h2>
 
-                      <OwlCarousel
-                        className="gallery-owl-theme"
-                        nav
-                        {...hotel}
-                      >
-                        <div className="gallery-item">
-                          <div
-                            className="gallery_slider_column"
-                            style={{
-                              backgroundImage: "url('/outdoor-gallery-1.jpg')",
-                            }}
-                          ></div>
-                        </div>
+                    <OwlCarousel className="gallery-owl-theme" nav {...hotel}>
+                      <div className="gallery-item">
+                        <div
+                          className="gallery_slider_column"
+                          style={{
+                            backgroundImage: "url('/outdoor-gallery-1.jpg')",
+                          }}
+                        ></div>
+                      </div>
 
-                        <div className="gallery-item">
-                          <div
-                            className="gallery_slider_column"
-                            style={{
-                              backgroundImage: "url('/outdoor-gallery-2.jpg')",
-                            }}
-                          ></div>
-                        </div>
+                      <div className="gallery-item">
+                        <div
+                          className="gallery_slider_column"
+                          style={{
+                            backgroundImage: "url('/outdoor-gallery-2.jpg')",
+                          }}
+                        ></div>
+                      </div>
 
-                        <div className="gallery-item">
-                          <div
-                            className="gallery_slider_column"
-                            style={{
-                              backgroundImage: "url('/outdoor-gallery-3.jpg')",
-                            }}
-                          ></div>
-                        </div>
+                      <div className="gallery-item">
+                        <div
+                          className="gallery_slider_column"
+                          style={{
+                            backgroundImage: "url('/outdoor-gallery-3.jpg')",
+                          }}
+                        ></div>
+                      </div>
 
-                        <div className="gallery-item">
-                          <div
-                            className="gallery_slider_column"
-                            style={{
-                              backgroundImage: "url('/outdoor-gallery-4.jpg')",
-                            }}
-                          ></div>
-                        </div>
+                      <div className="gallery-item">
+                        <div
+                          className="gallery_slider_column"
+                          style={{
+                            backgroundImage: "url('/outdoor-gallery-4.jpg')",
+                          }}
+                        ></div>
+                      </div>
 
-                        <div className="gallery-item">
-                          <div
-                            className="gallery_slider_column"
-                            style={{
-                              backgroundImage: "url('/outdoor-gallery-5.jpg')",
-                            }}
-                          ></div>
-                        </div>
+                      <div className="gallery-item">
+                        <div
+                          className="gallery_slider_column"
+                          style={{
+                            backgroundImage: "url('/outdoor-gallery-5.jpg')",
+                          }}
+                        ></div>
+                      </div>
 
-                        <div className="gallery-item">
-                          <div
-                            className="gallery_slider_column"
-                            style={{
-                              backgroundImage: "url('/outdoor-gallery-6.jpg')",
-                            }}
-                          ></div>
-                        </div>
+                      <div className="gallery-item">
+                        <div
+                          className="gallery_slider_column"
+                          style={{
+                            backgroundImage: "url('/outdoor-gallery-6.jpg')",
+                          }}
+                        ></div>
+                      </div>
 
-                        <div className="gallery-item">
-                          <div
-                            className="gallery_slider_column"
-                            style={{
-                              backgroundImage: "url('/outdoor-gallery-7.jpg')",
-                            }}
-                          ></div>
-                        </div>
+                      <div className="gallery-item">
+                        <div
+                          className="gallery_slider_column"
+                          style={{
+                            backgroundImage: "url('/outdoor-gallery-7.jpg')",
+                          }}
+                        ></div>
+                      </div>
 
-                        <div className="gallery-item">
-                          <div
-                            className="gallery_slider_column"
-                            style={{
-                              backgroundImage: "url('/outdoor-gallery-8.jpg')",
-                            }}
-                          ></div>
-                        </div>
-                      </OwlCarousel>
-                    </div>
-                    {/* </div> */}
+                      <div className="gallery-item">
+                        <div
+                          className="gallery_slider_column"
+                          style={{
+                            backgroundImage: "url('/outdoor-gallery-8.jpg')",
+                          }}
+                        ></div>
+                      </div>
+                    </OwlCarousel>
                   </div>
+                  {/* </div> */}
+                  {/* </div> */}
                 </div>
               </section>
-
             </div>
           </div>
         </div>

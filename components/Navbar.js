@@ -12,7 +12,6 @@ const Navbar = () => {
     <>
       <script src="/"></script>
 
-
       <header className="header">
         {/* <div className="header_bottom w-100"> */}
         <div className="container">
@@ -97,7 +96,7 @@ const Navbar = () => {
               </div>
               <div>
                 <button className="navbar-cut-btn" onClick={handleIsActive}>
-                  <img alt="logo" src="/cancel.png" />
+                  <img alt="logo" src="/cross.png" />
                 </button>
               </div>
             </div>
@@ -170,7 +169,7 @@ const Navbar = () => {
                   </div>
                 </div>
               </nav>
-              <div className="book-now-btn">
+              {/* <div className="book-now-btn">
                 <Link
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
@@ -181,7 +180,7 @@ const Navbar = () => {
                 <div className="common_arrow">
                   <img src="/images/arrow.svg" alt="Icon" />
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </header>

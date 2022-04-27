@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Carousel } from "react-responsive-carousel";
 import DatePicker from "react-datepicker";
-// import moment from "moment";
 
 var $ = require("jquery");
 if (typeof window !== "undefined") {
@@ -44,6 +43,24 @@ export default function Home() {
   };
   const testmonials = {
     items: 3,
+    loop: true,
+    nav: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true,
+      },
+      600: {
+        items: 3,
+        nav: false,
+      },
+      1000: {
+        items: 3,
+        nav: true,
+        loop: false,
+      },
+    },
   };
 
   // define handler change function on check-in date
@@ -72,14 +89,14 @@ export default function Home() {
 
   useEffect(() => {
     fetch(
-       `https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${long}&units=metric&APPID=afe83a2dbade6cad2645c7b7ec05a3a1`
-     )
-       .then((res) => res.json())
-       .then((data) => {
-         setData(data);
-         console.log(data);
-       });
- }, []);
+      `https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${long}&units=metric&APPID=afe83a2dbade6cad2645c7b7ec05a3a1`
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data);
+        console.log(data);
+      });
+  }, []);
 
   return (
     <>
@@ -97,51 +114,50 @@ export default function Home() {
                   Hotels for the elite passionate about luxury
                 </h1>
               </div>
-              <div>
-                <div className="bnr-booking">
-                  <div className="check-in-out-container">
-                    <div className="pick-dates vr-line">
-                      <label>Check-in</label>
-                      <DatePicker
-                        wrapperClassName="date-picker"
-                        placeholderText={datenmonth}
-                        selected={checkInDate}
-                        minDate={new Date()}
-                        onChange={handleCheckInDate}
-                      />
-                    </div>
-                    <div className="pick-dates vr-line">
-                      <label>Check-out</label>
-                      <DatePicker
-                        wrapperClassName="date-picker"
-                        placeholderText={datenmonth}
-                        selected={checkOutDate}
-                        minDate={checkInDate}
-                        onChange={handleCheckOutDate}
-                      />
-                    </div>
-                    <div className="pick-dates">
-                      <label>People</label>
-                      <div className="people-btn">
-                        <p>{people}</p>
-                        <div>
-                          <button onClick={incPeople}>
-                            <img src="/arrow-up.png" alt="" />
-                          </button>
-                          <button onClick={decPeople}>
-                            <img src="/arrow-down.png" alt="" />
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="banner-book-btn popup-book-btn">
-                    <div className="common_arrow">
-                      <img src="/images/arrow.svg" alt="Icon" />
-                    </div>
-                  </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <div className="bnr-booking">
+          <div className="check-in-out-container">
+            <div className="pick-dates vr-line">
+              <label>Check-in</label>
+              <DatePicker
+                wrapperClassName="date-picker"
+                placeholderText={datenmonth}
+                selected={checkInDate}
+                minDate={new Date()}
+                onChange={handleCheckInDate}
+              />
+            </div>
+            <div className="pick-dates vr-line">
+              <label>Check-out</label>
+              <DatePicker
+                wrapperClassName="date-picker"
+                placeholderText={datenmonth}
+                selected={checkOutDate}
+                minDate={checkInDate}
+                onChange={handleCheckOutDate}
+              />
+            </div>
+            <div className="pick-dates">
+              <label>People</label>
+              <div className="people-btn">
+                <p>{people}</p>
+                <div>
+                  <button onClick={incPeople}>
+                    <img src="/arrow-up.png" alt="" />
+                  </button>
+                  <button onClick={decPeople}>
+                    <img src="/arrow-down.png" alt="" />
+                  </button>
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="banner-book-btn popup-book-btn">
+            <div className="common_arrow">
+              <img src="/images/arrow.svg" alt="Icon" />
             </div>
           </div>
         </div>
@@ -150,8 +166,14 @@ export default function Home() {
             <h6 className="weather-date">{curruntDate}</h6>
             {data && (
               <div>
-                <h4 className="weather-status">{data.weather[0].description}</h4>
-                <h1 className="weather-temp">{data.main.temp}<span>&#176;</span><span>C</span></h1>
+                <h4 className="weather-status">
+                  {data.weather[0].description}
+                </h4>
+                <h1 className="weather-temp">
+                  {data.main.temp}
+                  <span>&#176;</span>
+                  <span>C</span>
+                </h1>
                 <h6 className="weather-name">{data.name}, India</h6>
               </div>
             )}
@@ -159,7 +181,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="about_hotel common_padding">
+      <section className="about_hotel">
         <div className="container">
           <div className="row">
             <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
@@ -336,66 +358,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <section className="testimonials_section common_padding">
-        <div className="col-md-6 offset-md-3 col-sm-12 text-center">
-          <h2 className="common_title">What People Say?</h2>
-          <p>
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-        <Carousel
-          showArrows={true}
-          infiniteLoop={true}
-          showThumbs={false}
-          showStatus={false}
-          autoPlay={true}
-          interval={6100}
-        >
-          <div>
-            <img src="/images/user.png" />
-            <div className="myCarousel">
-              <h3>Bobby</h3>
-              <h4>From Kerala</h4>
-              <p>
-                One of the best boutique hotel we have in Shimla, I recommend it
-                to every traveler who is coming to Shimla if they want to see
-                history about how was Shimla they should stay at Golden Fern
-                Resort Shimla.
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <img src="/images/user.png" />
-            <div className="myCarousel">
-              <h3>Vicky</h3>
-              <h4>From Kinnour</h4>
-              <p>
-                Amazing stay here. The room and bathroom were very neat and
-                clean. And the breakfast was also good. Good service and they
-                will provide you a clean towel and bed linen. Ac and
-                refrigerator also working properly.
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <img src="/images/user.png" />
-            <div className="myCarousel">
-              <h3>Arun</h3>
-              <h4>From Delhi</h4>
-              <p>
-                Golden Fern Resort Shimla is a very pretty and amazing Hotel. I
-                love the food, room, room service, view, everything. When I stay
-                at Golden Fern Resort Shimla Hotel, I feel like I am at home. So
-                thank you so much, guys. You are amazing.
-              </p>
-            </div>
-          </div>
-        </Carousel>
-      </section> */}
-
       <section className="testimonials_section common_padding">
         <div className="container">
           <div className="row">
@@ -407,7 +369,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="col-md-12">
+            <div className="col-md-12 padding-t-b-40">
               <OwlCarousel {...testmonials} className="testimonial-custom">
                 <div className="test-item">
                   <div className="testi_column text-center">
@@ -447,11 +409,10 @@ export default function Home() {
                   <div className="testi_column text-center">
                     <img src="/comma.png" alt="Icon" />
                     <p>
-                      Golden Fern Resort Shimla is a very pretty and amazing
-                      Hotel. I love the food, room, room service, view,
-                      everything. When I stay at Golden Fern Resort Shimla
-                      Hotel, I feel like I am at home. So thank you so much,
-                      guys. You are amazing.
+                      Golden Fern Resort Shimla is a very amazing Hotel. I love
+                      the food, room, room service, view, everything. When I
+                      stay at Golden Fern Resort Shimla Hotel, I feel like I am
+                      at home. So thank you so much, guys. You are amazing.
                     </p>
                   </div>
                   <div className="triangle"></div>
@@ -470,21 +431,23 @@ export default function Home() {
       <section className="posts_section common_padding">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 col-md-6 col-sm-12 ">
-              <h2 className="common_title">
-                Stay Update with <br /> Golden Fern
-              </h2>
-              <p>
-                All rooms and suites are elegantly appointed and reflect
-                unpretentious luxury and stylish className with wooden flooring.
-              </p>
+            <h2 className="common_title">
+              Stay Update with <br /> Golden Fern
+            </h2>
+            <div className="flex-between">
+              <div className="col-lg-6 col-md-6 col-sm-12 ">
+                <p>
+                  All rooms and suites are elegantly appointed and reflect
+                  unpretentious luxury and stylish className with wooden
+                  flooring.
+                </p>
+              </div>
+              <div className="posts_section_btn">
+                <a href="/#" className=" common_btn">
+                  VIEW ALL POSTS
+                </a>
+              </div>
             </div>
-            <div className="col-lg-6 col-md-6 col-sm-12 posts_section_btn">
-              <a href="/#" className=" common_btn">
-                VIEW ALL POSTS
-              </a>
-            </div>
-
             <div className="clearfix"></div>
 
             <div className="col-md-4 col-sm-12 post_column">

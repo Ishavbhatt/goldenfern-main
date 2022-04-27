@@ -7,7 +7,11 @@
   font-family: "Freight-Medium";
   src: url(../fonts/Freight-Medium.otf);
 }
-
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
 .weather_div {
   position: absolute;
   bottom: 0px;
@@ -70,9 +74,10 @@ body .fixedweather {
 .weather-temp {
   color: white;
   font-size: 30px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.weather-name{
+.weather-name {
   color: white;
   padding: 5px 0;
 }
@@ -196,7 +201,10 @@ section {
   padding: 80px 0px;
 }
 .padding-t-b-40 {
-padding: 40px 0;
+  padding: 40px 0;
+}
+.padding-t-40 {
+  padding-top: 40px;
 }
 .padding-t-80 {
   padding-top: 80px;
@@ -291,7 +299,7 @@ padding: 40px 0;
 .header {
   position: absolute;
   background: transparent;
-padding: 16px 0;
+  padding: 16px 0;
   top: 0px;
   z-index: 9999;
   transition: all ease-in-out 0.5s;
@@ -483,16 +491,16 @@ body .header .navbar-collapse {
   background-position: center;
 }
 .exec-singleroom-banner {
-  background-image: url('/executive-room.jpg');
+  background-image: url("/executive-room.jpg");
 }
 .clas-singleroom-banner {
-  background-image: url('/classic-room.jpg');
+  background-image: url("/classic-room.jpg");
 }
 .del-singleroom-banner {
-  background-image: url('/deluxe-room.jpg');
+  background-image: url("/deluxe-room.jpg");
 }
 .lux-singleroom-banner {
-  background-image: url('/luxury.jpg');
+  background-image: url("/luxury.jpg");
 }
 .single-room-banner::before {
   content: "";
@@ -518,13 +526,11 @@ body .header .navbar-collapse {
 .bnr-booking {
   display: flex;
   justify-content: center;
-  /* position: absolute; */
-  bottom: 0px;
+  position: absolute;
+  bottom: 0;
   right: 0;
-  /* max-width: 1200px; */
-  margin: 0 auto;
+  margin-bottom: 20px;
   left: 0;
-  /* min-width: 1200px; */
 }
 .date-picker input::placeholder {
   color: black;
@@ -542,19 +548,21 @@ body .header .navbar-collapse {
   width: 100px;
   height: auto;
 }
- .check-in-out-container .pick-dates {
+.check-in-out-container .pick-dates {
   width: 100px;
+  text-align: center;
 }
 .popup-book-btn {
   background-color: black;
 }
 .banner-book-btn .common_arrow {
   top: 25px;
+  margin-left: 25px;
 }
 .people-btn {
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin-left: 20px;
 }
 .popup-book-btn .common_arrow::after {
   content: "";
@@ -568,16 +576,18 @@ body .header .navbar-collapse {
   transform: rotate(-45deg);
 }
 .popup-book-btn .common_arrow img {
-max-width:45px;
+  max-width: 45px;
 }
 .check-in-out-container .vr-line {
   border-right: 1px solid rgb(204, 191, 191);
+  text-align: center;
 }
-.date-picker input{
+.date-picker input {
   width: 80px;
-  border: none; 
+  border: none;
+  text-align: center;
 }
-.date-picker input:focus{
+.date-picker input:focus {
   outline: none;
 }
 .check-in-out-container button {
@@ -592,14 +602,14 @@ max-width:45px;
   width: 16px;
   vertical-align: top;
 }
- .check-in-out-container label {
+.check-in-out-container label {
   color: #e29554;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .about_hotel {
-  padding-bottom: 110px;
+  padding: 100px 0;
 }
 .about_hotel_text h2 {
   font-size: 54px;
@@ -630,9 +640,10 @@ max-width:45px;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  /*background-image: url('../images/leaf_gold.svg');  
+  background-image: url("../images/leaf_gold.svg");
   background-position: center;
-  background-size: cover;*/
+  background-size: cover;
+  padding: 20px 0;
 }
 .about_hotel_text p {
   color: #fff;
@@ -760,9 +771,9 @@ max-width:45px;
 .col-md-12 .owl-item {
   width: 350px;
 }
-/* .test-item {
-  width: 300px;
-} */
+.test-item {
+  margin: 0 20px;
+}
 /* #testimonials_slider {
   margin-top: 50px;
 } */
@@ -820,7 +831,7 @@ max-width:45px;
 .testimonials_section .owl-dots {
   margin-top: 30px !important;
 }
-body .testimonials_section .owl-dots button {
+.testimonials_section .owl-dots button {
   border: 1px solid #ccc !important;
   border-radius: 50%;
   padding: 2px 2px !important;
@@ -870,11 +881,11 @@ body .testimonials_section .owl-dots button {
   z-index: 1;
 }
 */
-.posts_section_btn {
+/* .posts_section_btn {
   justify-content: flex-end;
   align-items: center;
   display: flex;
-}
+} */
 .post_column_image {
   height: 220px;
   background-size: cover;
@@ -1015,7 +1026,7 @@ body .testimonials_section .owl-dots button {
   color: #fff;
 }
 .common_page_header {
-  padding-top: 40px;
+  padding-top: 80px;
 }
 .common_page_header_title h2 {
   color: #fff;
@@ -1035,7 +1046,11 @@ body .testimonials_section .owl-dots button {
   font-size: 40px;
   /* margin-bottom: 30px !important; */
 }
-.attraction_column, .singleroom_column {
+.pages-info {
+  width: auto;
+}
+.attraction_column,
+.singleroom_column {
   height: 460px;
   background-size: cover;
   background-position: center;
@@ -1106,14 +1121,14 @@ body .testimonials_section .owl-dots button {
   right: 10px;
   margin: 0px !important;
 }
-.gallery-sec .owl-nav{
+.gallery-sec .owl-nav {
   position: absolute;
   right: 16%;
   margin: 0px !important;
 }
-.single-room-sec .owl-nav{
+.single-room-sec .owl-nav {
   position: absolute;
-  /* left: 50%; */  
+  /* left: 50%; */
   background: transparent;
 }
 .gallery-sec .owl-nav button {
@@ -1146,8 +1161,8 @@ body .testimonials_section .owl-dots button {
 .single-room-sec .owl-nav button.owl-next {
   background-image: url("../images/white-arrow-right.png") !important;
 }
-.single-room-sec .owl-nav button span, 
-.gallery-sec .owl-nav button span{
+.single-room-sec .owl-nav button span,
+.gallery-sec .owl-nav button span {
   display: none;
 }
 
@@ -1210,11 +1225,11 @@ body .testimonials_section .owl-dots button {
   background-repeat: no-repeat;
 }
 .cont-head-col {
-  color: #E29554;
+  color: #e29554;
   font-size: 1.5rem;
 }
 .a-span {
-  color: #E29554;
+  color: #e29554;
 }
 .a-span:hover {
   color: #b18058;
@@ -1289,7 +1304,9 @@ body .testimonials_section .owl-dots button {
 .contact_form form .form-group.form-check {
   border: 1px solid #c1c1c1;
   border-top: none;
-  padding: 20px;
+  padding: 16px;
+  line-height: 1;
+  font-size: 16px;
   color: #9d9d9d;
   padding-left: 45px;
 }
@@ -1379,7 +1396,7 @@ body .testimonials_section .owl-dots button {
   list-style: none;
 }
 
-.scrool-items a{
+.scrool-items a {
   background-color: transparent !important;
   border: none;
   padding: 0px;
@@ -1482,7 +1499,7 @@ body .testimonials_section .owl-dots button {
 } */
 
 .singleroom-item {
-  background-image: url('/about-img.jpg');
+  background-image: url("/about-img.jpg");
 }
 .singlepage-bookbtn {
   background: transparent;
@@ -1549,6 +1566,10 @@ body .testimonials_section .owl-dots button {
 .facilities_section .common_title {
   font-size: 40px;
 }
+.row-room {
+  display: flex;
+  flex-wrap: wrap;
+}
 .facilities_column {
   margin-top: 30px;
 }
@@ -1588,12 +1609,12 @@ body .testimonials_section .owl-dots button {
   width: 100%;
   background-color: #00000063;
 }
- .single_room_banner .owl-nav {
+.single_room_banner .owl-nav {
   position: absolute;
   bottom: 0px;
   margin: 0px;
 }
- .single_room_banner .owl-nav button {
+.single_room_banner .owl-nav button {
   height: 40px;
   margin-right: 5px !important;
   background-color: #e29554 !important;
@@ -1840,7 +1861,7 @@ div#sidebar {
   align-items: center;
 }
 .mobile-header {
-  background-color: #794b01;
+  background-color: #e29554;
   height: 100vh;
   position: fixed;
   width: 100%;
@@ -1959,7 +1980,7 @@ div#sidebar {
   font-weight: 600;
   color: #b3882c;
   letter-spacing: 1.5px;
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
 .myCarousel p {
@@ -2027,13 +2048,13 @@ div#sidebar {
   justify-content: space-between;
 } */
 
-.gallery-owl-theme{
+.gallery-owl-theme {
   display: flex;
   flex-wrap: wrap;
 }
 .gallery-col-md-12 {
   background-color: white;
-  padding: 40px 0 40px 40px; 
+  padding: 40px 0 40px 40px;
   /* margin-right: 20px; */
 }
 .gallery-row {

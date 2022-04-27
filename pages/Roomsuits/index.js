@@ -21,12 +21,6 @@ function Roomsuits() {
     });
   }, []);
 
-  // useEffect(() => {
-  //   window.addEventListener("twoscroll", () => {
-  //     setTwoscroll(window.scrollY > 300 && window.scrollY > 600 );
-  //     console.log("twoscrool" + window.scrollY)
-  //   });
-  // }, []);
 
   return (
     <>

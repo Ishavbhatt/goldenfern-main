@@ -114,8 +114,13 @@ function Contactus() {
                     id="exampleCheck1"
                   />
                   <label className="form-check-label" htmlFor="exampleCheck1">
-                    I have read the <a className="a-span" href="/Privacypolicy"> Golden Fern Resort</a> policies and I accept the
-                    use and treatment of my personal data.
+                    I have read the{" "}
+                    <a className="a-span" href="/Privacypolicy">
+                      {" "}
+                      Golden Fern Resort
+                    </a>{" "}
+                    policies and I accept the use and treatment of my personal
+                    data.
                   </label>
                 </div>
                 <button type="submit" className="common_btn">

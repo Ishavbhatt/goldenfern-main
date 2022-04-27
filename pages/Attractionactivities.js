@@ -16,34 +16,50 @@ import Head from "next/head";
 
 function Attractionactivities() {
   const attraction = {
-    items:3,
+    items: 3,
     margin: 20,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:1,
-            nav:false
-        },
-        1000:{
-            items:3,
-            nav:true,
-            loop:false
-        }
-      }
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+      },
+      600: {
+        items: 1,
+        nav: false,
+      },
+      1000: {
+        items: 3,
+        nav: true,
+        loop: false,
+      },
+    },
   };
 
   const activty = {
     items: 2,
     margin: 20,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+      },
+      600: {
+        items: 1,
+        nav: false,
+      },
+      1000: {
+        items: 2,
+        nav: true,
+        loop: false,
+      },
+    },
   };
 
   return (
     <>
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      {/* <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> */}
 
       <Head>
         <title>
@@ -61,8 +77,8 @@ function Attractionactivities() {
 
       <section className="common_page_header common_padding">
         <div className="container padding-t-80">
-          <div className="row pages-info">
-            <div className="col-lg-10 col-md-10 col-sm-12 common_page_header_title">
+          <div className="row">
+            <div className="col-lg-10 col-md-10 col-sm-12 common_page_header_title pages-info">
               <h1 className="common_title  white">Attraction & Activities</h1>
               <p>
                 There are not enough words to describe the charm that transpires

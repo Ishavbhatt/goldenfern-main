@@ -22,6 +22,22 @@ function ExecutiveRoom() {
   const otherroom = {
     items: 2,
     margin: 40,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true,
+      },
+      600: {
+        items: 1,
+        nav: false,
+      },
+      1000: {
+        items: 2,
+        nav: true,
+        loop: false,
+      },
+    },
   };
 
   return (
@@ -70,7 +86,7 @@ function ExecutiveRoom() {
 
       <section className="about_hotel room_page_desc common_padding pb-0">
         <div className="container">
-          <div className="row padding-t-b-40">
+          <div className="row">
             <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
               <div className="room_price">
                 <p>rates from</p>
@@ -94,7 +110,7 @@ function ExecutiveRoom() {
               <button className="singlepage-bookbtn">Book Now</button>
             </div>
 
-            <div className="col-lg-6 offset-lg-1 col-md-6 offset-md-1 col-sm-12 about_hotel_right room_aminities text-center row">
+            <div className="col-lg-6 offset-lg-1 col-md-6 offset-md-1 col-sm-12 about_hotel_right room_aminities facilities_section text-center row-room">
               <div className="col-md-12 col-sm-12 text-center">
                 <h2 className="common_title color_white">Room Facilities</h2>
               </div>
@@ -125,7 +141,14 @@ function ExecutiveRoom() {
                   <p>FREE WIFI</p>
                 </div>
               </div>
-
+              <div className="col-md-4 col-sm-6">
+                <div className="facilities_column text-center">
+                  <span>
+                    <img src="/breakfast.svg" alt="Icon" />
+                  </span>
+                  <p>BREAK-FAST</p>
+                </div>
+              </div>
               <div className="col-md-4 col-sm-6">
                 <div className="facilities_column text-center">
                   <span>
@@ -143,17 +166,8 @@ function ExecutiveRoom() {
                   <p>LCD WITHOUT HD CHANNEL</p>
                 </div>
               </div>
-
-              <div className="col-md-4 col-sm-6">
-                <div className="facilities_column text-center">
-                  <span>
-                    <img src="/breakfast.svg" alt="Icon" />
-                  </span>
-                  <p>BREAK-FAST</p>
-                </div>
-              </div>
             </div>
-          </div>
+            </div>
         </div>
       </section>
 
