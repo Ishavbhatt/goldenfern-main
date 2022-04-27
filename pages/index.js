@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Carousel } from "react-responsive-carousel";
 import DatePicker from "react-datepicker";
-import Weather from "../pages/Weather";
-import moment from "moment";
+// import moment from "moment";
 
 var $ = require("jquery");
 if (typeof window !== "undefined") {
