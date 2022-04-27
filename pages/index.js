@@ -71,19 +71,19 @@ export default function Home() {
     setPeople(people - 1);
   };
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     await fetch(
-  //       `https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${long}&units=metric&APPID=afe83a2dbade6cad2645c7b7ec05a3a1`
-  //     )
-  //       .then((res) => res.json())
-  //       .then((result) => {
-  //         setData(result);
-  //         console.log(result);
-  //       });
-  //   };
-  //   fetchData();
-  // }, []);
+  useEffect(() => {
+    const fetchData = async () => {
+      await fetch(
+        `https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${long}&units=metric&APPID=afe83a2dbade6cad2645c7b7ec05a3a1`
+      )
+        .then((res) => res.json())
+        .then((result) => {
+          setData(result);
+          console.log(result);
+        });
+    };
+    fetchData();
+  }, []);
 
   return (
     <>
@@ -152,13 +152,13 @@ export default function Home() {
         <div className="weather_div">
           <div className="fixedweather">
             <h6 className="weather-date">{curruntDate}</h6>
-            {/* {data && (
+            {data && (
               <div>
                 <h4 className="weather-status">{data.weather[0].description}</h4>
                 <h1 className="weather-temp">{data.main.temp}<span>&#176;</span><span>C</span></h1>
                 <h6 className="weather-name">{data.name}, India</h6>
               </div>
-            )} */}
+            )}
           </div>
         </div>
       </section>
