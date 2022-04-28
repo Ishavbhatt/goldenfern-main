@@ -42,23 +42,25 @@ export default function Home() {
     items: 1,
   };
   const testmonials = {
+    center:true,
     items: 3,
     loop: true,
-    nav: true,
+    dots: true,
     responsiveClass: true,
     responsive: {
       0: {
         items: 1,
         nav: true,
+        dots:true,
       },
       600: {
         items: 3,
-        nav: false,
+        dots:true,
       },
       1000: {
         items: 3,
-        nav: true,
-        loop: false,
+        dots: true,
+        loop: true,
       },
     },
   };
@@ -118,6 +120,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+      
         <div className="bnr-booking">
           <div className="check-in-out-container">
             <div className="pick-dates vr-line">
@@ -179,6 +182,7 @@ export default function Home() {
             )}
           </div>
         </div>
+       
       </section>
 
       <section className="about_hotel">
@@ -369,8 +373,8 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="col-md-12 padding-t-b-40">
-              <OwlCarousel {...testmonials} className="testimonial-custom">
+            <div className="col-md-12 padding-t-b-40 testimonials-dots">
+              <OwlCarousel {...testmonials}>
                 <div className="test-item">
                   <div className="testi_column text-center">
                     <img src="/comma.png" alt="Icon" />
@@ -384,7 +388,7 @@ export default function Home() {
                   <div className="triangle"></div>
                   <div className="testi_profile text-center">
                     <img src="/user.png" alt="Image" />
-                    <h3>Bobby</h3>
+                    <h5>Bobby</h5>
                     <p>From Kerala</p>
                   </div>
                 </div>
@@ -422,6 +426,7 @@ export default function Home() {
                     <p>From Delhi</p>
                   </div>
                 </div>
+
               </OwlCarousel>
             </div>
           </div>

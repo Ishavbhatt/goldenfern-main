@@ -57,7 +57,7 @@ function Roomsuits() {
       >
         <div className="container">
           <div className="row">
-            <div className="panel_sidebar">
+            {/* <div className="panel_sidebar">
               <div id="sidebar" className="room_suit_left" >
                 <li className={scroll ? "one-scrool" : "scrool-items"}> 
                   <Link 
@@ -92,10 +92,10 @@ function Roomsuits() {
                   </Link>
                 </li>
               </div>
-            </div>
+            </div> */}
 
             <div
-              className="scrollspy-example col-md-10 offset-md-2"
+              className="scrollspy-example col-md-10 mr-auto"
               tabIndex="0"
             >
               <div id="room1" className="spy_section">

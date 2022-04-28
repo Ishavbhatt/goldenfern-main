@@ -15,11 +15,11 @@
 .weather_div {
   position: absolute;
   bottom: 0px;
-  right: 0;
-  max-width: 1200px;
+  /* float: right; */
+  max-width: 160px;
   margin: 0px auto;
-  left: 0;
-  min-width: 1200px;
+  right: 90px;
+  /* min-width: 1200px; */
 }
 body .booked-wzsp-prime-data .booked-wzsp-day-number .plus {
   font-size: 30px;
@@ -55,7 +55,7 @@ body .fixedweather {
   padding: 25px;
   box-shadow: none;
   border-radius: 0;
-  width: 160px;
+  width: 100%;
   right: 0px;
   float: right;
 }
@@ -718,7 +718,7 @@ body .header .navbar-collapse {
   margin-top: 25px;
 }
 .rooms_slider .owl-item {
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 .rooms_slider .owl-item.center {
   opacity: 1;
@@ -806,14 +806,12 @@ body .header .navbar-collapse {
   right: 0;
   margin: 0px auto;
 }
-/* .testi_column::after{
+.testi_column::after{
   content: "";
   width: 0; 
   height: 0; 
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;  
-  border-top: 20px solid #f00;
-} */
+  
+}
 .testi_column img {
   margin: 0px auto 20px;
   max-width: 40px;
@@ -822,29 +820,39 @@ body .header .navbar-collapse {
   margin: 0px auto 0px;
   width: 90px !important;
 }
-.testi_profile p {
+.testi_profile p, .testi_column p {
   color: #aca8a8;
 }
 .testimonials_section .owl-nav {
   display: none;
 }
-.testimonials_section .owl-dots {
+.testimonials-dots .owl-carousel .owl-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   margin-top: 30px !important;
 }
-.testimonials_section .owl-dots button {
+.testimonials-dots .owl-dots .owl-dot {
   border: 1px solid #ccc !important;
   border-radius: 50%;
-  padding: 2px 2px !important;
+  background-color: #ccc;
+  /* padding: 2px 2px !important; */
   outline: none;
   margin: 0 2px;
 }
-.testimonials_section .owl-dots button span {
-  padding: 0 5px;
-  height: 11px !important;
-  width: 11px !important;
+testimonials-dots .owl-carousel .owl-dots .active {
+  background-color: black;
+}
+.testimonials-dots .owl-dots button span {
+  padding: 0 2px;
+  /* height: 5px !important; */
+  width: 10px !important;
   margin: 0px !important;
 }
-.testimonials_section .owl-item.center .testi_column {
+.testimonials-dots .owl-dots button span::after {
+  border: 1px solid black;
+}
+.testimonials-dots .owl-item.center .testi_column {
   box-shadow: 0 0px 3px #ccc;
 }
 
@@ -1362,6 +1370,9 @@ body .header .navbar-collapse {
 .scrollspy-example .about_hotel_text .common_title {
   margin-bottom: 10px !important;
 }
+.mr-auto {
+  margin: 0 auto;
+}
 .scrollspy-example .about_hotel_text .common_arrow {
   top: 0;
   margin-top: 30px;
@@ -1853,6 +1864,7 @@ div#sidebar {
   align-items: center;
 }
 .header-trans {
+
   transition: all 0.25s ease-in;
 }
 .header-row {
@@ -1864,7 +1876,7 @@ div#sidebar {
   background-color: #e29554;
   height: 100vh;
   position: fixed;
-  width: 100%;
+  width: auto;
   top: 0;
   z-index: 9999;
   display: inline;

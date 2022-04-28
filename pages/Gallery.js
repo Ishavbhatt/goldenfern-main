@@ -64,7 +64,7 @@ function Gallery() {
       <section className="common_padding pt-0 scrool_section" id="rooms_suits">
         <div className="container">
           <div className="row">
-            <div className="panel_sidebar">
+            {/* <div className="panel_sidebar">
               <div id="sidebar" className="list-group room_suit_left">
                 <li>
                   <a
@@ -91,10 +91,10 @@ function Gallery() {
                   </a>
                 </li>
               </div>
-            </div>
+            </div> */}
 
             <div
-              className="scrollspy-example col-md-10 offset-md-2"
+              className="scrollspy-example col-md-10 mr-auto"
               tabIndex="0"
             >
               <section className="gallery-sec">
