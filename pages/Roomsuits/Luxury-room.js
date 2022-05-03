@@ -245,6 +245,7 @@ function LuxuryRoom() {
                 nav
                 {...otherroom}
               >
+                                  <div className="single-room-item">
                 <div className="other-item">
                   <div
                     className="attraction_column"
@@ -257,7 +258,8 @@ function LuxuryRoom() {
                     </a>
                   </div>
                 </div>
-
+                </div>
+                <div className="single-room-item">
                 <div className="other-item">
                   <div
                     className="attraction_column"
@@ -270,7 +272,8 @@ function LuxuryRoom() {
                     </a>
                   </div>
                 </div>
-
+                </div>
+                <div className="single-room-item">
                 <div className="other-item">
                   <div
                     className="attraction_column"
@@ -282,6 +285,7 @@ function LuxuryRoom() {
                       </div>
                     </a>
                   </div>
+                </div>
                 </div>
               </OwlCarousel>
             </div>

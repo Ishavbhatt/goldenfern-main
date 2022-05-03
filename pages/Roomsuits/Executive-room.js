@@ -274,7 +274,8 @@ function ExecutiveRoom() {
                 nav
                 {...otherroom}
               >
-                <div className="other-item">
+                <div className="single-room-item">
+                   <div className="other-item">
                   <div
                     className="attraction_column"
                     style={{ backgroundImage: "url('/deluxe-room.jpg')" }}
@@ -286,8 +287,10 @@ function ExecutiveRoom() {
                     </a>
                   </div>
                 </div>
-
-                <div className="other-item">
+                </div>
+               
+<div className="single-room-item">
+   <div className="other-item">
                   <div
                     className="attraction_column"
                     style={{ backgroundImage: "url('/classic-room.jpg')" }}
@@ -299,8 +302,10 @@ function ExecutiveRoom() {
                     </a>
                   </div>
                 </div>
-
-                <div className="other-item">
+</div>
+               
+<div className="single-room-item">
+  <div className="other-item">
                   <div
                     className="attraction_column"
                     style={{ backgroundImage: "url('/luxury.jpg')" }}
@@ -312,6 +317,8 @@ function ExecutiveRoom() {
                     </a>
                   </div>
                 </div>
+</div>
+                
               </OwlCarousel>
             </div>
           </div>

@@ -42,8 +42,10 @@ export default function Home() {
     items: 1,
   };
   const testmonials = {
-    center:true,
+    center: true,
     items: 3,
+    autoplay: false,
+    autoplayTimeout: 5000,
     loop: true,
     dots: true,
     responsiveClass: true,
@@ -51,11 +53,37 @@ export default function Home() {
       0: {
         items: 1,
         nav: true,
-        dots:true,
+        dots: false,
       },
       600: {
         items: 3,
-        dots:true,
+        // dots: true,
+      },
+      1000: {
+        items: 3,
+        dots: true,
+        loop: true,
+      },
+    },
+  };
+  const blogs = {
+    center: true,
+    margin: 20,
+    items: 3,
+    loop: true,
+    dots: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        // nav: true,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+      },
+      600: {
+        items: 3,
+        dots: true,
       },
       1000: {
         items: 3,
@@ -103,7 +131,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <link rel="icon" href="logo.png" />
+        <link rel="icon" href="favicon.png" />
         <title>Golden Fern</title>
       </Head>
 
@@ -120,69 +148,72 @@ export default function Home() {
             </div>
           </div>
         </div>
-      
-        <div className="bnr-booking">
-          <div className="check-in-out-container">
-            <div className="pick-dates vr-line">
-              <label>Check-in</label>
-              <DatePicker
-                wrapperClassName="date-picker"
-                placeholderText={datenmonth}
-                selected={checkInDate}
-                minDate={new Date()}
-                onChange={handleCheckInDate}
-              />
-            </div>
-            <div className="pick-dates vr-line">
-              <label>Check-out</label>
-              <DatePicker
-                wrapperClassName="date-picker"
-                placeholderText={datenmonth}
-                selected={checkOutDate}
-                minDate={checkInDate}
-                onChange={handleCheckOutDate}
-              />
-            </div>
-            <div className="pick-dates">
-              <label>People</label>
-              <div className="people-btn">
-                <p>{people}</p>
-                <div>
-                  <button onClick={incPeople}>
-                    <img src="/arrow-up.png" alt="" />
-                  </button>
-                  <button onClick={decPeople}>
-                    <img src="/arrow-down.png" alt="" />
-                  </button>
+        <div className="container">
+          <div className="row">
+            <div className="bnr-booking">
+              <div className="check-in-out-container">
+                <div className="pick-dates vr-line">
+                  <label>Check-in</label>
+                  <DatePicker
+                    wrapperClassName="date-picker"
+                    placeholderText={datenmonth}
+                    selected={checkInDate}
+                    minDate={new Date()}
+                    onChange={handleCheckInDate}
+                  />
+                </div>
+                <div className="pick-dates vr-line">
+                  <label>Check-out</label>
+                  <DatePicker
+                    wrapperClassName="date-picker"
+                    placeholderText={datenmonth}
+                    selected={checkOutDate}
+                    minDate={checkInDate}
+                    onChange={handleCheckOutDate}
+                  />
+                </div>
+                <div className="pick-dates">
+                  <label>People</label>
+                  <div className="people-btn">
+                    <p>{people}</p>
+                    <div>
+                      <button onClick={incPeople}>
+                        <img src="/arrow-up.png" alt="" />
+                      </button>
+                      <button onClick={decPeople}>
+                        <img src="/arrow-down.png" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="banner-book-btn popup-book-btn">
+                <div className="common_arrow">
+                  <img src="/images/arrow.svg" alt="Icon" />
                 </div>
               </div>
             </div>
-          </div>
-          <div className="banner-book-btn popup-book-btn">
-            <div className="common_arrow">
-              <img src="/images/arrow.svg" alt="Icon" />
-            </div>
+            
           </div>
         </div>
         <div className="weather_div">
-          <div className="fixedweather">
-            <h6 className="weather-date">{curruntDate}</h6>
-            {data && (
-              <div>
-                <h4 className="weather-status">
-                  {data.weather[0].description}
-                </h4>
-                <h1 className="weather-temp">
-                  {data.main.temp}
-                  <span>&#176;</span>
-                  <span>C</span>
-                </h1>
-                <h6 className="weather-name">{data.name}, India</h6>
+              <div className="fixedweather">
+                <h6 className="weather-date">{curruntDate}</h6>
+                {data && (
+                  <div>
+                    <h4 className="weather-status">
+                      {data.weather[0].description}
+                    </h4>
+                    <h1 className="weather-temp">
+                      {data.main.temp}
+                      <span>&#176;</span>
+                      <span>C</span>
+                    </h1>
+                    <h6 className="weather-name">{data.name}, India</h6>
+                  </div>
+                )}
               </div>
-            )}
-          </div>
-        </div>
-       
+            </div>
       </section>
 
       <section className="about_hotel">
@@ -224,7 +255,7 @@ export default function Home() {
               <OwlCarousel className="gallery-owl-theme" {...rooms}>
                 <div className="index-room-item">
                   <div className="rooms_slider_column row">
-                    <div className="col-md-7 columns ">
+                    <div className="col-md-7 columns">
                       <div className="rooms_slider_image">
                         <div className="room_price">
                           <p>rates from</p>
@@ -272,7 +303,7 @@ export default function Home() {
                     </div>
                     <div className="col-md-5 columns">
                       <div className="rooms_slider_text">
-                        <h4>classNameic Room</h4>
+                        <h4>Classic Room</h4>
                         <p>
                           Designed to the highest specifications and situated on
                           all floors, with a private balcony and city view the
@@ -285,7 +316,10 @@ export default function Home() {
                           for additional space, a King-sized double bed, and
                           Large comfortable seating or sofa area.
                         </p>
-                        <a className="common_arrow">
+                        <a
+                          className="common_arrow"
+                          href="/Roomsuits/Classic-room"
+                        >
                           <img src="/arrow.svg" alt="Icon" />
                         </a>
                       </div>
@@ -317,7 +351,10 @@ export default function Home() {
                           luxury for four guests while allowing them equal
                           amounts of privacy and comfort.
                         </p>
-                        <a className="common_arrow">
+                        <a
+                          className="common_arrow"
+                          href="/Roomsuits/Luxury-room"
+                        >
                           <img src="/arrow.svg" alt="Icon" />
                         </a>
                       </div>
@@ -349,7 +386,10 @@ export default function Home() {
                           rooms come with Private Balcony with a Valley view
                           overlooking the city.
                         </p>
-                        <a className="common_arrow">
+                        <a
+                          className="common_arrow"
+                          href="/Roomsuits/Deluxe-room"
+                        >
                           <img src="/arrow.svg" alt="Icon" />
                         </a>
                       </div>
@@ -366,7 +406,7 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-md-6 offset-md-3 col-sm-12 text-center">
-              <h2 className="common_title">What People Say?</h2>
+              <h2 className="test-title">What People Say?</h2>
               <p>
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa
                 qui officia deserunt mollit anim id est laborum.
@@ -426,7 +466,6 @@ export default function Home() {
                     <p>From Delhi</p>
                   </div>
                 </div>
-
               </OwlCarousel>
             </div>
           </div>
@@ -447,33 +486,35 @@ export default function Home() {
                   flooring.
                 </p>
               </div>
-              <div className="posts_section_btn">
-                <a href="/#" className=" common_btn">
-                  VIEW ALL POSTS
-                </a>
-              </div>
             </div>
             <div className="clearfix"></div>
+            <OwlCarousel {...blogs}>
+              <div className="post_column">
+                <div className="post_column_image"></div>
+                <p>on 22 Nov, 2021 / by admin</p>
+                <h4>Disclosing the Secrets of Success in Golden fern</h4>
+                <a href="/#">READ MORE</a>
+              </div>
 
-            <div className="col-md-4 col-sm-12 post_column">
-              <div className="post_column_image"></div>
-              <p>on 22 Nov, 2021 / by admin</p>
-              <h4>Disclosing the Secrets of Success in Golden fern</h4>
-              <a href="/#">READ MORE</a>
-            </div>
+              <div className="post_column">
+                <div className="post_column_image"></div>
+                <p>on 22 Nov, 2021 / by admin</p>
+                <h4>Disclosing the Secrets of Success in Golden fern</h4>
+                <a href="/#">READ MORE</a>
+              </div>
 
-            <div className="col-md-4 col-sm-12 post_column">
-              <div className="post_column_image"></div>
-              <p>on 22 Nov, 2021 / by admin</p>
-              <h4>Disclosing the Secrets of Success in Golden fern</h4>
-              <a href="/#">READ MORE</a>
-            </div>
+              <div className="post_column">
+                <div className="post_column_image"></div>
+                <p>on 22 Nov, 2021 / by admin</p>
+                <h4>Disclosing the Secrets of Success in Golden fern</h4>
+                <a href="/#">READ MORE</a>
+              </div>
+            </OwlCarousel>
 
-            <div className="col-md-4 col-sm-12 post_column">
-              <div className="post_column_image"></div>
-              <p>on 22 Nov, 2021 / by admin</p>
-              <h4>Disclosing the Secrets of Success in Golden fern</h4>
-              <a href="/#">READ MORE</a>
+            <div className="posts_section_btn">
+              <a href="/#" className=" common_btn">
+                VIEW ALL POSTS
+              </a>
             </div>
           </div>
         </div>

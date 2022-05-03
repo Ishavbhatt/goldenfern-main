@@ -246,7 +246,8 @@ function DeluxeRoom() {
               <OwlCarousel  className="other-room-owl"
                 responsiveClass={true}
                 nav {...otherroom}>
-                <div className="other-item">
+                  <div className="single-room-item">
+                    <div className="other-item">
                   <div
                     className="attraction_column"
                     style={{ backgroundImage: "url('/luxury.jpg')" }}
@@ -258,6 +259,9 @@ function DeluxeRoom() {
                     </a>
                   </div>
                 </div>
+                  </div>
+                
+                  <div className="single-room-item">
 
                 <div className="other-item">
                   <div
@@ -271,6 +275,9 @@ function DeluxeRoom() {
                     </a>
                   </div>
                 </div>
+                </div>
+
+                <div className="single-room-item">
 
                 <div className="other-item">
                   <div
@@ -283,6 +290,7 @@ function DeluxeRoom() {
                       </div>
                     </a>
                   </div>
+                </div>
                 </div>
               </OwlCarousel>
             </div>

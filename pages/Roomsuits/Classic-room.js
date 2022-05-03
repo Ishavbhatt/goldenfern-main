@@ -241,12 +241,14 @@ function ClassicRoom() {
               <h2 className="common_title color_white">Other Room Types</h2>
             </div>
             <div className="activities_slider">
+              
               <OwlCarousel
                 className="other-room-owl"
                 responsiveClass={true}
                 nav
                 {...otherroom}
               >
+                                  <div className="single-room-item">
                 <div className="other-item">
                   <div
                     className="attraction_column"
@@ -259,7 +261,8 @@ function ClassicRoom() {
                     </a>
                   </div>
                 </div>
-
+                </div>
+                <div className="single-room-item">
                 <div className="other-item">
                   <div
                     className="attraction_column"
@@ -272,7 +275,8 @@ function ClassicRoom() {
                     </a>
                   </div>
                 </div>
-
+                </div>
+                <div className="single-room-item">
                 <div className="other-item">
                   <div
                     className="attraction_column"
@@ -284,6 +288,7 @@ function ClassicRoom() {
                       </div>
                     </a>
                   </div>
+                </div>
                 </div>
               </OwlCarousel>
             </div>

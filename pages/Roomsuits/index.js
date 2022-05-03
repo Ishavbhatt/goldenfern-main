@@ -26,7 +26,7 @@ function Roomsuits() {
     <>
       <Head>
         <title>Luxurious Rooms & Suites In Shimla | Golden Fern Resort</title>
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/favicon.png" />
         <meta
           property="og:title"
           content="Luxurious Rooms & Suites In Shimla | Golden Fern Resort"

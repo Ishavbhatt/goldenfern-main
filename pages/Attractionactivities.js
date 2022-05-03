@@ -17,16 +17,16 @@ import Head from "next/head";
 function Attractionactivities() {
   const attraction = {
     items: 3,
-    margin: 20,
+    margin: 40,
     responsiveClass: true,
     responsive: {
       0: {
         items: 1,
-        nav: false,
+        nav: true,
       },
       600: {
-        items: 1,
-        nav: false,
+        items: 2,
+        nav: true,
       },
       1000: {
         items: 3,
@@ -38,16 +38,16 @@ function Attractionactivities() {
 
   const activty = {
     items: 2,
-    margin: 20,
+    margin: 40,
     responsiveClass: true,
     responsive: {
       0: {
         items: 1,
-        nav: false,
+        nav: true,
       },
       600: {
         items: 1,
-        nav: false,
+        nav: true,
       },
       1000: {
         items: 2,
@@ -103,7 +103,8 @@ function Attractionactivities() {
                 nav
                 {...attraction}
               >
-                <div className="attraction_column item_1">
+                <div className="activity-item">
+<div className="attraction_column item_1">
                   <div className="attraction_column_title">
                     <h3>The Ridge</h3>
                     <p>
@@ -114,7 +115,10 @@ function Attractionactivities() {
                     </p>
                   </div>
                 </div>
-                <div className="attraction_column item_2">
+                </div>
+                
+                <div className="activity-item">
+                  <div className="attraction_column item_2">
                   <div className="attraction_column_title">
                     <h3>Jakhu Temple</h3>
                     <p>
@@ -125,8 +129,10 @@ function Attractionactivities() {
                     </p>
                   </div>
                 </div>
-
-                <div className="attraction_column item_3">
+                </div>
+                
+                <div className="activity-item">
+                  <div className="attraction_column item_3">
                   <div className="attraction_column_title">
                     <h3>Fagu</h3>
                     <p>
@@ -137,8 +143,10 @@ function Attractionactivities() {
                     </p>
                   </div>
                 </div>
-
-                <div className="attraction_column item_2">
+                  </div>
+                
+                <div className="activity-item">
+                  <div className="attraction_column item_2">
                   <div className="attraction_column_title">
                     <h3>Jakhu Temple</h3>
                     <p>
@@ -149,8 +157,10 @@ function Attractionactivities() {
                     </p>
                   </div>
                 </div>
-
-                <div className="attraction_column item_3">
+                  </div>
+                
+                <div className="activity-item">
+                  <div className="attraction_column item_3">
                   <div className="attraction_column_title">
                     <h3>Fagu</h3>
                     <p>
@@ -161,6 +171,8 @@ function Attractionactivities() {
                     </p>
                   </div>
                 </div>
+                  </div>
+                
               </OwlCarousel>
             </div>
           </div>
@@ -173,7 +185,7 @@ function Attractionactivities() {
             <div className="col-md-12 col-sm-12 text-left">
               <h2 className="common_title color_white">Activities</h2>
             </div>
-            <div className="activities_slider">
+            <div className="owl-carousel owl-theme owl-loaded activities_slider">
               <OwlCarousel
                 className="activity-owl"
                 responsiveClass={true}
@@ -184,7 +196,7 @@ function Attractionactivities() {
                   <div className="attraction_column item_4">
                     <div className="attraction_column_title">
                       <h3>Trekking Tour</h3>
-                      <p>
+                      <p className="attraction-para">
                         Himachal Pradesh is a state in Northern India. Literally
                         translated it means in the Lap of Himalayas.
                       </p>
@@ -196,7 +208,7 @@ function Attractionactivities() {
                   <div className="attraction_column item_5">
                     <div className="attraction_column_title">
                       <h3>Cycling Tour</h3>
-                      <p>
+                      <p className="attraction-para">
                         These biking routes cater congenial bike ride experience
                         in the midst of arresting backdrop.
                       </p>
@@ -208,7 +220,7 @@ function Attractionactivities() {
                   <div className="attraction_column item_4">
                     <div className="attraction_column_title">
                       <h3>Trekking Tour</h3>
-                      <p>
+                      <p className="attraction-para">
                         Himachal Pradesh is a state in Northern India. Literally
                         translated it means in the Lap of Himalayas.
                       </p>

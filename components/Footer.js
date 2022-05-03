@@ -24,13 +24,13 @@ function Footer() {
                   </div>
 
                   <div className="f_icons">
-                    <a to="https://www.facebook.com/Golden-Fern-Resort-110187927124912/">
+                    <a href="https://www.facebook.com/Golden-Fern-Resort-110187927124912/">
                       <img src="/facebook.svg" alt="Icon" />
                     </a>
-                    <a to="https://www.instagram.com/goldenfernresort_/">
+                    <a href="https://www.instagram.com/goldenfernresort_/">
                       <img src="/instagram.svg" alt="Icon" />
                     </a>
-                    <a to="https://www.youtube.com/channel/UCGC6GEnkBUDnNqN479Jp0OA">
+                    <a href="https://www.youtube.com/channel/UCGC6GEnkBUDnNqN479Jp0OA">
                       <img src="/youtube.svg" alt="Icon" />
                     </a>
                   </div>
@@ -48,13 +48,13 @@ function Footer() {
                   <div>
                     <h4 className="text-uppercase">PHONE NUMBER</h4>
                     <p>
-                      <a to="tel:9805084000">+91 - 98050 84000</a>
+                      <a href="tel:9805084000">+91 - 98050 84000</a>
                     </p>
                   </div>
                   <div>
                     <h4 className="text-uppercase">RESERVATION</h4>
                     <p>
-                      <a to="mailto:reservations@goldenfernresort.com">
+                      <a href="mailto:reservations@goldenfernresort.com">
                         reservations@goldenfernresort.com
                       </a>
                     </p>

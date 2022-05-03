@@ -68,18 +68,10 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-              onClick={handleIsActive}
-            >
-              <img alt="logo" src="/list.png" />
-            </button>
+            <div>
+              <button className="menu-btn" onClick={handleIsActive}><img alt="logo" src="/toggle.svg" /></button>
+            </div>
+            
           </div>
         </div>
         {/* </div> */}

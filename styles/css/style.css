@@ -15,7 +15,7 @@
 .weather_div {
   position: absolute;
   bottom: 0px;
-  /* float: right; */
+  float: right;
   max-width: 170px;
   margin: 0px auto;
   right: 90px;
@@ -264,6 +264,13 @@ section {
   margin-bottom: 10px !important;
   text-transform: capitalize;
 }
+.test-title {
+  font-size: 44px;
+  color: #000000;
+  margin-bottom: 10px !important;
+  text-transform: capitalize;
+  padding-top: 30px;
+}
 .padding-t-b-30 {
   padding: 30px 0;
 }
@@ -387,24 +394,41 @@ body .header .navbar-collapse {
 #bs-example-navbar-collapse-1 {
   display: block;
 }
-
-.navbar-toggler {
+.menu-btn {
   font-size: 22px;
   border: none;
   color: #939191;
+  background: transparent;
+  outline: none !important;
+   padding: 0;
+  height: 40px;
+  overflow: hidden;
+  z-index: 9999;
+  display: block;
+  width: 40px !important;
+}
+.menu-btn img{
+  width: 30px;
+  height: 30px;
+}
+/* .navbar-toggler {
+  font-size: 22px;
+  border: none;
+  color: #939191;
+  background: transparent;
   outline: none !important;
   width: 42px;
   height: 33px;
-  padding: 0px;
+  padding: 20px;
   line-height: 10px;
   overflow: hidden;
   z-index: 9999;
   display: block;
   width: 54px !important;
   position: absolute;
-  right: 10px;
-}
-.navbar-toggler::before {
+   right: 10px;
+} */
+/* .navbar-toggler::before {
   height: 2px;
   content: "";
   width: 28px;
@@ -425,8 +449,8 @@ body .header .navbar-collapse {
   right: 0px;
   margin: 0px auto;
   bottom: 8px;
-}
-.navbar-toggler.toggle_btn span {
+} */
+/* .navbar-toggler.toggle_btn span {
   transform: translateX(-1000%);
 }
 .navbar-toggler.toggle_btn::before {
@@ -440,7 +464,7 @@ body .header .navbar-collapse {
   width: 30px;
   bottom: 15px;
   background-color: #fff;
-}
+} */
 .book_appointment {
   float: right;
   margin-left: 20px;
@@ -502,13 +526,13 @@ body .header .navbar-collapse {
 .lux-singleroom-banner {
   background-image: url("/luxury.jpg");
 }
-.single-room-banner::before {
+/* .single-room-banner::before {
   content: "";
   position: absolute;
   height: 100%;
   width: 100%;
   background-color: #00000054;
-}
+} */
 .banner_text {
   position: relative;
   height: 100%;
@@ -536,28 +560,39 @@ body .header .navbar-collapse {
   color: black;
   font-weight: 700;
 }
+
 .check-in-out-container {
   background-color: white;
-  width: 300px;
+  width: 345px;
   padding: 10px;
   height: auto;
   display: flex;
 }
+.pick-dates {
+  width: 115px;
+  height: auto;
+  text-align: center;
+}
 .banner-book-btn {
   background-color: #000000;
-  width: 100px;
+  width: 115px;
   height: auto;
 }
-.check-in-out-container .pick-dates {
-  width: 100px;
-  text-align: center;
+.react-datepicker__input-container::after {
+  content: "";
+  position: absolute;
+  background-image: url("/down-arrow.png");
+  height: 15px;
+  width: 15px;
+  right: 50px;
+  top: 20px;
 }
 .popup-book-btn {
   background-color: black;
 }
 .banner-book-btn .common_arrow {
   top: 25px;
-  margin-left: 25px;
+  margin-left: 30px;
 }
 .people-btn {
   display: flex;
@@ -599,7 +634,7 @@ body .header .navbar-collapse {
   display: block;
 }
 .check-in-out-container button img {
-  width: 16px;
+  width: 12px;
   vertical-align: top;
 }
 .check-in-out-container label {
@@ -640,7 +675,7 @@ body .header .navbar-collapse {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  background-image: url("../images/leaf_gold.svg");
+  /* background-image: url("../images/leaf_gold.svg"); */
   background-position: center;
   background-size: cover;
   padding: 20px 0;
@@ -680,7 +715,7 @@ body .header .navbar-collapse {
   bottom: 70px;
   background-color: #e29554;
   right: -1px;
-  z-index: 1;
+  z-index: 99;
   padding: 3px 12px;
   transition: all ease-in-out 0.8s;
   transform: translateX(100%);
@@ -710,6 +745,7 @@ body .header .navbar-collapse {
   margin-left: -80px;
   transition: all ease-in-out 0.5s;
   padding-right: 30px;
+  z-index: 9;
 }
 .rooms_slider_text p {
   margin-top: 7px !important;
@@ -754,6 +790,7 @@ body .header .navbar-collapse {
   background-color: transparent !important;
   outline: none !important;
 }
+
 .rooms_slider .owl-nav button.owl-next {
   background-image: url("/arrow-bg-right.png") !important;
 }
@@ -857,7 +894,7 @@ testimonials-dots .owl-carousel .owl-dots .active {
 }
 
 .post_column {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 .posts_section {
   background-color: #f0f3f7;
@@ -889,11 +926,11 @@ testimonials-dots .owl-carousel .owl-dots .active {
   z-index: 1;
 }
 */
-/* .posts_section_btn {
-  justify-content: flex-end;
-  align-items: center;
+.posts_section_btn {
+  padding-top: 20px;
+  justify-content: center;
   display: flex;
-} */
+}
 .post_column_image {
   height: 220px;
   background-size: cover;
@@ -921,7 +958,7 @@ testimonials-dots .owl-carousel .owl-dots .active {
 }
 .footer_address_left_inner,
 .footer_address_right_inner {
-  display: flex;
+ display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -939,6 +976,12 @@ testimonials-dots .owl-carousel .owl-dots .active {
   background-color: #fff;
   padding: 50px 50px !important;
   height: 450px;
+}
+.footer_address_right {
+  background-image: url('../images/leaf_gold.svg');
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .footer_bottom_column li {
@@ -1052,13 +1095,12 @@ testimonials-dots .owl-carousel .owl-dots .active {
 }
 .attraction_section .common_title {
   font-size: 40px;
-  /* margin-bottom: 30px !important; */
+  margin-bottom: 30px !important;
 }
 .pages-info {
   width: auto;
 }
-.attraction_column,
-.singleroom_column {
+.attraction_column {
   height: 460px;
   background-size: cover;
   background-position: center;
@@ -1069,32 +1111,45 @@ testimonials-dots .owl-carousel .owl-dots .active {
 }
 .attraction_column_title {
   text-align: center;
+  -webkit-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
   transition: all ease-in-out 0.5s;
   position: absolute;
   width: 100%;
   padding: 30px;
+  display: -moz-box;
   display: flex;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
   flex-direction: column;
+  -moz-box-pack: center;
   justify-content: center;
   height: 90px;
   align-content: center;
   padding: 23px 20px;
   left: 0px;
-  bottom: -30px;
+  bottom: -5px;
   background: #e29554;
   background: -moz-linear-gradient(top, #e29554 0%, #e29554 50%, #e29554 100%);
-  background: -webkit-linear-gradient(
-    top,
-    #e29554 0%,
-    #e29554 50%,
-    #e29554 100%
-  );
+  background: -webkit-gradient(
+  linear,
+  left top, left bottom,
+  from(#e2955442),
+  color-stop(50%, #df7d2ba1),
+  to(#e29554)
+);
+  background: -moz-linear-gradient(
+  top,
+  #e2955442 0%,
+  #e29554a1 50%,
+  #e29554 100%
+);
   background: linear-gradient(
-    to bottom,
-    #e2955405 0%,
-    #e29554a1 50%,
-    #e29554 100%
-  );
+  to bottom,
+  #e2955429 0%,
+  #e29554ba 50%,
+  #e29554 100%
+);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e29554', endColorstr='#e29554',GradientType=0 );
 }
 .attraction_column::before {
@@ -1109,9 +1164,14 @@ testimonials-dots .owl-carousel .owl-dots .active {
 }
 .attraction_column_title h3 {
   color: #fff;
-  margin-bottom: 5px !important;
 }
 .attraction_column_title p {
+  display: none;
+  color: #fff;
+  opacity: 0;
+}
+.attraction_column_title .attraction-para {
+  display: block;
   color: #fff;
   opacity: 0;
 }
@@ -1125,8 +1185,9 @@ testimonials-dots .owl-carousel .owl-dots .active {
 }
 .attraction_section .owl-nav {
   position: absolute;
-  top: -60px;
-  right: 10px;
+  top: -65px;
+  width: 120px;
+  right: 0;
   margin: 0px !important;
 }
 .gallery-sec .owl-nav {
@@ -1188,21 +1249,30 @@ testimonials-dots .owl-carousel .owl-dots .active {
 .activities_slider .attraction_column .attraction_column_title p {
   opacity: 1;
 }
+.attraction_slider .owl-theme .owl-nav,
+.activities_slider .owl-nav{
+  display: flex;
+  justify-content: space-between;
+}
 .attraction_section .owl-nav button,
 .single_room_banner_slider .owl-nav button {
   background-image: url("/white-arrow-left.png") !important;
   background-repeat: no-repeat !important;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 16px;
   background-size: 40px !important;
   background-position: center !important;
   background-color: transparent !important;
   outline: none !important;
   margin: 0px !important;
 }
+.attraction_section .owl-nav button.owl-prev {
+  margin: 0;
+}
 .attraction_section .owl-nav button.owl-next,
 .single_room_banner_slider .owl-nav button.owl-next {
   background-image: url("../images/white-arrow-right.png") !important;
+  margin: 0 !important;
 }
 .attraction_section .owl-nav button span,
 .attraction_section .owl-dots,
@@ -1839,23 +1909,6 @@ div#sidebar {
   top: 59%;
 }
 /* Practice Css */
-/* .menu-btn {
-  font-size: 22px;
-  border: none;
-  color: #939191;
-  outline: none !important;
-  width: 42px;
-  height: 33px;
-  padding: 0px;
-  line-height: 10px;
-  
-  overflow: hidden;
-  z-index: 9999;
-  display: block;
-  width: 54px !important;
-  position: absolute;
-  right: 10px;
-} */
 .header-div,
 .mobile-header-div {
   display: flex;
@@ -1927,14 +1980,17 @@ div#sidebar {
   border: none;
   outline: none !important;
   background-color: transparent;
-  height: 33px;
+  height: 40px;
+  width: 40px;
   padding: 0px;
   line-height: 10px;
   overflow: hidden;
   z-index: 9999;
   display: block;
-  /* width: 54px !important; */
-  right: 10px;
+}
+.navbar-cut-btn img {
+  height: 40px;
+  width: 40px;
 }
 
 /* Testimonial css */

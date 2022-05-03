@@ -10,15 +10,50 @@
   .post_column {
     padding: 10px 0;
   }
-  /* .banner {
+  .banner {
     background-size: cover;
-    height: 100vh;
-} */
+    height: 95vh;
+  }
   .panel_sidebar {
     /* position: relative; */
     display: none;
   }
   .bnr-booking {
+    width: auto;
+  }
+  .check-in-out-container {
+    width: auto;
+  }
+  .check-in-out-container .pick-dates {
+    width: 80px;
+    text-align: center;
+  }
+  .check-in-out-container label{
+font-size: 14px;
+letter-spacing: 0ch;
+font-weight: 700;
+}
+.date-picker input::placeholder {
+  font-weight: 500;
+  font-size: 16px;
+}
+.date-picker input {
+  width: 75px;
+  text-align: center;
+  font-size: 14px;
+}
+.react-datepicker__input-container::after {
+  right: 30px;
+  top: 20px;
+}
+  .banner-book-btn {
+    width: 80px;
+  }
+  .banner-book-btn .common_arrow {
+    top: 25px;
+    margin-left: 15px;
+  }
+  .weather_div {
     display: none;
   }
   .room_suit_left.fixed {
@@ -59,6 +94,9 @@
   }
   body .common_title {
     text-align: center !important;
+    font-size: 30px;
+  }
+  .test-title {
     font-size: 30px;
   }
   .logo img {
@@ -137,8 +175,7 @@
   .header .navbar ul li.active a {
     color: #000;
   }
-  .header_toggle,
-  .header .navbar-toggler img {
+  .header_toggle {
     display: none;
   }
   .book_appointment {
@@ -191,10 +228,9 @@
   }
   .rooms_slider .owl-nav {
     margin: 0px !important;
-    /* top: -29px; */
+    top: 34%;
     justify-content: center;
     /* bottom: 0; */
-    top: 100%;
   }
   .rooms_slider .owl-nav button {
     width: 50px;
@@ -261,6 +297,9 @@
   .common_page_header .common_page_header_title h2 {
     text-align: left !important;
   }
+  /* .attraction_section {
+    padding-top: 50px;
+  } */
   .attraction_section .common_title,
   .gallery_section h2 {
     font-size: 25px;
@@ -274,9 +313,15 @@
   }
   .attraction_column {
     height: 400px;
+    /* margin-bottom: 10px; */
+  }
+  .activity-item, .single-room-item {
+    margin-bottom: 20px;
   }
   .attraction_section .owl-nav {
-    top: -60px;
+    position: absolute;
+    bottom: 0;
+    top: 100%;
   }
   .contact_left p {
     font-size: 16px !important;
@@ -354,7 +399,7 @@
     bottom: -10px;
     left: auto;
   }
-  .banner.single_room_banner {
+  .single-room-banner {
     height: 50vh;
   }
   .single_room_banner_column {
@@ -364,7 +409,6 @@
   .room_page_desc .about_hotel_text .room_price {
     position: relative;
     right: 0;
-    margin-bottom: 15px;
   }
   .room_page_desc h2 span {
     display: inline;
@@ -463,6 +507,9 @@
   .common_title {
     font-size: 34px;
   }
+  .test-title {
+    font-size: 34px;
+  }
   .banner_text h1 {
     font-size: 58px;
   }
@@ -518,7 +565,7 @@
   .about_hotel {
     padding-bottom: 70px;
   }
-  .navbar-toggler,
+  .menu-btn,
   .mobile-header {
     display: none;
   }
@@ -539,5 +586,19 @@
   .rooms_slider_text {
     padding: 40px 65px;
     padding-right: 20px;
+  }
+  .menu-btn,
+  .mobile-header {
+    display: none;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1600px) {
+  .rooms_slider_text {
+    padding: 40px 65px;
+    padding-right: 20px;
+  }
+  .menu-btn,
+  .mobile-header {
+    display: none;
   }
 }

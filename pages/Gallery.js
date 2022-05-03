@@ -103,7 +103,6 @@ function Gallery() {
                   {/* <div className="row"> */}
                   <div className="gallery-col-md-12">
                     <h2 className="gallery-item-heading">Rooms</h2>
-
                     <OwlCarousel className="gallery-owl-theme" nav {...options}>
                       <div className="gallery-item">
                         <div
