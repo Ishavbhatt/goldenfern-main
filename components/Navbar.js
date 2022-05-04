@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import $ from "jquery";
 
 const Navbar = () => {
   const [isactive, setIsactive] = useState(false);
@@ -10,71 +11,79 @@ const Navbar = () => {
 
   return (
     <>
-      <script src="/"></script>
-
       <header className="header">
-        {/* <div className="header_bottom w-100"> */}
-        <div className="container">
-          <div className="header-row">
-            <div className="col-lg-3 col-md-3 col-sm-12 logo">
-              <Link className="navbar-brand" href="/#">
-                <img src="/logo.png" alt="Logo" className="logo img-fluid" />
-              </Link>
-            </div>
-            <div className="col-lg-9 col-md-9 col-sm-12 header_right">
-              <nav className="navbar navbar-expand-md">
-                <div className="navbar-collapse" id="navbarNav">
-                  <div id="bs-example-navbar-collapse-1" className="collapse">
-                    <ul id="menu-header-menu" className="nav navbar-nav">
-                      <li>
-                        <Link href="/#">home</Link>
-                      </li>
-                      <li>
-                        <Link href="/Roomsuits">room & suits</Link>
-                      </li>
-                      <li>
-                        <Link href="/Attractionactivities">
-                          Attraction & Activities
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/Healthsafety">health & safety</Link>
-                      </li>
-                      <li>
-                        <Link href="/Gallery">gallery</Link>
-                      </li>
-                      <li>
-                        <Link href="/Contactus">contact us</Link>
-                      </li>
-                    </ul>
+        <div className="header_bottom w-100">
+          <div className="container">
+            <div className="row">
+              <div className="header-row">
+                <div className="col-lg-3 col-md-3 col-sm-12 logo">
+                  <Link className="navbar-brand" href="/#">
+                    <img
+                      src="/logo.png"
+                      alt="Logo"
+                      className="logo img-fluid"
+                    />
+                  </Link>
+                </div>
+                <div className="col-lg-9 col-md-9 col-sm-12 header_right">
+                  <nav className="navbar navbar-expand-md">
+                    <div className="navbar-collapse" id="navbarNav">
+                      <div
+                        id="bs-example-navbar-collapse-1"
+                        className="collapse"
+                      >
+                        <ul id="menu-header-menu" className="nav navbar-nav">
+                          <li>
+                            <Link href="/#">home</Link>
+                          </li>
+                          <li>
+                            <Link href="/Roomsuits">room & suits</Link>
+                          </li>
+                          <li>
+                            <Link href="/Attractionactivities">
+                              Attraction & Activities
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href="/Healthsafety">health & safety</Link>
+                          </li>
+                          <li>
+                            <Link href="/Gallery">gallery</Link>
+                          </li>
+                          <li>
+                            <Link href="/Contactus">contact us</Link>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <span className="header_toggle">
+                      <img alt="logo" src="/toggle.svg" />
+                    </span>
+                  </nav>
+
+                  <div className="book_appointment text-capitalize">
+                    <Link
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                      href="#/"
+                    >
+                      Book Now
+                    </Link>
+                    <div className="common_arrow">
+                      <img src="/images/arrow.svg" alt="Icon" />
+                    </div>
                   </div>
                 </div>
-
-                <span className="header_toggle">
-                  <img alt="logo" src="/toggle.svg" />
-                </span>
-              </nav>
-
-              <div className="book_appointment text-capitalize">
-                <Link
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                  href="#/"
-                >
-                  Book Now
-                </Link>
-                <div className="common_arrow">
-                  <img src="/images/arrow.svg" alt="Icon" />
+                <div className="menu-btn">
+                  <button className="bg-trans" onClick={handleIsActive}>
+                    <img alt="logo" src="/toggle.svg" />
+                  </button>
                 </div>
               </div>
             </div>
-            <div>
-              <button className="menu-btn" onClick={handleIsActive}><img alt="logo" src="/toggle.svg" /></button>
-            </div>
-            
           </div>
         </div>
-        {/* </div> */}
       </header>
 
       {isactive ? (
@@ -161,7 +170,7 @@ const Navbar = () => {
                   </div>
                 </div>
               </nav>
-              {/* <div className="book-now-btn">
+              <div className="book-now-btn">
                 <Link
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
@@ -172,7 +181,7 @@ const Navbar = () => {
                 <div className="common_arrow">
                   <img src="/images/arrow.svg" alt="Icon" />
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
         </header>

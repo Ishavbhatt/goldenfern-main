@@ -44,6 +44,7 @@ function ExecutiveRoom() {
     <>
       <Head>
         <title>Executive Room On Budget | Golden Fern Resort</title>
+        <link rel="icon" href="/favicon.png" />
         <meta
           property="og:title"
           content="Executive Room On Budget | Golden Fern Resort"

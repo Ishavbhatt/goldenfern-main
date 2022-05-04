@@ -53,11 +53,11 @@ export default function Home() {
       0: {
         items: 1,
         nav: true,
-        dots: false,
+        dots: true,
       },
       600: {
         items: 3,
-        // dots: true,
+        dots: true,
       },
       1000: {
         items: 3,
@@ -133,6 +133,7 @@ export default function Home() {
       <Head>
         <link rel="icon" href="favicon.png" />
         <title>Golden Fern</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
       <section className="banner">
@@ -144,7 +145,6 @@ export default function Home() {
                   Hotels for the elite passionate about luxury
                 </h1>
               </div>
-              <div></div>
             </div>
           </div>
         </div>
@@ -175,7 +175,7 @@ export default function Home() {
                 <div className="pick-dates">
                   <label>People</label>
                   <div className="people-btn">
-                    <p>{people}</p>
+                    <p className="people">{people}</p>
                     <div>
                       <button onClick={incPeople}>
                         <img src="/arrow-up.png" alt="" />
@@ -193,27 +193,27 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            
+            <div className="weather_div">
+          <div className="fixedweather">
+            <h6 className="weather-date">{curruntDate}</h6>
+            {data && (
+              <div>
+                <h4 className="weather-status">
+                  {data.weather[0].description}
+                </h4>
+                <h1 className="weather-temp">
+                  {data.main.temp}
+                  <span>&#176;</span>
+                  <span>C</span>
+                </h1>
+                <h6 className="weather-name">{data.name}, India</h6>
+              </div>
+            )}
+          </div>
+            </div>
           </div>
         </div>
-        <div className="weather_div">
-              <div className="fixedweather">
-                <h6 className="weather-date">{curruntDate}</h6>
-                {data && (
-                  <div>
-                    <h4 className="weather-status">
-                      {data.weather[0].description}
-                    </h4>
-                    <h1 className="weather-temp">
-                      {data.main.temp}
-                      <span>&#176;</span>
-                      <span>C</span>
-                    </h1>
-                    <h6 className="weather-name">{data.name}, India</h6>
-                  </div>
-                )}
-              </div>
-            </div>
+       
       </section>
 
       <section className="about_hotel">

@@ -18,7 +18,7 @@
   float: right;
   max-width: 170px;
   margin: 0px auto;
-  right: 90px;
+  right: 0;
   /* min-width: 1200px; */
 }
 body .booked-wzsp-prime-data .booked-wzsp-day-number .plus {
@@ -55,7 +55,7 @@ body .fixedweather {
   padding: 25px;
   box-shadow: none;
   border-radius: 0;
-  width: 100%;
+  width: auto;
   right: 0px;
   float: right;
 }
@@ -275,8 +275,15 @@ section {
   padding: 30px 0;
 }
 
-/* .no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.no-js #loader {
+  display: none;
+}
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
 .se-pre-con {
   position: fixed;
   left: 0px;
@@ -284,11 +291,9 @@ section {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background: url(../images/loading.gif) center no-repeat #fff;
+  /* background: url(../images/loading.gif) center no-repeat #fff; */
   background-size: 510px;
-} */
-/* index css */
-
+}
 .header.header_fixed {
   border-bottom: 2px solid #e29554;
   top: 0;
@@ -314,13 +319,15 @@ section {
 }
 .header_bottom {
   position: relative;
-  /* padding: 16px 0; */
   transition: all ease-in-out 0.5s;
 }
 .header.header_fixed .header_bottom {
   padding: 10px 0;
 }
-
+.bg-trans {
+  background: transparent;
+  border: none;
+}
 .logo .navbar-brand {
   padding: 0px;
 }
@@ -338,7 +345,6 @@ section {
   display: flex;
   padding: 0px;
   transition: all ease-in-out 0.3s;
-  /* opacity: 0; */
   transform: translateX(0px);
   overflow: hidden;
 }
@@ -353,15 +359,15 @@ body .header .navbar-collapse {
 .header .navbar:hover .header_toggle {
   transform: translateX(100%);
 }
-/* .header_toggle_open .navbar{
-  opacity:  1;
+.header_toggle_open .navbar {
+  opacity: 1;
   transform: translateX(0px);
 }
 .header_toggle.header_toggle_btn {
   width: 0;
   margin: 0px;
   display: none;
-} */
+}
 .header_right {
   display: flex;
   align-items: center;
@@ -384,7 +390,6 @@ body .header .navbar-collapse {
   border-bottom-color: #e29554;
 }
 .header_toggle {
-  /* margin-left: 20px; */
   cursor: pointer;
   transition: all ease-in-out 0.3s;
 }
@@ -400,18 +405,19 @@ body .header .navbar-collapse {
   color: #939191;
   background: transparent;
   outline: none !important;
-   padding: 0;
+  padding: 0;
   height: 40px;
   overflow: hidden;
   z-index: 9999;
   display: block;
   width: 40px !important;
+  display: none;
 }
-.menu-btn img{
+.menu-btn img {
   width: 30px;
   height: 30px;
 }
-/* .navbar-toggler {
+.navbar-toggler {
   font-size: 22px;
   border: none;
   color: #939191;
@@ -426,9 +432,9 @@ body .header .navbar-collapse {
   display: block;
   width: 54px !important;
   position: absolute;
-   right: 10px;
-} */
-/* .navbar-toggler::before {
+  right: 10px;
+}
+.navbar-toggler::before {
   height: 2px;
   content: "";
   width: 28px;
@@ -449,8 +455,8 @@ body .header .navbar-collapse {
   right: 0px;
   margin: 0px auto;
   bottom: 8px;
-} */
-/* .navbar-toggler.toggle_btn span {
+}
+.navbar-toggler.toggle_btn span {
   transform: translateX(-1000%);
 }
 .navbar-toggler.toggle_btn::before {
@@ -464,7 +470,7 @@ body .header .navbar-collapse {
   width: 30px;
   bottom: 15px;
   background-color: #fff;
-} */
+}
 .book_appointment {
   float: right;
   margin-left: 20px;
@@ -546,6 +552,7 @@ body .header .navbar-collapse {
 .banner_text h1 {
   color: #fff;
   font-size: 78px;
+  /* text-shadow: 2px 2px #ff0000; */
 }
 .bnr-booking {
   display: flex;
@@ -577,6 +584,7 @@ body .header .navbar-collapse {
   background-color: #000000;
   width: 115px;
   height: auto;
+  padding: 10px;
 }
 .react-datepicker__input-container::after {
   content: "";
@@ -591,8 +599,8 @@ body .header .navbar-collapse {
   background-color: black;
 }
 .banner-book-btn .common_arrow {
-  top: 25px;
-  margin-left: 30px;
+  top: 16px;
+  margin-left: 20px;
 }
 .people-btn {
   display: flex;
@@ -815,7 +823,7 @@ body .header .navbar-collapse {
   margin-top: 50px;
 } */
 .testi_column {
-  border: 1px solid #efefef;
+  border: 1px solid #a9a1a1;
   padding: 30px 20px;
   position: relative;
 }
@@ -843,11 +851,10 @@ body .header .navbar-collapse {
   right: 0;
   margin: 0px auto;
 }
-.testi_column::after{
+.testi_column::after {
   content: "";
-  width: 0; 
-  height: 0; 
-  
+  width: 0;
+  height: 0;
 }
 .testi_column img {
   margin: 0px auto 20px;
@@ -857,7 +864,8 @@ body .header .navbar-collapse {
   margin: 0px auto 0px;
   width: 90px !important;
 }
-.testi_profile p, .testi_column p {
+.testi_profile p,
+.testi_column p {
   color: #aca8a8;
 }
 .testimonials_section .owl-nav {
@@ -870,26 +878,26 @@ body .header .navbar-collapse {
   margin-top: 30px !important;
 }
 .testimonials-dots .owl-dots .owl-dot {
-  border: 1px solid #ccc !important;
-  border-radius: 50%;
   background-color: #ccc;
-  /* padding: 2px 2px !important; */
-  outline: none;
-  margin: 0 2px;
+  border: 3px solid #fff;
+  border-radius: 18px;
+  margin: 0 3px;
+  box-shadow: 0 0 3px #888;
+  height: 16px;
+  width: 16px;
 }
-testimonials-dots .owl-carousel .owl-dots .active {
+.testimonials-dots .owl-dots .active {
   background-color: black;
 }
 .testimonials-dots .owl-dots button span {
   padding: 0 2px;
-  /* height: 5px !important; */
-  width: 10px !important;
   margin: 0px !important;
 }
 .testimonials-dots .owl-dots button span::after {
   border: 1px solid black;
 }
 .testimonials-dots .owl-item.center .testi_column {
+  border: transparent;
   box-shadow: 0 0px 3px #ccc;
 }
 
@@ -958,7 +966,7 @@ testimonials-dots .owl-carousel .owl-dots .active {
 }
 .footer_address_left_inner,
 .footer_address_right_inner {
- display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -978,12 +986,14 @@ testimonials-dots .owl-carousel .owl-dots .active {
   height: 450px;
 }
 .footer_address_right {
-  background-image: url('../images/leaf_gold.svg');
-  background-repeat:no-repeat;
+  background-image: url("../images/leaf_gold.svg");
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-
+.footer_bottom_column ul {
+  padding: 0;
+}
 .footer_bottom_column li {
   display: inline-block;
   margin-right: 20px;
@@ -998,6 +1008,7 @@ testimonials-dots .owl-carousel .owl-dots .active {
 }
 .footer_bottom_column span {
   color: #fff;
+  float: right;
 }
 .footer_bottom_column span img {
   max-width: 70px;
@@ -1132,24 +1143,25 @@ testimonials-dots .owl-carousel .owl-dots .active {
   background: #e29554;
   background: -moz-linear-gradient(top, #e29554 0%, #e29554 50%, #e29554 100%);
   background: -webkit-gradient(
-  linear,
-  left top, left bottom,
-  from(#e2955442),
-  color-stop(50%, #df7d2ba1),
-  to(#e29554)
-);
+    linear,
+    left top,
+    left bottom,
+    from(#e2955442),
+    color-stop(50%, #df7d2ba1),
+    to(#e29554)
+  );
   background: -moz-linear-gradient(
-  top,
-  #e2955442 0%,
-  #e29554a1 50%,
-  #e29554 100%
-);
+    top,
+    #e2955442 0%,
+    #e29554a1 50%,
+    #e29554 100%
+  );
   background: linear-gradient(
-  to bottom,
-  #e2955429 0%,
-  #e29554ba 50%,
-  #e29554 100%
-);
+    to bottom,
+    #e2955429 0%,
+    #e29554ba 50%,
+    #e29554 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e29554', endColorstr='#e29554',GradientType=0 );
 }
 .attraction_column::before {
@@ -1197,7 +1209,7 @@ testimonials-dots .owl-carousel .owl-dots .active {
 }
 .single-room-sec .owl-nav {
   position: absolute;
-  /* left: 50%; */
+  right: 0;
   background: transparent;
 }
 .gallery-sec .owl-nav button {
@@ -1250,7 +1262,7 @@ testimonials-dots .owl-carousel .owl-dots .active {
   opacity: 1;
 }
 .attraction_slider .owl-theme .owl-nav,
-.activities_slider .owl-nav{
+.activities_slider .owl-nav {
   display: flex;
   justify-content: space-between;
 }
@@ -1292,7 +1304,7 @@ testimonials-dots .owl-carousel .owl-dots .active {
   margin: 0px auto;
   left: 0;
   right: 0;
-  padding: 15px 20px;
+  padding: 18px 20px;
 }
 .activities_slider .attraction_column .attraction_column_title p {
   opacity: 1;
@@ -1917,7 +1929,6 @@ div#sidebar {
   align-items: center;
 }
 .header-trans {
-
   transition: all 0.25s ease-in;
 }
 .header-row {
@@ -1926,7 +1937,7 @@ div#sidebar {
   align-items: center;
 }
 .mobile-header {
-  background-color: #e29554;
+  background-color: #835301;
   height: 100vh;
   position: fixed;
   width: auto;

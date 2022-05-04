@@ -1,3 +1,18 @@
+$( window ).on( "load", function() {
+  $('.list-group a:last-child').removeClass('active');
+      $('.list-group a:first-child').addClass('active');
+
+      });
+
+      $(document).ready(function(){
+
+       // menu js
+      
+      $('.navbar-toggler').onClick(function(){
+         $(this).toggleClass('toggle_btn');
+      $('#navbarNav').toggleClass('show_menu');
+      });
+      });
 
 /*! jQuery v1.11.1 | (c) 2005, 2014 jQuery Foundation, Inc. | jquery.org/license */
 !(function (a, b) {

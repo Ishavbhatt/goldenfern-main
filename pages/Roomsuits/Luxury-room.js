@@ -44,6 +44,7 @@ function LuxuryRoom() {
     <>
       <Head>
         <title>Unbeatable Luxury Room | Golden Fern Resort</title>
+        <link rel="icon" href="/favicon.png" />
         <meta
           property="og:title"
           content="Executive Room On Budget | Golden Fern Resort"

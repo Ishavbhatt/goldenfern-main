@@ -48,6 +48,7 @@ function DeluxeRoom() {
     <>
       <Head>
         <title>Deluxe Rooms At Low Price | Golden Fern Resort</title>
+        <link rel="icon" href="/favicon.png" />
         <meta
           property="og:title"
           content="Deluxe Rooms At Low Price | Golden Fern Resort"

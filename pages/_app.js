@@ -12,6 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Layout from '../components/Layout'
 
 function MyApp({ Component, pageProps }) {
+  <script src='jquery.js'></script>
 
   return (
     <>
