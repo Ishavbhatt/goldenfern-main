@@ -13,13 +13,18 @@
   padding-bottom: 20px;
 }
 .weather_div {
-  position: absolute;
+  /* position: absolute;
   bottom: 0px;
   float: right;
   max-width: 170px;
   margin: 0px auto;
-  right: 0;
-  /* min-width: 1200px; */
+  right: 0; */
+
+    bottom: 0px;
+    float: right;
+    max-width: 170px;
+    /* margin: 0px auto; */
+    /* right: 0; */
 }
 body .booked-wzsp-prime-data .booked-wzsp-day-number .plus {
   font-size: 30px;
@@ -275,15 +280,8 @@ section {
   padding: 30px 0;
 }
 
-.no-js #loader {
-  display: none;
-}
-.js #loader {
-  display: block;
-  position: absolute;
-  left: 100px;
-  top: 0;
-}
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
 .se-pre-con {
   position: fixed;
   left: 0px;
@@ -359,8 +357,8 @@ body .header .navbar-collapse {
 .header .navbar:hover .header_toggle {
   transform: translateX(100%);
 }
-.header_toggle_open .navbar {
-  opacity: 1;
+.header_toggle_open .navbar{
+  opacity:  1;
   transform: translateX(0px);
 }
 .header_toggle.header_toggle_btn {
@@ -392,6 +390,8 @@ body .header .navbar-collapse {
 .header_toggle {
   cursor: pointer;
   transition: all ease-in-out 0.3s;
+  border: none;
+  background: transparent;
 }
 .header_toggle img {
   max-width: 30px;
@@ -432,7 +432,7 @@ body .header .navbar-collapse {
   display: block;
   width: 54px !important;
   position: absolute;
-  right: 10px;
+   right: 10px;
 }
 .navbar-toggler::before {
   height: 2px;
@@ -456,7 +456,7 @@ body .header .navbar-collapse {
   margin: 0px auto;
   bottom: 8px;
 }
-.navbar-toggler.toggle_btn span {
+ .navbar-toggler.toggle_btn span {
   transform: translateX(-1000%);
 }
 .navbar-toggler.toggle_btn::before {
@@ -569,39 +569,49 @@ body .header .navbar-collapse {
 }
 
 .check-in-out-container {
-  background-color: white;
-  width: 345px;
-  padding: 10px;
+  /* width: 345px; */
   height: auto;
   display: flex;
 }
 .pick-dates {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 115px;
   height: auto;
   text-align: center;
+}
+ .vr-left-rigth::before {
+  content:'';
+  position: absolute;
+  background-color: rgb(219, 210, 210);
+  width: 2px;
+  height: 70%;
+  bottom: 5;
+  /* left:-7px;  */
 }
 .banner-book-btn {
   background-color: #000000;
   width: 115px;
   height: auto;
-  padding: 10px;
+  text-align: center;
 }
-.react-datepicker__input-container::after {
-  content: "";
-  position: absolute;
-  background-image: url("/down-arrow.png");
-  height: 15px;
-  width: 15px;
-  right: 50px;
-  top: 20px;
+.bkg-arrow-down {
+  position: relative;
+  margin-top: -11px;
+}
+.bkg-arrow-btn {
+  width: 16px;
+  height: 16px;
 }
 .popup-book-btn {
   background-color: black;
 }
-.banner-book-btn .common_arrow {
+/* .banner-book-btn .common_arrow {
   top: 16px;
   margin-left: 20px;
-}
+} */
 .people-btn {
   display: flex;
   justify-content: center;
@@ -621,10 +631,10 @@ body .header .navbar-collapse {
 .popup-book-btn .common_arrow img {
   max-width: 45px;
 }
-.check-in-out-container .vr-line {
+/* .check-in-out-container .vr-line {
   border-right: 1px solid rgb(204, 191, 191);
   text-align: center;
-}
+} */
 .date-picker input {
   width: 80px;
   border: none;
@@ -637,8 +647,8 @@ body .header .navbar-collapse {
   border: none;
   background: transparent;
   margin: 0;
-  width: 16px;
-  height: 16px;
+  /* width: 16px;
+  height: 16px; */
   display: block;
 }
 .check-in-out-container button img {
@@ -1937,7 +1947,7 @@ div#sidebar {
   align-items: center;
 }
 .mobile-header {
-  background-color: #835301;
+  background-color: #e29554;
   height: 100vh;
   position: fixed;
   width: auto;

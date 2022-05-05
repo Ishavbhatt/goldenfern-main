@@ -30,7 +30,7 @@ function ExecutiveRoom() {
       },
       600: {
         items: 1,
-        nav: false,
+        nav: true,
       },
       1000: {
         items: 2,
@@ -94,7 +94,7 @@ function ExecutiveRoom() {
                 <h2>₹ 6500 /</h2>
                 <span>per night + 12% Tax</span>
               </div>
-              <h2 className="common_title">
+              <h2>
                 <span className="golden_color">Executive </span>Room
               </h2>
               <p>

@@ -15,7 +15,6 @@ const Navbar = () => {
         <div className="header_bottom w-100">
           <div className="container">
             <div className="row">
-              <div className="header-row">
                 <div className="col-lg-3 col-md-3 col-sm-12 logo">
                   <Link className="navbar-brand" href="/#">
                     <img
@@ -57,9 +56,9 @@ const Navbar = () => {
                       </div>
                     </div>
 
-                    <span className="header_toggle">
+                    <button onClick={handleIsActive} className="header_toggle">
                       <img alt="logo" src="/toggle.svg" />
-                    </span>
+                    </button>
                   </nav>
 
                   <div className="book_appointment text-capitalize">
@@ -75,12 +74,11 @@ const Navbar = () => {
                     </div>
                   </div>
                 </div>
-                <div className="menu-btn">
+                {/* <div className="menu-btn">
                   <button className="bg-trans" onClick={handleIsActive}>
                     <img alt="logo" src="/toggle.svg" />
                   </button>
-                </div>
-              </div>
+                </div> */}
             </div>
           </div>
         </div>
@@ -90,7 +88,7 @@ const Navbar = () => {
         <header className="header-trans">
           <div className="mobile-header container">
             <div className="mobile-header-div">
-              <div className=" col-lg-3 col-md-3 col-sm-12 logo">
+              <div className=" col-lg-3 col-md-3 col-sm-10 logo">
                 <Link className="navbar-brand" href="/#">
                   <img src="/logo.png" alt="Logo" className="logo img-fluid" />
                 </Link>
@@ -170,7 +168,7 @@ const Navbar = () => {
                   </div>
                 </div>
               </nav>
-              <div className="book-now-btn">
+              {/* <div className="book-now-btn">
                 <Link
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModal"
@@ -181,7 +179,7 @@ const Navbar = () => {
                 <div className="common_arrow">
                   <img src="/images/arrow.svg" alt="Icon" />
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </header>

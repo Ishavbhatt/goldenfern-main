@@ -34,7 +34,7 @@ function DeluxeRoom() {
       },
       600: {
         items: 1,
-        nav: false,
+        nav: true,
       },
       1000: {
         items: 2,
@@ -64,14 +64,14 @@ function DeluxeRoom() {
 
       <section className="about_hotel room_page_desc common_padding pb-0">
         <div className="container">
-          <div className="row padding-t-b-40">
+          <div className="row">
             <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
               <div className="room_price">
                 <p>rates from</p>
                 <h2>₹ 5500 /</h2>
                 <span>per night + 12% Tax</span>
               </div>
-              <h2 className="common_title">
+              <h2>
                 <span className="golden_color">Deluxe</span> Room
               </h2>
               <p>

@@ -20,7 +20,7 @@ function Termsandconditions() {
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12 common_page_header_title">
-              <h2 className="common_title">Terms and Conditions </h2>
+              <h2 className="common_title padding-t-40">Terms and Conditions </h2>
               <p>
                 The terms and conditions stated below (“Conditions”) apply to
                 your use of this website, including the utilization of the data

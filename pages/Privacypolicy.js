@@ -20,7 +20,7 @@ function Privacypolicy() {
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12 common_page_header_title">
-              <h2 className="common_title">Privacy Policy</h2>
+              <h2 className="common_title padding-t-40">Privacy Policy</h2>
               <p>
                 This Privacy policy clarifies our personal data practices and
                 the decisions you can make about how your information is

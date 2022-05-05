@@ -23,7 +23,7 @@ function Disclaimer() {
         <div className="container">
           <div className="row">
             <div className="col-md-12 privacy_column">
-              <h3>Copyright and Licenses:</h3>
+              <h3 className="padding-t-40">Copyright and Licenses:</h3>
               <p>
                 The contents of the Website are protected by international
                 copyright and trademark laws. goldenfernresort.com its

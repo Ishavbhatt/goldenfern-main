@@ -148,11 +148,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="container">
-          <div className="row">
             <div className="bnr-booking">
               <div className="check-in-out-container">
-                <div className="pick-dates vr-line">
+                <div className="pick-dates">
                   <label>Check-in</label>
                   <DatePicker
                     wrapperClassName="date-picker"
@@ -161,8 +159,9 @@ export default function Home() {
                     minDate={new Date()}
                     onChange={handleCheckInDate}
                   />
+                   <span className="bkg-arrow-down"><img src="./down-arrow.png" alt="" /></span>
                 </div>
-                <div className="pick-dates vr-line">
+                <div className="pick-dates vr-left-rigth">
                   <label>Check-out</label>
                   <DatePicker
                     wrapperClassName="date-picker"
@@ -171,29 +170,30 @@ export default function Home() {
                     minDate={checkInDate}
                     onChange={handleCheckOutDate}
                   />
+                   <span className="bkg-arrow-down"><img src="./down-arrow.png" alt="" /></span>
                 </div>
-                <div className="pick-dates">
+                <div className="pick-dates vr-left-rigth">
                   <label>People</label>
                   <div className="people-btn">
                     <p className="people">{people}</p>
-                    <div>
-                      <button onClick={incPeople}>
+                    <span>
+                      <button className="bkg-arrow-btn" onClick={incPeople}>
                         <img src="/arrow-up.png" alt="" />
                       </button>
-                      <button onClick={decPeople}>
+                      <button className="bkg-arrow-btn" onClick={decPeople}>
                         <img src="/arrow-down.png" alt="" />
                       </button>
-                    </div>
+                      </span>
                   </div>
                 </div>
-              </div>
-              <div className="banner-book-btn popup-book-btn">
+                <div className="banner-book-btn popup-book-btn">
                 <div className="common_arrow">
                   <img src="/images/arrow.svg" alt="Icon" />
                 </div>
               </div>
+              </div>
+             
             </div>
-            <div className="weather_div">
           <div className="fixedweather">
             <h6 className="weather-date">{curruntDate}</h6>
             {data && (
@@ -210,10 +210,6 @@ export default function Home() {
               </div>
             )}
           </div>
-            </div>
-          </div>
-        </div>
-       
       </section>
 
       <section className="about_hotel">
