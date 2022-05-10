@@ -122,6 +122,7 @@ function Gallery() {
               items={["room1", "room2", "room3"]}
               className="panel_sidebar"
               currentClassName="is-current"
+              offset={-500}
               id="sidebar"
             >
               <li className="scrool-items">

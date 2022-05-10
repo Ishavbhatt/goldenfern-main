@@ -44,7 +44,7 @@ export default function Home() {
   const testmonials = {
     center: true,
     items: 3,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 5000,
     loop: true,
     dots: true,

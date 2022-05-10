@@ -209,6 +209,9 @@ section {
 .padding-t-40 {
   padding-top: 40px;
 }
+.padding-b-50 {
+  padding-bottom: 50px;
+}
 .padding-t-80 {
   padding-top: 80px;
 }
@@ -1481,6 +1484,9 @@ body .header .navbar-collapse {
   left: -20px;
   bottom: -20px;
 }
+.spy_section {
+  padding-bottom: 100px;
+}
 .scrollspy-example .spy_section:last-child .about_hotel {
   padding-bottom: 30px;
 }
@@ -1536,6 +1542,26 @@ body .header .navbar-collapse {
   list-style-type: none;
 }
 .is-current a::before {
+  position: absolute;
+  content: "";
+  width: 9px;
+  height: 9px;
+  border: 1px solid #fff;
+  left: -5px;
+  background-color: #202e27;
+  border-radius: 50%;
+  top: 16px;
+}
+.is-active a {
+  color: #e29554 !important;
+  border-left: 1px solid #e29554;
+  position: relative;
+  padding-left: 25px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  list-style-type: none;
+}
+.is-active a::before {
   position: absolute;
   content: "";
   width: 9px;
@@ -1833,7 +1859,7 @@ div.wpcf7 .ajax-loader {
 }
 .panel_sidebar {
   position: fixed;
-  top: 59%;
+  /* top: 59%; */
   /* left: 45px; */
   width: 170px;
 }
