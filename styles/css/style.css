@@ -52,17 +52,16 @@ body .booked-wzsp-prime-data .booked-wzsp-day-val {
   margin-left: 0;
   margin-top: 10px;
 }
-body .fixedweather {
+.fixedweather {
   position: relative;
   z-index: 99;
-  top: auto;
   background: #e295548a;
-  padding: 25px;
+  padding: 10px 25px;
   box-shadow: none;
-  border-radius: 0;
-  width: auto;
-  right: 0px;
+  width: 160px;
   float: right;
+  bottom: 140px;
+  /* right: 0; */
 }
 .weather-date {
   font-size: 12px;
@@ -79,8 +78,7 @@ body .fixedweather {
 .weather-temp {
   color: white;
   font-size: 30px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Freight-Medium";
 }
 .weather-name {
   color: white;
@@ -570,7 +568,7 @@ body .header .navbar-collapse {
 
 .check-in-out-container {
   /* width: 345px; */
-  height: auto;
+  height: 70px;
   display: flex;
 }
 .pick-dates {
@@ -581,6 +579,9 @@ body .header .navbar-collapse {
   width: 115px;
   height: auto;
   text-align: center;
+}
+.pick-dates .common_arrow {
+  align-self: center;
 }
  .vr-left-rigth::before {
   content:'';
@@ -599,7 +600,7 @@ body .header .navbar-collapse {
 }
 .bkg-arrow-down {
   position: relative;
-  margin-top: -11px;
+  margin-top: -12px;
 }
 .bkg-arrow-btn {
   width: 16px;
@@ -616,6 +617,7 @@ body .header .navbar-collapse {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 4px;
 }
 .popup-book-btn .common_arrow::after {
   content: "";
@@ -1524,8 +1526,8 @@ body .header .navbar-collapse {
   border-radius: 50%;
   top: 16px;
 }
-.one-scrool a {
-  color: #e29554;
+.is-current a {
+  color: #e29554 !important;
   border-left: 1px solid #e29554;
   position: relative;
   padding-left: 25px;
@@ -1533,27 +1535,7 @@ body .header .navbar-collapse {
   padding-top: 8px;
   list-style-type: none;
 }
-.one-scrool a::before {
-  position: absolute;
-  content: "";
-  width: 9px;
-  height: 9px;
-  border: 1px solid #fff;
-  left: -5px;
-  background-color: #202e27;
-  border-radius: 50%;
-  top: 16px;
-}
-.two-scrool a {
-  color: #e29554;
-  border-left: 1px solid #e29554;
-  position: relative;
-  padding-left: 25px;
-  padding-bottom: 8px;
-  padding-top: 8px;
-  list-style-type: none;
-}
-.two-scrool a::before {
+.is-current a::before {
   position: absolute;
   content: "";
   width: 9px;
@@ -1850,10 +1832,12 @@ div.wpcf7 .ajax-loader {
   position: relative;
 }
 .panel_sidebar {
-  position: absolute;
-  left: 15px;
-  width: 160px;
+  position: fixed;
+  top: 59%;
+  /* left: 45px; */
+  width: 170px;
 }
+
 .room_suit_left.fixed {
   position: fixed;
   top: 15px;
@@ -1926,7 +1910,7 @@ div.wpcf7 .ajax-loader {
 .white {
   color: white;
 }
-div#sidebar {
+#sidebar {
   position: fixed;
   top: 59%;
 }

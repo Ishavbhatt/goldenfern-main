@@ -16,7 +16,7 @@ const Navbar = () => {
           <div className="container">
             <div className="row">
                 <div className="col-lg-3 col-md-3 col-sm-12 logo">
-                  <Link className="navbar-brand" href="/#">
+                  <Link className="navbar-brand" href="/">
                     <img
                       src="/logo.png"
                       alt="Logo"
@@ -33,7 +33,7 @@ const Navbar = () => {
                       >
                         <ul id="menu-header-menu" className="nav navbar-nav">
                           <li>
-                            <Link href="/#">home</Link>
+                            <Link href="/">home</Link>
                           </li>
                           <li>
                             <Link href="/Roomsuits">room & suits</Link>

@@ -1,27 +1,9 @@
-import React, {useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Head from "next/head";
+import Scrollspy from "react-scrollspy";
 
 function Roomsuits() {
-  const [scroll, setScroll] = useState(false);
-
-  const [twoscroll, setTwoscroll] = useState(false);
-
-  const [threescroll, setThreescroll] = useState(false);
-
-  const [fourscroll, setFourscroll] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 50 && window.scrollY < 250 );
-    });
-    window.addEventListener("twoscroll", () => {
-      setTwoscroll(window.scrollY > 300 && window.scrollY > 600 );
-      console.log("twoscrool" + window.scrollY)
-    });
-  }, []);
-
-
   return (
     <>
       <Head>
@@ -51,53 +33,67 @@ function Roomsuits() {
           </div>
         </div>
       </section>
-      <section
-        className="attraction_section common_padding pt-0 scrool_section"
-        id="rooms_suits"
-      >
+
+      <section className="common_padding pt-0 scrool_section" id="rooms_suits">
         <div className="container">
           <div className="row">
-            {/* <div className="panel_sidebar">
-              <div id="sidebar" className="room_suit_left" >
-                <li className={scroll ? "one-scrool" : "scrool-items"}> 
-                  <Link 
+            {/* <nav id="navbar-example3" className="panel_sidebar">
+              <nav id="sidebar" className="nav nav-pills list-group room_suit_left">
+                <li className="scrool-items nav-link">
+                  <Link
                     className="list-group-item list-group-item-action"
-                    href="/Roomsuits#room1"
+                    href="#room1"
                   >
                     EXECUTIVE ROOM
                   </Link>
                 </li>
-                <li className={twoscroll ? "two-scrool" : "scrool-items"}>
+                <li className="scrool-items nav-link">
                   <Link
                     className="list-group-item list-group-item-action"
-                    href="/Roomsuits#room2"
+                    href="#room2"
                   >
                     CLASSIC ROOM
                   </Link>
                 </li>
-                <li className={twoscroll ? "three-scrool" : "scrool-items"}>
+                <li className="scrool-items nav-link">
                   <Link
                     className="list-group-item list-group-item-action"
-                    href="/Roomsuits#room3"
+                    href="#room3"
                   >
                     LUXURY ROOM
                   </Link>
                 </li>
-                <li className={twoscroll ? "four-scrool" : "scrool-items"}>
+                <li className="scrool-items nav-link">
                   <Link
                     className="list-group-item list-group-item-action"
-                    href="/Roomsuits#room4"
+                    href="#room4"
                   >
                     DELUXE ROOM
                   </Link>
                 </li>
-              </div>
-            </div> */}
-
-            <div
-              className="scrollspy-example col-md-10 mr-auto"
-              tabIndex="0"
+              </nav>
+            </nav> */}
+            <Scrollspy
+              items={["room1", "room2", "room3", "room4"]}
+              className="panel_sidebar"
+              currentClassName="is-current"
+              id="sidebar"
             >
+              <li className="scrool-items">
+                <Link href="#room1">EXECUTIVE ROOM</Link>
+              </li>
+              <li className="scrool-items">
+                <Link href="#room2">CLASSIC ROOM</Link>
+              </li>
+              <li className="scrool-items">
+                <Link href="#room3"> LUXURY ROOM</Link>
+              </li>
+              <li className="scrool-items">
+                <Link href="#room4">DELUXE ROOM</Link>
+              </li>
+            </Scrollspy>
+
+            <div className="scrollspy-example col-md-10 offset-md-2">
               <div id="room1" className="spy_section">
                 <div className="about_hotel ">
                   <div className="container">

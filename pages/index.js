@@ -148,8 +148,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-            <div className="bnr-booking">
-              <div className="check-in-out-container">
+        <div className="container">
+            {/* <div className="row"> */}
+        <div className="bnr-booking">
+        <div className="check-in-out-container">
                 <div className="pick-dates">
                   <label>Check-in</label>
                   <DatePicker
@@ -186,30 +188,31 @@ export default function Home() {
                       </span>
                   </div>
                 </div>
-                <div className="banner-book-btn popup-book-btn">
+                <div className="banner-book-btn pick-dates popup-book-btn">
                 <div className="common_arrow">
                   <img src="/images/arrow.svg" alt="Icon" />
                 </div>
               </div>
               </div>
-             
+        </div>
+        <div className="fixedweather">
+              <h6 className="weather-date">{curruntDate}</h6>
+              {data && (
+                <div>
+                  <h4 className="weather-status">
+                    {data.weather[0].description}
+                  </h4>
+                  <h1 className="weather-temp">
+                    {data.main.temp}
+                    <span>&#176;</span>
+                    <span>C</span>
+                  </h1>
+                  <h6 className="weather-name">{data.name}, India</h6>
+                </div>
+              )}
             </div>
-          <div className="fixedweather">
-            <h6 className="weather-date">{curruntDate}</h6>
-            {data && (
-              <div>
-                <h4 className="weather-status">
-                  {data.weather[0].description}
-                </h4>
-                <h1 className="weather-temp">
-                  {data.main.temp}
-                  <span>&#176;</span>
-                  <span>C</span>
-                </h1>
-                <h6 className="weather-name">{data.name}, India</h6>
-              </div>
-            )}
-          </div>
+            {/* </div> */}
+            </div>
       </section>
 
       <section className="about_hotel">

@@ -24,11 +24,8 @@
   .bnr-booking {
     width: auto;
   }
-  .check-in-out-container {
-    /* width: 210px; */
-  }
   .check-in-out-container .pick-dates {
-    width: 70px;
+    width: 80px;
     text-align: center;
   }
   .check-in-out-container label {
@@ -53,34 +50,18 @@
     font-size: 12px;
     font-weight: 500;
   }
-  .banner-book-btn {
+  /* .banner-book-btn {
     width: 70px;
-  }
+  } */
   .banner-book-btn .common_arrow {
     margin-left: 0;
   }
-  .weather_div {
-    display: none;
-  }
+  
   .room_suit_left.fixed {
     position: relative;
   }
-  .weather_div {
-    position: absolute;
-    bottom: 0px;
-    right: 0;
-    max-width: 1200px;
-    margin: 0px auto;
-    left: 0;
-    min-width: auto;
-  }
-  body .fixedweather {
-    position: relative;
-    padding: 15px;
-    width: 140px;
-    right: 0px;
-    float: none;
-    margin: 0px auto;
+  .fixedweather {
+    display: none;
   }
   .weather-temp {
     font-size: 20px;
@@ -196,14 +177,14 @@
     text-align: center;
     box-shadow: 0px -1px 2px #e29554;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
   }
   .banner_text h1 {
     font-size: 35px;
   }
   .about_hotel {
-    padding: 0;
+    padding: 30px 0;
   }
   .about_hotel_text .common_arrow {
     top: 3px;
@@ -371,9 +352,18 @@
     margin-bottom: 0;
     margin-top: 25px;
   }
+  .gallery-col-md-12 {
+    padding: 20px;
+  }
   .gallery_section .col-md-12 {
     padding: 0px;
   }
+  .gallery-sec .owl-nav {
+    position: relative;
+    float: right;
+    right: 0;
+    margin: 0px !important;
+}
   .gallery_slider_column {
     height: 350px;
   }
@@ -597,6 +587,7 @@
   } */
   .panel_sidebar {
     width: 120px;
+    left: 0;
   }
 }
 

@@ -24,13 +24,13 @@ function Footer() {
                   </div>
 
                   <div className="f_icons">
-                    <a href="https://www.facebook.com/Golden-Fern-Resort-110187927124912/">
+                    <a  href="https://www.facebook.com/Golden-Fern-Resort-110187927124912/" target="_blank">
                       <img src="/facebook.svg" alt="Icon" />
                     </a>
-                    <a href="https://www.instagram.com/goldenfernresort_/">
+                    <a href="https://www.instagram.com/goldenfernresort_/" target="_blank">
                       <img src="/instagram.svg" alt="Icon" />
                     </a>
-                    <a href="https://www.youtube.com/channel/UCGC6GEnkBUDnNqN479Jp0OA">
+                    <a href="https://www.youtube.com/channel/UCGC6GEnkBUDnNqN479Jp0OA" target="_blank">
                       <img src="/youtube.svg" alt="Icon" />
                     </a>
                   </div>

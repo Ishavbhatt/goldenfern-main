@@ -1,4 +1,5 @@
 import React from "react";
+import Scrollspy from "react-scrollspy";
 
 var $ = require("jquery");
 if (typeof window !== "undefined") {
@@ -20,16 +21,69 @@ function Gallery() {
     loop: true,
     items: 1.2,
     margin: 30,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true,
+        dots: true,
+      },
+      600: {
+        items: 1.2,
+        dots: true,
+      },
+      1000: {
+        items: 1.2,
+        dots: true,
+        loop: true,
+      },
+    },
   };
-  const restraunt = {
+
+  const restaurant = {
     loop: true,
     items: 1.2,
     margin: 30,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true,
+        dots: true,
+      },
+      600: {
+        items: 1.2,
+        dots: true,
+      },
+      1000: {
+        items: 1.2,
+        dots: true,
+        loop: true,
+      },
+    },
   };
+
   const hotel = {
     loop: true,
     items: 1.2,
     margin: 30,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true,
+        dots: true,
+      },
+      600: {
+        items: 1.2,
+        dots: true,
+      },
+      1000: {
+        items: 1.2,
+        dots: true,
+        loop: true,
+      },
+    },
   };
 
   return (
@@ -64,43 +118,31 @@ function Gallery() {
       <section className="common_padding pt-0 scrool_section" id="rooms_suits">
         <div className="container">
           <div className="row">
-            {/* <div className="panel_sidebar">
-              <div id="sidebar" className="list-group room_suit_left">
-                <li>
-                  <a
-                    className="list-group-item list-group-item-action "
-                    href="#room1"
-                  >
-                    ROOMS
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="list-group-item list-group-item-action"
-                    href="#room2"
-                  >
-                    RESTAURANT & BAR
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="list-group-item list-group-item-action"
-                    href="#room3"
-                  >
-                    HOTEL AREA
-                  </a>
-                </li>
-              </div>
-            </div> */}
+            <Scrollspy
+              items={["room1", "room2", "room3"]}
+              className="panel_sidebar"
+              currentClassName="is-current"
+              id="sidebar"
+            >
+              <li className="scrool-items">
+                <Link href="#room1">ROOMS</Link>
+              </li>
+              <li className="scrool-items">
+                <Link href="#room2">RESTAURANT & BAR</Link>
+              </li>
+              <li className="scrool-items">
+                <Link href="#room3">HOTEL AREA</Link>
+              </li>
+            </Scrollspy>
 
             <div
-              className="scrollspy-example col-md-10 mr-auto"
+              className="scrollspy-example col-md-10 offset-md-2"
               tabIndex="0"
             >
               <section className="gallery-sec">
                 <div id="room1" className="gallery_section">
-                  {/* <div className="container"> */}
-                  {/* <div className="row"> */}
+                  {/* <div className="container">
+                  <div className="row"> */}
                   <div className="gallery-col-md-12">
                     <h2 className="gallery-item-heading">Rooms</h2>
                     <OwlCarousel className="gallery-owl-theme" nav {...options}>
@@ -185,22 +227,20 @@ function Gallery() {
                       </div>
                     </OwlCarousel>
                   </div>
-                  {/* </div> */}
-                  {/* </div> */}
+                  {/* </div>
+                  </div> */}
                 </div>
               </section>
 
               <section className="gallery-sec">
                 <div id="room2" className="gallery_section">
-                  {/* <div className="container"> */}
-                  {/* <div className="row"> */}
                   <div className="gallery-col-md-12">
                     <h2 className="gallery-item-heading">Restaurant & Bar</h2>
 
                     <OwlCarousel
                       className="gallery-owl-theme"
                       nav
-                      {...restraunt}
+                      {...restaurant}
                     >
                       <div className="gallery-item">
                         <div
@@ -275,15 +315,11 @@ function Gallery() {
                       </div>
                     </OwlCarousel>
                   </div>
-                  {/* </div> */}
-                  {/* </div> */}
                 </div>
               </section>
 
               <section className="gallery-sec">
                 <div id="room3" className="gallery_section">
-                  {/* <div className="container"> */}
-                  {/* <div className="row"> */}
                   <div className="gallery-col-md-12">
                     <h2 className="gallery-item-heading">Hotel Area</h2>
 
@@ -361,8 +397,6 @@ function Gallery() {
                       </div>
                     </OwlCarousel>
                   </div>
-                  {/* </div> */}
-                  {/* </div> */}
                 </div>
               </section>
             </div>
