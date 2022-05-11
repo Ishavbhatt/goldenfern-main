@@ -20,7 +20,7 @@ function Privacypolicy() {
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12 common_page_header_title">
-              <h2 className="common_title padding-t-40">Privacy Policy</h2>
+              <h2 className="common_title padding-t-20">Privacy Policy</h2>
               <p>
                 This Privacy policy clarifies our personal data practices and
                 the decisions you can make about how your information is
@@ -45,7 +45,7 @@ function Privacypolicy() {
         <div className="container">
           <div className="row">
             <div className="col-md-12 privacy_column">
-              <h3 className="padding-t-40">Personal Information You Provide to us:</h3>
+              <h3 className="padding-t-20">Personal Information You Provide to us:</h3>
               <p>
                 When using the site of Golden Fern Resort, you may be asked to
                 provide certain information about yourself when you book a
@@ -66,7 +66,7 @@ function Privacypolicy() {
             </div>
 
             <div className="col-md-12 privacy_column">
-              <h3 className="padding-t-40">How we use your information?</h3>
+              <h3 className="padding-t-20">How we use your information?</h3>
               <p>
                 We may use Personal Information you submit and non-Personal
                 Information we automatically collect for the purposes identified
@@ -121,7 +121,7 @@ function Privacypolicy() {
               </p>
             </div>
 
-            <div className="col-md-12 privacy_column text-center">
+            <div className="col-md-12 privacy_column text-center padding-t-20">
               <p>
                 <strong>
                   Any changes to this Terms & Conditions will become effective

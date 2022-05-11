@@ -15,12 +15,12 @@ function Healthsafety() {
         />
       </Head>
 
-      <section className="common_page_header common_padding">
-        <div className="container padding-t-80">
+      <section className="common_page_header">
+        <div className="container padding-t-20">
           <div className="row">
             <div className="col-lg-10 col-md-10 col-sm-12 common_page_header_title pages-info">
               <h1 className="common_title white">Health & Safety Assurance</h1>
-              <p>
+              <p className="health-para">
                 We care for you,Our extensive list of safety measures include
                 the following:
               </p>
@@ -29,7 +29,7 @@ function Healthsafety() {
         </div>
       </section>
 
-      <div className="safety_section_columns w-100">
+      <div className="safety_section_columns w-100 padding-t-20">
         <section className="safety_section common_padding">
           <div className="container">
             <div className="row">

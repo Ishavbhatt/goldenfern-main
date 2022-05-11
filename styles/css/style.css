@@ -60,7 +60,7 @@ body .booked-wzsp-prime-data .booked-wzsp-day-val {
   box-shadow: none;
   width: 160px;
   float: right;
-  bottom: 140px;
+  bottom: 160px;
   /* right: 0; */
 }
 .weather-date {
@@ -202,6 +202,9 @@ section {
 }
 .common_padding {
   padding: 80px 0px;
+}
+.padding-t-20 {
+  padding-top: 20px;
 }
 .padding-t-b-40 {
   padding: 40px 0;
@@ -396,6 +399,9 @@ body .header .navbar-collapse {
 }
 .header_toggle img {
   max-width: 30px;
+}
+.res-header-links ul{
+padding: 0;
 }
 #bs-example-navbar-collapse-1 {
   display: block;
@@ -669,9 +675,13 @@ body .header .navbar-collapse {
 .about_hotel {
   padding: 100px 0;
 }
+.spy_section .about_hotel {
+  padding: 50px 0;
+}
 .about_hotel_text h2 {
   font-size: 54px;
   color: #fff;
+  text-align: left;
 }
 .about_hotel_text h2 span {
   width: 100%;
@@ -726,7 +736,7 @@ body .header .navbar-collapse {
 .rooms_slider_image {
   width: 100%;
   height: 400px;
-  margin-left: 25px;
+  margin-left: 45px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -765,11 +775,13 @@ body .header .navbar-collapse {
   align-items: flex-start;
   flex-direction: column;
   text-align: left;
+  margin-right: 20px;
   margin-left: -80px;
   transition: all ease-in-out 0.5s;
   padding-right: 30px;
   z-index: 9;
 }
+
 .rooms_slider_text p {
   margin-top: 7px !important;
 }
@@ -826,7 +838,7 @@ body .header .navbar-collapse {
 }
 .testimonials_section {
   background-color: #fff;
-  padding-bottom: 130px;
+  /* padding-bottom: 130px;is-curr */
 }
 .col-md-12 .owl-item {
   width: 350px;
@@ -961,7 +973,7 @@ body .header .navbar-collapse {
   background-position: center;
   margin-bottom: 10px;
 }
-.post_column h5 {
+.post_column h4 {
   margin: 8px 0 !important;
 }
 .post_column a {
@@ -1001,7 +1013,6 @@ body .header .navbar-collapse {
   height: 450px;
 }
 .footer_address_right {
-  background-image: url("../images/leaf_gold.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1121,7 +1132,7 @@ body .header .navbar-collapse {
 }
 .attraction_section .common_title {
   font-size: 40px;
-  margin-bottom: 30px !important;
+  margin: 30px 0 !important;
 }
 .pages-info {
   width: auto;
@@ -1484,16 +1495,8 @@ body .header .navbar-collapse {
   left: -20px;
   bottom: -20px;
 }
-.spy_section {
-  padding-bottom: 100px;
-}
 .scrollspy-example .spy_section:last-child .about_hotel {
-  padding-bottom: 30px;
-}
-.list_fixed {
-  position: fixed;
-  top: 135px;
-  width: 170px;
+  padding-bottom: 50px;
 }
 .scrollspy-example .spy_section:nth-child(2n + 2) .about_hotel_text {
   order: -1;
@@ -1546,9 +1549,9 @@ body .header .navbar-collapse {
   content: "";
   width: 9px;
   height: 9px;
-  border: 1px solid #fff;
+  border: 1px solid #e29554;
   left: -5px;
-  background-color: #202e27;
+  background-color: #e29554;
   border-radius: 50%;
   top: 16px;
 }
@@ -1572,43 +1575,6 @@ body .header .navbar-collapse {
   border-radius: 50%;
   top: 16px;
 }
-/* .room_suit_left a {
-  background-color: transparent !important;
-  border: none;
-  padding: 0px;
-  border-radius: 0px !important;
-  position: relative;
-  padding-left: 25px;
-  color: #fff !important;
-  transition: all ease-in-out 0.5s;
-  border-left: 1px solid #fff;
-  padding-bottom: 8px;
-  padding-top: 8px;
-}
-.room_suit_left a::before {
-  position: absolute;
-  content: "";
-  width: 9px;
-  height: 9px;
-  border: 1px solid #fff;
-  left: -5px;
-  background-color: #202e27;
-  border-radius: 50%;
-  top: 16px;
-}
-.room_suit_left li {
-  list-style-type: none;
-}
-.room_suit_left li.active a,
-.room_suit_left a:hover {
-  border-color: #e29554 !important;
-  color: #e29554 !important;
-}
-.room_suit_left li.active a::before {
-  background-color: #e29554;
-  border-color: #e29554;
-} */
-
 .singleroom-item {
   background-image: url("/about-img.jpg");
 }
@@ -1732,7 +1698,7 @@ body .header .navbar-collapse {
   border-radius: 0px !important;
 }
 .gallery_section {
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 .pages-info {
   width: 600px;
@@ -1763,7 +1729,6 @@ body .header .navbar-collapse {
 }
 .privacy_column p {
   color: #fff;
-  margin-top: 10px !important;
 }
 
 .back-to-top {
@@ -1858,17 +1823,19 @@ div.wpcf7 .ajax-loader {
   position: relative;
 }
 .panel_sidebar {
+  position: absolute;
+  width: 160px;
+}
+.list-absolute {
   position: fixed;
-  /* top: 59%; */
-  /* left: 45px; */
+  top: 40%;
+  padding: 0;
+}
+.list_fixed {
+  position: absolute;
+  top: 15px;
   width: 170px;
 }
-
-.room_suit_left.fixed {
-  position: fixed;
-  top: 15px;
-}
-
 .banner {
   background-image: url("/banner.jpg");
 }

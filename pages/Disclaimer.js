@@ -23,7 +23,7 @@ function Disclaimer() {
         <div className="container">
           <div className="row">
             <div className="col-md-12 privacy_column">
-              <h3 className="padding-t-40">Copyright and Licenses:</h3>
+              <h3 className="">Copyright and Licenses:</h3>
               <p>
                 The contents of the Website are protected by international
                 copyright and trademark laws. goldenfernresort.com its
@@ -37,7 +37,7 @@ function Disclaimer() {
             </div>
 
             <div className="col-md-12 privacy_column">
-              <h3 className="padding-t-40">Use of the Site :</h3>
+              <h3 className="padding-t-20">Use of the Site :</h3>
               <p>
                 You understand that, except for information, products or
                 services identified as being supplied by goldenfernresort.com,
@@ -68,7 +68,7 @@ function Disclaimer() {
             </div>
 
             <div className="col-md-12 privacy_column">
-              <h3 className="padding-t-40">Indemnification : </h3>
+              <h3 className="padding-t-20">Indemnification : </h3>
               <p>
                 You agree to indemnify, defend and hold harmless{" "}
                 <a href="https://goldenfernresort.com/">goldenfernresort.com</a>
@@ -81,7 +81,7 @@ function Disclaimer() {
             </div>
 
             <div className="col-md-12 privacy_column">
-              <h3 className="padding-t-40">Third Party Rights : </h3>
+              <h3 className="padding-t-20">Third Party Rights : </h3>
               <p>
                 The provisions of paragraphs 2 (Use of the Service), and 3
                 (Indemnification) are for the benefit of
@@ -95,7 +95,7 @@ function Disclaimer() {
             </div>
 
             <div className="col-md-12 privacy_column">
-              <h3 className="padding-t-40">Termination :</h3>
+              <h3 className="padding-t-20">Termination :</h3>
               <p>
                 This Agreement may be terminated by either party without notice
                 at any time for any reason. The provisions of paragraphs 1
@@ -106,7 +106,7 @@ function Disclaimer() {
             </div>
 
             <div className="col-md-12 privacy_column">
-              <h3 className="padding-t-40">Miscellaneous :</h3>
+              <h3 className="padding-t-20">Miscellaneous :</h3>
               <p>
                 You agree that any legal action or proceeding between
                 goldenfernresort.com and you for any purpose concerning this

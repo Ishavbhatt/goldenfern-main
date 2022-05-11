@@ -17,7 +17,7 @@ function Contactus() {
       </Head>
 
       <section className="common_page_header common_padding">
-        <div className="container padding-t-80">
+        <div className="container padding-t-40">
           <div className="row">
             <div className="col-lg-5 col-md-6 col-sm-12 contact_left">
               <h1 className="white">Contacts</h1>

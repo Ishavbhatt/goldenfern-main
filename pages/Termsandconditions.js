@@ -20,7 +20,7 @@ function Termsandconditions() {
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12 common_page_header_title">
-              <h2 className="common_title padding-t-40">Terms and Conditions </h2>
+              <h2 className="common_title">Terms and Conditions </h2>
               <p>
                 The terms and conditions stated below (“Conditions”) apply to
                 your use of this website, including the utilization of the data
@@ -39,7 +39,7 @@ function Termsandconditions() {
         <div className="container">
           <div className="row">
             <div className="col-md-12 privacy_column">
-              <h3 className="padding-t-40">Site</h3>
+              <h3 className="padding-t-20">Site</h3>
               <p>
                 The Site makes available information concerning the hotel under
                 the laws of India, and its subsidiaries, controlled entities,
@@ -48,7 +48,7 @@ function Termsandconditions() {
             </div>
 
             <div className="col-md-12 privacy_column">
-              <h3 className="padding-t-40">Trade Marks</h3>
+              <h3 className="padding-t-20">Trade Marks</h3>
               <p>
                 The Site contains trade and service marks and devices and other
                 valuable trade or service marks owned by Golden Fern Resort or
@@ -58,7 +58,7 @@ function Termsandconditions() {
             </div>
 
             <div className="col-md-12 privacy_column">
-              <h3 className="padding-t-40">Copyright</h3>
+              <h3 className="padding-t-20">Copyright</h3>
               <p>
                 The information, text, graphics, images, sounds, links, and
                 everyone other information published or otherwise contained
@@ -75,7 +75,7 @@ function Termsandconditions() {
             </div>
 
             <div className="col-md-12 privacy_column">
-              <h3 className="padding-t-40">Your Use</h3>
+              <h3 className="padding-t-20">Your Use</h3>
               <p>
                 The Site is for your personal non-commercial use and therefore
                 the Information could also be downloaded or printed by you
@@ -103,7 +103,7 @@ function Termsandconditions() {
             </div>
 
             <div className="col-md-12 privacy_column">
-              <h3 className="padding-t-40">Specific Warnings</h3>
+              <h3 className="padding-t-20">Specific Warnings</h3>
               <p>
                 You must make sure that your access to and your use of the
                 website isn't illegal or prohibited by laws which apply to you.
@@ -122,7 +122,7 @@ function Termsandconditions() {
             </div>
 
             <div className="col-md-12 privacy_column">
-              <h3 className="padding-t-40">Security & Non Confidentiality</h3>
+              <h3 className="padding-t-20">Security & Non Confidentiality</h3>
               <p>
                 Electronic transmissions of knowledge including the web are
                 public media and any use of such media is public, not private.
@@ -143,7 +143,7 @@ function Termsandconditions() {
               </p>
             </div>
 
-            <div className="col-md-12 privacy_column text-center">
+            <div className="col-md-12 privacy_column text-center padding-t-20">
               <p>
                 <strong>
                   Any changes to this Terms & Conditions will become effective

@@ -20,7 +20,7 @@ function Cancellationpolicy() {
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12 common_page_header_title">
-              <h2 className="common_title padding-t-40">Cancellation & Refund Policy </h2>
+              <h2 className="common_title padding-t-20">Cancellation & Refund Policy </h2>
               <p>
                 For each reservation of a Service, the Special Conditions
                 specify the conditions to cancel and/or modify the reservation.

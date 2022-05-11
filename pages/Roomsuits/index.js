@@ -1,9 +1,18 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Link from "next/link";
 import Head from "next/head";
 import Scrollspy from "react-scrollspy";
 
 function Roomsuits() {
+  const [scroll, setScroll] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY >= 1900);
+      console.log("scrooll in")
+    });
+  }, []);
+
   return (
     <>
       <Head>
@@ -19,12 +28,12 @@ function Roomsuits() {
         />
       </Head>
 
-      <section className="common_page_header common_padding">
-        <div className="container padding-t-80">
+      <section className="common_page_header">
+        <div className="container padding-t-20">
           <div className="row">
             <div className="col-lg-10 col-md-10 col-sm-12 common_page_header_title">
               <h1 className="common_title white">Rooms & Suits</h1>
-              <p>
+              <p className="rooms-para">
                 The rooms at Golden Fern are designed with simple, timeless
                 lines. Here you may find all the commodities needed for a
                 comfortable stay. All rooms are non-smoking.
@@ -37,9 +46,10 @@ function Roomsuits() {
       <section className="pt-0 scrool_section" id="rooms_suits">
         <div className="container">
           <div className="row">
+            <div className="panel_sidebar">
             <Scrollspy
               items={["room1", "room2", "room3", "room4"]}
-              className="panel_sidebar"
+              className={scroll ? "list_fixed" : "list-absolute"}
               currentClassName="is-current"
               offset={-300}
               id="sidebar"
@@ -57,9 +67,12 @@ function Roomsuits() {
                 <Link href="#room4">DELUXE ROOM</Link>
               </li>
             </Scrollspy>
+            </div>
+            
 
             <div className="scrollspy-example col-md-10 offset-md-2">
               <div id="room1" className="spy_section">
+              <div className="about_hotel ">
                 <div className="container">
                   <div className="row">
                     <div className="col-lg-7 col-md-7 col-sm-12 about_hotel_right text-center">
@@ -87,9 +100,11 @@ function Roomsuits() {
                     </div>
                   </div>
                 </div>
+                </div>
               </div>
 
               <div id="room2" className="spy_section">
+              <div className="about_hotel">
                 <div className="container">
                   <div className="row">
                     <div className="col-lg-7 col-md-7 col-sm-12 about_hotel_right text-center">
@@ -117,9 +132,11 @@ function Roomsuits() {
                     </div>
                   </div>
                 </div>
+                </div>
               </div>
 
               <div id="room3" className="spy_section">
+              <div className="about_hotel">
                 <div className="container">
                   <div className="row">
                     <div className="col-lg-7 col-md-7 col-sm-12 about_hotel_right text-center">
@@ -144,9 +161,11 @@ function Roomsuits() {
                     </div>
                   </div>
                 </div>
+                </div>
               </div>
 
               <div id="room4" className="spy_section">
+              <div className="about_hotel">
                 <div className="container">
                   <div className="row">
                     <div className="col-lg-7 col-md-7 col-sm-12 about_hotel_right text-center">
@@ -170,6 +189,7 @@ function Roomsuits() {
                       </a>
                     </div>
                   </div>
+                </div>
                 </div>
               </div>
             </div>

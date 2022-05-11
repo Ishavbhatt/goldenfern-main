@@ -240,12 +240,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="testimonials_section room_suites common_padding">
+      <section className="testimonials_section room_suites padding-t-b-40">
         <div className="container">
           <div className="row">
             <div className="col-md-6 col-sm-12">
               <h2 className="common_title">Rooms & Suites</h2>
-              <p>
+              <p className="rooms-para">
                 All rooms and suites are elegantly appointed and reflect
                 unpretentious luxury and stylish className with wooden flooring.
               </p>
@@ -272,9 +272,7 @@ export default function Home() {
                           executive rooms are spacious with all modern amenities
                           and furnishing to meet the desired level of the
                           satisfaction of the esteemed guests at Golden Fern
-                          Resort Shimla. The average size of the executive rooms
-                          is 375 sq. feet excluding the bathroom and Balcony
-                          area. All Executive rooms come with Extra large rooms
+                          Resort Shimla. All Executive rooms come with Extra large rooms
                           for additional space, a King-sized double bed, and
                           Large comfortable seating or sofa area.
                         </p>
@@ -309,9 +307,7 @@ export default function Home() {
                           executive rooms are spacious with all modern amenities
                           and furnishing to meet the desired level of the
                           satisfaction of the esteemed guests at Golden Fern
-                          Resort Shimla. The average size of the executive rooms
-                          is 375 sq. feet excluding the bathroom and Balcony
-                          area. All Executive rooms come with Extra large rooms
+                          Resort Shimla. All Executive rooms come with Extra large rooms
                           for additional space, a King-sized double bed, and
                           Large comfortable seating or sofa area.
                         </p>
@@ -401,7 +397,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="testimonials_section common_padding">
+      <section className="testimonials_section padding-t-b-40">
         <div className="container">
           <div className="row">
             <div className="col-md-6 offset-md-3 col-sm-12 text-center">

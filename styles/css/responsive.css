@@ -15,7 +15,7 @@
   }
   .banner {
     background-size: cover;
-    height: 95vh;
+    height: 50vh;
   }
   .panel_sidebar {
     /* position: relative; */
@@ -181,7 +181,7 @@
     align-items: center;
   }
   .banner_text h1 {
-    font-size: 35px;
+    font-size: 24px;
   }
   .about_hotel {
     padding: 30px 0;
@@ -205,12 +205,16 @@
   #testimonials_slider {
     margin-top: 20px;
   }
+  .rooms-para, .attr-para, .gallery-para, .health-para {
+    text-align: center;
+  }
   .rooms_slider_column {
     margin: 0px !important;
   }
   .rooms_slider_text {
     padding: 30px 20px;
     margin-left: 0;
+    margin-right: 0;
     margin-top: 20px;
   }
   .columns {
@@ -218,10 +222,9 @@
   }
   .rooms_slider .owl-nav {
     margin: 0px !important;
-    -moz-box-pack: center;
     justify-content: center;
-    align-items: end;
-    bottom: 0;
+    /* align-items: end;
+    bottom: 0; */
   }
   .rooms_slider .owl-nav button {
     width: 50px;
@@ -294,8 +297,13 @@
   /* .attraction_section {
     padding-top: 50px;
   } */
-  .attraction_section .common_title,
-  .gallery_section h2 {
+  .attraction_section .common_title {
+    font-size: 25px;
+    text-align: left !important;
+    margin: 20px 0 !important;
+  }
+  .gallery_section h2,
+  .about_hotel_text .common_title {
     font-size: 25px;
     text-align: left !important;
   }
@@ -344,11 +352,11 @@
   .contact_subtitle {
     font-size: 17px !important;
   }
-  .list_fixed {
+  /* .list_fixed {
     position: relative;
     top: 0;
     width: 100%;
-  }
+  } */
   .gallery_section {
     margin-bottom: 0;
     margin-top: 25px;
@@ -390,12 +398,15 @@
   .about_hotel_text h2 {
     font-size: 30px;
   }
-  .spy_section .about_hotel {
-    padding-bottom: 0;
-    padding-top: 40px;
-  }
+ 
   .spy_section .about_hotel .container {
     padding: 0px;
+  }
+  .spy_section .about_hotel {
+    padding: 30px 0;
+  }
+  .scrollspy-example {
+    padding-bottom: 20px;
   }
   .scrollspy-example .about_hotel_image::before {
     left: -10px;
@@ -528,7 +539,7 @@
     font-size: 42px;
   }
   .rooms_slider_text {
-    padding-right: 46px;
+    padding-right: 30px;
   }
   .post_column_image {
     width: 100%;
@@ -549,10 +560,6 @@
     right: -10px;
     z-index: -1;
   }
-  .rooms_slider_text {
-    padding: 30px 65px;
-    padding-right: 30px;
-  }
   .contact_form form {
     padding: 60px 40px;
   }
@@ -563,9 +570,9 @@
     height: 400px;
     max-width: 570px;
   }
-  .list_fixed {
+  /* .list_fixed {
     width: 120px;
-  }
+  } */
   .scrollspy-example .about_hotel_text .common_title {
     margin-top: 10px !important;
     font-size: 26px;

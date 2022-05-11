@@ -102,10 +102,10 @@ const Navbar = () => {
             <div>
               <nav>
                 <div>
-                  <div>
+                  <div className="res-header-links">
                     <ul className="mobile-view-ul">
                       <li className="mobile-view-lists">
-                        <Link href="/#">
+                        <Link href="/">
                           <a
                             onClick={handleIsActive}
                             className="mobile-view-lists-clr"
