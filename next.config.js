@@ -1,5 +1,9 @@
 const webpack = require('webpack');
 module.exports = {
+  env: {
+    API_KEY: process.env.API_KEY,
+    API_LINK: process.env.API_LINK,
+  },
   future: {
     webpack5: true
   },

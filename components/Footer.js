@@ -89,7 +89,7 @@ function Footer() {
               <div className="col-lg-4 col-md-3 col-sm-12 footer_bottom_column text-right">
                 <span>
                   Powered By:
-                  <a to="https://unmeteredtechnologies.com/">
+                  <a target="blank" href="https://unmeteredtechnologies.com" to="https://unmeteredtechnologies.com/">
                     <img src="/unmetered-logo.gif" alt="icon" />
                   </a>
                 </span>

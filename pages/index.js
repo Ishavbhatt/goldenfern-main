@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Carousel } from "react-responsive-carousel";
 import DatePicker from "react-datepicker";
 
 var $ = require("jquery");
@@ -37,6 +36,9 @@ export default function Home() {
   const [data, setData] = useState(null);
   const lat = 31.1048;
   const long = 77.1734;
+  const weatherapiKey = process.env.API_KEY;
+  const weatherapiLink = process.env.API_LINK
+  const weatherapiUrl = `${weatherapiLink}/?lat=${lat}&lon=${long}&units=metric&APPID=${weatherapiKey}`;
 
   const rooms = {
     items: 1,
@@ -118,13 +120,10 @@ export default function Home() {
   };
 
   useEffect(() => {
-    fetch(
-      `https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${long}&units=metric&APPID=afe83a2dbade6cad2645c7b7ec05a3a1`
-    )
+    fetch(weatherapiUrl)
       .then((res) => res.json())
       .then((data) => {
         setData(data);
-        console.log(data);
       });
   }, []);
 
@@ -265,7 +264,7 @@ export default function Home() {
                     </div>
                     <div className="col-md-5 columns">
                       <div className="rooms_slider_text">
-                        <h3>EXECUTIVE ROOM</h3>
+                        <h4>EXECUTIVE ROOM</h4>
                         <p>
                           Designed to the highest specifications and situated on
                           all floors, with a private balcony and city view the
