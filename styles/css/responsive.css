@@ -162,9 +162,9 @@
   .header .navbar ul li.active a {
     color: #000;
   }
-  /* .header_toggle,.header .navbar-toggler img {
-    display: none;
-  } */
+  .header .navbar:hover .header_toggle {
+    transform: translateX(0%)
+  }
   .book_appointment {
     float: none;
     position: fixed;
