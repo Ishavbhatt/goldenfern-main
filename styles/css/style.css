@@ -677,10 +677,18 @@ padding: 0;
 .spy_section .about_hotel {
   padding: 50px 0;
 }
-.about_hotel_text h2 {
+.about_hotel_text h2, .about-page-text h3 {
   font-size: 54px;
   color: #fff;
   text-align: left;
+}
+.about-center-text {
+  text-align: center;
+  padding: 40px 0;
+  color: white;
+}
+.about_hotel_text h3 {
+  color: #fff;
 }
 .about_hotel_text h2 span {
   width: 100%;
@@ -707,11 +715,24 @@ padding: 0;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  /* background-image: url("../images/leaf_gold.svg"); */
   background-position: center;
   background-size: cover;
   padding: 20px 0;
 }
+.justify-center {
+  justify-content: center;
+}
+.about-page-text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  padding: 0 20px;
+}
+/* .about-text{
+  padding: 0 30px;
+} */
 .about_hotel_text p {
   color: #fff;
 }
@@ -720,6 +741,10 @@ padding: 0;
 }
 .about_hotel_text .common_arrow::after {
   top: -6px;
+}
+.about-page-section {
+  display: flex;
+  justify-content: center;
 }
 .testimonials_section.room_suites {
   padding-bottom: 0;
@@ -1115,6 +1140,32 @@ padding: 0;
 .common_page_header {
   padding-top: 80px;
 }
+.top_banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.rooms_page_banner {
+  background-image: url("/room-suit-banner.jpeg");
+}
+.about_page_banner {
+  background-image: url("/about-banner.jpeg");
+}
+.health_page_banner {
+  background-image: url("/health-banner.jpeg");
+}
+.attraction_page_banner {
+background-image: url("/attraction-banner.jpeg");
+}
+.gallery_page_banner {
+  background-image: url("/gallery-banner.jpeg");
+}
+.contact-page-banner {
+  background-image: url("/contact-banner.jpeg");
+}
+.restaurant_page_banner {
+  background-image: url("/new-images/restaurant-banner.jpg");
+}
 .common_page_header_title h2 {
   color: #fff;
 }
@@ -1122,7 +1173,7 @@ padding: 0;
   margin-top: 10px !important;
 }
 .common_page_header_title p,
-.contact_subtitle {
+.contact-subtitle {
   color: #fff;
   font-size: 18px !important;
 }
@@ -1134,7 +1185,8 @@ padding: 0;
   margin: 30px 0 !important;
 }
 .pages-info {
-  width: auto;
+  /* width: auto; */
+  padding: 60px 0;
 }
 .attraction_column {
   height: 460px;
@@ -1232,7 +1284,16 @@ padding: 0;
   right: 16%;
   margin: 0px !important;
 }
+.single-room {
+  padding: 50px 0;
+}
+.other-room {
+  padding-bottom: 60px;
+}
 .single-room-sec .owl-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
   position: absolute;
   right: 0;
   background: transparent;
@@ -1349,8 +1410,12 @@ padding: 0;
 .a-span:hover {
   color: #b18058;
 }
+.contact_left {
+  display: flex;
+  align-items: center;
+}
 .contact_left h2 {
-  margin-bottom: 10px !important;
+  margin-bottom: 5px !important;
 }
 .contact_left .footer_address_right_inner {
   background-image: none;
@@ -1699,9 +1764,9 @@ padding: 0;
 .gallery_section {
   margin: 50px 0;
 }
-.pages-info {
+/* .pages-info {
   width: 600px;
-}
+} */
 .gallery_slider_column {
   height: 400px;
   width: 100%;
@@ -1826,13 +1891,14 @@ div.wpcf7 .ajax-loader {
   width: 160px;
 }
 .list-absolute {
-  position: fixed;
-  top: 40%;
-  padding: 0;
+  position: absolute;
+  top: 50%;
+  
 }
 .list_fixed {
-  position: absolute;
-  top: 15px;
+  position: fixed;
+  /* top: 15px; */
+  padding: 0;
   width: 170px;
 }
 .banner {
@@ -2125,4 +2191,33 @@ div.wpcf7 .ajax-loader {
 .gallery-row {
   padding-left: 30px;
   padding-right: 0px;
+}
+
+/* Menu Css */
+.question {
+  padding:0.5rem 1rem;
+  border: 2px solid #e29554;
+  margin-bottom: 1rem;
+  border-radius: .25rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+.question div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.show-more-btn {
+  background: transparent;
+  border-color: transparent;
+  width: 2rem;
+  height: 2rem;
+  background: var(--clr-grey-special);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--clr-red-special);
+  cursor: pointer;
+  margin-left: 1rem;
+  align-self: center;
 }

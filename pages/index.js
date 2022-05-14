@@ -37,7 +37,7 @@ export default function Home() {
   const lat = 31.1048;
   const long = 77.1734;
   const weatherapiKey = process.env.API_KEY;
-  const weatherapiLink = process.env.API_LINK
+  const weatherapiLink = process.env.API_LINK;
   const weatherapiUrl = `${weatherapiLink}/?lat=${lat}&lon=${long}&units=metric&APPID=${weatherapiKey}`;
 
   const rooms = {
@@ -148,70 +148,74 @@ export default function Home() {
           </div>
         </div>
         <div className="container">
-            {/* <div className="row"> */}
-        <div className="bnr-booking">
-        <div className="check-in-out-container">
-                <div className="pick-dates">
-                  <label>Check-in</label>
-                  <DatePicker
-                    wrapperClassName="date-picker"
-                    placeholderText={datenmonth}
-                    selected={checkInDate}
-                    minDate={new Date()}
-                    onChange={handleCheckInDate}
-                  />
-                   <span className="bkg-arrow-down"><img src="./down-arrow.png" alt="" /></span>
+          {/* <div className="row"> */}
+          <div className="bnr-booking">
+            <div className="check-in-out-container">
+              <div className="pick-dates">
+                <label>Check-in</label>
+                <DatePicker
+                  wrapperClassName="date-picker"
+                  placeholderText={datenmonth}
+                  selected={checkInDate}
+                  minDate={new Date()}
+                  onChange={handleCheckInDate}
+                />
+                <span className="bkg-arrow-down">
+                  <img src="./down-arrow.png" alt="" />
+                </span>
+              </div>
+              <div className="pick-dates vr-left-rigth">
+                <label>Check-out</label>
+                <DatePicker
+                  wrapperClassName="date-picker"
+                  placeholderText={datenmonth}
+                  selected={checkOutDate}
+                  minDate={checkInDate}
+                  onChange={handleCheckOutDate}
+                />
+                <span className="bkg-arrow-down">
+                  <img src="./down-arrow.png" alt="" />
+                </span>
+              </div>
+              <div className="pick-dates vr-left-rigth">
+                <label>People</label>
+                <div className="people-btn">
+                  <p className="people">{people}</p>
+                  <span>
+                    <button className="bkg-arrow-btn" onClick={incPeople}>
+                      <img src="/arrow-up.png" alt="" />
+                    </button>
+                    <button className="bkg-arrow-btn" onClick={decPeople}>
+                      <img src="/arrow-down.png" alt="" />
+                    </button>
+                  </span>
                 </div>
-                <div className="pick-dates vr-left-rigth">
-                  <label>Check-out</label>
-                  <DatePicker
-                    wrapperClassName="date-picker"
-                    placeholderText={datenmonth}
-                    selected={checkOutDate}
-                    minDate={checkInDate}
-                    onChange={handleCheckOutDate}
-                  />
-                   <span className="bkg-arrow-down"><img src="./down-arrow.png" alt="" /></span>
-                </div>
-                <div className="pick-dates vr-left-rigth">
-                  <label>People</label>
-                  <div className="people-btn">
-                    <p className="people">{people}</p>
-                    <span>
-                      <button className="bkg-arrow-btn" onClick={incPeople}>
-                        <img src="/arrow-up.png" alt="" />
-                      </button>
-                      <button className="bkg-arrow-btn" onClick={decPeople}>
-                        <img src="/arrow-down.png" alt="" />
-                      </button>
-                      </span>
-                  </div>
-                </div>
-                <div className="banner-book-btn pick-dates popup-book-btn">
+              </div>
+              <div className="banner-book-btn pick-dates popup-book-btn">
                 <div className="common_arrow">
                   <img src="/images/arrow.svg" alt="Icon" />
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="fixedweather">
+            <h6 className="weather-date">{curruntDate}</h6>
+            {data && (
+              <div>
+                <h4 className="weather-status">
+                  {data.weather[0].description}
+                </h4>
+                <h1 className="weather-temp">
+                  {data.main.temp}
+                  <span>&#176;</span>
+                  <span>C</span>
+                </h1>
+                <h6 className="weather-name">{data.name}, India</h6>
               </div>
+            )}
+          </div>
+          {/* </div> */}
         </div>
-        <div className="fixedweather">
-              <h6 className="weather-date">{curruntDate}</h6>
-              {data && (
-                <div>
-                  <h4 className="weather-status">
-                    {data.weather[0].description}
-                  </h4>
-                  <h1 className="weather-temp">
-                    {data.main.temp}
-                    <span>&#176;</span>
-                    <span>C</span>
-                  </h1>
-                  <h6 className="weather-name">{data.name}, India</h6>
-                </div>
-              )}
-            </div>
-            {/* </div> */}
-            </div>
       </section>
 
       <section className="about_hotel">
@@ -220,9 +224,9 @@ export default function Home() {
             <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
               <h2 className="common_title">
                 <span className="golden_color">Golden Fern</span>Shimla
-                <div className="common_arrow">
-                  <img src="images/arrow.svg" alt="Icon" />
-                </div>
+                  <a className="common_arrow" href="/Aboutus">
+                    <img src="/arrow.svg" alt="Icon" />
+                  </a>
               </h2>
               <p>
                 Golden Fern Resort Shimla ideally located on Shimla Kalka
@@ -271,9 +275,9 @@ export default function Home() {
                           executive rooms are spacious with all modern amenities
                           and furnishing to meet the desired level of the
                           satisfaction of the esteemed guests at Golden Fern
-                          Resort Shimla. All Executive rooms come with Extra large rooms
-                          for additional space, a King-sized double bed, and
-                          Large comfortable seating or sofa area.
+                          Resort Shimla. All Executive rooms come with Extra
+                          large rooms for additional space, a King-sized double
+                          bed, and Large comfortable seating or sofa area.
                         </p>
                         <a
                           className="common_arrow"
@@ -306,9 +310,9 @@ export default function Home() {
                           executive rooms are spacious with all modern amenities
                           and furnishing to meet the desired level of the
                           satisfaction of the esteemed guests at Golden Fern
-                          Resort Shimla. All Executive rooms come with Extra large rooms
-                          for additional space, a King-sized double bed, and
-                          Large comfortable seating or sofa area.
+                          Resort Shimla. All Executive rooms come with Extra
+                          large rooms for additional space, a King-sized double
+                          bed, and Large comfortable seating or sofa area.
                         </p>
                         <a
                           className="common_arrow"

@@ -36,6 +36,9 @@ const Navbar = () => {
                             <Link href="/">home</Link>
                           </li>
                           <li>
+                            <Link href="/Aboutus">about us</Link>
+                          </li>
+                          <li>
                             <Link href="/Roomsuits">room & suits</Link>
                           </li>
                           <li>
@@ -48,6 +51,9 @@ const Navbar = () => {
                           </li>
                           <li>
                             <Link href="/Gallery">gallery</Link>
+                          </li>
+                          <li>
+                            <Link href="/Menu">menu</Link>
                           </li>
                           <li>
                             <Link href="/Contactus">contact us</Link>
@@ -111,6 +117,16 @@ const Navbar = () => {
                             className="mobile-view-lists-clr"
                           >
                             Home
+                          </a>
+                        </Link>
+                      </li>
+                      <li className="mobile-view-lists">
+                        <Link href="/Aboutus">
+                          <a
+                            onClick={handleIsActive}
+                            className="mobile-view-lists-clr"
+                          >
+                            About Us
                           </a>
                         </Link>
                       </li>

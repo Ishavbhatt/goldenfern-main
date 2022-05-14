@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="play" transform="translate(-1357 -1034)">
+    <g id="Ellipse_14" data-name="Ellipse 14" transform="translate(1357 1034)" fill="none" stroke="#fff" stroke-width="3">
+      <circle cx="40" cy="40" r="40" stroke="none"/>
+      <circle cx="40" cy="40" r="38.5" fill="none"/>
+    </g>
+    <circle id="Ellipse_15" data-name="Ellipse 15" cx="35" cy="35" r="35" transform="translate(1362 1039)" fill="#fff" opacity="0.859"/>
+    <path id="Icon_material-play-arrow" data-name="Icon material-play-arrow" d="M12,7.5v21L28.5,18Z" transform="translate(1377 1056.5)" fill="#e29554"/>
+  </g>
+</svg>

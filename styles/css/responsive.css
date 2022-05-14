@@ -70,9 +70,9 @@
     display: flex;
     flex-direction: column;
   }
-  /* .common_padding {
+  .common_padding {
     padding: 40px 0px;
-  } */
+  }
   .common_arrow::after {
     right: -7px;
     height: 26px;
@@ -205,14 +205,14 @@
   #testimonials_slider {
     margin-top: 20px;
   }
-  .rooms-para, .attr-para, .gallery-para, .health-para {
+  .rooms-subtitle, .attr-subtitle, .gallery-subtitle, .health-subtitle, .contact-subtitle, .about-subtitle {
     text-align: center;
   }
   .rooms_slider_column {
     margin: 0px !important;
   }
   .rooms_slider_text {
-    padding: 30px 20px;
+    padding: 40px 20px;
     margin-left: 0;
     margin-right: 0;
     margin-top: 20px;
@@ -349,7 +349,7 @@
     font-size: smaller;
   }
   .common_page_header_title p,
-  .contact_subtitle {
+  .contact-subtitle {
     font-size: 17px !important;
   }
   /* .list_fixed {

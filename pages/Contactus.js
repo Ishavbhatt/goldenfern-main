@@ -16,16 +16,23 @@ function Contactus() {
         />
       </Head>
 
-      <section className="common_page_header common_padding">
-        <div className="container padding-t-40">
+      <section className="common_page_header top_banner contact-page-banner">
+        <div className="container">
           <div className="row">
-            <div className="col-lg-5 col-md-6 col-sm-12 contact_left">
-              <h1 className="white">Contacts</h1>
-              <p className="contact_subtitle">
+            <div className="col-lg-10 col-md-10 col-sm-12 common_page_header_title pages-info">
+              <h1 className="common_title white">Contacts</h1>
+              <p className="contact-subtitle">
                 At Golden Fern we like to answer all your questions.
                 <br /> Find the contacts you need.
               </p>
-
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="common_padding">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-5 col-md-6 col-sm-12 contact_left">
               <div className="footer_address_right_inner">
                 <div>
                   <h2 className="cont-head-col">ADDRESS</h2>
@@ -57,7 +64,7 @@ function Contactus() {
               </div>
             </div>
 
-            <div className="col-lg-6 offset-lg-1 col-md-6 offset-lg-1 col-sm-12 contact_right">
+            <div className="col-md-6 col-sm-12 offset-lg-1 contact_right">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13666.95865605713!2d77.1405961!3d31.0891678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xed76ee25a9bdb157!2sGolden%20Fern%20Resort!5e0!3m2!1sen!2sin!4v1638428151450!5m2!1sen!2sin"
                 width=""

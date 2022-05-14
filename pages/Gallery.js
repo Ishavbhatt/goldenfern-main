@@ -110,12 +110,12 @@ function Gallery() {
         />
       </Head>
 
-      <section className="common_page_header">
-        <div className="container padding-t-20">
+      <section className="common_page_header top_banner gallery_page_banner">
+        <div className="container">
           <div className="row">
             <div className="col-lg-10 col-md-10 col-sm-12 common_page_header_title pages-info">
               <h1 className="common_title white">Gallery</h1>
-              <p className="gallery-para">
+              <p className="gallery-subtitle">
                 There are not enough words to describe the charm that transpires
                 in the hotel rooms and public areas. Make a tour, wherever you
                 are.
@@ -125,13 +125,13 @@ function Gallery() {
         </div>
       </section>
 
-      <section className="common_padding pt-0 scrool_section" id="rooms_suits">
+      <section className="pt-0 scrool_section" id="rooms_suits">
         <div className="container">
           <div className="row">
             <div className="panel_sidebar">
               <Scrollspy
               items={["room1", "room2", "room3"]}
-              className={scroll ? "list_fixed" : "list-absolute"}
+              className={scroll ? "list-absolute" : "list_fixed"}
               currentClassName="is-current"
               offset={-300}
               id="sidebar"

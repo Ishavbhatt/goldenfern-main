@@ -145,7 +145,7 @@ function ClassicRoom() {
         </div>
       </section>
 
-      <section className="single-room-sec other_room_section common_padding">
+      <section className="single-room-sec other_room_section single-room">
         <div className="container">
           <div className="row">
             <div id="" className="executive-room-section">
@@ -235,7 +235,7 @@ function ClassicRoom() {
         </div>
       </section>
 
-      <section className="attraction_section other_room_section common_padding ">
+      <section className="attraction_section other_room_section other-room">
         <div className="container">
           <div className="row">
             <div className="col-md-12 col-sm-12 text-left">
