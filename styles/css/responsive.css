@@ -189,7 +189,7 @@
   .about_hotel_text .common_arrow {
     top: 3px;
   }
-  .about_hotel_image {
+  .about_hotel_image, .restaurant_image {
     max-width: 270px;
     height: 250px;
     background-size: cover;
@@ -198,7 +198,7 @@
     background-position: center;
     margin: 25px auto 0;
   }
-  .about_hotel_image::before {
+  .about_hotel_image::before, .restaurant_image::before {
     bottom: -18px;
     right: -18px;
   }
@@ -408,11 +408,13 @@
   .scrollspy-example {
     padding-bottom: 20px;
   }
-  .scrollspy-example .about_hotel_image::before {
+  .scrollspy-example .about_hotel_image::before, 
+  .scrollspy-example .restaurant_image::before {
     left: -10px;
     bottom: -10px;
   }
-  .scrollspy-example .spy_section:nth-child(2n + 2) .about_hotel_image::before {
+  .scrollspy-example .spy_section:nth-child(2n + 2) .about_hotel_image::before,
+  .scrollspy-example .spy_section:nth-child(2n + 2) .restaurant_image::before {
     right: -10px;
     bottom: -10px;
     left: auto;
@@ -532,7 +534,7 @@
   .banner_text h1 {
     font-size: 58px;
   }
-  .about_hotel_image {
+  .about_hotel_image, .restaurant_image {
     height: 380px;
   }
   .about_hotel_text h2 {
@@ -555,7 +557,7 @@
   .footer_bottom_column li {
     margin-right: 10px;
   }
-  .about_hotel_image::before {
+  .about_hotel_image::before, .restaurant_image::before {
     bottom: -10px;
     right: -10px;
     z-index: -1;

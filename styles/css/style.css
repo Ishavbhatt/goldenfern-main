@@ -1348,7 +1348,8 @@ background-image: url("/attraction-banner.jpeg");
   opacity: 1;
 }
 .attraction_slider .owl-theme .owl-nav,
-.activities_slider .owl-nav {
+.activities_slider .owl-nav,
+.restaurant-slider .owl-nav {
   display: flex;
   justify-content: space-between;
 }
@@ -1910,19 +1911,15 @@ div.wpcf7 .ajax-loader {
 .executive {
   background-image: url("/executive-room.jpg");
 }
-
 .classic {
   background-image: url("/classic-room.jpg");
 }
-
 .luxury {
   background-image: url("/luxury.jpg");
 }
-
 .deluxe {
   background-image: url("/deluxe-room.jpg");
 }
-
 .rooms_slider_image {
   background-image: url("/room-img.jpg");
 }
@@ -1964,7 +1961,27 @@ div.wpcf7 .ajax-loader {
   background-image: url("/cycling.jpg");
   /* width: 450px; */
 }
-
+.res-img-1 {
+  background-image: url("/new-images/dinning.jpg");
+}
+.res-img-2 {
+  background-image: url("/new-images/recipe.jpg");
+}
+.res-item-1 {
+  background-image: url("/new-images/restaurant-1.jpg");
+}
+.res-item-2 {
+  background-image: url("/new-images/restaurant-2.jpg");
+}
+.res-item-3 {
+  background-image: url("/new-images/restaurant-3.jpg");
+}
+.who-we-are {
+  background-image: url("/new-images/who-we-are.jpg");
+}
+.shimla-hill-station {
+  background-image: url("/new-images/shimla.jpg");
+}
 .white {
   color: white;
 }
@@ -2220,4 +2237,40 @@ div.wpcf7 .ajax-loader {
   cursor: pointer;
   margin-left: 1rem;
   align-self: center;
+}
+
+/* Restaurant Sectiion */
+.restaurant_image {
+  height: 500px;
+  max-width: 570px;
+  background-size: cover;
+  position: relative;
+}
+.restaurant_image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -30px;
+  border: 2px solid #e29554;
+  right: -30px;
+  z-index: -1;
+}
+.scrollspy-example .restaurant_image {
+  max-width: 670px;
+  height: 430px;
+  background-size: cover;
+  position: relative;
+}
+.scrollspy-example .restaurant_image::before {
+  left: -20px;
+  bottom: -20px;
+}
+.scrollspy-example .spy_section:last-child .restaurant-col {
+  padding-bottom: 50px;
+}
+.scrollspy-example .spy_section:nth-child(2n + 2) .restaurant_image::before {
+  right: -20px;
+  bottom: -20px;
+  left: auto;
 }

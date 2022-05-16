@@ -45,7 +45,7 @@ function Aboutus() {
                 </p>
               </div>
               <div className="col-md-5 col-sm-10 safety_section_image">
-                <div className="about_hotel_image executive"></div>
+                <div className="about_hotel_image who-we-are"></div>
               </div>
             </div>
           </div>
@@ -69,7 +69,7 @@ function Aboutus() {
           <div className="container">
             <div className="row justify-center">
               <div className="col-md-5 col-sm-10 safety_section_image">
-                <div className="about_hotel_image executive"></div>
+                <div className="about_hotel_image shimla-hill-station"></div>
               </div>
               <div className="col-md-5 col-sm-10 about_hotel_text about-text">
                 <h3 className="common_title">

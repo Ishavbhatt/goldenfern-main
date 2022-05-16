@@ -50,10 +50,7 @@ const Navbar = () => {
                             <Link href="/Healthsafety">health & safety</Link>
                           </li>
                           <li>
-                            <Link href="/Gallery">gallery</Link>
-                          </li>
-                          <li>
-                            <Link href="/Menu">menu</Link>
+                            <Link href="/Restaurant">restaurant</Link>
                           </li>
                           <li>
                             <Link href="/Contactus">contact us</Link>
