@@ -6,7 +6,7 @@ function Menu() {
   return (
     <>
       <Head>
-        <title>About Golden Fern Resort</title>
+        <title>Menu at Golden Fern Resort</title>
         <meta property="og:title" content="About Golden Fern Resort" />
         <meta
           property="og:description"
@@ -34,19 +34,21 @@ function Menu() {
             <div className="col-md-10">
               <div className="question">
                 <div>
-                  <h4 className="golden_color">Hello</h4>
+                  <h4 className="golden_color">Appetizer</h4>
                   <button
                     className="show-more-btn"
                     onClick={() => setShowInfo(!showInfo)}
                   >
                     {showInfo ? (
-                      <img src="/arrow-up.png" alt="" />
+                      <img src="/menu-up.svg" alt="" />
                     ) : (
-                      <img src="/arrow-down.png" alt="" />
+                      <img src="/menu-down.svg" alt="" />
                     )}
                   </button>
                 </div>
-                {showInfo && <p>Hy</p>}
+                {showInfo && <div>
+                  
+                  </div>}
               </div>
             </div>
           </div>

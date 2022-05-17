@@ -231,7 +231,7 @@ function Attractionactivities() {
                   <div className="attraction_column item_5">
                     <div className="attraction_column_title">
                       <h3>Cycling Tour</h3>
-                      <p>
+                      <p className="attraction-para">
                         These biking routes cater congenial bike ride experience
                         in the midst of arresting backdrop.
                       </p>

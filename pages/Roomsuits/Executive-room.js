@@ -168,7 +168,7 @@ function ExecutiveRoom() {
                 </div>
               </div>
             </div>
-            </div>
+          </div>
         </div>
       </section>
 
@@ -276,50 +276,49 @@ function ExecutiveRoom() {
                 {...otherroom}
               >
                 <div className="single-room-item">
-                   <div className="other-item">
-                  <div
-                    className="attraction_column"
-                    style={{ backgroundImage: "url('/deluxe-room.jpg')" }}
-                  >
-                    <a href="/Roomsuits/Deluxe-room">
-                      <div className="attraction_column_title">
-                        <h3>DELUXE ROOM</h3>
-                      </div>
-                    </a>
+                  <div className="other-item">
+                    <div
+                      className="attraction_column"
+                      style={{ backgroundImage: "url('/deluxe-room.jpg')" }}
+                    >
+                      <a href="/Roomsuits/Deluxe-room">
+                        <div className="attraction_column_title">
+                          <h3>DELUXE ROOM</h3>
+                        </div>
+                      </a>
+                    </div>
                   </div>
                 </div>
-                </div>
-               
-<div className="single-room-item">
-   <div className="other-item">
-                  <div
-                    className="attraction_column"
-                    style={{ backgroundImage: "url('/classic-room.jpg')" }}
-                  >
-                    <a href="/Roomsuits/Classic-room">
-                      <div className="attraction_column_title">
-                        <h3>CLASSIC ROOM</h3>
-                      </div>
-                    </a>
+
+                <div className="single-room-item">
+                  <div className="other-item">
+                    <div
+                      className="attraction_column"
+                      style={{ backgroundImage: "url('/classic-room.jpg')" }}
+                    >
+                      <a href="/Roomsuits/Classic-room">
+                        <div className="attraction_column_title">
+                          <h3>CLASSIC ROOM</h3>
+                        </div>
+                      </a>
+                    </div>
                   </div>
                 </div>
-</div>
-               
-<div className="single-room-item">
-  <div className="other-item">
-                  <div
-                    className="attraction_column"
-                    style={{ backgroundImage: "url('/luxury.jpg')" }}
-                  >
-                    <a href="/Roomsuits/Luxury-room">
-                      <div className="attraction_column_title">
-                        <h3>LUXURY SUITE</h3>
-                      </div>
-                    </a>
+
+                <div className="single-room-item">
+                  <div className="other-item">
+                    <div
+                      className="attraction_column"
+                      style={{ backgroundImage: "url('/luxury.jpg')" }}
+                    >
+                      <a href="/Roomsuits/Luxury-room">
+                        <div className="attraction_column_title">
+                          <h3>LUXURY SUITE</h3>
+                        </div>
+                      </a>
+                    </div>
                   </div>
                 </div>
-</div>
-                
               </OwlCarousel>
             </div>
           </div>

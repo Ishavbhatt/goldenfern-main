@@ -64,7 +64,7 @@ function Restaurant() {
 
       <section className="scrollspy-example common_padding w-100">
         <div className="spy_section">
-          <div className="restaurant-col">
+          <div className="restaurant_col">
             <div className="container">
               <div className="row">
               <div className="col-md-6 col-sm-12 safety_section_image">
@@ -83,14 +83,16 @@ function Restaurant() {
                     to meet the desired level of the satisfaction of the
                     esteemed guests at Golden Fern Resort Shimla.
                   </p>
+                  <a href="/Menu">
                   <button className="singlepage-bookbtn">view Menu</button>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div className="spy_section">
-          <div className="restaurant-col">
+          <div className="restaurant_col">
             <div className="container">
               <div className="row">
                 <div className="col-md-6 col-sm-12 safety_section_image">
@@ -130,19 +132,19 @@ function Restaurant() {
                 {...gallery}
               >
                 <div className="activity-item">
-                  <div className="attraction_column res-item-1">
+                  <div className="restaurant_column res-item-1">
                   
                   </div>
                 </div>
 
                 <div className="activity-item">
-                  <div className="attraction_column res-item-2">
+                  <div className="restaurant_column res-item-2">
                   
                   </div>
                 </div>
 
                 <div className="activity-item">
-                  <div className="attraction_column res-item-3">
+                  <div className="restaurant_column res-item-3">
                   </div>
                 </div>
               </OwlCarousel>

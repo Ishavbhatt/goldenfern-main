@@ -33,9 +33,6 @@ const Navbar = () => {
                       >
                         <ul id="menu-header-menu" className="nav navbar-nav">
                           <li>
-                            <Link href="/">home</Link>
-                          </li>
-                          <li>
                             <Link href="/Aboutus">about us</Link>
                           </li>
                           <li>
@@ -54,6 +51,9 @@ const Navbar = () => {
                           </li>
                           <li>
                             <Link href="/Contactus">contact us</Link>
+                          </li>
+                          <li>
+                            <Link href="/Wedding">wedding</Link>
                           </li>
                         </ul>
                       </div>
