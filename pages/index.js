@@ -109,6 +109,7 @@ export default function Home() {
   // Increment People
   const incPeople = () => {
     setPeople(people + 1);
+    console.log(weatherapiUrl)
   };
 
   // Decrement People
