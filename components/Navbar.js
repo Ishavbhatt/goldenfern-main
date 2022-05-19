@@ -157,6 +157,26 @@ const Navbar = () => {
                           </a>
                         </Link>
                       </li>
+                      <li className="mobile-view-lists">
+                        <Link href="/Wedding">
+                          <a
+                            onClick={handleIsActive}
+                            className="mobile-view-lists-clr"
+                          >
+                            Wedding
+                          </a>
+                        </Link>
+                      </li>
+                      <li className="mobile-view-lists">
+                        <Link href="/Restaurant">
+                          <a
+                            onClick={handleIsActive}
+                            className="mobile-view-lists-clr"
+                          >
+                            Restaurant
+                          </a>
+                        </Link>
+                      </li>
                       <li>
                         <Link href="/Gallery">
                           <a

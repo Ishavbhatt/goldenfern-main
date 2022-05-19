@@ -17,6 +17,7 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 function Wedding() {
   const wedding = {
     items: 1,
+    dots: false
   };
   const otherOccasion = {
     items: 2,
@@ -153,7 +154,7 @@ function Wedding() {
         <div className="wedding_gallery">
           <div className="container">
             <div className="row">
-              <OwlCarousel className="gallery-owl-theme" {...wedding}>
+              <OwlCarousel className="owl-theme" nav {...wedding}>
                 <div className="wedding_gal_item">
                   <div
                     className="singleroom_slider_col"

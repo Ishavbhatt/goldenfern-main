@@ -1,5 +1,4 @@
 import React from "react";
-import Slider from "react-slick";
 
 var $ = require("jquery");
 if (typeof window !== "undefined") {
@@ -21,6 +20,7 @@ function DeluxeRoom() {
 
   const deluxe = {
     items: 1,
+    dots: false
   };
 
   const otherroom = {
@@ -151,7 +151,7 @@ function DeluxeRoom() {
         <div className="container">
           <div className="row">
             <div id="" className="executive-room-section">
-              <OwlCarousel className="gallery-owl-theme" nav {...deluxe}>
+              <OwlCarousel className="gallery-owl-theme owl-theme" nav {...deluxe}>
                 <div className="executive-item">
                   <div
                     className="singleroom_slider_col"
@@ -244,7 +244,7 @@ function DeluxeRoom() {
               <h2 className="common_title color_white">Other Room Types</h2>
             </div>
             <div className="activities_slider">
-              <OwlCarousel  className="other-room-owl"
+              <OwlCarousel  className="owl-theme"
                 responsiveClass={true}
                 nav {...otherroom}>
                   <div className="single-room-item">

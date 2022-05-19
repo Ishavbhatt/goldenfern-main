@@ -334,6 +334,7 @@ section {
 }
 .logo img {
   max-width: 285px;
+  cursor: pointer;
   transform: scale3d(1, 1, 1);
   transition: all ease-in-out 0.5s;
 }
@@ -842,7 +843,7 @@ padding: 0;
 }
 .rooms_slider .owl-nav button {
   width: 80px;
-  background-image: url("/arrow-bg-left.png") !important;
+  background-image: url("/arrow-bg-left.svg") !important;
   height: 80px;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -852,7 +853,7 @@ padding: 0;
 }
 
 .rooms_slider .owl-nav button.owl-next {
-  background-image: url("/arrow-bg-right.png") !important;
+  background-image: url("/arrow-bg-right.svg") !important;
 }
 .rooms_slider .owl-nav button span {
   display: none;
@@ -1296,13 +1297,14 @@ background-image: url("/attraction-banner.jpeg");
 }
 .single-room-sec .owl-nav {
   display: flex;
-  justify-content: space-between;
-  width: 120px;
+  justify-content:center;
   position: absolute;
-  right: 0;
+  width: 1176px;
   background: transparent;
+  margin: 0px !important;
+  z-index: 9;
 }
-.gallery-sec .owl-nav button {
+/* .gallery-sec .owl-nav button {
   background-image: url("/left-arrows.png") !important;
   background-repeat: no-repeat !important;
   color: white;
@@ -1316,24 +1318,23 @@ background-image: url("/attraction-banner.jpeg");
 }
 .gallery-sec .owl-nav button.owl-next {
   background-image: url("/right-arrows.png") !important;
-}
+} */
 .single-room-sec .owl-nav button {
-  background-image: url("/white-arrow-left.png") !important;
+  background-image: url("/new-images/arrow-white-left.svg") !important;
   background-repeat: no-repeat !important;
-  color: white;
-  width: 50px;
-  height: 16px;
+  width: 40px;
+  height: 40px;
   background-size: 40px !important;
   background-position: center !important;
   background-color: transparent !important;
   outline: none !important;
-  margin: 20px 0;
 }
 .single-room-sec .owl-nav button.owl-next {
-  background-image: url("../images/white-arrow-right.png") !important;
+  background-image: url("/new-images/arrow-white-right.svg") !important;
 }
 .single-room-sec .owl-nav button span,
-.gallery-sec .owl-nav button span {
+.gallery-sec .owl-nav button span,
+.wedding_gallery .owl-nav button span {
   display: none;
 }
 
@@ -2271,7 +2272,26 @@ div.wpcf7 .ajax-loader {
   margin-left: 1rem;
   align-self: center;
 }
-
+.menu_title {
+  color: #e29554;
+  font-size: 30px;
+}
+.menu_list_items {
+  display: flex; 
+  justify-content: space-between;
+}
+.menu-ul{
+  padding: 0 !important;
+}
+.menu_item_left {
+  color: white;
+  font-size: 20px;
+}
+.menu_item_right {
+  color: white;
+  font-size: 20px;
+  font-family: "Freight-Medium" !important;
+}
 
 /* Restaurant Sectiion */
 .restaurant_image {
@@ -2315,7 +2335,7 @@ div.wpcf7 .ajax-loader {
   justify-content: center;
     position: absolute;
     width: 1176px;
-    bottom: 40px;
+    bottom: 20px;
     margin: 0px !important;
     z-index: 9;
 }

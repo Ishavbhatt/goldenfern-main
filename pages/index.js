@@ -161,7 +161,7 @@ export default function Home() {
                   onChange={handleCheckInDate}
                 />
                 <span className="bkg-arrow-down">
-                  <img src="./down-arrow.png" alt="" />
+                  <img src="/filter-down-arrow.svg" alt="" />
                 </span>
               </div>
               <div className="pick-dates vr-left-rigth">
@@ -174,7 +174,7 @@ export default function Home() {
                   onChange={handleCheckOutDate}
                 />
                 <span className="bkg-arrow-down">
-                  <img src="./down-arrow.png" alt="" />
+                  <img src="/filter-down-arrow.svg" alt="" />
                 </span>
               </div>
               <div className="pick-dates vr-left-rigth">
@@ -183,10 +183,10 @@ export default function Home() {
                   <p className="people">{people}</p>
                   <span>
                     <button className="bkg-arrow-btn" onClick={incPeople}>
-                      <img src="/arrow-up.png" alt="" />
+                      <img src="/filter-up-arrow.svg" alt="" />
                     </button>
                     <button className="bkg-arrow-btn" onClick={decPeople}>
-                      <img src="/arrow-down.png" alt="" />
+                      <img src="/filter-down-arrow.svg" alt="" />
                     </button>
                   </span>
                 </div>

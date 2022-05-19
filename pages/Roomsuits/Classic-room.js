@@ -17,6 +17,7 @@ import Head from "next/head";
 function ClassicRoom() {
   const classic = {
     items: 1,
+    dots: false,
   };
 
   const otherroom = {
@@ -149,7 +150,7 @@ function ClassicRoom() {
         <div className="container">
           <div className="row">
             <div id="" className="executive-room-section">
-              <OwlCarousel className="gallery-owl-theme" nav {...classic}>
+              <OwlCarousel className="gallery-owl-theme owl-theme" nav {...classic}>
                 <div className="executive-item">
                   <div
                     className="singleroom_slider_col"
@@ -244,7 +245,7 @@ function ClassicRoom() {
             <div className="activities_slider">
               
               <OwlCarousel
-                className="other-room-owl"
+                className="owl-theme"
                 responsiveClass={true}
                 nav
                 {...otherroom}

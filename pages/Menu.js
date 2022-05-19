@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import Head from "next/head";
+import menudata from "../styles/js/menudata";
+import Singleitem from "./Singleitem";
 
 function Menu() {
-  const [showInfo, setShowInfo] = useState(false);
+  const [items, setItems] = useState(menudata);
+
   return (
     <>
       <Head>
@@ -32,24 +35,11 @@ function Menu() {
         <div className="container">
           <div className="row justify-center">
             <div className="col-md-10">
-              <div className="question">
-                <div>
-                  <h4 className="golden_color">Appetizer</h4>
-                  <button
-                    className="show-more-btn"
-                    onClick={() => setShowInfo(!showInfo)}
-                  >
-                    {showInfo ? (
-                      <img src="/menu-up.svg" alt="" />
-                    ) : (
-                      <img src="/menu-down.svg" alt="" />
-                    )}
-                  </button>
-                </div>
-                {showInfo && <div>
-                  
-                  </div>}
-              </div>
+              <section className="info">
+                {items.map((item) => {
+                  return <Singleitem key={item.id} {...item}></Singleitem>;
+                })}
+              </section>
             </div>
           </div>
         </div>

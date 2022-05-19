@@ -17,6 +17,7 @@ import Head from "next/head";
 function LuxuryRoom() {
   const luxury = {
     items: 1,
+    dots: false
   };
 
   const otherroom = {
