@@ -310,7 +310,7 @@
   .attraction_section .owl-nav button,
   .single_room_banner_slider .owl-nav button {
     width: 38px;
-    height: 22px;
+    /* height: 22px; */
     background-size: 30px !important;
   }
   .attraction_column {

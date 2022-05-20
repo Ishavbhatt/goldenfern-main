@@ -376,7 +376,7 @@ body .header .navbar-collapse {
   justify-content: flex-end;
 }
 .header .navbar ul li {
-  padding-left: 33px;
+  padding-left: 10px;
 }
 .header .navbar ul li a {
   padding: 0px !important;
@@ -1299,7 +1299,7 @@ background-image: url("/attraction-banner.jpeg");
   display: flex;
   justify-content:center;
   position: absolute;
-  width: 1176px;
+  width: 100%;
   background: transparent;
   margin: 0px !important;
   z-index: 9;
@@ -2334,7 +2334,7 @@ div.wpcf7 .ajax-loader {
   display: flex !important;
   justify-content: center;
     position: absolute;
-    width: 1176px;
+    width: 100%;
     bottom: 20px;
     margin: 0px !important;
     z-index: 9;

@@ -27,10 +27,12 @@ function Wedding() {
       0: {
         items: 1,
         nav: true,
+        margin: 0,
       },
       600: {
         items: 1,
         nav: true,
+        margin: 0,
       },
       1000: {
         items: 2,
@@ -92,7 +94,7 @@ function Wedding() {
               <div className="col-md-6 col-sm-12">
                 <div className="wedding_video">
                   <iframe
-                    width="560"
+                    width="100%"
                     height="315"
                     src="https://www.youtube.com/embed/vjXqYP67l5E?controls=0"
                     title="YouTube video player"
@@ -109,38 +111,38 @@ function Wedding() {
           <div className="container">
             <div className="row">
               <h3 className="golden_color text-center">Hign Lights</h3>
-              <div className="col-lg-12  col-md-12 col-sm-12 row-room common_padding">
-                <div className="col-md-2 col-sm-6 wedding_highlights_col text-center">
+              <div className="row common_padding">
+                <div className="col-sm-8 col-md-2 wedding_highlights_col text-center">
                   <span>
                     <img src="/new-images/people.svg" alt="Icon" />
                   </span>
                   <p>Capacity 200+</p>
                 </div>
-                <div className="col-md-2 col-sm-6 wedding_highlights_col text-center">
+                <div className="col-sm-8 col-md-2 wedding_highlights_col text-center">
                   <span>
                     <img src="/new-images/decoration.svg" alt="Icon" />
                   </span>
                   <p>Decoration</p>
                 </div>
-                <div className="col-md-2 col-sm-6 wedding_highlights_col text-center">
+                <div className="col-sm-8 col-md-2 wedding_highlights_col text-center">
                   <span>
                     <img src="/new-images/dj.svg" alt="Icon" />
                   </span>
                   <p>Dj Available</p>
                 </div>
-                <div className="col-md-2 col-sm-6 wedding_highlights_col text-center">
+                <div className="col-sm-8 col-md-2 wedding_highlights_col text-center">
                   <span>
                     <img src="/new-images/mandap.svg" alt="Icon" />
                   </span>
                   <p>Mandap Setup</p>
                 </div>
-                <div className="col-md-2 col-sm-6 wedding_highlights_col text-center">
+                <div className=" col-sm-8 col-md-2 wedding_highlights_col text-center">
                   <span>
                     <img src="/new-images/firecracker.svg" alt="Icon" />
                   </span>
                   <p>Fire Cracker Allowed</p>
                 </div>
-                <div className="col-md-2 col-sm-6 wedding_highlights_col text-center">
+                <div className=" col-sm-8 col-md-2 wedding_highlights_col text-center">
                   <span>
                     <img src="/new-images/hawan.svg" alt="Icon" />
                   </span>
@@ -240,7 +242,9 @@ function Wedding() {
         </div>
 
         <div className="scrollspy-example common_padding w-100">
-          <h3 className="text-center color_white">The Specified Services</h3>
+          <div className="container">
+            <div className="row">
+            <h3 className="text-center color_white">The Specified Services</h3>
           <div className="spy_section">
             <div className="wedding_col">
               <div className="container">
@@ -307,6 +311,9 @@ function Wedding() {
               </div>
             </div>
           </div>
+            </div>
+          </div>
+          
         </div>
 
         <div className="attraction_section other_room_section other-room">
