@@ -90,7 +90,7 @@ function Attractionactivities() {
         </div>
       </section>
 
-      <section className="attraction_section common_padding pt-0">
+      <section className="attraction_section common_padding">
         <div className="container">
           <div className="row">
             <div className="col-md-12 col-sm-12 text-left">
