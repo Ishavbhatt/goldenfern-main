@@ -189,6 +189,12 @@
   .about_hotel_text .common_arrow {
     top: 3px;
   }
+  .menu_title {
+    font-size: 24px;
+  }
+  .menu_item_left, .menu_item_right {
+    font-size: 16px;
+  }
   .about_hotel_image, .restaurant_image, .wedding_services_image {
     max-width: 270px;
     height: 250px;
@@ -322,7 +328,11 @@
     margin-bottom: 20px;
   }
   .attraction_section .owl-nav {
+    justify-content: center;
+    display: flex;
     position: absolute;
+    width: 100%;
+    align-items: center;
     bottom: 0;
     top: 100%;
   }
@@ -444,13 +454,19 @@
   .facilities_section .common_title {
     font-size: 30px;
   }
-  .facilities_section .col-sm-6 {
+  .facilities_section .col-sm-6 , .wedding_highlights .col-sm-6{
+    width: 50%;
+  }
+  .wedding_highlights_col {
     width: 50%;
   }
   .facilities_column span {
     display: flex;
     width: 90px;
     height: 90px;
+  }
+  .wedding_highlights_col {
+    margin: 10px 0;
   }
   .facilities_column span img {
     max-width: 32px;

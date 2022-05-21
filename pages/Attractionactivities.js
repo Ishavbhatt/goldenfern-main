@@ -94,7 +94,7 @@ function Attractionactivities() {
         <div className="container">
           <div className="row">
             <div className="col-md-12 col-sm-12 text-left">
-              <h2 className="common_title color_white">Attraction</h2>
+              <h2 className="golden_title">Attraction</h2>
             </div>
             <div className="owl-carousel owl-theme owl-loaded attraction_slider">
               <OwlCarousel
@@ -178,11 +178,11 @@ function Attractionactivities() {
         </div>
       </section>
 
-      <section className="attraction_section common_padding pt-0">
+      <section className="attraction_section common_padding">
         <div className="container">
           <div className="row">
             <div className="col-md-12 col-sm-12 text-left">
-              <h2 className="common_title color_white">Activities</h2>
+              <h2 className="golden_title">Activities</h2>
             </div>
             <div className="owl-carousel owl-theme owl-loaded activities_slider">
               <OwlCarousel

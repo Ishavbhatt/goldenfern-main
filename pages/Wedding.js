@@ -99,7 +99,7 @@ function Wedding() {
                     src="https://www.youtube.com/embed/vjXqYP67l5E?controls=0"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
+                    allowFullScreen
                   ></iframe>
                 </div>
               </div>
@@ -107,55 +107,58 @@ function Wedding() {
           </div>
         </div>
 
-        <div className="common_padding wedding_highlights">
-          <div className="container">
+        <div className="common_padding">
+        <div className="container">
             <div className="row">
-              <h3 className="golden_color text-center">Hign Lights</h3>
-              <div className="row common_padding">
-                <div className="col-sm-8 col-md-2 wedding_highlights_col text-center">
+              <h3 className="golden_color mb-3 text-center">Hign Lights</h3>
+            </div>
+            </div>
+          <div className="container">
+            <div className="row wedding_highlights">
+                <div className="col-sm-6 col-md-2 wedding_highlights_col text-center">
                   <span>
                     <img src="/new-images/people.svg" alt="Icon" />
                   </span>
                   <p>Capacity 200+</p>
                 </div>
-                <div className="col-sm-8 col-md-2 wedding_highlights_col text-center">
+                <div className="col-sm-6 col-md-2 wedding_highlights_col text-center">
                   <span>
                     <img src="/new-images/decoration.svg" alt="Icon" />
                   </span>
                   <p>Decoration</p>
                 </div>
-                <div className="col-sm-8 col-md-2 wedding_highlights_col text-center">
+                <div className="col-sm-6 col-md-2 wedding_highlights_col text-center">
                   <span>
                     <img src="/new-images/dj.svg" alt="Icon" />
                   </span>
                   <p>Dj Available</p>
                 </div>
-                <div className="col-sm-8 col-md-2 wedding_highlights_col text-center">
+                <div className="col-sm-6 col-md-2 wedding_highlights_col text-center">
                   <span>
                     <img src="/new-images/mandap.svg" alt="Icon" />
                   </span>
                   <p>Mandap Setup</p>
                 </div>
-                <div className=" col-sm-8 col-md-2 wedding_highlights_col text-center">
+                <div className=" col-sm-6 col-md-2 wedding_highlights_col text-center">
                   <span>
                     <img src="/new-images/firecracker.svg" alt="Icon" />
                   </span>
                   <p>Fire Cracker Allowed</p>
                 </div>
-                <div className=" col-sm-8 col-md-2 wedding_highlights_col text-center">
+                <div className=" col-sm-6 col-md-2 wedding_highlights_col text-center">
                   <span>
                     <img src="/new-images/hawan.svg" alt="Icon" />
                   </span>
                   <p>Hawan Allowed</p>
                 </div>
-              </div>
             </div>
           </div>
         </div>
 
-        <div className="wedding_gallery">
+        <section className="wedding_gallery">
           <div className="container">
             <div className="row">
+            <div className="wedding-gallery-sec">
               <OwlCarousel className="owl-theme" nav {...wedding}>
                 <div className="wedding_gal_item">
                   <div
@@ -237,9 +240,10 @@ function Wedding() {
                   ></div>
                 </div>
               </OwlCarousel>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
 
         <div className="scrollspy-example common_padding w-100">
           <div className="container">
@@ -313,10 +317,9 @@ function Wedding() {
           </div>
             </div>
           </div>
-          
         </div>
 
-        <div className="attraction_section other_room_section other-room">
+        <div className="attraction_section other_room_section">
         <div className="container">
           <div className="row">
             <div className="col-md-12 col-sm-12 text-left">

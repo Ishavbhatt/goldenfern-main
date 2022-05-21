@@ -44,16 +44,16 @@ const Navbar = () => {
                             </Link>
                           </li>
                           <li>
-                            <Link href="/Healthsafety">health & safety</Link>
+                            <Link href="/Wedding">wedding</Link>
                           </li>
                           <li>
                             <Link href="/Restaurant">restaurant</Link>
                           </li>
                           <li>
-                            <Link href="/Contactus">contact us</Link>
+                            <Link href="/Healthsafety">health & safety</Link>
                           </li>
                           <li>
-                            <Link href="/Wedding">wedding</Link>
+                            <Link href="/Contactus">contact us</Link>
                           </li>
                         </ul>
                       </div>
@@ -92,7 +92,7 @@ const Navbar = () => {
           <div className="mobile-header container">
             <div className="mobile-header-div">
               <div className=" col-lg-3 col-md-3 col-sm-10 logo">
-                <Link className="navbar-brand" href="/#">
+                <Link className="navbar-brand" href="/">
                   <img src="/logo.png" alt="Logo" className="logo img-fluid" />
                 </Link>
               </div>
@@ -158,16 +158,6 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li className="mobile-view-lists">
-                        <Link href="/Wedding">
-                          <a
-                            onClick={handleIsActive}
-                            className="mobile-view-lists-clr"
-                          >
-                            Wedding
-                          </a>
-                        </Link>
-                      </li>
-                      <li className="mobile-view-lists">
                         <Link href="/Restaurant">
                           <a
                             onClick={handleIsActive}
@@ -177,16 +167,17 @@ const Navbar = () => {
                           </a>
                         </Link>
                       </li>
-                      <li>
-                        <Link href="/Gallery">
+                      <li className="mobile-view-lists">
+                        <Link href="/Wedding">
                           <a
                             onClick={handleIsActive}
                             className="mobile-view-lists-clr"
                           >
-                            Gallery
+                            Wedding
                           </a>
                         </Link>
                       </li>
+                      
                       <li className="mobile-view-lists">
                         <Link href="/Contactus">
                           <a
