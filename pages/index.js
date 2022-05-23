@@ -31,7 +31,7 @@ let curruntDate = new Date().toLocaleDateString("en-us", {
 
 import Head from "next/head";
 
-export default function Home() {
+ const Home = ({token, ...props}) => {
   const [people, setPeople] = useState(1);
   const [checkInDate, setCheckInDate] = useState(null);
   const [checkOutDate, setCheckOutDate] = useState(null);
@@ -48,6 +48,7 @@ export default function Home() {
   const rooms = {
     items: 1,
   };
+  
   const testmonials = {
     center: true,
     items: 3,
@@ -73,6 +74,7 @@ export default function Home() {
       },
     },
   };
+
   const blogs = {
     center: true,
     margin: 20,
@@ -562,3 +564,4 @@ export default function Home() {
     </>
   );
 }
+export default Home;
