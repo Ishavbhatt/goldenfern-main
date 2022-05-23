@@ -17,7 +17,7 @@ const Instafeeds = ({token, ...props}) => {
         async function fetchInstagramPost () {
           try{
             axios
-                .get(`https://graph.instagram.com/me/media?fields=id,media_type,media_url,caption&limit=${props.limit}&access_token=${'IGQVJVRzNBY3JhMVpJOThLQkYzcHMyMG05UDRWbGpxRTJpUVZANOFg0dElnMERCYzdLUk9WTEt1c0pTbDlqRE9RLTlhRk1qWDNJcVJHeHo2R3FRbEFaaTNOaVNDRVdVcnZAvN1djWWVn'}`)
+                .get(`https://graph.instagram.com/me/media?fields=id,media_type,media_url,caption&limit=${props.limit}&access_token=${tokenProp.current}`)
                 .then((resp) => {
                     setFeedsData(resp.data.data)
                 })
