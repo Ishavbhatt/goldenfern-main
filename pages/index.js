@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
-import axios from 'axios'
+import React, { useState, useEffect } from "react";
 import DatePicker from "react-datepicker";
-import Feed from './Feed';
+import Instafeeds from "./Instafeeds";
 
 var $ = require("jquery");
 if (typeof window !== "undefined") {
@@ -35,9 +34,6 @@ import Head from "next/head";
   const [people, setPeople] = useState(1);
   const [checkInDate, setCheckInDate] = useState(null);
   const [checkOutDate, setCheckOutDate] = useState(null);
-  const [feeds, setFeedsData] = useState([])
-  const tokenProp = useRef(token);
-  tokenProp.current = token;
   const [data, setData] = useState(null);
   const lat = 31.1048;
   const long = 77.1734;
@@ -48,7 +44,7 @@ import Head from "next/head";
   const rooms = {
     items: 1,
   };
-  
+
   const testmonials = {
     center: true,
     items: 3,
@@ -135,30 +131,7 @@ import Head from "next/head";
       });
   }, []);
 
-  useEffect(() => {
-    const abortController = new AbortController();
-
-    async function fetchInstagramPost () {
-      try{
-        axios
-            .get(`https://graph.instagram.com/me/media?fields=id,media_type,media_url,caption&limit=${props.limit}&access_token=${props.token}`)
-            .then((resp) => {
-                setFeedsData(resp.data.data)
-            })
-      } catch (err) {
-          console.log('error', err)
-      }
-    }
-    
-    // manually call the fecth function 
-    fetchInstagramPost();
-
-    return () => {
-        // cancel pending fetch request on component unmount
-        abortController.abort(); 
-    };
-}, [props.limit])
-
+  
   return (
     <>
       <Head>
@@ -553,11 +526,11 @@ import Head from "next/head";
       <section className="posts_section common_padding">
         <div className="container">
           <div className="row">
-          <div token={process.env.INSTA_TOKEN} limit={12}>
-          {feeds.map((feed) => (
-                <Feed key={feed.id} feed={feed} />
-            ))}
-          </div>
+          <header className="App-header" style={{textAlign:'center'}}>
+        <h1>Instagram Feed with Instagram API</h1>
+      </header>
+
+      <Instafeeds token={process.env.INSTA_TOKEN} limit={12}/>
           </div>
         </div>
       </section>
