@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import axios from 'axios'
 import DatePicker from "react-datepicker";
+import Feed from './Feed';
 
 var $ = require("jquery");
 if (typeof window !== "undefined") {
@@ -33,6 +35,9 @@ export default function Home() {
   const [people, setPeople] = useState(1);
   const [checkInDate, setCheckInDate] = useState(null);
   const [checkOutDate, setCheckOutDate] = useState(null);
+  const [feeds, setFeedsData] = useState([])
+  const tokenProp = useRef(token);
+  tokenProp.current = token;
   const [data, setData] = useState(null);
   const lat = 31.1048;
   const long = 77.1734;
@@ -127,6 +132,30 @@ export default function Home() {
         setData(data);
       });
   }, []);
+
+  useEffect(() => {
+    const abortController = new AbortController();
+
+    async function fetchInstagramPost () {
+      try{
+        axios
+            .get(`https://graph.instagram.com/me/media?fields=id,media_type,media_url,caption&limit=${props.limit}&access_token=${props.token}`)
+            .then((resp) => {
+                setFeedsData(resp.data.data)
+            })
+      } catch (err) {
+          console.log('error', err)
+      }
+    }
+    
+    // manually call the fecth function 
+    fetchInstagramPost();
+
+    return () => {
+        // cancel pending fetch request on component unmount
+        abortController.abort(); 
+    };
+}, [props.limit])
 
   return (
     <>
@@ -515,6 +544,18 @@ export default function Home() {
                 VIEW ALL POSTS
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="posts_section common_padding">
+        <div className="container">
+          <div className="row">
+          <div token={process.env.INSTA_TOKEN} limit={12}>
+          {feeds.map((feed) => (
+                <Feed key={feed.id} feed={feed} />
+            ))}
+          </div>
           </div>
         </div>
       </section>

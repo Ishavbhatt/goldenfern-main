@@ -1497,7 +1497,7 @@ background-image: url("/attraction-banner.jpeg");
   border: 1px solid #c1c1c1;
   border-top: none;
   padding: 16px;
-  line-height: 1;
+  /* line-height: 1; */
   font-size: 16px;
   color: #9d9d9d;
   padding-left: 45px;
