@@ -1151,18 +1151,21 @@ padding: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
 }
 .rooms_page_banner {
-  background-image: url("/room-suit-banner.jpeg");
+  background-image: url("/new-images/room-suit-banner.jpeg");
 }
 .about_page_banner {
-  background-image: url("/about-banner.jpeg");
+  background-image: url("/new-images/about-banner.jpeg");
 }
 .health_page_banner {
-  background-image: url("/health-banner.jpeg");
+  background-image: url("/new-images/health-banner.jpeg");
 }
 .attraction_page_banner {
-background-image: url("/attraction-banner.jpeg");
+background-image: url("/new-images/attraction-banner.jpeg");
 }
 .gallery_page_banner {
   background-image: url("/gallery-banner.jpeg");
@@ -1171,10 +1174,13 @@ background-image: url("/attraction-banner.jpeg");
   background-image: url("/contact-banner.jpeg");
 }
 .restaurant_page_banner {
-  background-image: url("/new-images/restaurant-banner.jpg");
+  background-image: url("/new-images/restaurant-banner.jpeg");
 }
 .wedding_page_banner {
   background-image: url("/new-images/wedding-banner.jpg");
+}
+.privacy_page_banner {
+  background-image: url("/new-images/privacy-banner.jpeg");
 }
 .common_page_header_title h2 {
   color: #fff;
@@ -1196,7 +1202,6 @@ background-image: url("/attraction-banner.jpeg");
 }
 .pages-info {
   /* width: auto; */
-  padding: 60px 0;
 }
 .attraction_column, .restaurant_column {
   height: 460px;
@@ -1520,6 +1525,9 @@ background-image: url("/attraction-banner.jpeg");
   font-size: 28px;
   margin-bottom: 25px !important;
 }
+.safety_section_text ul, .privacy_column ul  {
+  padding: 0;
+}
 .safety_section_text ul li {
   font-size: 16px;
   color: #fff;
@@ -1819,6 +1827,7 @@ background-image: url("/attraction-banner.jpeg");
   margin-top: 30px;
   color: #fff;
 }
+
 .privacy_column h3 {
   color: #e29554;
   font-size: 25px;
@@ -1973,15 +1982,26 @@ div.wpcf7 .ajax-loader {
   background-image: url("/banner.jpg");
 }
 
-.item_1 {
+.attraction_item_1 {
+  background-image: url("/Attractions/victoria.jpg");
+}
+
+.attraction_item_2 {
+  background-image: url("/Attractions/jakhu-temple.jpg");
+}
+
+.attraction_item_3 {
+  background-image: url("/Attractions/state-meseum.jpg");
+}
+.attraction_item_4 {
+  background-image: url("/Attractions/nature-park.jpg");
+}
+
+.attraction_item_5 {
   background-image: url("/ridge.jpg");
 }
 
-.item_2 {
-  background-image: url("/jakhu.jpg");
-}
-
-.item_3 {
+.attraction_item_6 {
   background-image: url("/fagu.jpg");
 }
 .item_4 {
@@ -2344,4 +2364,11 @@ div.wpcf7 .ajax-loader {
     bottom: 20px;
     margin: 0px !important;
     z-index: 9;
+}
+/* Insta Gallery */
+.insta-gallery img {
+  width: 400px;
+  height: auto;
+  display: block;
+  transition: all 100ms ease-out;
 }

@@ -13,17 +13,20 @@ function Disclaimer() {
         />
       </Head>
 
-      <section className="common_page_header">
+      <section className="common_page_header top_banner privacy_page_banner">
         <div className="container">
-          <div className="row"></div>
+          <div className="row">
+            <div className="col-lg-10 col-md-10 col-sm-12 common_page_header_title pages-info">
+              <h1 className="common_title white">Copyright and Licenses:</h1>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section className="attraction_section common_padding pt-0">
+      <section className="common_padding">
         <div className="container">
           <div className="row">
-            <div className="col-md-12 privacy_column">
-              <h3 className="">Copyright and Licenses:</h3>
+            <div className="col-md-12 privacy_column ">
               <p>
                 The contents of the Website are protected by international
                 copyright and trademark laws. goldenfernresort.com its
@@ -84,9 +87,9 @@ function Disclaimer() {
               <h3 className="padding-t-20">Third Party Rights : </h3>
               <p>
                 The provisions of paragraphs 2 (Use of the Service), and 3
-                (Indemnification) are for the benefit of
+                (Indemnification) are for the benefit of 
                 <a href="https://goldenfernresort.com/">
-                  goldenfernresort.com
+                   goldenfernresort.com
                 </a>{" "}
                 and its officers, directors, employees, agents, licensors,
                 suppliers, and any third party information providers to the

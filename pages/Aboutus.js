@@ -31,8 +31,11 @@ function Aboutus() {
       <section className="scrollspy-example common_padding w-100">
         <div className="about-section-col spy_section">
           <div className="container">
-            <div className="row justify-center">
-              <div className="col-md-5 col-sm-10 about_hotel_text about-text">
+            <div className="row">
+            <div className="col-md-6 col-sm-12 wedding_services_right">
+                <div className="wedding_services_image who-we-are"></div>
+              </div>
+              <div className="col-md-6 col-sm-12 about_hotel_text">
                 <h3 className="common_title">
                   <span className="golden_color">Who We</span> Are
                 </h3>
@@ -44,16 +47,14 @@ function Aboutus() {
                   guests at Golden Fern Resort Shimla.
                 </p>
               </div>
-              <div className="col-md-5 col-sm-10 safety_section_image">
-                <div className="about_hotel_image who-we-are"></div>
-              </div>
+             
             </div>
           </div>
         </div>
         <div className="about-section-col">
           <div className="container">
-            <div className="row justify-center">
-              <div className="col-md-10">
+            <div className="row">
+              <div className="col-md-12">
                 <p className="about-center-text">
                   Golden Fern Resort Shimla ideally located on Shimla Kalka
                   Highway at Kachi Ghati, just 4 km away from the city Centre
@@ -68,10 +69,7 @@ function Aboutus() {
         <div className="about-section-col spy_section">
           <div className="container">
             <div className="row justify-center">
-              <div className="col-md-5 col-sm-10 safety_section_image">
-                <div className="about_hotel_image shimla-hill-station"></div>
-              </div>
-              <div className="col-md-5 col-sm-10 about_hotel_text about-text">
+            <div className="col-md-6 col-sm-12 about_hotel_text">
                 <h3 className="common_title">
                   <span className="golden_color">About Shimla</span> Hill Station
                 </h3>
@@ -90,6 +88,10 @@ function Aboutus() {
                   guests at Golden Fern Resort Shimla.
                 </p>
               </div>
+              <div className="col-md-6 col-sm-12 wedding_services_right">
+                <div className="about_hotel_image shimla-hill-station"></div>
+              </div>
+              
             </div>
           </div>
         </div>

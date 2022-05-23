@@ -103,10 +103,62 @@ function Attractionactivities() {
                 nav
                 {...attraction}
               >
-                <div className="activity-item">
-                  <div className="attraction_column item_1">
+                 <div className="activity-item">
+                  <div className="attraction_column attraction_item_1">
                     <div className="attraction_column_title">
-                      <h3>The Ridge</h3>
+                      <h3>Victoria</h3>
+                      <p>
+                        Fagu is Cuddling in the Majestic Himalayan Range. This
+                        place looks magical as it is always enveloped in snow &
+                        fog. The clouds are so close to the surface that at
+                        times it feels as if you are walking on clouds.{" "}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="activity-item">
+                  <div className="attraction_column attraction_item_2">
+                    <div className="attraction_column_title">
+                      <h3>Jakhu Temple</h3>
+                      <p>
+                        Jakhu Temple is Dedicated to Lord Hanuman, it houses a
+                        108-foot-tall idol of the deity. It offers sweeping
+                        views of the Shivalik ranges. The temple is situated at
+                        Jakhu Hills about 2.5 km away from the Ridge in Shimla.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="activity-item">
+                  <div className="attraction_column attraction_item_3">
+                    <div className="attraction_column_title">
+                      <h3>State Meseum</h3>
+                      <p>
+                        Fagu is Cuddling in the Majestic Himalayan Range. This
+                        place looks magical as it is always enveloped in snow &
+                        fog. The clouds are so close to the surface that at
+                        times it feels as if you are walking on clouds.{" "}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="activity-item">
+                  <div className="attraction_column attraction_item_4">
+                    <div className="attraction_column_title">
+                      <h3>Nature Park</h3>
+                      <p>
+                        Jakhu Temple is Dedicated to Lord Hanuman, it houses a
+                        108-foot-tall idol of the deity. It offers sweeping
+                        views of the Shivalik ranges. The temple is situated at
+                        Jakhu Hills about 2.5 km away from the Ridge in Shimla.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="activity-item">
+                  <div className="attraction_column attraction_item_5">
+                    <div className="attraction_column_title">
+                      <h3>Fagu</h3>
                       <p>
                         The Ridge road is a large open space, located in the
                         center of Shimla. The Ridge is the hub of all cultural
@@ -116,58 +168,15 @@ function Attractionactivities() {
                     </div>
                   </div>
                 </div>
-
                 <div className="activity-item">
-                  <div className="attraction_column item_2">
+                  <div className="attraction_column attraction_item_6">
                     <div className="attraction_column_title">
-                      <h3>Jakhu Temple</h3>
+                      <h3>The Ridge</h3>
                       <p>
-                        Jakhu Temple is Dedicated to Lord Hanuman, it houses a
-                        108-foot-tall idol of the deity. It offers sweeping
-                        views of the Shivalik ranges. The temple is situated at
-                        Jakhu Hills about 2.5 km away from the Ridge in Shimla.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="activity-item">
-                  <div className="attraction_column item_3">
-                    <div className="attraction_column_title">
-                      <h3>Fagu</h3>
-                      <p>
-                        Fagu is Cuddling in the Majestic Himalayan Range. This
-                        place looks magical as it is always enveloped in snow &
-                        fog. The clouds are so close to the surface that at
-                        times it feels as if you are walking on clouds.{" "}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="activity-item">
-                  <div className="attraction_column item_2">
-                    <div className="attraction_column_title">
-                      <h3>Jakhu Temple</h3>
-                      <p>
-                        Jakhu Temple is Dedicated to Lord Hanuman, it houses a
-                        108-foot-tall idol of the deity. It offers sweeping
-                        views of the Shivalik ranges. The temple is situated at
-                        Jakhu Hills about 2.5 km away from the Ridge in Shimla.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="activity-item">
-                  <div className="attraction_column item_3">
-                    <div className="attraction_column_title">
-                      <h3>Fagu</h3>
-                      <p>
-                        Fagu is Cuddling in the Majestic Himalayan Range. This
-                        place looks magical as it is always enveloped in snow &
-                        fog. The clouds are so close to the surface that at
-                        times it feels as if you are walking on clouds.{" "}
+                        The Ridge road is a large open space, located in the
+                        center of Shimla. The Ridge is the hub of all cultural
+                        activities of Shimla. It runs east to west alongside
+                        Mall Road. It is only 18 minutes distance from us.
                       </p>
                     </div>
                   </div>

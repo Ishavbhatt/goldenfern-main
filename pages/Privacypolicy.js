@@ -16,16 +16,25 @@ function Privacypolicy() {
         />
       </Head>
 
+      <section className="common_page_header top_banner privacy_page_banner">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-10 col-md-10 col-sm-12 common_page_header_title pages-info">
+              <h1 className="common_title white">Privacy Policy</h1>
+              <p className="about-subtitle">
+              This Privacy policy clarifies our personal data practices and
+                the decisions you can make about how your information is
+                utilized.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="common_page_header">
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12 common_page_header_title">
-              <h2 className="common_title padding-t-20">Privacy Policy</h2>
-              <p>
-                This Privacy policy clarifies our personal data practices and
-                the decisions you can make about how your information is
-                utilized.
-              </p>
               <p>
                 Golden Fern Resort respects your privacy and is committed to
                 protecting the privacy, confidentiality, and security of the
@@ -94,7 +103,7 @@ function Privacypolicy() {
               </ul>
             </div>
 
-            <div className="col-md-12 privacy_column">
+            <div className="col-md-12 privacy_column padding-t-20">
               <p>
                 We do not distribute your personal information to any third
                 party.
@@ -106,7 +115,7 @@ function Privacypolicy() {
               </p>
             </div>
 
-            <div className="col-md-12 privacy_column">
+            <div className="col-md-12 privacy_column ">
               <p>
                 We reserve the right to change this policy in the future, but
                 not without giving notice and providing individuals with the
@@ -116,7 +125,7 @@ function Privacypolicy() {
 
             <div className="col-md-12 privacy_column">
               <p>
-                ” We do not track or monitor any one individual” activity on the
+                We do not track or monitor any one individual activity on the
                 website
               </p>
             </div>

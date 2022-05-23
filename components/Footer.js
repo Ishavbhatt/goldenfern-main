@@ -70,18 +70,21 @@ function Footer() {
               <div className="col-lg-8 col-md-9 col-sm-12 footer_bottom_column">
                 <ul>
                   <li>
-                    <a href="/Privacypolicy">Privacy Policy </a>
+                    <Link href="/Privacypolicy">Privacy Policy </Link>
                   </li>
                   <li>
-                    <a href="/Termsandconditions">Terms and Conditions </a>
+                    <Link href="/Termsandconditions">Terms and Conditions </Link>
                   </li>
                   <li>
-                    <a href="/Cancellationpolicy">
+                    <Link href="/Cancellationpolicy">
                       Cancellation & Refund Policy
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/Disclaimer">Disclaimer</a>
+                    <Link href="/Disclaimer">Disclaimer</Link>
+                  </li>
+                  <li>
+                    <Link href="/Healthsafety">Health & Safety</Link>
                   </li>
                 </ul>
               </div>

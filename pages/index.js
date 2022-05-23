@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import DatePicker from "react-datepicker";
-import Instafeeds from "./Instafeeds";
+import axios from "axios";
+import Link from "next/link";
 
 var $ = require("jquery");
 if (typeof window !== "undefined") {
@@ -35,6 +36,7 @@ import Head from "next/head";
   const [checkInDate, setCheckInDate] = useState(null);
   const [checkOutDate, setCheckOutDate] = useState(null);
   const [data, setData] = useState(null);
+  const [feeds, setFeeds] = useState([]);
   const lat = 31.1048;
   const long = 77.1734;
   const weatherapiKey = process.env.API_KEY;
@@ -98,6 +100,24 @@ import Head from "next/head";
     },
   };
 
+  const instaGallery = {
+    stagePadding: 50,
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+  }; 
+
   // define handler change function on check-in date
   const handleCheckInDate = (date) => {
     setCheckInDate(date);
@@ -131,7 +151,21 @@ import Head from "next/head";
       });
   }, []);
 
-  
+    
+  useEffect(() => {
+      fetchFeeds()
+    }, [])
+
+  const fetchFeeds = () => {
+      axios.get("https://graph.instagram.com/me/media?fields=id,media_type,media_url,caption&limit=12&access_token=IGQVJVRzNBY3JhMVpJOThLQkYzcHMyMG05UDRWbGpxRTJpUVZANOFg0dElnMERCYzdLUk9WTEt1c0pTbDlqRE9RLTlhRk1qWDNJcVJHeHo2R3FRbEFaaTNOaVNDRVdVcnZAvN1djWWVn")
+        .then(res => {
+          setFeeds(res.data.data)
+        })
+        .catch(err => {
+            console.log(err)
+        })
+    }
+
   return (
     <>
       <Head>
@@ -525,13 +559,16 @@ import Head from "next/head";
 
       <section className="posts_section common_padding">
         <div className="container">
-          <div className="row">
-          <header className="App-header" style={{textAlign:'center'}}>
-        <h1>Instagram Feed with Instagram API</h1>
-      </header>
-
-      <Instafeeds token={process.env.INSTA_TOKEN} limit={12}/>
+          <div className="row insta-gallery">
+        <h1 className="text-center">Instagram</h1>
+        <Link href="https://instagram.com/goldenfernresort_" ><a className="text-center golden_color">@goldenfernresort_</a></Link>
+        <OwlCarousel {...instaGallery}>
+          {feeds.map((feed) => (
+            <img key={feed.id} src={feed.media_url} alt="" />
+          ))}
+          </OwlCarousel>
           </div>
+          
         </div>
       </section>
     </>

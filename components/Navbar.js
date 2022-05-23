@@ -49,9 +49,9 @@ const Navbar = () => {
                           <li>
                             <Link href="/Restaurant">restaurant</Link>
                           </li>
-                          <li>
+                          {/* <li>
                             <Link href="/Healthsafety">health & safety</Link>
-                          </li>
+                          </li> */}
                           <li>
                             <Link href="/Contactus">contact us</Link>
                           </li>
@@ -67,10 +67,11 @@ const Navbar = () => {
                   <div className="book_appointment text-capitalize">
                     <Link
                       data-bs-toggle="modal"
+                      target="_blank"
                       data-bs-target="#exampleModal"
-                      href="#/"
+                      href="https://goldenfernresort.bookingjini.com/property"
                     >
-                      Book Now
+                     <a target="_blank">Book Now</a>
                     </Link>
                     <div className="common_arrow">
                       <img src="/images/arrow.svg" alt="Icon" />

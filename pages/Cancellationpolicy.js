@@ -16,15 +16,23 @@ function Cancellationpolicy() {
         />
       </Head>
 
-      <section className="common_page_header">
+      <section className="common_page_header top_banner privacy_page_banner">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-10 col-md-10 col-sm-12 common_page_header_title pages-info">
+              <h1 className="common_title white">Cancellation & Refund Policy</h1>
+              <p className="about-subtitle">
+              For each reservation of a Service, the Special Conditions
+                specify the conditions to cancel and/or modify the reservation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="attraction_section common_page_header">
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 col-sm-12 common_page_header_title">
-              <h2 className="common_title padding-t-20">Cancellation & Refund Policy </h2>
-              <p>
-                For each reservation of a Service, the Special Conditions
-                specify the conditions to cancel and/or modify the reservation.
-              </p>
               <p>
                 Customers can call customer service to request a refund. Refunds
                 for qualifying returns per the return policies described above
