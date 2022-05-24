@@ -381,7 +381,7 @@ body .header .navbar-collapse {
   justify-content: flex-end;
 }
 .header .navbar ul li {
-  padding-left: 10px;
+  padding-left: 13px;
 }
 .header .navbar ul li a {
   padding: 0px !important;
@@ -1182,6 +1182,9 @@ background-image: url("/new-images/attraction-banner.jpeg");
 .privacy_page_banner {
   background-image: url("/new-images/privacy-banner.jpeg");
 }
+.termscondition_banner {
+  background-image: url("/new-images/disclimer-banner.jpeg");
+}
 .common_page_header_title h2 {
   color: #fff;
 }
@@ -1557,6 +1560,9 @@ background-image: url("/new-images/attraction-banner.jpeg");
   padding-top: 0;
 }
 .safety_section_columns .safety_section:nth-child(2n + 2) .safety_section_text {
+  order: 2;
+}
+.menu_section_columns .safety_section:nth-child(2n + 2) .menu_section_text {
   order: 2;
 }
 .scrollspy-example .about_hotel_text .common_title {
@@ -1998,11 +2004,11 @@ div.wpcf7 .ajax-loader {
 }
 
 .attraction_item_5 {
-  background-image: url("/ridge.jpg");
+  background-image: url("/Attractions/fagu.jpg");
 }
 
 .attraction_item_6 {
-  background-image: url("/fagu.jpg");
+  background-image: url("/Attractions/green-valley.jpg");
 }
 .item_4 {
   background-image: url("/trekking.jpg");
@@ -2271,47 +2277,42 @@ div.wpcf7 .ajax-loader {
 }
 
 /* Menu Css */
-.question {
-  padding:0.5rem 1rem;
-  border: 2px solid #e29554;
-  margin-bottom: 1rem;
-  border-radius: .25rem;
-  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+.menu_section_image div{
+  height: 100%;
+  max-width: 570px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.question div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.menu_image_1 {
+  background-image: url('/menu-1.jpg');
 }
-.show-more-btn {
-  background: transparent;
-  border-color: transparent;
-  width: 2rem;
-  height: 2rem;
-  background: var(--clr-grey-special);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  color: var(--clr-red-special);
-  cursor: pointer;
-  margin-left: 1rem;
-  align-self: center;
+.menu_image_2 {
+  background-image: url('/menu-2.jpg');
+}
+.menu_image_3 {
+  background-image: url('/menu-3.jpg');
 }
 .menu_title {
   color: #e29554;
   font-size: 30px;
+  padding-bottom: 10px;
 }
 .menu_list_items {
   display: flex; 
   justify-content: space-between;
+  padding-bottom: 4px;
+  margin-bottom: 15px;
+  border-bottom: 0.1em solid white;
 }
 .menu-ul{
   padding: 0 !important;
 }
 .menu_item_left {
-  color: white;
-  font-size: 20px;
+  font-size: 16px;
+  color: #fff;
+  line-height: 26px !important;
+
 }
 .menu_item_right {
   color: white;

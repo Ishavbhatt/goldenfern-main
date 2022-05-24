@@ -13,7 +13,7 @@ function Disclaimer() {
         />
       </Head>
 
-      <section className="common_page_header top_banner privacy_page_banner">
+      <section className="common_page_header top_banner termscondition_banner">
         <div className="container">
           <div className="row">
             <div className="col-lg-10 col-md-10 col-sm-12 common_page_header_title pages-info">

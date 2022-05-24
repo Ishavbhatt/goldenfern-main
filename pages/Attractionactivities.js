@@ -171,7 +171,7 @@ function Attractionactivities() {
                 <div className="activity-item">
                   <div className="attraction_column attraction_item_6">
                     <div className="attraction_column_title">
-                      <h3>The Ridge</h3>
+                      <h3>Green Valley</h3>
                       <p>
                         The Ridge road is a large open space, located in the
                         center of Shimla. The Ridge is the hub of all cultural

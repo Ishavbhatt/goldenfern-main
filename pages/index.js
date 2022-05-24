@@ -31,7 +31,7 @@ let curruntDate = new Date().toLocaleDateString("en-us", {
 
 import Head from "next/head";
 
- const Home = ({token, ...props}) => {
+const Home = ({ token, ...props }) => {
   const [people, setPeople] = useState(1);
   const [checkInDate, setCheckInDate] = useState(null);
   const [checkOutDate, setCheckOutDate] = useState(null);
@@ -102,21 +102,21 @@ import Head from "next/head";
 
   const instaGallery = {
     stagePadding: 50,
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
-  }; 
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 5,
+      },
+    },
+  };
 
   // define handler change function on check-in date
   const handleCheckInDate = (date) => {
@@ -132,7 +132,7 @@ import Head from "next/head";
   // Increment People
   const incPeople = () => {
     setPeople(people + 1);
-    console.log(weatherapiUrl)
+    console.log(weatherapiUrl);
   };
 
   // Decrement People
@@ -151,20 +151,22 @@ import Head from "next/head";
       });
   }, []);
 
-    
   useEffect(() => {
-      fetchFeeds()
-    }, [])
+    fetchFeeds();
+  }, []);
 
   const fetchFeeds = () => {
-      axios.get("https://graph.instagram.com/me/media?fields=id,media_type,media_url,caption&limit=12&access_token=IGQVJVRzNBY3JhMVpJOThLQkYzcHMyMG05UDRWbGpxRTJpUVZANOFg0dElnMERCYzdLUk9WTEt1c0pTbDlqRE9RLTlhRk1qWDNJcVJHeHo2R3FRbEFaaTNOaVNDRVdVcnZAvN1djWWVn")
-        .then(res => {
-          setFeeds(res.data.data)
-        })
-        .catch(err => {
-            console.log(err)
-        })
-    }
+    axios
+      .get(
+        "https://graph.instagram.com/me/media?fields=id,media_type,media_url,caption&limit=12&access_token=IGQVJVRzNBY3JhMVpJOThLQkYzcHMyMG05UDRWbGpxRTJpUVZANOFg0dElnMERCYzdLUk9WTEt1c0pTbDlqRE9RLTlhRk1qWDNJcVJHeHo2R3FRbEFaaTNOaVNDRVdVcnZAvN1djWWVn"
+      )
+      .then((res) => {
+        setFeeds(res.data.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
   return (
     <>
@@ -263,9 +265,9 @@ import Head from "next/head";
             <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
               <h2 className="common_title">
                 <span className="golden_color">Golden Fern</span>Shimla
-                  <a className="common_arrow" href="/Aboutus">
-                    <img src="/arrow.svg" alt="Icon" />
-                  </a>
+                <a className="common_arrow" href="/Aboutus">
+                  <img src="/arrow.svg" alt="Icon" />
+                </a>
               </h2>
               <p>
                 Golden Fern Resort Shimla ideally located on Shimla Kalka
@@ -560,18 +562,19 @@ import Head from "next/head";
       <section className="posts_section common_padding">
         <div className="container">
           <div className="row insta-gallery">
-        <h1 className="text-center">Instagram</h1>
-        <Link href="https://instagram.com/goldenfernresort_" ><a className="text-center golden_color">@goldenfernresort_</a></Link>
-        <OwlCarousel {...instaGallery}>
-          {feeds.map((feed) => (
-            <img key={feed.id} src={feed.media_url} alt="" />
-          ))}
-          </OwlCarousel>
+            <h1 className="text-center">Instagram</h1>
+            <Link href="https://instagram.com/goldenfernresort_">
+              <a className="text-center golden_color">@goldenfernresort_</a>
+            </Link>
+            <OwlCarousel {...instaGallery}>
+              {feeds.map((feed) => (
+                <img key={feed.id} src={feed.media_url} alt="" />
+              ))}
+            </OwlCarousel>
           </div>
-          
         </div>
       </section>
     </>
   );
-}
+};
 export default Home;
