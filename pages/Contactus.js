@@ -20,7 +20,7 @@ function Contactus() {
         <div className="container">
           <div className="row">
             <div className="col-lg-10 col-md-10 col-sm-12 common_page_header_title pages-info">
-              <h1 className="common_title white">Contacts</h1>
+              <h1 className="common_title white">Contact Us</h1>
               <p className="contact-subtitle">
                 At Golden Fern we like to answer all your questions.
                 <br /> Find the contacts you need.
@@ -32,7 +32,7 @@ function Contactus() {
       <section className="common_padding">
         <div className="container">
           <div className="row">
-            <div className="col-lg-5 col-md-6 col-sm-12 contact_left">
+            <div className="col-lg-4 col-md-4 col-sm-12 contact_left">
               <div className="footer_address_right_inner">
                 <div>
                   <h2 className="cont-head-col">ADDRESS</h2>
@@ -64,14 +64,24 @@ function Contactus() {
               </div>
             </div>
 
-            <div className="col-md-6 col-sm-12 offset-lg-1 contact_right">
-              <iframe
+            <div className="col-md-8 col-sm-12 contact_right">
+              <Link
+                className="pointer"
+                target="_blank"
+                href="https://www.google.com/maps/dir//Golden+Fern+Resort,+Taradevi+Rd,+Bagh,+Shimla,+Himachal+Pradesh+171004/@31.0891678,77.1405961,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3905796a89448473:0xed76ee25a9bdb157!2m2!1d77.1405961!2d31.0891678"
+              >
+                <a>
+                  <img src="/map-image.png" alt="" />
+                </a>
+              </Link>
+
+              {/* <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13666.95865605713!2d77.1405961!3d31.0891678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xed76ee25a9bdb157!2sGolden%20Fern%20Resort!5e0!3m2!1sen!2sin!4v1638428151450!5m2!1sen!2sin"
                 width=""
                 height=""
                 allowFullScreen=""
                 loading="lazy"
-              ></iframe>
+              ></iframe> */}
             </div>
           </div>
         </div>

@@ -57,33 +57,6 @@ function ExecutiveRoom() {
       </Head>
 
       <div className="single-room-banner exec-singleroom-banner">
-        {/* <div className="banner_text text-center"> */}
-        {/* <div className="container">
-            <div className="row"> */}
-        {/* <OwlCarousel {...bannerslider}>
-                  <div className="singleroom-item">
-                    <div
-                      className="single_room_banner_column"
-                      style={{ backgroundImage: "url('/executive-room.jpg')" }}
-                    ></div>
-                  </div>
-
-                  <div className="singleroom-item">
-                    <div
-                      className="single_room_banner_column"
-                      style={{ backgroundImage: "url('/banner.jpg')" }}
-                    ></div>
-                  </div>
-                  <div className="singleroom-item">
-                    <div
-                      className="single_room_banner_column"
-                      style={{ backgroundImage: "url('/banner.jpg')" }}
-                    ></div>
-                  </div>
-                </OwlCarousel> */}
-        {/* </div>
-          </div> */}
-        {/* </div> */}
       </div>
 
       <section className="about_hotel room_page_desc common_padding pb-0">
@@ -176,7 +149,7 @@ function ExecutiveRoom() {
       <section className="single-room-sec other_room_section single-room">
         <div className="container">
           <div className="row">
-            <div id="" className="executive-room-section">
+            <div className="executive-room-section">
               <OwlCarousel className="gallery-owl-theme owl-theme" nav {...executive}>
                 <div className="executive-item">
                   <div
@@ -267,7 +240,7 @@ function ExecutiveRoom() {
         <div className="container">
           <div className="row">
             <div className="col-md-12 col-sm-12 text-left">
-              <h2 className="common_title color_white">Other Room Types</h2>
+            <h2 className="golden_title">Other Room Types</h2>
             </div>
             <div className="activities_slider">
               <OwlCarousel
@@ -280,7 +253,7 @@ function ExecutiveRoom() {
                   <div className="other-item">
                     <div
                       className="attraction_column"
-                      style={{ backgroundImage: "url('/deluxe-room.jpg')" }}
+                      style={{ backgroundImage: "url('/homepage-deluxe.jpg')" }}
                     >
                       <a href="/Roomsuits/Deluxe-room">
                         <div className="attraction_column_title">
@@ -295,7 +268,7 @@ function ExecutiveRoom() {
                   <div className="other-item">
                     <div
                       className="attraction_column"
-                      style={{ backgroundImage: "url('/classic-room.jpg')" }}
+                      style={{ backgroundImage: "url('/homepage-classic.jpeg')" }}
                     >
                       <a href="/Roomsuits/Classic-room">
                         <div className="attraction_column_title">
@@ -310,7 +283,7 @@ function ExecutiveRoom() {
                   <div className="other-item">
                     <div
                       className="attraction_column"
-                      style={{ backgroundImage: "url('/luxury.jpg')" }}
+                      style={{ backgroundImage: "url('/homepage-luxury.jpg')" }}
                     >
                       <a href="/Roomsuits/Luxury-room">
                         <div className="attraction_column_title">

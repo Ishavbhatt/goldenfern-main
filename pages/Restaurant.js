@@ -113,6 +113,9 @@ function Restaurant() {
                     to meet the desired level of the satisfaction of the
                     esteemed guests at Golden Fern Resort Shimla.
                   </p>
+                   <a href="/Contactus">
+                    <button className="singlepage-bookbtn">Make Reservation</button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -122,7 +125,7 @@ function Restaurant() {
         </div>
       </section>
 
-      <section className="attraction_section common_padding pt-0">
+      <section className="attraction_section common_padding">
         <div className="container">
           <div className="row">
             <div className="text-left">

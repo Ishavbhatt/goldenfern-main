@@ -234,7 +234,13 @@ const Home = ({ token, ...props }) => {
               </div>
               <div className="banner-book-btn pick-dates popup-book-btn">
                 <div className="common_arrow">
-                  <img src="/images/arrow.svg" alt="Icon" />
+                  <a
+                    href="https://goldenfernresort.bookingjini.com/property"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="/images/arrow.svg" alt="Icon" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -299,7 +305,7 @@ const Home = ({ token, ...props }) => {
                 <div className="index-room-item">
                   <div className="rooms_slider_column row">
                     <div className="col-md-7 columns">
-                      <div className="rooms_slider_image">
+                      <div className="rooms_slider_image executive_slider_image">
                         <div className="room_price">
                           <p>rates from</p>
                           <h2>&#8377; 6500 /</h2>
@@ -330,11 +336,10 @@ const Home = ({ token, ...props }) => {
                     </div>
                   </div>
                 </div>
-
                 <div className="index-room-item">
                   <div className="rooms_slider_column row">
                     <div className="col-md-7 columns ">
-                      <div className="rooms_slider_image">
+                      <div className="rooms_slider_image classic_room_slider">
                         <div className="room_price">
                           <p>rates from</p>
                           <h2>&#8377; 5000 /</h2>
@@ -365,11 +370,10 @@ const Home = ({ token, ...props }) => {
                     </div>
                   </div>
                 </div>
-
                 <div className="index-room-item">
                   <div className="rooms_slider_column row">
                     <div className="col-md-7 columns ">
-                      <div className="rooms_slider_image">
+                      <div className="rooms_slider_image luxury_room_slider">
                         <div className="room_price">
                           <p>rates from</p>
                           <h2>&#8377; 7400 /</h2>
@@ -400,11 +404,10 @@ const Home = ({ token, ...props }) => {
                     </div>
                   </div>
                 </div>
-
                 <div className="index-room-item">
                   <div className="rooms_slider_column row">
                     <div className="col-md-7 columns ">
-                      <div className="rooms_slider_image">
+                      <div className="rooms_slider_image deluxe_room_slider">
                         <div className="room_price">
                           <p>rates from</p>
                           <h2>&#8377; 5500 /</h2>
@@ -559,12 +562,12 @@ const Home = ({ token, ...props }) => {
         </div>
       </section>
 
-      <section className="posts_section common_padding">
+      <section className="insta_gallery_section common_padding">
         <div className="container">
           <div className="row insta-gallery">
             <h1 className="text-center">Instagram</h1>
             <Link href="https://instagram.com/goldenfernresort_">
-              <a className="text-center golden_color">@goldenfernresort_</a>
+              <a className="text-center golden_color m-2">@goldenfernresort_</a>
             </Link>
             <OwlCarousel {...instaGallery}>
               {feeds.map((feed) => (

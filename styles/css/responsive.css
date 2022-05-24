@@ -398,7 +398,7 @@
     margin: 0px auto 20px;
     background-position: top;
   }
-  .single_menu_image div {
+  .menu_section_image div {
     height: 260px;
     margin-bottom: 20px;
     margin: 0px auto 20px;
@@ -542,7 +542,7 @@
     min-width: 768px;
   } */
   .header .navbar ul li {
-    padding-left: 15px;
+    padding-left: 20px;
   }
   .header .navbar ul li a {
     font-size: 14px;
@@ -597,7 +597,7 @@
     height: 400px;
     max-width: 570px;
   }
-  .single_menu_image div {
+  .menu_section_image div {
     height: 100%;
     max-width: 570px;
   }

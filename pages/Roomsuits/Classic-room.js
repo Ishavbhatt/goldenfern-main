@@ -240,7 +240,7 @@ function ClassicRoom() {
         <div className="container">
           <div className="row">
             <div className="col-md-12 col-sm-12 text-left">
-              <h2 className="common_title color_white">Other Room Types</h2>
+            <h2 className="golden_title">Other Room Types</h2>
             </div>
             <div className="activities_slider">
               
@@ -254,7 +254,7 @@ function ClassicRoom() {
                 <div className="other-item">
                   <div
                     className="attraction_column"
-                    style={{ backgroundImage: "url('/deluxe-room.jpg')" }}
+                    style={{ backgroundImage: "url('/homepage-deluxe.jpg')" }}
                   >
                     <a href="/Roomsuits/Deluxe-room">
                       <div className="attraction_column_title">
@@ -268,7 +268,7 @@ function ClassicRoom() {
                 <div className="other-item">
                   <div
                     className="attraction_column"
-                    style={{ backgroundImage: "url('/classic-room.jpg')" }}
+                    style={{ backgroundImage: "url('/homepage-executive.jpg')" }}
                   >
                     <a href="/Roomsuits/Executive-room">
                       <div className="attraction_column_title">
@@ -282,7 +282,7 @@ function ClassicRoom() {
                 <div className="other-item">
                   <div
                     className="attraction_column"
-                    style={{ backgroundImage: "url('/luxury.jpg')" }}
+                    style={{ backgroundImage: "url('/homepage-luxury.jpg')" }}
                   >
                     <a href="/Roomsuits/Luxury-room">
                       <div className="attraction_column_title">

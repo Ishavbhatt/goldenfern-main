@@ -29,7 +29,7 @@ function Healthsafety() {
         </div>
       </section>
 
-      <div className="safety_section_columns w-100 padding-t-20">
+      <div className="safety_section_columns w-100 common_padding">
         <section className="safety_section common_padding">
           <div className="container">
             <div className="row">

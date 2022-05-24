@@ -12,7 +12,7 @@ function Menu() {
           content="Golden Fern Resort Shimla ideally located on Shimla Kalka Highway at Kachi Ghati, just 4 km away from the city Centre The Mall Road."
         />
       </Head>
-      <section className="common_page_header top_banner about_page_banner">
+      <section className="common_page_header top_banner menu_page_banner">
         <div className="container">
           <div className="row">
             <div className="col-lg-10 col-md-10 col-sm-12 common_page_header_title pages-info">
@@ -27,7 +27,7 @@ function Menu() {
         </div>
       </section>
 
-      <section className="menu_section_columns">
+      <section className="menu_section_columns common_padding">
         <div className="safety_section common_padding">
           <div className="container">
             <div className="row">
@@ -326,7 +326,7 @@ function Menu() {
                   </li>
                 </ul>
               </div>
-              <div className="col-md-6 col-sm-12 single_menu_image">
+              <div className="col-md-6 col-sm-12 menu_section_image">
                 <div className="menu_image_1"></div>
               </div>
             </div>

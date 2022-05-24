@@ -15,7 +15,7 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import Head from "next/head";
 
 function Attractionactivities() {
-  const attraction = {
+  const attractions = {
     items: 3,
     margin: 40,
     responsiveClass: true,
@@ -94,14 +94,14 @@ function Attractionactivities() {
         <div className="container">
           <div className="row">
             <div className="col-md-12 col-sm-12 text-left">
-              <h2 className="golden_title">Attraction</h2>
+              <h2 className="golden_title">Attractions</h2>
             </div>
             <div className="owl-carousel owl-theme owl-loaded attraction_slider">
               <OwlCarousel
                 className="owl-theme"
                 responsiveClass={true}
                 nav
-                {...attraction}
+                {...attractions}
               >
                  <div className="activity-item">
                   <div className="attraction_column attraction_item_1">

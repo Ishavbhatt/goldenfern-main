@@ -527,23 +527,23 @@ padding: 0;
 }
 .single-room-banner {
   background-color: #000000;
-  height: 90vh;
+  height: 70vh;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .exec-singleroom-banner {
-  background-image: url("/executive-room.jpg");
+  background-image: url("/executive-banner.jpg");
 }
 .clas-singleroom-banner {
-  background-image: url("/classic-room.jpg");
+  background-image: url("/classic-room-banner.jpeg");
 }
 .del-singleroom-banner {
   background-image: url("/deluxe-room.jpg");
 }
 .lux-singleroom-banner {
-  background-image: url("/luxury.jpg");
+  background-image: url("/luxury-room-banner.jpg");
 }
 /* .single-room-banner::before {
   content: "";
@@ -641,7 +641,7 @@ padding: 0;
   height: 20px;
   width: 20px;
   border: 2px solid #e29554;
-  top: -5px;
+  top: 2px;
   transition: all ease-in-out 0.4s;
   transform: rotate(-45deg);
 }
@@ -652,6 +652,9 @@ padding: 0;
   border-right: 1px solid rgb(204, 191, 191);
   text-align: center;
 } */
+.react-datepicker .react-datepicker__month-container .react-datepicker__header {
+  background: #e29554;
+}
 .date-picker input {
   width: 80px;
   border: none;
@@ -1176,6 +1179,9 @@ background-image: url("/new-images/attraction-banner.jpeg");
 .restaurant_page_banner {
   background-image: url("/new-images/restaurant-banner.jpeg");
 }
+.menu_page_banner {
+background-image: url("/new-images/menu-banner.jpg");
+}
 .wedding_page_banner {
   background-image: url("/new-images/wedding-banner.jpg");
 }
@@ -1305,7 +1311,7 @@ background-image: url("/new-images/attraction-banner.jpeg");
   padding: 50px 0;
 }
 .other-room {
-  padding-bottom: 60px;
+  padding: 60px 0;
 }
 .single-room-sec .owl-nav {
   display: flex;
@@ -1454,7 +1460,7 @@ background-image: url("/new-images/attraction-banner.jpeg");
 .contact_left .footer_address_right_inner div h4 {
   text-align: left;
 }
-.contact_right iframe {
+.contact_right img {
   width: 100%;
   height: 475px;
 }
@@ -1966,8 +1972,17 @@ div.wpcf7 .ajax-loader {
 .deluxe {
   background-image: url("/deluxe-room.jpg");
 }
-.rooms_slider_image {
-  background-image: url("/room-img.jpg");
+.executive_slider_image{
+  background-image: url("/homepage-executive.jpg");
+}
+.classic_room_slider{
+  background-image: url("/homepage-classic.jpeg");
+}
+.luxury_room_slider{
+  background-image: url("/homepage-luxury.jpg");
+}
+.deluxe_room_slider{
+  background-image: url("/homepage-deluxe.jpg");
 }
 .post_column_image {
   background-image: url("/blog.png");
@@ -2318,6 +2333,9 @@ div.wpcf7 .ajax-loader {
   color: white;
   font-size: 20px;
   font-family: "Freight-Medium" !important;
+}
+.insta_gallery_section {
+  background: white;
 }
 
 /* Restaurant Sectiion */
