@@ -103,8 +103,11 @@ const Home = ({ token, ...props }) => {
   const instaGallery = {
     stagePadding: 50,
     loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
     margin: 10,
-    nav: true,
+    nav: false,
     responsive: {
       0: {
         items: 1,
@@ -169,19 +172,19 @@ const Home = ({ token, ...props }) => {
   };
 
   return (
+    
     <>
       <Head>
         <link rel="icon" href="favicon.png" />
         <title>Golden Fern</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-
       <section className="banner">
         <div className="banner_text text-center">
           <div className="container">
             <div className="row">
               <div className="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-12">
-                <h1 className="">
+                <h1 className="animate__animated animate__bounce">
                   Hotels for the elite passionate about luxury
                 </h1>
               </div>
@@ -283,7 +286,8 @@ const Home = ({ token, ...props }) => {
                 marriages, and conferences in Shimla.
               </p>
             </div>
-            <div className="col-lg-7 col-md-7 col-sm-12 about_hotel_right text-center">
+            <div className="col-lg-7 col-md-7 col-sm-12 about_hotel_right text-center"
+            >
               <div className="about_hotel_image"></div>
             </div>
           </div>
@@ -293,8 +297,8 @@ const Home = ({ token, ...props }) => {
       <section className="testimonials_section room_suites padding-t-b-40">
         <div className="container">
           <div className="row">
-            <div className="col-md-6 col-sm-12">
-              <h2 className="common_title">Rooms & Suites</h2>
+            <div className="col-md-6 col-sm-12 ">
+              <h2 className="common_title ">Rooms & Suites</h2>
               <p className="rooms-para">
                 All rooms and suites are elegantly appointed and reflect
                 unpretentious luxury and stylish className with wooden flooring.
@@ -328,7 +332,7 @@ const Home = ({ token, ...props }) => {
                         </p>
                         <a
                           className="common_arrow"
-                          href="/roomsuits/executive-room"
+                          href="/room-suits/executive-room"
                         >
                           <img src="/arrow.svg" alt="Icon" />
                         </a>
@@ -362,7 +366,7 @@ const Home = ({ token, ...props }) => {
                         </p>
                         <a
                           className="common_arrow"
-                          href="/roomsuits/classic-room"
+                          href="/room-suits/classic-room"
                         >
                           <img src="/arrow.svg" alt="Icon" />
                         </a>
@@ -396,7 +400,7 @@ const Home = ({ token, ...props }) => {
                         </p>
                         <a
                           className="common_arrow"
-                          href="/roomsuits/luxury-room"
+                          href="/room-suits/luxury-room"
                         >
                           <img src="/arrow.svg" alt="Icon" />
                         </a>
@@ -430,7 +434,7 @@ const Home = ({ token, ...props }) => {
                         </p>
                         <a
                           className="common_arrow"
-                          href="/roomsuits/deluxe-room"
+                          href="/room-suits/deluxe-room"
                         >
                           <img src="/arrow.svg" alt="Icon" />
                         </a>

@@ -92,7 +92,7 @@ function roomsuits() {
                         </p>
                         <a
                           className="common_arrow"
-                          href="/roomsuits/executive-room"
+                          href="/room-suits/executive-room"
                         >
                           <img src="/arrow.svg" alt="Icon" />
                         </a>
@@ -124,7 +124,7 @@ function roomsuits() {
                         </p>
                         <a
                           className="common_arrow"
-                          href="/roomsuits/classic-room"
+                          href="/room-suits/classic-room"
                         >
                           <img src="/arrow.svg" alt="Icon" />
                         </a>
@@ -156,7 +156,7 @@ function roomsuits() {
                         </p>
                         <a
                           className="common_arrow"
-                          href="/roomsuits/luxury-room"
+                          href="/room-suits/luxury-room"
                         >
                           <img src="images/arrow.svg" alt="Icon" />
                         </a>
@@ -188,7 +188,7 @@ function roomsuits() {
                         </p>
                         <a
                           className="common_arrow"
-                          href="/roomsuits/deluxe-room"
+                          href="/room-suits/deluxe-room"
                         >
                           <img src="images/arrow.svg" alt="Icon" />
                         </a>

@@ -185,6 +185,30 @@ function ClassicRoom() {
                     }}
                   ></div>
                 </div>
+                <div className="executive-item">
+                  <div
+                    className="singleroom_slider_col"
+                    style={{
+                      backgroundImage: "url('/Washroom/washroom-1.jpg')",
+                    }}
+                  ></div>
+                </div>
+                <div className="executive-item">
+                  <div
+                    className="singleroom_slider_col"
+                    style={{
+                      backgroundImage: "url('/Washroom/washroom-2.jpg')",
+                    }}
+                  ></div>
+                </div>
+                <div className="executive-item">
+                  <div
+                    className="singleroom_slider_col"
+                    style={{
+                      backgroundImage: "url('/Washroom/washroom-6.jpg')",
+                    }}
+                  ></div>
+                </div>
               </OwlCarousel>
             </div>
           </div>
@@ -211,7 +235,7 @@ function ClassicRoom() {
                     className="attraction_column"
                     style={{ backgroundImage: "url('/homepage-deluxe.jpg')" }}
                   >
-                    <a href="/roomsuits/deluxe-room">
+                    <a href="/room-suits/deluxe-room">
                       <div className="attraction_column_title">
                         <h3>DELUXE ROOM</h3>
                       </div>
@@ -225,7 +249,7 @@ function ClassicRoom() {
                     className="attraction_column"
                     style={{ backgroundImage: "url('/homepage-executive.jpg')" }}
                   >
-                    <a href="/doomsuits/executive-room">
+                    <a href="/room-suits/executive-room">
                       <div className="attraction_column_title">
                         <h3>EXECUTIVE ROOM</h3>
                       </div>
@@ -239,7 +263,7 @@ function ClassicRoom() {
                     className="attraction_column"
                     style={{ backgroundImage: "url('/homepage-luxury.jpg')" }}
                   >
-                    <a href="/roomsuits/luxury-room">
+                    <a href="/room-suits/luxury-room">
                       <div className="attraction_column_title">
                         <h3>LUXURY SUITE</h3>
                       </div>

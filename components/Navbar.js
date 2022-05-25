@@ -36,10 +36,10 @@ const Navbar = () => {
                             <Link href="/about-us">about us</Link>
                           </li>
                           <li>
-                            <Link href="/roomsuits">room & suits</Link>
+                            <Link href="/room-suits">room & suits</Link>
                           </li>
                           <li>
-                            <Link href="/attractionsandactivities">
+                            <Link href="/attractions-and-activities">
                               Attraction & Activities
                             </Link>
                           </li>
@@ -129,7 +129,7 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li className="mobile-view-lists">
-                        <Link href="/roomsuits">
+                        <Link href="/room-suits">
                           <a
                             onClick={handleIsActive}
                             className="mobile-view-lists-clr"
@@ -139,7 +139,7 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li className="mobile-view-lists">
-                        <Link href="/attractionsandactivities">
+                        <Link href="/attractions-and-activities">
                           <a
                             onClick={handleIsActive}
                             className="mobile-view-lists-clr"
@@ -149,7 +149,7 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li className="mobile-view-lists">
-                        <Link href="/healthandsafety">
+                        <Link href="/health-and-safety">
                           <a
                             onClick={handleIsActive}
                             className="mobile-view-lists-clr"

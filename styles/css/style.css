@@ -1022,6 +1022,11 @@ padding: 0;
   background-color: #e29554;
   padding: 70px 0px 50px;
 }
+.copyright {
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+}
 .footer_upper {
   margin-bottom: 40px;
 }
@@ -1263,8 +1268,8 @@ background-image: url("/new-images/menu-banner.jpg");
   );
   background: linear-gradient(
     to bottom,
-    #e2955429 0%,
-    #e29554ba 50%,
+    #e2955400 0%,
+    #e29554a3 50%,
     #e29554 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e29554', endColorstr='#e29554',GradientType=0 );
