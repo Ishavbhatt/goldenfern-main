@@ -14,10 +14,10 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import Head from "next/head";
 
-function ClassicRoom() {
-  const classic = {
+function ExecutiveRoom() {
+  const executive = {
     items: 1,
-    dots: false,
+    dots: false
   };
 
   const otherroom = {
@@ -44,7 +44,7 @@ function ClassicRoom() {
   return (
     <>
       <Head>
-        <title>Classic Rooms | Golden Fern Resort</title>
+        <title>Executive Room On Budget | Golden Fern Resort</title>
         <link rel="icon" href="/favicon.png" />
         <meta
           property="og:title"
@@ -52,11 +52,12 @@ function ClassicRoom() {
         />
         <meta
           property="og:description"
-          content="Classic rooms are designed to the finest standards and are located on all levels, with all modern amenities and furnishing to meet desired | Golden Fern Resort"
+          content="Designed to the highest specifications and situated on all floors, with a private balcony and city view the executive rooms are | Golden Fern Resort"
         />
       </Head>
 
-      <div className="single-room-banner clas-singleroom-banner"></div>
+      <div className="single-room-banner exec-singleroom-banner">
+      </div>
 
       <section className="about_hotel room_page_desc common_padding pb-0">
         <div className="container">
@@ -64,11 +65,11 @@ function ClassicRoom() {
             <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
               <div className="room_price">
                 <p>rates from</p>
-                <h2>₹ 5000 /</h2>
+                <h2>₹ 6500 /</h2>
                 <span>per night + 12% Tax</span>
               </div>
               <h2>
-                <span className="golden_color">Classic </span>Room
+                <span className="golden_color">Executive </span>Room
               </h2>
               <p>
                 Designed to the highest specifications and situated on all
@@ -81,6 +82,7 @@ function ClassicRoom() {
                 space, a King-sized double bed, and Large comfortable seating or
                 sofa area.
               </p>
+              <button className="singlepage-bookbtn">Book Now</button>
             </div>
 
             <div className="col-lg-6 offset-lg-1 col-md-6 offset-md-1 col-sm-12 about_hotel_right room_aminities facilities_section text-center row-room">
@@ -114,7 +116,14 @@ function ClassicRoom() {
                   <p>FREE WIFI</p>
                 </div>
               </div>
-
+              <div className="col-md-4 col-sm-6">
+                <div className="facilities_column text-center">
+                  <span>
+                    <img src="/breakfast.svg" alt="Icon" />
+                  </span>
+                  <p>BREAK-FAST</p>
+                </div>
+              </div>
               <div className="col-md-4 col-sm-6">
                 <div className="facilities_column text-center">
                   <span>
@@ -132,15 +141,6 @@ function ClassicRoom() {
                   <p>LCD WITHOUT HD CHANNEL</p>
                 </div>
               </div>
-
-              <div className="col-md-4 col-sm-6">
-                <div className="facilities_column text-center">
-                  <span>
-                    <img src="/breakfast.svg" alt="Icon" />
-                  </span>
-                  <p>BREAK-FAST</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -149,13 +149,13 @@ function ClassicRoom() {
       <section className="single-room-sec other_room_section single-room">
         <div className="container">
           <div className="row">
-            <div id="" className="executive-room-section">
-              <OwlCarousel className="gallery-owl-theme owl-theme" nav {...classic}>
+            <div className="executive-room-section">
+              <OwlCarousel className="gallery-owl-theme owl-theme" nav {...executive}>
                 <div className="executive-item">
                   <div
                     className="singleroom_slider_col"
                     style={{
-                      backgroundImage: "url('/all-rooms/classic/classic-room-1.jpg')",
+                      backgroundImage: "url('/all-rooms/Executive/exe-1.jpg')",
                     }}
                   ></div>
                 </div>
@@ -163,16 +163,7 @@ function ClassicRoom() {
                   <div
                     className="singleroom_slider_col"
                     style={{
-                      backgroundImage: "url('/all-rooms/classic/classic-room-2.jpg')",
-                    }}
-                  ></div>
-                </div>
-
-                <div className="executive-item">
-                  <div
-                    className="singleroom_slider_col"
-                    style={{
-                      backgroundImage: "url('/all-rooms/classic/classic-room-3.jpg')",
+                      backgroundImage: "url('/all-rooms/Executive/exe-2.jpg')",
                     }}
                   ></div>
                 </div>
@@ -181,7 +172,16 @@ function ClassicRoom() {
                   <div
                     className="singleroom_slider_col"
                     style={{
-                      backgroundImage: "url('/all-rooms/classic/classic-room-4.jpg')",
+                      backgroundImage: "url('/all-rooms/Executive/exe-3.jpg')",
+                    }}
+                  ></div>
+                </div>
+
+                <div className="executive-item">
+                  <div
+                    className="singleroom_slider_col"
+                    style={{
+                      backgroundImage: "url('/all-rooms/Executive/exe-4.jpg')",
                     }}
                   ></div>
                 </div>
@@ -198,54 +198,55 @@ function ClassicRoom() {
             <h2 className="golden_title">Other Room Types</h2>
             </div>
             <div className="activities_slider">
-              
               <OwlCarousel
                 className="owl-theme"
                 responsiveClass={true}
                 nav
                 {...otherroom}
               >
-                                  <div className="single-room-item">
-                <div className="other-item">
-                  <div
-                    className="attraction_column"
-                    style={{ backgroundImage: "url('/homepage-deluxe.jpg')" }}
-                  >
-                    <a href="/Roomsuits/Deluxe-room">
-                      <div className="attraction_column_title">
-                        <h3>DELUXE ROOM</h3>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                </div>
                 <div className="single-room-item">
-                <div className="other-item">
-                  <div
-                    className="attraction_column"
-                    style={{ backgroundImage: "url('/homepage-executive.jpg')" }}
-                  >
-                    <a href="/Roomsuits/Executive-room">
-                      <div className="attraction_column_title">
-                        <h3>EXECUTIVE ROOM</h3>
-                      </div>
-                    </a>
+                  <div className="other-item">
+                    <div
+                      className="attraction_column"
+                      style={{ backgroundImage: "url('/homepage-deluxe.jpg')" }}
+                    >
+                      <a href="/roomsuits/deluxe-room">
+                        <div className="attraction_column_title">
+                          <h3>DELUXE ROOM</h3>
+                        </div>
+                      </a>
+                    </div>
                   </div>
                 </div>
-                </div>
+
                 <div className="single-room-item">
-                <div className="other-item">
-                  <div
-                    className="attraction_column"
-                    style={{ backgroundImage: "url('/homepage-luxury.jpg')" }}
-                  >
-                    <a href="/Roomsuits/Luxury-room">
-                      <div className="attraction_column_title">
-                        <h3>LUXURY SUITE</h3>
-                      </div>
-                    </a>
+                  <div className="other-item">
+                    <div
+                      className="attraction_column"
+                      style={{ backgroundImage: "url('/homepage-classic.jpeg')" }}
+                    >
+                      <a href="/roomsuits/classic-room">
+                        <div className="attraction_column_title">
+                          <h3>CLASSIC ROOM</h3>
+                        </div>
+                      </a>
+                    </div>
                   </div>
                 </div>
+
+                <div className="single-room-item">
+                  <div className="other-item">
+                    <div
+                      className="attraction_column"
+                      style={{ backgroundImage: "url('/homepage-luxury.jpg')" }}
+                    >
+                      <a href="/roomsuits/luxury-room">
+                        <div className="attraction_column_title">
+                          <h3>LUXURY SUITE</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </OwlCarousel>
             </div>
@@ -256,4 +257,4 @@ function ClassicRoom() {
   );
 }
 
-export default ClassicRoom;
+export default ExecutiveRoom;

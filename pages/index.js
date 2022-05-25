@@ -271,7 +271,7 @@ const Home = ({ token, ...props }) => {
             <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
               <h2 className="common_title">
                 <span className="golden_color">Golden Fern</span>Shimla
-                <a className="common_arrow" href="/Aboutus">
+                <a className="common_arrow" href="/about-us">
                   <img src="/arrow.svg" alt="Icon" />
                 </a>
               </h2>
@@ -328,7 +328,7 @@ const Home = ({ token, ...props }) => {
                         </p>
                         <a
                           className="common_arrow"
-                          href="/Roomsuits/Executive-room"
+                          href="/roomsuits/executive-room"
                         >
                           <img src="/arrow.svg" alt="Icon" />
                         </a>
@@ -362,7 +362,7 @@ const Home = ({ token, ...props }) => {
                         </p>
                         <a
                           className="common_arrow"
-                          href="/Roomsuits/Classic-room"
+                          href="/roomsuits/classic-room"
                         >
                           <img src="/arrow.svg" alt="Icon" />
                         </a>
@@ -396,7 +396,7 @@ const Home = ({ token, ...props }) => {
                         </p>
                         <a
                           className="common_arrow"
-                          href="/Roomsuits/Luxury-room"
+                          href="/roomsuits/luxury-room"
                         >
                           <img src="/arrow.svg" alt="Icon" />
                         </a>
@@ -430,7 +430,7 @@ const Home = ({ token, ...props }) => {
                         </p>
                         <a
                           className="common_arrow"
-                          href="/Roomsuits/Deluxe-room"
+                          href="/roomsuits/deluxe-room"
                         >
                           <img src="/arrow.svg" alt="Icon" />
                         </a>

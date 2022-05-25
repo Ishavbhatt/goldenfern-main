@@ -85,7 +85,7 @@ function Restaurant() {
                     to meet the desired level of the satisfaction of the
                     esteemed guests at Golden Fern Resort Shimla.
                   </p>
-                  <a href="/Menu">
+                  <a href="/menu">
                     <button className="singlepage-bookbtn">view Menu</button>
                   </a>
                 </div>
@@ -113,7 +113,7 @@ function Restaurant() {
                     to meet the desired level of the satisfaction of the
                     esteemed guests at Golden Fern Resort Shimla.
                   </p>
-                   <a href="/Contactus">
+                   <a href="/contact-us">
                     <button className="singlepage-bookbtn">Make Reservation</button>
                   </a>
                 </div>

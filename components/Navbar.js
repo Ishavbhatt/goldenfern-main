@@ -33,27 +33,27 @@ const Navbar = () => {
                       >
                         <ul id="menu-header-menu" className="nav navbar-nav">
                           <li>
-                            <Link href="/Aboutus">about us</Link>
+                            <Link href="/about-us">about us</Link>
                           </li>
                           <li>
-                            <Link href="/Roomsuits">room & suits</Link>
+                            <Link href="/roomsuits">room & suits</Link>
                           </li>
                           <li>
-                            <Link href="/Attractionactivities">
+                            <Link href="/attractionsandactivities">
                               Attraction & Activities
                             </Link>
                           </li>
                           <li>
-                            <Link href="/Wedding">wedding</Link>
+                            <Link href="/wedding">wedding</Link>
                           </li>
                           <li>
-                            <Link href="/Restaurant">restaurant</Link>
+                            <Link href="/restaurant">restaurant</Link>
                           </li>
                           {/* <li>
                             <Link href="/Healthsafety">health & safety</Link>
                           </li> */}
                           <li>
-                            <Link href="/Contactus">contact us</Link>
+                            <Link href="/contact-us">contact us</Link>
                           </li>
                         </ul>
                       </div>
@@ -119,7 +119,7 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li className="mobile-view-lists">
-                        <Link href="/Aboutus">
+                        <Link href="/about-us">
                           <a
                             onClick={handleIsActive}
                             className="mobile-view-lists-clr"
@@ -129,7 +129,7 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li className="mobile-view-lists">
-                        <Link href="/Roomsuits">
+                        <Link href="/roomsuits">
                           <a
                             onClick={handleIsActive}
                             className="mobile-view-lists-clr"
@@ -139,7 +139,7 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li className="mobile-view-lists">
-                        <Link href="/Attractionactivities">
+                        <Link href="/attractionsandactivities">
                           <a
                             onClick={handleIsActive}
                             className="mobile-view-lists-clr"
@@ -149,7 +149,7 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li className="mobile-view-lists">
-                        <Link href="/Healthsafety">
+                        <Link href="/healthandsafety">
                           <a
                             onClick={handleIsActive}
                             className="mobile-view-lists-clr"
@@ -159,7 +159,7 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li className="mobile-view-lists">
-                        <Link href="/Restaurant">
+                        <Link href="/restaurant">
                           <a
                             onClick={handleIsActive}
                             className="mobile-view-lists-clr"
@@ -169,7 +169,7 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li className="mobile-view-lists">
-                        <Link href="/Wedding">
+                        <Link href="/wedding">
                           <a
                             onClick={handleIsActive}
                             className="mobile-view-lists-clr"
@@ -180,7 +180,7 @@ const Navbar = () => {
                       </li>
                       
                       <li className="mobile-view-lists">
-                        <Link href="/Contactus">
+                        <Link href="/contact-us">
                           <a
                             onClick={handleIsActive}
                             className="mobile-view-lists-clr"

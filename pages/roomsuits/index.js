@@ -3,7 +3,7 @@ import Link from "next/link";
 import Head from "next/head";
 import Scrollspy from "react-scrollspy";
 
-function Roomsuits() {
+function roomsuits() {
   const [scroll, setScroll] = useState(false);
 
   useEffect(() => {
@@ -92,7 +92,7 @@ function Roomsuits() {
                         </p>
                         <a
                           className="common_arrow"
-                          href="/Roomsuits/Executive-room"
+                          href="/roomsuits/executive-room"
                         >
                           <img src="/arrow.svg" alt="Icon" />
                         </a>
@@ -124,7 +124,7 @@ function Roomsuits() {
                         </p>
                         <a
                           className="common_arrow"
-                          href="/Roomsuits/Classic-room"
+                          href="/roomsuits/classic-room"
                         >
                           <img src="/arrow.svg" alt="Icon" />
                         </a>
@@ -156,7 +156,7 @@ function Roomsuits() {
                         </p>
                         <a
                           className="common_arrow"
-                          href="/Roomsuits/Luxury-room"
+                          href="/roomsuits/luxury-room"
                         >
                           <img src="images/arrow.svg" alt="Icon" />
                         </a>
@@ -188,7 +188,7 @@ function Roomsuits() {
                         </p>
                         <a
                           className="common_arrow"
-                          href="/Roomsuits/Deluxe-room"
+                          href="/roomsuits/deluxe-room"
                         >
                           <img src="images/arrow.svg" alt="Icon" />
                         </a>
@@ -206,4 +206,4 @@ function Roomsuits() {
   );
 }
 
-export default Roomsuits;
+export default roomsuits;

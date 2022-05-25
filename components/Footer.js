@@ -72,29 +72,32 @@ function Footer() {
         <div className="footer_bottom w-100">
           <div className="container">
             <div className="row">
-              <div className="col-lg-8 col-md-9 col-sm-12 footer_bottom_column">
+              <div className="col-lg-3 col-md-9 col-sm-12 footer_bottom_column">
+                <span>&#169; All Rights Reserved for Golden Fern Resort</span>
+              </div>
+              <div className="col-lg-7 col-md-9 col-sm-12 footer_bottom_column">
                 <ul>
                   <li>
-                    <Link href="/Privacypolicy">Privacy Policy </Link>
+                    <Link href="/privacy-policy">Privacy Policy </Link>
                   </li>
                   <li>
-                    <Link href="/Termsandconditions">Terms and Conditions </Link>
+                    <Link href="/termsandconditions">Terms and Conditions </Link>
                   </li>
                   <li>
-                    <Link href="/Cancellationpolicy">
+                    <Link href="/cancellation-policy">
                       Cancellation & Refund Policy
                     </Link>
                   </li>
                   <li>
-                    <Link href="/Disclaimer">Disclaimer</Link>
+                    <Link href="/disclaimer">Disclaimer</Link>
                   </li>
                   <li>
-                    <Link href="/Healthsafety">Health & Safety</Link>
+                    <Link href="/healthandsafety">Health & Safety</Link>
                   </li>
                 </ul>
               </div>
 
-              <div className="col-lg-4 col-md-3 col-sm-12 footer_bottom_column text-right">
+              <div className="col-lg-2 col-md-3 col-sm-12 footer_bottom_column text-right">
                 <span>
                   Powered By:
                   <a target="blank" href="https://unmeteredtechnologies.com" to="https://unmeteredtechnologies.com/">

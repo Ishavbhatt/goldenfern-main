@@ -12,10 +12,12 @@ const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
 
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+
+import Link from "next/link";
 import Head from "next/head";
 
-function LuxuryRoom() {
-  const luxury = {
+function DeluxeRoom() {
+  const deluxe = {
     items: 1,
     dots: false,
   };
@@ -44,19 +46,19 @@ function LuxuryRoom() {
   return (
     <>
       <Head>
-        <title>Unbeatable Luxury Room | Golden Fern Resort</title>
+        <title>Deluxe Rooms At Low Price | Golden Fern Resort</title>
         <link rel="icon" href="/favicon.png" />
         <meta
           property="og:title"
-          content="Executive Room On Budget | Golden Fern Resort"
+          content="Deluxe Rooms At Low Price | Golden Fern Resort"
         />
         <meta
           property="og:description"
-          content="Luxury Suites cover 750 square feet area and consist of two bedrooms both with King size beds, a comfortable sitting area, an en suite | Golden Fern Resort"
+          content="Deluxe Rooms have been designed elegantly as per the requirement of the guests. The average size of the room is 350 Sq. feet | Golden Fern Resort"
         />
       </Head>
 
-      <div className="single-room-banner lux-singleroom-banner"></div>
+      <div className="single-room-banner del-singleroom-banner"></div>
 
       <section className="about_hotel room_page_desc common_padding pb-0">
         <div className="container">
@@ -64,21 +66,22 @@ function LuxuryRoom() {
             <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
               <div className="room_price">
                 <p>rates from</p>
-                <h2>₹ 7400 /</h2>
+                <h2>₹ 5500 /</h2>
                 <span>per night + 12% Tax</span>
               </div>
               <h2>
-                <span className="golden_color">Luxury</span> Room
+                <span className="golden_color">Deluxe</span> Room
               </h2>
               <p>
-                Luxury Suites at Golden Fern Resort Shimla cover 750 square feet
-                area and consist of two bedrooms both with King size beds, a
-                comfortable sitting area, an en suite marble bathroom with
-                shower cubical hairdryer, and all modern fittings along with a
-                separate bathroom with WC. These family suites offer plenty of
-                space and luxury for four guests while allowing them equal
-                amounts of privacy and comfort.
+                Deluxe Rooms have been designed elegantly as per the requirement
+                of the guests. The average size of the room is 350 Sq. feet. The
+                rooms are equipped with all modern amenities 42 Inch LED TV, 10
+                Inch Mattress, Clean Lenin, study table, tea coffee makers in
+                each room with electronic safe, and Min Bar. All Deluxe rooms
+                come with Private Balcony with a Valley view overlooking the
+                city.
               </p>
+              <button className="singlepage-bookbtn">Book Now</button>
             </div>
 
             <div className="col-lg-6 offset-lg-1 col-md-6 offset-md-1 col-sm-12 about_hotel_right room_aminities facilities_section text-center row-room">
@@ -112,7 +115,14 @@ function LuxuryRoom() {
                   <p>FREE WIFI</p>
                 </div>
               </div>
-
+              <div className="col-md-4 col-sm-6">
+                <div className="facilities_column text-center">
+                  <span>
+                    <img src="/breakfast.svg" alt="Icon" />
+                  </span>
+                  <p>BREAK-FAST</p>
+                </div>
+              </div>
               <div className="col-md-4 col-sm-6">
                 <div className="facilities_column text-center">
                   <span>
@@ -130,15 +140,6 @@ function LuxuryRoom() {
                   <p>LCD WITHOUT HD CHANNEL</p>
                 </div>
               </div>
-
-              <div className="col-md-4 col-sm-6">
-                <div className="facilities_column text-center">
-                  <span>
-                    <img src="/breakfast.svg" alt="Icon" />
-                  </span>
-                  <p>BREAK-FAST</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -147,13 +148,17 @@ function LuxuryRoom() {
       <section className="single-room-sec other_room_section single-room">
         <div className="container">
           <div className="row">
-            <div className="executive-room-section">
-              <OwlCarousel className="gallery-owl-theme owl-theme" nav {...luxury}>
+            <div id="" className="executive-room-section">
+              <OwlCarousel
+                className="gallery-owl-theme owl-theme"
+                nav
+                {...deluxe}
+              >
                 <div className="executive-item">
                   <div
                     className="singleroom_slider_col"
                     style={{
-                      backgroundImage: "url('/all-rooms/Luxury/luxury-1.jpg')",
+                      backgroundImage: "url('/all-rooms/Deluxe/deluxe-1.jpg')",
                     }}
                   ></div>
                 </div>
@@ -161,16 +166,7 @@ function LuxuryRoom() {
                   <div
                     className="singleroom_slider_col"
                     style={{
-                      backgroundImage: "url('/all-rooms/Luxury/luxury-2.jpg')",
-                    }}
-                  ></div>
-                </div>
-
-                <div className="executive-item">
-                  <div
-                    className="singleroom_slider_col"
-                    style={{
-                      backgroundImage: "url('/all-rooms/Luxury/luxury-3.jpg')",
+                      backgroundImage: "url('/all-rooms/Deluxe/deluxe-2.jpg')",
                     }}
                   ></div>
                 </div>
@@ -188,7 +184,7 @@ function LuxuryRoom() {
             </div>
             <div className="activities_slider">
               <OwlCarousel
-                className="other-room-owl owl-theme"
+                className="owl-theme"
                 responsiveClass={true}
                 nav
                 {...otherroom}
@@ -197,25 +193,24 @@ function LuxuryRoom() {
                   <div className="other-item">
                     <div
                       className="attraction_column"
-                      style={{ backgroundImage: "url('/homepage-deluxe.jpg')" }}
+                      style={{ backgroundImage: "url('/homepage-luxury.jpg')" }}
                     >
-                      <a href="/Roomsuits/Deluxe-room">
+                      <a href="/roomsuits/luxury-room">
                         <div className="attraction_column_title">
-                          <h3>DELUXE ROOM</h3>
+                          <h3>LUXURY SUITE</h3>
                         </div>
                       </a>
                     </div>
                   </div>
                 </div>
+
                 <div className="single-room-item">
                   <div className="other-item">
                     <div
                       className="attraction_column"
-                      style={{
-                        backgroundImage: "url('/homepage-executive.jpg')",
-                      }}
+                      style={{ backgroundImage: "url('/homepage-executive.jpg')" }}
                     >
-                      <a href="/Roomsuits/Executive-room">
+                      <a href="/roomsuits/executive-room">
                         <div className="attraction_column_title">
                           <h3>EXECUTIVE ROOM</h3>
                         </div>
@@ -223,15 +218,14 @@ function LuxuryRoom() {
                     </div>
                   </div>
                 </div>
+
                 <div className="single-room-item">
                   <div className="other-item">
                     <div
                       className="attraction_column"
-                      style={{
-                        backgroundImage: "url('/homepage-classic.jpeg')",
-                      }}
+                      style={{ backgroundImage: "url('/homepage-classic.jpeg')" }}
                     >
-                      <a href="/Roomsuits/Classic-room">
+                      <a href="/roomsuits/classic-room">
                         <div className="attraction_column_title">
                           <h3>CLASSIC ROOM</h3>
                         </div>
@@ -248,4 +242,4 @@ function LuxuryRoom() {
   );
 }
 
-export default LuxuryRoom;
+export default DeluxeRoom;

@@ -3,15 +3,21 @@ import Head from "next/head";
 import Link from "next/link";
 import { error } from "jquery";
 function Contactus() {
-  const initialValues = { fullname: "", email: "", phone: "", chechbox: "" };
+  const initialValues = { fullname: "", email: "", phone: ""};
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
   };
+
+  // const changeCheckbox = () => {
+  //   setIsChange(!ischange)
+  //   console.log(ischange)
+  // }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -21,8 +27,8 @@ function Contactus() {
 
   useEffect(() => {
     console.log(formErrors)
-    if (Object.keys(formErrors).length === 0 && isSubmit) {
-      console.log(formValues);
+    if (Object.keys(formErrors).length === 0 && isSubmit && !ischange) {
+      console.log("Thanks For Contacting Us")
     }
   }, [formErrors]);
 
@@ -41,9 +47,9 @@ function Contactus() {
     if (!values.fullname) {
       errors.phone = "Phone No. is required!";
     }
-    // if (!values.checkbox) {
-    //   errors.checkbox = "Checkbox is required!";
-    // }
+    if (!ischange) {
+      errors.ischange = "Checkbox is required!";
+    }
     return errors;
   };
 
@@ -168,7 +174,7 @@ function Contactus() {
                 <div className="col-md-6 col-sm-12 form-group">
                   <input
                     name="phone"
-                    type="text"
+                    type="number"
                     className="form-control"
                     placeholder="Phone"
                     value={formValues.phone}
@@ -189,8 +195,8 @@ function Contactus() {
                     type="checkbox"
                     className="form-check-input"
                     id="exampleCheck1"
-                    // value={formValues.checkbox}
-                    // onChange={handleChange}
+                    // value={ischange}
+                    // onChange={changeCheckbox}
                   />
                   <label className="form-check-label" htmlFor="exampleCheck1">
                     I have read the

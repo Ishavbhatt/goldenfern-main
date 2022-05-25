@@ -540,7 +540,7 @@ padding: 0;
   background-image: url("/classic-room-banner.jpeg");
 }
 .del-singleroom-banner {
-  background-image: url("/deluxe-room.jpg");
+  background-image: url("/deluxe-room-banner.jpg");
 }
 .lux-singleroom-banner {
   background-image: url("/luxury-room-banner.jpg");
@@ -1506,6 +1506,15 @@ background-image: url("/new-images/menu-banner.jpg");
   /* border-top: none;
   border-bottom: none; */
   
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 .contact_form form .form-group:nth-child(5) input {
   border-left: none;
