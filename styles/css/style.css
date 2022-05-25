@@ -1202,6 +1202,10 @@ background-image: url("/new-images/menu-banner.jpg");
   color: #fff;
   font-size: 18px !important;
 }
+.error-field {
+  color: rgb(148, 29, 29);
+  /* position: absolute; */
+}
 .color_white {
   color: #fff;
 }
@@ -1484,6 +1488,7 @@ background-image: url("/new-images/menu-banner.jpg");
 }
 .contact_form form .form-group input,
 .contact_form form .form-group textarea {
+  margin-bottom: 20px;
   border-radius: 0px;
   border: 1px solid #c1c1c1;
   height: 50px;
@@ -1498,17 +1503,19 @@ background-image: url("/new-images/menu-banner.jpg");
 }
 .contact_form form .form-group:nth-child(4) input,
 .contact_form form .form-group:nth-child(5) input {
-  border-top: none;
-  border-bottom: none;
+  /* border-top: none;
+  border-bottom: none; */
+  
 }
 .contact_form form .form-group:nth-child(5) input {
   border-left: none;
+  border-right: 1px solid #c1c1c1;
 }
 .contact_form form p {
   margin-bottom: 20px !important;
 }
 .contact_form form .form-group.form-check {
-  border: 1px solid #c1c1c1;
+  /* border: 1px solid #c1c1c1; */
   border-top: none;
   padding: 16px;
   /* line-height: 1; */

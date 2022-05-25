@@ -1,7 +1,52 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
+import { error } from "jquery";
 function Contactus() {
+  const initialValues = { fullname: "", email: "", phone: "", chechbox: "" };
+  const [formValues, setFormValues] = useState(initialValues);
+  const [formErrors, setFormErrors] = useState({});
+  const [isSubmit, setIsSubmit] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues({ ...formValues, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setFormErrors(validate(formValues));
+    setIsSubmit(true);
+  };
+
+  useEffect(() => {
+    console.log(formErrors)
+    if (Object.keys(formErrors).length === 0 && isSubmit) {
+      console.log(formValues);
+    }
+  }, [formErrors]);
+
+  const validate = (values) => {
+    const errors = {};
+    const regex =  /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    if (!values.fullname) {
+      errors.fullname = "Name is required!";
+    }
+    if (!values.email) {
+      errors.email = "Email is required!";
+    }
+     else if (!regex.test(values.email)) {
+      errors.email = "This is not a valid email format!";
+    }
+    if (!values.fullname) {
+      errors.phone = "Phone No. is required!";
+    }
+    // if (!values.checkbox) {
+    //   errors.checkbox = "Checkbox is required!";
+    // }
+    return errors;
+  };
+
   return (
     <>
       <Head>
@@ -67,21 +112,14 @@ function Contactus() {
             <div className="col-md-8 col-sm-12 contact_right">
               <Link
                 className="pointer"
-                target="_blank"
-                href="https://www.google.com/maps/dir//Golden+Fern+Resort,+Taradevi+Rd,+Bagh,+Shimla,+Himachal+Pradesh+171004/@31.0891678,77.1405961,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3905796a89448473:0xed76ee25a9bdb157!2m2!1d77.1405961!2d31.0891678"
+                href={
+                  "https://www.google.com/maps/place/Golden+Fern+Resort/@31.0891837,77.1406142,17z/data=!3m1!4b1!4m8!3m7!1s0x3905796a89448473:0xed76ee25a9bdb157!5m2!4m1!1i2!8m2!3d31.0891837!4d77.1406142"
+                }
               >
-                <a>
+                <a target="_blank">
                   <img src="/map-image.png" alt="" />
                 </a>
               </Link>
-
-              {/* <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13666.95865605713!2d77.1405961!3d31.0891678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xed76ee25a9bdb157!2sGolden%20Fern%20Resort!5e0!3m2!1sen!2sin!4v1638428151450!5m2!1sen!2sin"
-                width=""
-                height=""
-                allowFullScreen=""
-                loading="lazy"
-              ></iframe> */}
             </div>
           </div>
         </div>
@@ -90,8 +128,15 @@ function Contactus() {
       <section className="attraction_section contact_form_section common_padding pt-0">
         <div className="container">
           <div className="row">
+            {Object.keys(formErrors).length === 0 && isSubmit ? (
+              <alert className="alert alert-success" role="alert">
+                Thank You For Contacting us
+              </alert>
+            ) : (
+              console.log(formValues)
+            )}
             <div className="col-md-8 offset-md-2 col-sm-12 contact_form">
-              <form className="row">
+              <form onSubmit={handleSubmit} className="row">
                 <h3 className="text-center w-100">Talk To Us</h3>
                 <p className="text-center w-100">
                   Send us your questions. We promise to answer soon. Thank you!
@@ -99,25 +144,39 @@ function Contactus() {
 
                 <div className="col-md-12 form-group">
                   <input
-                    type="text"
+                  type="text"
+                    name="fullname"
                     className="form-control"
-                    placeholder="Name"
+                    placeholder="Full Name"
+                    value={formValues.fullname}
+                    onChange={handleChange}
                   />
+                <p className="error-field">{formErrors.fullname}</p>
+
                 </div>
-                <div className="col-md-6 col-sm-12 form-group">
+                  <div className="col-md-6 col-sm-12 form-group">
                   <input
+                    name="email"
                     type="email"
                     className="form-control"
                     placeholder="Email"
+                    value={formValues.email}
+                    onChange={handleChange}
                   />
+                <p className="error-field">{formErrors.email}</p>
                 </div>
                 <div className="col-md-6 col-sm-12 form-group">
                   <input
+                    name="phone"
                     type="text"
                     className="form-control"
                     placeholder="Phone"
+                    value={formValues.phone}
+                    onChange={handleChange}
                   />
+                <p className="error-field">{formErrors.phone}</p>
                 </div>
+                
                 <div className="col-md-12 col-sm-12 form-group">
                   <textarea
                     className="form-control"
@@ -126,21 +185,24 @@ function Contactus() {
                 </div>
                 <div className="col-md-12 col-sm-12 form-group form-check">
                   <input
+                  name="checkbox"
                     type="checkbox"
                     className="form-check-input"
                     id="exampleCheck1"
+                    // value={formValues.checkbox}
+                    // onChange={handleChange}
                   />
                   <label className="form-check-label" htmlFor="exampleCheck1">
-                    I have read the{" "}
-                    <a className="a-span" href="/Privacypolicy">
-                      {" "}
-                      Golden Fern Resort
-                    </a>{" "}
+                    I have read the
+                      <a className="a-span" href="/Privacypolicy">
+                        Golden Fern Resort
+                      </a>
                     policies and I accept the use and treatment of my personal
                     data.
                   </label>
+                {/* <p className="error-field">{formErrors.checkbox}</p> */}
                 </div>
-                <button type="submit" className="common_btn">
+                <button className="common_btn">
                   SEND REQUEST
                 </button>
               </form>

@@ -155,7 +155,7 @@ function ClassicRoom() {
                   <div
                     className="singleroom_slider_col"
                     style={{
-                      backgroundImage: "url('/gallery-room-1.jpg')",
+                      backgroundImage: "url('/all-rooms/classic/classic-room-1.jpg')",
                     }}
                   ></div>
                 </div>
@@ -163,16 +163,7 @@ function ClassicRoom() {
                   <div
                     className="singleroom_slider_col"
                     style={{
-                      backgroundImage: "url('/gallery-room-2.jpg')",
-                    }}
-                  ></div>
-                </div>
-
-                <div className="executive-item">
-                  <div
-                    className="singleroom_slider_col"
-                    style={{
-                      backgroundImage: "url('/gallery-room-3.jpg')",
+                      backgroundImage: "url('/all-rooms/classic/classic-room-2.jpg')",
                     }}
                   ></div>
                 </div>
@@ -181,7 +172,7 @@ function ClassicRoom() {
                   <div
                     className="singleroom_slider_col"
                     style={{
-                      backgroundImage: "url('/gallery-room-4.jpg')",
+                      backgroundImage: "url('/all-rooms/classic/classic-room-3.jpg')",
                     }}
                   ></div>
                 </div>
@@ -190,43 +181,7 @@ function ClassicRoom() {
                   <div
                     className="singleroom_slider_col"
                     style={{
-                      backgroundImage: "url('/gallery-room-5.jpg')",
-                    }}
-                  ></div>
-                </div>
-
-                <div className="executive-item">
-                  <div
-                    className="singleroom_slider_col"
-                    style={{
-                      backgroundImage: "url('/gallery-room-6.jpg')",
-                    }}
-                  ></div>
-                </div>
-
-                <div className="executive-item">
-                  <div
-                    className="singleroom_slider_col"
-                    style={{
-                      backgroundImage: "url('/gallery-room-7.jpg')",
-                    }}
-                  ></div>
-                </div>
-
-                <div className="executive-item">
-                  <div
-                    className="singleroom_slider_col"
-                    style={{
-                      backgroundImage: "url('/gallery-room-8.jpg')",
-                    }}
-                  ></div>
-                </div>
-
-                <div className="executive-item">
-                  <div
-                    className="singleroom_slider_col"
-                    style={{
-                      backgroundImage: "url('/gallery-room-9.jpg')",
+                      backgroundImage: "url('/all-rooms/classic/classic-room-4.jpg')",
                     }}
                   ></div>
                 </div>

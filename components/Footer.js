@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
 function Footer() {
+  
+
+  const handleChange = (e) => {
+    setEmail(e.target.value)
+  }
   return (
     <>
       <section className="footer_section">
@@ -16,7 +21,7 @@ function Footer() {
                   <div className="f_newsletter">
                     <h4 className="text-uppercase">SUBSCRIBE OUR NEWSLETTER</h4>
                     <form>
-                      <input type="email" placeholder="Email*" required="" />
+                      <input type="email" placeholder="Email*" onChange={handleChange}/>
                       <button type="submit" className="common_arrow">
                         <img src="/arrow.svg" alt="Icon" />
                       </button>
