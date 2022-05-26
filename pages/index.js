@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import DatePicker from "react-datepicker";
 import axios from "axios";
 import Link from "next/link";
-import Fade from 'react-reveal/Fade';
+import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Slide";
 
 var $ = require("jquery");
 if (typeof window !== "undefined") {
@@ -104,7 +105,7 @@ const Home = ({ token, ...props }) => {
   const instaGallery = {
     stagePadding: 50,
     loop: true,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 2000,
     autoplayHoverPause: true,
     margin: 10,
@@ -173,7 +174,6 @@ const Home = ({ token, ...props }) => {
   };
 
   return (
-    
     <>
       <Head>
         <link rel="icon" href="favicon.png" />
@@ -272,31 +272,27 @@ const Home = ({ token, ...props }) => {
       <section className="about_hotel">
         <div className="container">
           <div className="row">
-          <Fade left>
-            <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
-            
-              <h2 className="common_title">
-                <span className="golden_color">Golden Fern</span>Shimla
-                <a className="common_arrow" href="/about-us">
-                  <img src="/arrow.svg" alt="Icon" />
-                </a>
-              </h2>
-              <p>
-                Golden Fern Resort Shimla ideally located on Shimla Kalka
-                Highway at Kachi Ghati, just 4 km away from the city Centre The
-                Mall Road. With 50 Rooms and Suites, the Resort has a big
-                Banquet hall and conference Hall to host the big events,
-                marriages, and conferences in Shimla.
-              </p>
-              
-            </div>
+            <Fade left>
+              <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
+                <h2 className="common_title">
+                  <span className="golden_color">Golden Fern</span>Shimla
+                  <a className="common_arrow" href="/about-us">
+                    <img src="/arrow.svg" alt="Icon" />
+                  </a>
+                </h2>
+                <p>
+                  Golden Fern Resort Shimla ideally located on Shimla Kalka
+                  Highway at Kachi Ghati, just 4 km away from the city Centre
+                  The Mall Road. With 50 Rooms and Suites, the Resort has a big
+                  Banquet hall and conference Hall to host the big events,
+                  marriages, and conferences in Shimla.
+                </p>
+              </div>
             </Fade>
             <Fade right>
-            <div className="col-lg-7 col-md-7 col-sm-12 about_hotel_right text-center"
-            >
-              
-              <div className="about_hotel_image"></div>
-            </div>
+              <div className="col-lg-7 col-md-7 col-sm-12 about_hotel_right text-center">
+                <div className="about_hotel_image"></div>
+              </div>
             </Fade>
           </div>
         </div>
@@ -305,13 +301,17 @@ const Home = ({ token, ...props }) => {
       <section className="testimonials_section room_suites padding-t-b-40">
         <div className="container">
           <div className="row">
-            <div className="col-md-6 col-sm-12 ">
-              <h2 className="common_title ">Rooms & Suites</h2>
-              <p className="rooms-para">
-                All rooms and suites are elegantly appointed and reflect
-                unpretentious luxury and stylish className with wooden flooring.
-              </p>
-            </div>
+            <Fade right big>
+              <div className="col-md-6 col-sm-12">
+                <h2 className="common_title ">Rooms & Suites</h2>
+                <p className="rooms-para">
+                  All rooms and suites are elegantly appointed and reflect
+                  unpretentious luxury and stylish className with wooden
+                  flooring.
+                </p>
+              </div>
+            </Fade>
+
             <div className="col-md-12 rooms_slider">
               <OwlCarousel className="gallery-owl-theme" {...rooms}>
                 <div className="index-room-item">
@@ -459,13 +459,15 @@ const Home = ({ token, ...props }) => {
       <section className="testimonials_section padding-t-b-40">
         <div className="container">
           <div className="row">
-            <div className="col-md-6 offset-md-3 col-sm-12 text-center">
-              <h2 className="test-title">What People Say?</h2>
-              <p>
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
+            <Fade bottom>
+              <div className="col-md-6 offset-md-3 col-sm-12 text-center">
+                <h2 className="test-title">What People Say?</h2>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </Fade>
 
             <div className="col-md-12 padding-t-b-40 testimonials-dots">
               <OwlCarousel {...testmonials}>
@@ -529,18 +531,20 @@ const Home = ({ token, ...props }) => {
       <section className="posts_section common_padding">
         <div className="container">
           <div className="row">
-            <h2 className="common_title">
-              Stay Update with <br /> Golden Fern
-            </h2>
-            <div className="flex-between">
-              <div className="col-lg-6 col-md-6 col-sm-12 ">
-                <p>
-                  All rooms and suites are elegantly appointed and reflect
-                  unpretentious luxury and stylish className with wooden
-                  flooring.
-                </p>
+            <Fade right big>
+              <h2 className="common_title">
+                Stay Update with <br /> Golden Fern
+              </h2>
+              <div className="flex-between">
+                <div className="col-lg-6 col-md-6 col-sm-12 ">
+                  <p>
+                    All rooms and suites are elegantly appointed and reflect
+                    unpretentious luxury and stylish className with wooden
+                    flooring.
+                  </p>
+                </div>
               </div>
-            </div>
+            </Fade>
             <div className="clearfix"></div>
             <OwlCarousel {...blogs}>
               <div className="post_column">
@@ -576,14 +580,22 @@ const Home = ({ token, ...props }) => {
 
       <section className="insta_gallery_section common_padding">
         <div className="container">
-          <div className="row insta-gallery">
-            <h1 className="text-center">Instagram</h1>
+          <div className="row">
+            <Slide bottom>
+              <h2 className="text-center">Follow Us On Instagram</h2>
+            </Slide>
             <Link href="https://instagram.com/goldenfernresort_">
-              <a className="text-center golden_color m-2">@goldenfernresort_</a>
+              <a className="insta-gallery-link">@goldenfernresort_</a>
             </Link>
+
             <OwlCarousel {...instaGallery}>
               {feeds.map((feed) => (
-                <img key={feed.id} src={feed.media_url} alt="" />
+                <img
+                  className="insta-gallery-img"
+                  key={feed.id}
+                  src={feed.media_url}
+                  alt=""
+                />
               ))}
             </OwlCarousel>
           </div>

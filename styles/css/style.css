@@ -1023,8 +1023,7 @@ padding: 0;
   padding: 70px 0px 50px;
 }
 .copyright {
-  text-align: center;
-  padding-top: 20px;
+  /* text-align: center; */
   color: white;
 }
 .footer_upper {
@@ -1056,8 +1055,12 @@ padding: 0;
   background-position: center;
   background-size: cover;
 }
+.footer_bottom_column {
+  margin-bottom: 10px;
+}
 .footer_bottom_column ul {
   padding: 0;
+  text-align: center;
 }
 .footer_bottom_column li {
   display: inline-block;
@@ -1221,8 +1224,17 @@ background-image: url("/new-images/menu-banner.jpg");
 .pages-info {
   /* width: auto; */
 }
-.attraction_column, .restaurant_column {
+.attraction_column {
   height: 460px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 23px 20px;
+  transition: all ease-in-out 0.5s;
+}
+.restaurant_column {
+  height: 300px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1286,6 +1298,8 @@ background-image: url("/new-images/menu-banner.jpg");
 }
 .attraction_column_title h3 {
   color: #fff;
+}
+.otherroom_title {
   text-align: left;
 }
 .attraction_column_title p {
@@ -2374,9 +2388,6 @@ div.wpcf7 .ajax-loader {
   font-size: 20px;
   font-family: "Freight-Medium" !important;
 }
-.insta_gallery_section {
-  background: white;
-}
 
 /* Restaurant Sectiion */
 .restaurant_image {
@@ -2425,9 +2436,22 @@ div.wpcf7 .ajax-loader {
     z-index: 9;
 }
 /* Insta Gallery */
-.insta-gallery img {
+.insta-gallery-img {
   width: 400px;
   height: auto;
   display: block;
   transition: all 100ms ease-out;
+}
+.insta-gallery-link {
+  text-align: center;
+  font-size: 18px;
+  color: #e29554;
+  margin-bottom: 10px;
+  transition: all ease-in-out 0.5s;
+}
+.insta-gallery-link:hover {
+  color: #4d5852;
+}
+.insta_gallery_section {
+  background: white;
 }

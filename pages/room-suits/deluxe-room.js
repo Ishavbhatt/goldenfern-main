@@ -220,7 +220,7 @@ function DeluxeRoom() {
                       style={{ backgroundImage: "url('/homepage-luxury.jpg')" }}
                     >
                       <a href="/room-suits/luxury-room">
-                        <div className="attraction_column_title">
+                        <div className="attraction_column_title otherroom_title">
                           <h3>LUXURY SUITE</h3>
                         </div>
                       </a>
@@ -235,7 +235,7 @@ function DeluxeRoom() {
                       style={{ backgroundImage: "url('/homepage-executive.jpg')" }}
                     >
                       <a href="/room-suits/executive-room">
-                        <div className="attraction_column_title">
+                        <div className="attraction_column_title otherroom_title">
                           <h3>EXECUTIVE ROOM</h3>
                         </div>
                       </a>
@@ -250,7 +250,7 @@ function DeluxeRoom() {
                       style={{ backgroundImage: "url('/homepage-classic.jpeg')" }}
                     >
                       <a href="/room-suits/classic-room">
-                        <div className="attraction_column_title">
+                        <div className="attraction_column_title otherroom_title">
                           <h3>CLASSIC ROOM</h3>
                         </div>
                       </a>

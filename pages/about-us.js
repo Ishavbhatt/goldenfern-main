@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Head from "next/head";
+import Slide from 'react-reveal/Slide';
 
 function Aboutus() {
   return (
@@ -32,9 +33,12 @@ function Aboutus() {
         <div className="about-section-col spy_section">
           <div className="container">
             <div className="row">
-            <div className="col-md-6 col-sm-12 wedding_services_right">
+            <Slide left>
+              <div className="col-md-6 col-sm-12 wedding_services_right">
                 <div className="wedding_services_image who-we-are"></div>
               </div>
+            </Slide>
+            <Slide right>
               <div className="col-md-6 col-sm-12 about_hotel_text">
                 <h3 className="common_title">
                   <span className="golden_color">Who We</span> Are
@@ -47,7 +51,7 @@ function Aboutus() {
                   guests at Golden Fern Resort Shimla.
                 </p>
               </div>
-             
+              </Slide>
             </div>
           </div>
         </div>
@@ -69,6 +73,7 @@ function Aboutus() {
         <div className="about-section-col spy_section">
           <div className="container">
             <div className="row justify-center">
+            <Slide left>
             <div className="col-md-6 col-sm-12 about_hotel_text">
                 <h3 className="common_title">
                   <span className="golden_color">About Shimla</span> Hill Station
@@ -88,10 +93,12 @@ function Aboutus() {
                   guests at Golden Fern Resort Shimla.
                 </p>
               </div>
+              </Slide>
+              <Slide right>
               <div className="col-md-6 col-sm-12 wedding_services_right">
                 <div className="about_hotel_image shimla-hill-station"></div>
               </div>
-              
+              </Slide>
             </div>
           </div>
         </div>

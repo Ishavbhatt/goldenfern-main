@@ -1,5 +1,7 @@
 import React from "react";
 import Head from "next/head";
+import Fade from "react-reveal/Fade";
+
 function Healthsafety() {
   return (
     <>
@@ -33,6 +35,7 @@ function Healthsafety() {
         <section className="safety_section common_padding">
           <div className="container">
             <div className="row">
+              <Fade left>
               <div className="col-md-6 col-sm-12 safety_section_text">
                 <h2 className="white">Mandatory Use of Safety Gears</h2>
                 <ul>
@@ -52,15 +55,19 @@ function Healthsafety() {
                   </li>
                 </ul>
               </div>
+              </Fade>
+              <Fade right>
               <div className="col-md-6 col-sm-12 safety_section_image">
                 <div className="safety_inner_1"></div>
               </div>
+              </Fade>
             </div>
           </div>
         </section>
         <section className="safety_section common_padding">
           <div className="container">
             <div className="row">
+            <Fade left>
               <div className="col-md-6 col-sm-12 safety_section_text">
                 <h2 className="white">Proper Sanitation</h2>
                 <ul>
@@ -84,9 +91,12 @@ function Healthsafety() {
                   </li>
                 </ul>
               </div>
+              </Fade>
+              <Fade right>
               <div className="col-md-6 col-sm-12 safety_section_image">
                 <div className="safety_inner_2"></div>
               </div>
+              </Fade>
             </div>
           </div>
         </section>
@@ -94,36 +104,36 @@ function Healthsafety() {
         <section className="safety_section common_padding">
           <div className="container">
             <div className="row">
+            <Fade left>
               <div className="col-md-6 col-sm-12 safety_section_text">
                 <h2 className="white">Food & Hygiene</h2>
                 <ul>
                   <li>Restaurant seating to ensure social distancing</li>
                   <li>
-                    {" "}
                     Introduction of an e-menu that can be viewed by guests on
                     their respective phones
                   </li>
                   <li>
-                    {" "}
                     Use of hand sanitisers in restaurants Introduction of
                     natural immunity-boosting beverages, which will help our
                     guests stay healthy
                   </li>
                   <li>
-                    {" "}
                     Washing and sanitisation of vegetables, fruits and groceries
                   </li>
                   <li>
-                    {" "}
                     Preparation of food in small quantities to ensure fresh food
                     is served to the guests Washing of all dishes at 80 degrees
                     Celsius
                   </li>
                 </ul>
               </div>
+              </Fade>
+              <Fade right>
               <div className="col-md-6 col-sm-12 safety_section_image">
                 <div className="safety_inner_3"></div>
               </div>
+              </Fade>
             </div>
           </div>
         </section>
@@ -131,6 +141,7 @@ function Healthsafety() {
         <section className="safety_section common_padding">
           <div className="container">
             <div className="row">
+              <Fade left>
               <div className="col-md-6 col-sm-12 safety_section_text">
                 <h2 className="white">Contact Free Interaction</h2>
                 <ul>
@@ -146,9 +157,12 @@ function Healthsafety() {
                   </li>
                 </ul>
               </div>
+              </Fade>
+              <Fade right>
               <div className="col-md-6 col-sm-12 safety_section_image">
                 <div className="safety_inner_4"></div>
               </div>
+              </Fade>
             </div>
           </div>
         </section>

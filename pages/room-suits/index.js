@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Head from "next/head";
 import Scrollspy from "react-scrollspy";
+import Fade from "react-reveal/Fade";
+
 
 function roomsuits() {
   const [scroll, setScroll] = useState(false);
@@ -77,7 +79,7 @@ function roomsuits() {
                       <div className="col-lg-7 col-md-7 col-sm-12 about_hotel_right text-center">
                         <div className="about_hotel_image executive"></div>
                       </div>
-
+                      <Fade right>
                       <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
                         <h2 className="common_title">
                           <span className="golden_color">EXECUTIVE</span>ROOM
@@ -97,6 +99,7 @@ function roomsuits() {
                           <img src="/arrow.svg" alt="Icon" />
                         </a>
                       </div>
+                      </Fade>
                     </div>
                   </div>
                 </div>
@@ -109,7 +112,7 @@ function roomsuits() {
                       <div className="col-lg-7 col-md-7 col-sm-12 about_hotel_right text-center">
                         <div className="about_hotel_image classic"></div>
                       </div>
-
+                      <Fade left>
                       <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
                         <h2 className="common_title">
                           <span className="golden_color">CLASSIC</span>ROOM
@@ -129,6 +132,7 @@ function roomsuits() {
                           <img src="/arrow.svg" alt="Icon" />
                         </a>
                       </div>
+                      </Fade>
                     </div>
                   </div>
                 </div>
@@ -141,7 +145,7 @@ function roomsuits() {
                       <div className="col-lg-7 col-md-7 col-sm-12 about_hotel_right text-center">
                         <div className="about_hotel_image luxury"></div>
                       </div>
-
+                      <Fade right>
                       <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
                         <h2 className="common_title">
                           <span className="golden_color">LUXURY</span>ROOM
@@ -161,6 +165,7 @@ function roomsuits() {
                           <img src="images/arrow.svg" alt="Icon" />
                         </a>
                       </div>
+                      </Fade>
                     </div>
                   </div>
                 </div>
@@ -173,7 +178,7 @@ function roomsuits() {
                       <div className="col-lg-7 col-md-7 col-sm-12 about_hotel_right text-center">
                         <div className="about_hotel_image deluxe"></div>
                       </div>
-
+                      <Fade left>
                       <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
                         <h2 className="common_title">
                           <span className="golden_color">DELUXE</span>ROOM
@@ -193,6 +198,7 @@ function roomsuits() {
                           <img src="images/arrow.svg" alt="Icon" />
                         </a>
                       </div>
+                      </Fade>
                     </div>
                   </div>
                 </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Fade from "react-reveal/Fade";
 
 var $ = require("jquery");
 if (typeof window !== "undefined") {
@@ -69,29 +70,33 @@ function Restaurant() {
               <div className="restaurant_col">
                 <div className="container">
                   <div className="row">
-                    <div className="col-md-6 col-sm-12 wedding_services_right">
-                      <div className="restaurant_image res-img-1"></div>
-                    </div>
-                    <div className="col-md-6 col-sm-12 about_hotel_text">
-                      <h3 className="common_title">
-                        <span className="golden_color">
-                          An Ambient Dining Experiance
-                        </span>
-                      </h3>
-                      <p>
-                        Designed to the highest specifications and situated on
-                        all floors, with a private balcony and city view the
-                        executive rooms are spacious with all modern amenities
-                        and furnishing to meet the desired level of the
-                        satisfaction of the esteemed guests at Golden Fern
-                        Resort Shimla.
-                      </p>
-                      <a href="/menu">
-                        <button className="singlepage-bookbtn">
-                          view Menu
-                        </button>
-                      </a>
-                    </div>
+                    <Fade left>
+                      <div className="col-md-6 col-sm-12 wedding_services_right">
+                        <div className="restaurant_image res-img-1"></div>
+                      </div>
+                    </Fade>
+                    <Fade right>
+                      <div className="col-md-6 col-sm-12 about_hotel_text">
+                        <h3 className="common_title">
+                          <span className="golden_color">
+                            An Ambient Dining Experiance
+                          </span>
+                        </h3>
+                        <p>
+                          Designed to the highest specifications and situated on
+                          all floors, with a private balcony and city view the
+                          executive rooms are spacious with all modern amenities
+                          and furnishing to meet the desired level of the
+                          satisfaction of the esteemed guests at Golden Fern
+                          Resort Shimla.
+                        </p>
+                        <a href="/menu">
+                          <button className="singlepage-bookbtn">
+                            view Menu
+                          </button>
+                        </a>
+                      </div>
+                    </Fade>
                   </div>
                 </div>
               </div>
@@ -100,29 +105,33 @@ function Restaurant() {
               <div className="restaurant_col">
                 <div className="container">
                   <div className="row">
-                    <div className="col-md-6 col-sm-12 wedding_services_right">
-                      <div className="restaurant_image res-img-2"></div>
-                    </div>
-                    <div className="col-md-6 col-sm-12 about_hotel_text">
-                      <h3 className="common_title">
-                        <span className="golden_color">
-                          Traditional & Family Reciepe
-                        </span>
-                      </h3>
-                      <p>
-                        Designed to the highest specifications and situated on
-                        all floors, with a private balcony and city view the
-                        executive rooms are spacious with all modern amenities
-                        and furnishing to meet the desired level of the
-                        satisfaction of the esteemed guests at Golden Fern
-                        Resort Shimla.
-                      </p>
-                      <a href="/contact-us">
-                        <button className="singlepage-bookbtn">
-                          Make Reservation
-                        </button>
-                      </a>
-                    </div>
+                    <Fade left>
+                      <div className="col-md-6 col-sm-12 wedding_services_right">
+                        <div className="restaurant_image res-img-2"></div>
+                      </div>
+                    </Fade>
+                    <Fade right>
+                      <div className="col-md-6 col-sm-12 about_hotel_text">
+                        <h3 className="common_title">
+                          <span className="golden_color">
+                            Traditional & Family Reciepe
+                          </span>
+                        </h3>
+                        <p>
+                          Designed to the highest specifications and situated on
+                          all floors, with a private balcony and city view the
+                          executive rooms are spacious with all modern amenities
+                          and furnishing to meet the desired level of the
+                          satisfaction of the esteemed guests at Golden Fern
+                          Resort Shimla.
+                        </p>
+                        <a href="/contact-us">
+                          <button className="singlepage-bookbtn">
+                            Make Reservation
+                          </button>
+                        </a>
+                      </div>
+                    </Fade>
                   </div>
                 </div>
               </div>

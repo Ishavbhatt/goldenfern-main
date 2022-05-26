@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
+import Fade from "react-reveal/Fade";
+
+
 import { error } from "jquery";
 function Contactus() {
   const [checked, setChecked] = useState(false)
@@ -84,6 +87,7 @@ function Contactus() {
       <section className="common_padding">
         <div className="container">
           <div className="row">
+            <Fade left>
             <div className="col-lg-4 col-md-4 col-sm-12 contact_left">
               <div className="footer_address_right_inner">
                 <div>
@@ -115,7 +119,8 @@ function Contactus() {
                 </a>
               </div>
             </div>
-
+            </Fade>
+            <Fade right>
             <div className="col-md-8 col-sm-12 contact_right">
               <Link
                 className="pointer"
@@ -128,6 +133,7 @@ function Contactus() {
                 </a>
               </Link>
             </div>
+            </Fade>
           </div>
         </div>
       </section>
@@ -135,6 +141,7 @@ function Contactus() {
       <section className="attraction_section contact_form_section common_padding pt-0">
         <div className="container">
           <div className="row">
+         
             {Object.keys(formErrors).length === 0 && isSubmit ? (
               <div className="alert alert-success" role="alert">
                 Thank You For Contacting us
@@ -142,6 +149,7 @@ function Contactus() {
             ) : (
               console.log(formValues)
             )}
+               <Fade bottom>
             <div className="col-md-8 offset-md-2 col-sm-12 contact_form">
               <form onSubmit={handleSubmit} className="row">
                 <h3 className="text-center w-100">Talk To Us</h3>
@@ -213,7 +221,9 @@ function Contactus() {
                   SEND REQUEST
                 </button>
               </form>
+            
             </div>
+            </Fade>
           </div>
         </div>
       </section>

@@ -100,8 +100,7 @@ function Footer() {
         </div>
         <div className="footer_bottom w-100">
           <div className="container">
-            <div className="row">
-              <div className="col-lg-8 col-md-9 col-sm-12 footer_bottom_column">
+          <div className="col-lg-12 col-md-12 col-sm-12 footer_bottom_column">
                 <ul>
                   <li>
                     <Link href="/privacy-policy">Privacy Policy</Link>
@@ -123,9 +122,12 @@ function Footer() {
                     <Link href="/health-and-safety">Health & Safety</Link>
                   </li>
                 </ul>
-              </div>
-
-              <div className="col-lg-4 col-md-3 col-sm-12 footer_bottom_column text-right">
+          </div>
+            <div className="row">
+              <div className="col-lg-6 col-md-3 col-sm-12 copyright">
+              <span>&#169; All Rights Reserved for Golden Fern Resort</span>
+            </div>
+              <div className="col-lg-6 col-md-3 col-sm-12 footer_bottom_column text-right">
                 <span>
                   Powered By:
                   <a
@@ -138,10 +140,7 @@ function Footer() {
                 </span>
               </div>
             </div>
-            <div className="copyright">
-              <span>&#169; All Rights Reserved for Golden Fern Resort</span>
-            </div>
-          </div>
+           </div>
         </div>
       </section>
     </>
