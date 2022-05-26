@@ -25,11 +25,11 @@ function Restaurant() {
         nav: true,
       },
       600: {
-        items: 1,
+        items: 2,
         nav: true,
       },
       1000: {
-        items: 2,
+        items: 3,
         nav: true,
         loop: false,
       },
@@ -63,65 +63,71 @@ function Restaurant() {
       </section>
 
       <section className="scrollspy-example">
-      <div className="container">
-            <div className="row">
-        <div className="spy_section">
-          <div className="restaurant_col">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-6 col-sm-12 wedding_services_right">
-                  <div className="restaurant_image res-img-1"></div>
+        <div className="container">
+          <div className="row">
+            <div className="spy_section">
+              <div className="restaurant_col">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-md-6 col-sm-12 wedding_services_right">
+                      <div className="restaurant_image res-img-1"></div>
+                    </div>
+                    <div className="col-md-6 col-sm-12 about_hotel_text">
+                      <h3 className="common_title">
+                        <span className="golden_color">
+                          An Ambient Dining Experiance
+                        </span>
+                      </h3>
+                      <p>
+                        Designed to the highest specifications and situated on
+                        all floors, with a private balcony and city view the
+                        executive rooms are spacious with all modern amenities
+                        and furnishing to meet the desired level of the
+                        satisfaction of the esteemed guests at Golden Fern
+                        Resort Shimla.
+                      </p>
+                      <a href="/menu">
+                        <button className="singlepage-bookbtn">
+                          view Menu
+                        </button>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div className="col-md-6 col-sm-12 about_hotel_text">
-                  <h3 className="common_title">
-                    <span className="golden_color">
-                      An Ambient Dining Experiance
-                    </span>
-                  </h3>
-                  <p>
-                    Designed to the highest specifications and situated on all
-                    floors, with a private balcony and city view the executive
-                    rooms are spacious with all modern amenities and furnishing
-                    to meet the desired level of the satisfaction of the
-                    esteemed guests at Golden Fern Resort Shimla.
-                  </p>
-                  <a href="/menu">
-                    <button className="singlepage-bookbtn">view Menu</button>
-                  </a>
+              </div>
+            </div>
+            <div className="spy_section">
+              <div className="restaurant_col">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-md-6 col-sm-12 wedding_services_right">
+                      <div className="restaurant_image res-img-2"></div>
+                    </div>
+                    <div className="col-md-6 col-sm-12 about_hotel_text">
+                      <h3 className="common_title">
+                        <span className="golden_color">
+                          Traditional & Family Reciepe
+                        </span>
+                      </h3>
+                      <p>
+                        Designed to the highest specifications and situated on
+                        all floors, with a private balcony and city view the
+                        executive rooms are spacious with all modern amenities
+                        and furnishing to meet the desired level of the
+                        satisfaction of the esteemed guests at Golden Fern
+                        Resort Shimla.
+                      </p>
+                      <a href="/contact-us">
+                        <button className="singlepage-bookbtn">
+                          Make Reservation
+                        </button>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="spy_section">
-          <div className="restaurant_col">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-6 col-sm-12 wedding_services_right">
-                  <div className="restaurant_image res-img-2"></div>
-                </div>
-                <div className="col-md-6 col-sm-12 about_hotel_text">
-                  <h3 className="common_title">
-                    <span className="golden_color">
-                      Traditional & Family Reciepe
-                    </span>
-                  </h3>
-                  <p>
-                    Designed to the highest specifications and situated on all
-                    floors, with a private balcony and city view the executive
-                    rooms are spacious with all modern amenities and furnishing
-                    to meet the desired level of the satisfaction of the
-                    esteemed guests at Golden Fern Resort Shimla.
-                  </p>
-                   <a href="/contact-us">
-                    <button className="singlepage-bookbtn">Make Reservation</button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
         </div>
       </section>
 
@@ -155,7 +161,8 @@ function Restaurant() {
                 </div>
                 <div className="activity-item">
                   <div className="restaurant_column res-item-6"></div>
-                  <div className="activity-item">
+                </div>
+                <div className="activity-item">
                   <div className="restaurant_column res-item-7"></div>
                 </div>
                 <div className="activity-item">
@@ -163,7 +170,6 @@ function Restaurant() {
                 </div>
                 <div className="activity-item">
                   <div className="restaurant_column res-item-9"></div>
-                </div>
                 </div>
               </OwlCarousel>
             </div>
