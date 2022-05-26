@@ -141,13 +141,29 @@ function Restaurant() {
                 <div className="activity-item">
                   <div className="restaurant_column res-item-1"></div>
                 </div>
-
                 <div className="activity-item">
                   <div className="restaurant_column res-item-2"></div>
                 </div>
-
                 <div className="activity-item">
                   <div className="restaurant_column res-item-3"></div>
+                </div>
+                <div className="activity-item">
+                  <div className="restaurant_column res-item-4"></div>
+                </div>
+                <div className="activity-item">
+                  <div className="restaurant_column res-item-5"></div>
+                </div>
+                <div className="activity-item">
+                  <div className="restaurant_column res-item-6"></div>
+                  <div className="activity-item">
+                  <div className="restaurant_column res-item-7"></div>
+                </div>
+                <div className="activity-item">
+                  <div className="restaurant_column res-item-8"></div>
+                </div>
+                <div className="activity-item">
+                  <div className="restaurant_column res-item-9"></div>
+                </div>
                 </div>
               </OwlCarousel>
             </div>

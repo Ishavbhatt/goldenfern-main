@@ -1286,6 +1286,7 @@ background-image: url("/new-images/menu-banner.jpg");
 }
 .attraction_column_title h3 {
   color: #fff;
+  text-align: left;
 }
 .attraction_column_title p {
   display: none;
@@ -2055,19 +2056,37 @@ div.wpcf7 .ajax-loader {
   /* width: 450px; */
 }
 .res-img-1 {
-  background-image: url("/new-images/dinning.jpg");
+  background-image: url("/gallery-restaurant-1.jpg");
 }
 .res-img-2 {
-  background-image: url("/new-images/recipe.jpg");
+  background-image: url("/gallery-restaurant-1.jpg");
 }
 .res-item-1 {
-  background-image: url("/new-images/restaurant-1.jpg");
+  background-image: url("/gallery-restaurant-1.jpg");
 }
 .res-item-2 {
-  background-image: url("/new-images/restaurant-2.jpg");
+  background-image: url("/gallery-restaurant-2.jpg");
 }
 .res-item-3 {
-  background-image: url("/new-images/restaurant-3.jpg");
+  background-image: url("/gallery-restaurant-3.jpg");
+}
+.res-item-4 {
+  background-image: url("/gallery-restaurant-4.jpg");
+}
+.res-item-5 {
+  background-image: url("/gallery-restaurant-5.jpg");
+}
+.res-item-6 {
+  background-image: url("/gallery-restaurant-6.jpg");
+}
+.res-item-7 {
+  background-image: url("/gallery-restaurant-7.jpg");
+}
+.res-item-8 {
+  background-image: url("/gallery-restaurant-8.jpg");
+}
+.res-item-9 {
+  background-image: url("/food.jpg");
 }
 .wed_services_1 {
   background-image: url("/new-images/beauty.jpg");
