@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import DatePicker from "react-datepicker";
 import axios from "axios";
 import Link from "next/link";
+import Fade from 'react-reveal/Fade';
 
 var $ = require("jquery");
 if (typeof window !== "undefined") {
@@ -271,7 +272,9 @@ const Home = ({ token, ...props }) => {
       <section className="about_hotel">
         <div className="container">
           <div className="row">
+          <Fade left>
             <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
+            
               <h2 className="common_title">
                 <span className="golden_color">Golden Fern</span>Shimla
                 <a className="common_arrow" href="/about-us">
@@ -285,11 +288,16 @@ const Home = ({ token, ...props }) => {
                 Banquet hall and conference Hall to host the big events,
                 marriages, and conferences in Shimla.
               </p>
+              
             </div>
+            </Fade>
+            <Fade right>
             <div className="col-lg-7 col-md-7 col-sm-12 about_hotel_right text-center"
             >
+              
               <div className="about_hotel_image"></div>
             </div>
+            </Fade>
           </div>
         </div>
       </section>
