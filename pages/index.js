@@ -587,7 +587,7 @@ const Home = ({ token, ...props }) => {
               <h2 className="text-center">Follow Us On Instagram</h2>
             </Slide>
             <Link href="https://instagram.com/goldenfernresort_">
-              <a className="insta-gallery-link">@goldenfernresort_</a>
+              <a target="_blank" className="insta-gallery-link">@goldenfernresort_</a>
             </Link>
 
             {isLoading ? (

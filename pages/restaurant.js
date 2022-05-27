@@ -91,7 +91,7 @@ function Restaurant() {
                         </p>
                         <div className="res_link_btn text-capitalize">
                           <Link href="/menu">
-                            <a target="_blank">View Menu</a>
+                            <a>View Menu</a>
                           </Link>
                           <div className="common_arrow">
                             <img src="/images/arrow.svg" alt="Icon" />
@@ -128,7 +128,7 @@ function Restaurant() {
 
                         <div className="res_link_btn text-capitalize">
                           <Link href="/contact-us">
-                            <a target="_blank">Make Reservation</a>
+                            <a>Make Reservation</a>
                           </Link>
                           <div className="common_arrow">
                             <img src="/images/arrow.svg" alt="Icon" />
