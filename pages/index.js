@@ -37,6 +37,7 @@ const Home = ({ token, ...props }) => {
   const [people, setPeople] = useState(1);
   const [checkInDate, setCheckInDate] = useState(null);
   const [checkOutDate, setCheckOutDate] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState(null);
   const [feeds, setFeeds] = useState([]);
   const lat = 31.1048;
@@ -157,21 +158,21 @@ const Home = ({ token, ...props }) => {
   }, []);
 
   useEffect(() => {
+    const fetchFeeds = () => {
+      axios
+        .get(
+          "https://graph.instagram.com/me/media?fields=id,media_type,media_url,caption&limit=12&access_token=IGQVJVRzNBY3JhMVpJOThLQkYzcHMyMG05UDRWbGpxRTJpUVZANOFg0dElnMERCYzdLUk9WTEt1c0pTbDlqRE9RLTlhRk1qWDNJcVJHeHo2R3FRbEFaaTNOaVNDRVdVcnZAvN1djWWVn"
+        )
+        .then((res) => {
+          setFeeds(res.data.data);
+          setIsLoading(false);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    };
     fetchFeeds();
   }, []);
-
-  const fetchFeeds = () => {
-    axios
-      .get(
-        "https://graph.instagram.com/me/media?fields=id,media_type,media_url,caption&limit=12&access_token=IGQVJVRzNBY3JhMVpJOThLQkYzcHMyMG05UDRWbGpxRTJpUVZANOFg0dElnMERCYzdLUk9WTEt1c0pTbDlqRE9RLTlhRk1qWDNJcVJHeHo2R3FRbEFaaTNOaVNDRVdVcnZAvN1djWWVn"
-      )
-      .then((res) => {
-        setFeeds(res.data.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
 
   return (
     <>
@@ -588,16 +589,20 @@ const Home = ({ token, ...props }) => {
               <a className="insta-gallery-link">@goldenfernresort_</a>
             </Link>
 
-            <OwlCarousel {...instaGallery}>
-              {feeds.map((feed) => (
-                <img
-                  className="insta-gallery-img"
-                  key={feed.id}
-                  src={feed.media_url}
-                  alt=""
-                />
-              ))}
-            </OwlCarousel>
+            {isLoading ? (
+              <img src="/spinner.svg" alt="Loading..." />
+            ) : (
+              <OwlCarousel {...instaGallery}>
+                {feeds.map((feed) => (
+                  <img
+                    className="insta-gallery-img"
+                    key={feed.id}
+                    src={feed.media_url}
+                    alt=""
+                  />
+                ))}
+              </OwlCarousel>
+            )}
           </div>
         </div>
       </section>

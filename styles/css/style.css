@@ -495,17 +495,20 @@ padding: 0;
   transition: all ease-in-out 0.5s;
   text-transform: capitalize;
 }
-.book_appointment .common_arrow {
+.book_appointment .common_arrow, 
+.res_link_btn .common_arrow {
   display: inline-flex;
   position: relative;
   transition: all ease-in-out 0.4s;
   margin-left: -18px;
   top: 2px;
 }
-.book_appointment .common_arrow img {
+.book_appointment .common_arrow img,
+.res_link_btn .common_arrow img {
   max-width: 43px;
 }
-.book_appointment .common_arrow::after {
+.book_appointment .common_arrow::after, 
+.res_link_btn .common_arrow::after {
   height: 20px;
   width: 20px;
   top: -5px;
@@ -2424,13 +2427,11 @@ div.wpcf7 .ajax-loader {
   bottom: -20px;
   left: auto;
 }
-.res_link_btn {
+/* .res_link_btn {
   float: right;
   margin-right: 10px;
-}
-.res_link_btn .common_arrow img {
-  max-width: 50px;
-}
+} */
+
 .res_link_btn a {
   font-size: 16px;
     color: #fff !important;
@@ -2445,15 +2446,10 @@ div.wpcf7 .ajax-loader {
   top: 2px;
 }
 .res_link_btn .common_arrow::after {
-  content: "";
-  position: absolute;
-  right: -6px;
-  height: 20px;
-  width: 20px;
-  border: 1px solid #e29554;
+  height: 18px;
+  width: 18px;
   top: -3px;
-  transition: all ease-in-out 0.4s;
-  transform: rotate(-45deg)
+  right: -5px;
 }
 .res_link_btn a:hover{
   color: white;

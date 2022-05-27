@@ -89,9 +89,9 @@ function Restaurant() {
                           satisfaction of the esteemed guests at Golden Fern
                           Resort Shimla.
                         </p>
-                        <div className="res_link_btn">
+                        <div className="res_link_btn text-capitalize">
                           <Link href="/menu">
-                            <a>View Menu</a>
+                            <a target="_blank">View Menu</a>
                           </Link>
                           <div className="common_arrow">
                             <img src="/images/arrow.svg" alt="Icon" />
@@ -126,13 +126,13 @@ function Restaurant() {
                           Resort Shimla.
                         </p>
 
-                        <div className="res_link_btn">
+                        <div className="res_link_btn text-capitalize">
                           <Link href="/contact-us">
-                            <a>Make Reservation</a>
+                            <a target="_blank">Make Reservation</a>
                           </Link>
-                          <a className="common_arrow">
+                          <div className="common_arrow">
                             <img src="/images/arrow.svg" alt="Icon" />
-                          </a>
+                          </div>
                         </div>
                       </div>
                     </Fade>

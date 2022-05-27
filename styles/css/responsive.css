@@ -56,7 +56,9 @@
   .banner-book-btn .common_arrow {
     margin-left: 0;
   }
-
+.rooms-para {
+  text-align: center;
+}
   .room_suit_left.fixed {
     position: relative;
   }
