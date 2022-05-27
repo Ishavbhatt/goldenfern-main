@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Link from "next/link";
 import Fade from "react-reveal/Fade";
 
 var $ = require("jquery");
@@ -70,11 +71,9 @@ function Restaurant() {
               <div className="restaurant_col">
                 <div className="container">
                   <div className="row">
-                    <Fade left>
-                      <div className="col-md-6 col-sm-12 wedding_services_right">
-                        <div className="restaurant_image res-img-1"></div>
-                      </div>
-                    </Fade>
+                    <div className="col-md-6 col-sm-12 wedding_services_right">
+                      <div className="restaurant_image res-img-1"></div>
+                    </div>
                     <Fade right>
                       <div className="col-md-6 col-sm-12 about_hotel_text">
                         <h3 className="common_title">
@@ -90,11 +89,14 @@ function Restaurant() {
                           satisfaction of the esteemed guests at Golden Fern
                           Resort Shimla.
                         </p>
-                        <a href="/menu">
-                          <button className="singlepage-bookbtn">
-                            view Menu
-                          </button>
-                        </a>
+                        <div className="res_link_btn">
+                          <Link href="/menu">
+                            <a>View Menu</a>
+                          </Link>
+                          <div className="common_arrow">
+                            <img src="/images/arrow.svg" alt="Icon" />
+                          </div>
+                        </div>
                       </div>
                     </Fade>
                   </div>
@@ -105,12 +107,10 @@ function Restaurant() {
               <div className="restaurant_col">
                 <div className="container">
                   <div className="row">
+                    <div className="col-md-6 col-sm-12 wedding_services_right">
+                      <div className="restaurant_image res-img-2"></div>
+                    </div>
                     <Fade left>
-                      <div className="col-md-6 col-sm-12 wedding_services_right">
-                        <div className="restaurant_image res-img-2"></div>
-                      </div>
-                    </Fade>
-                    <Fade right>
                       <div className="col-md-6 col-sm-12 about_hotel_text">
                         <h3 className="common_title">
                           <span className="golden_color">
@@ -125,11 +125,15 @@ function Restaurant() {
                           satisfaction of the esteemed guests at Golden Fern
                           Resort Shimla.
                         </p>
-                        <a href="/contact-us">
-                          <button className="singlepage-bookbtn">
-                            Make Reservation
-                          </button>
-                        </a>
+
+                        <div className="res_link_btn">
+                          <Link href="/contact-us">
+                            <a>Make Reservation</a>
+                          </Link>
+                          <a className="common_arrow">
+                            <img src="/images/arrow.svg" alt="Icon" />
+                          </a>
+                        </div>
                       </div>
                     </Fade>
                   </div>

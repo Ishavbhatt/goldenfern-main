@@ -1,4 +1,5 @@
 import React from "react";
+import Zoom from "react-reveal/Zoom";
 
 var $ = require("jquery");
 if (typeof window !== "undefined") {
@@ -17,7 +18,7 @@ import Head from "next/head";
 function ExecutiveRoom() {
   const executive = {
     items: 1,
-    dots: false
+    dots: false,
   };
 
   const otherroom = {
@@ -56,8 +57,7 @@ function ExecutiveRoom() {
         />
       </Head>
 
-      <div className="single-room-banner exec-singleroom-banner">
-      </div>
+      <div className="single-room-banner exec-singleroom-banner"></div>
 
       <section className="about_hotel room_page_desc common_padding pb-0">
         <div className="container">
@@ -93,7 +93,9 @@ function ExecutiveRoom() {
               <div className="col-md-4 col-sm-6">
                 <div className="facilities_column text-center">
                   <span>
-                    <img src="/ketttle.svg" alt="Icon" />
+                    <Zoom>
+                      <img src="/ketttle.svg" alt="Icon" />
+                    </Zoom>
                   </span>
                   <p>BOOK NOW</p>
                 </div>
@@ -102,7 +104,9 @@ function ExecutiveRoom() {
               <div className="col-md-4 col-sm-6">
                 <div className="facilities_column text-center">
                   <span>
-                    <img src="/room-service.svg" alt="Icon" />
+                    <Zoom>
+                      <img src="/room-service.svg" alt="Icon" />
+                    </Zoom>
                   </span>
                   <p>ROOM SERVICE</p>
                 </div>
@@ -111,7 +115,9 @@ function ExecutiveRoom() {
               <div className="col-md-4 col-sm-6">
                 <div className="facilities_column text-center">
                   <span>
-                    <img src="/wifi.svg" alt="Icon" />
+                    <Zoom>
+                      <img src="/wifi.svg" alt="Icon" />
+                    </Zoom>
                   </span>
                   <p>FREE WIFI</p>
                 </div>
@@ -119,7 +125,9 @@ function ExecutiveRoom() {
               <div className="col-md-4 col-sm-6">
                 <div className="facilities_column text-center">
                   <span>
-                    <img src="/breakfast.svg" alt="Icon" />
+                    <Zoom>
+                      <img src="/breakfast.svg" alt="Icon" />
+                    </Zoom>
                   </span>
                   <p>BREAK-FAST</p>
                 </div>
@@ -127,7 +135,9 @@ function ExecutiveRoom() {
               <div className="col-md-4 col-sm-6">
                 <div className="facilities_column text-center">
                   <span>
-                    <img src="/bed.svg" alt="Icon" />
+                    <Zoom>
+                      <img src="/bed.svg" alt="Icon" />
+                    </Zoom>
                   </span>
                   <p>SPACIOUS GUEST ROOM</p>
                 </div>
@@ -136,7 +146,9 @@ function ExecutiveRoom() {
               <div className="col-md-4 col-sm-6">
                 <div className="facilities_column text-center">
                   <span>
-                    <img src="/tv.svg" alt="Icon" />
+                    <Zoom>
+                      <img src="/tv.svg" alt="Icon" />
+                    </Zoom>
                   </span>
                   <p>LCD WITHOUT HD CHANNEL</p>
                 </div>
@@ -150,7 +162,11 @@ function ExecutiveRoom() {
         <div className="container">
           <div className="row">
             <div className="executive-room-section">
-              <OwlCarousel className="gallery-owl-theme owl-theme" nav {...executive}>
+              <OwlCarousel
+                className="gallery-owl-theme owl-theme"
+                nav
+                {...executive}
+              >
                 <div className="executive-item">
                   <div
                     className="singleroom_slider_col"
@@ -218,7 +234,7 @@ function ExecutiveRoom() {
         <div className="container">
           <div className="row">
             <div className="col-md-12 col-sm-12 text-left">
-            <h2 className="golden_title">Other Room Types</h2>
+              <h2 className="golden_title">Other Room Types</h2>
             </div>
             <div className="activities_slider">
               <OwlCarousel
@@ -246,7 +262,9 @@ function ExecutiveRoom() {
                   <div className="other-item">
                     <div
                       className="attraction_column"
-                      style={{ backgroundImage: "url('/homepage-classic.jpeg')" }}
+                      style={{
+                        backgroundImage: "url('/homepage-classic.jpeg')",
+                      }}
                     >
                       <a href="/room-suits/classic-room">
                         <div className="attraction_column_title otherroom_title">

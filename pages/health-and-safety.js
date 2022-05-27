@@ -56,18 +56,16 @@ function Healthsafety() {
                 </ul>
               </div>
               </Fade>
-              <Fade right>
               <div className="col-md-6 col-sm-12 safety_section_image">
                 <div className="safety_inner_1"></div>
               </div>
-              </Fade>
             </div>
           </div>
         </section>
         <section className="safety_section common_padding">
           <div className="container">
             <div className="row">
-            <Fade left>
+            <Fade right>
               <div className="col-md-6 col-sm-12 safety_section_text">
                 <h2 className="white">Proper Sanitation</h2>
                 <ul>
@@ -92,11 +90,9 @@ function Healthsafety() {
                 </ul>
               </div>
               </Fade>
-              <Fade right>
               <div className="col-md-6 col-sm-12 safety_section_image">
                 <div className="safety_inner_2"></div>
               </div>
-              </Fade>
             </div>
           </div>
         </section>
@@ -129,11 +125,9 @@ function Healthsafety() {
                 </ul>
               </div>
               </Fade>
-              <Fade right>
               <div className="col-md-6 col-sm-12 safety_section_image">
                 <div className="safety_inner_3"></div>
               </div>
-              </Fade>
             </div>
           </div>
         </section>
@@ -141,7 +135,7 @@ function Healthsafety() {
         <section className="safety_section common_padding">
           <div className="container">
             <div className="row">
-              <Fade left>
+              <Fade right>
               <div className="col-md-6 col-sm-12 safety_section_text">
                 <h2 className="white">Contact Free Interaction</h2>
                 <ul>
@@ -158,11 +152,9 @@ function Healthsafety() {
                 </ul>
               </div>
               </Fade>
-              <Fade right>
               <div className="col-md-6 col-sm-12 safety_section_image">
                 <div className="safety_inner_4"></div>
               </div>
-              </Fade>
             </div>
           </div>
         </section>

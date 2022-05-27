@@ -1,4 +1,5 @@
 import React from "react";
+import Zoom from "react-reveal/Zoom";
 
 var $ = require("jquery");
 if (typeof window !== "undefined") {
@@ -89,7 +90,9 @@ function LuxuryRoom() {
               <div className="col-md-4 col-sm-6">
                 <div className="facilities_column text-center">
                   <span>
-                    <img src="/ketttle.svg" alt="Icon" />
+                    <Zoom>
+                      <img src="/ketttle.svg" alt="Icon" />
+                    </Zoom>
                   </span>
                   <p>BOOK NOW</p>
                 </div>
@@ -98,7 +101,9 @@ function LuxuryRoom() {
               <div className="col-md-4 col-sm-6">
                 <div className="facilities_column text-center">
                   <span>
-                    <img src="/room-service.svg" alt="Icon" />
+                    <Zoom>
+                      <img src="/room-service.svg" alt="Icon" />
+                    </Zoom>
                   </span>
                   <p>ROOM SERVICE</p>
                 </div>
@@ -107,7 +112,9 @@ function LuxuryRoom() {
               <div className="col-md-4 col-sm-6">
                 <div className="facilities_column text-center">
                   <span>
-                    <img src="/wifi.svg" alt="Icon" />
+                    <Zoom>
+                      <img src="/wifi.svg" alt="Icon" />
+                    </Zoom>
                   </span>
                   <p>FREE WIFI</p>
                 </div>
@@ -116,7 +123,9 @@ function LuxuryRoom() {
               <div className="col-md-4 col-sm-6">
                 <div className="facilities_column text-center">
                   <span>
-                    <img src="/bed.svg" alt="Icon" />
+                    <Zoom>
+                      <img src="/bed.svg" alt="Icon" />
+                    </Zoom>
                   </span>
                   <p>SPACIOUS GUEST ROOM</p>
                 </div>
@@ -125,7 +134,9 @@ function LuxuryRoom() {
               <div className="col-md-4 col-sm-6">
                 <div className="facilities_column text-center">
                   <span>
-                    <img src="/tv.svg" alt="Icon" />
+                    <Zoom>
+                      <img src="/tv.svg" alt="Icon" />
+                    </Zoom>
                   </span>
                   <p>LCD WITHOUT HD CHANNEL</p>
                 </div>
@@ -134,7 +145,9 @@ function LuxuryRoom() {
               <div className="col-md-4 col-sm-6">
                 <div className="facilities_column text-center">
                   <span>
-                    <img src="/breakfast.svg" alt="Icon" />
+                    <Zoom>
+                      <img src="/breakfast.svg" alt="Icon" />
+                    </Zoom>
                   </span>
                   <p>BREAK-FAST</p>
                 </div>
@@ -148,7 +161,11 @@ function LuxuryRoom() {
         <div className="container">
           <div className="row">
             <div className="executive-room-section">
-              <OwlCarousel className="gallery-owl-theme owl-theme" nav {...luxury}>
+              <OwlCarousel
+                className="gallery-owl-theme owl-theme"
+                nav
+                {...luxury}
+              >
                 <div className="executive-item">
                   <div
                     className="singleroom_slider_col"

@@ -1,4 +1,5 @@
 import React from "react";
+import Zoom from "react-reveal/Zoom";
 
 var $ = require("jquery");
 if (typeof window !== "undefined") {
@@ -91,7 +92,9 @@ function ClassicRoom() {
               <div className="col-md-4 col-sm-6">
                 <div className="facilities_column text-center">
                   <span>
-                    <img src="/ketttle.svg" alt="Icon" />
+                    <Zoom>
+                      <img src="/ketttle.svg" alt="Icon" />
+                    </Zoom>
                   </span>
                   <p>BOOK NOW</p>
                 </div>
@@ -100,7 +103,9 @@ function ClassicRoom() {
               <div className="col-md-4 col-sm-6">
                 <div className="facilities_column text-center">
                   <span>
-                    <img src="/room-service.svg" alt="Icon" />
+                    <Zoom>
+                      <img src="/room-service.svg" alt="Icon" />
+                    </Zoom>
                   </span>
                   <p>ROOM SERVICE</p>
                 </div>
@@ -109,7 +114,9 @@ function ClassicRoom() {
               <div className="col-md-4 col-sm-6">
                 <div className="facilities_column text-center">
                   <span>
-                    <img src="/wifi.svg" alt="Icon" />
+                    <Zoom>
+                      <img src="/wifi.svg" alt="Icon" />
+                    </Zoom>
                   </span>
                   <p>FREE WIFI</p>
                 </div>
@@ -118,7 +125,9 @@ function ClassicRoom() {
               <div className="col-md-4 col-sm-6">
                 <div className="facilities_column text-center">
                   <span>
-                    <img src="/bed.svg" alt="Icon" />
+                    <Zoom>
+                      <img src="/bed.svg" alt="Icon" />
+                    </Zoom>
                   </span>
                   <p>SPACIOUS GUEST ROOM</p>
                 </div>
@@ -127,7 +136,9 @@ function ClassicRoom() {
               <div className="col-md-4 col-sm-6">
                 <div className="facilities_column text-center">
                   <span>
-                    <img src="/tv.svg" alt="Icon" />
+                    <Zoom>
+                      <img src="/tv.svg" alt="Icon" />
+                    </Zoom>
                   </span>
                   <p>LCD WITHOUT HD CHANNEL</p>
                 </div>
@@ -136,7 +147,9 @@ function ClassicRoom() {
               <div className="col-md-4 col-sm-6">
                 <div className="facilities_column text-center">
                   <span>
-                    <img src="/breakfast.svg" alt="Icon" />
+                    <Zoom>
+                      <img src="/breakfast.svg" alt="Icon" />
+                    </Zoom>
                   </span>
                   <p>BREAK-FAST</p>
                 </div>
@@ -150,12 +163,17 @@ function ClassicRoom() {
         <div className="container">
           <div className="row">
             <div id="" className="executive-room-section">
-              <OwlCarousel className="gallery-owl-theme owl-theme" nav {...classic}>
+              <OwlCarousel
+                className="gallery-owl-theme owl-theme"
+                nav
+                {...classic}
+              >
                 <div className="executive-item">
                   <div
                     className="singleroom_slider_col"
                     style={{
-                      backgroundImage: "url('/all-rooms/classic/classic-room-1.jpg')",
+                      backgroundImage:
+                        "url('/all-rooms/classic/classic-room-1.jpg')",
                     }}
                   ></div>
                 </div>
@@ -163,7 +181,8 @@ function ClassicRoom() {
                   <div
                     className="singleroom_slider_col"
                     style={{
-                      backgroundImage: "url('/all-rooms/classic/classic-room-2.jpg')",
+                      backgroundImage:
+                        "url('/all-rooms/classic/classic-room-2.jpg')",
                     }}
                   ></div>
                 </div>
@@ -172,7 +191,8 @@ function ClassicRoom() {
                   <div
                     className="singleroom_slider_col"
                     style={{
-                      backgroundImage: "url('/all-rooms/classic/classic-room-3.jpg')",
+                      backgroundImage:
+                        "url('/all-rooms/classic/classic-room-3.jpg')",
                     }}
                   ></div>
                 </div>
@@ -181,7 +201,8 @@ function ClassicRoom() {
                   <div
                     className="singleroom_slider_col"
                     style={{
-                      backgroundImage: "url('/all-rooms/classic/classic-room-4.jpg')",
+                      backgroundImage:
+                        "url('/all-rooms/classic/classic-room-4.jpg')",
                     }}
                   ></div>
                 </div>
@@ -219,57 +240,58 @@ function ClassicRoom() {
         <div className="container">
           <div className="row">
             <div className="col-md-12 col-sm-12 text-left">
-            <h2 className="golden_title">Other Room Types</h2>
+              <h2 className="golden_title">Other Room Types</h2>
             </div>
             <div className="activities_slider">
-              
               <OwlCarousel
                 className="owl-theme"
                 responsiveClass={true}
                 nav
                 {...otherroom}
               >
-                                  <div className="single-room-item">
-                <div className="other-item">
-                  <div
-                    className="attraction_column"
-                    style={{ backgroundImage: "url('/homepage-deluxe.jpg')" }}
-                  >
-                    <a href="/room-suits/deluxe-room">
-                      <div className="attraction_column_title otherroom_title">
-                        <h3>DELUXE ROOM</h3>
-                      </div>
-                    </a>
+                <div className="single-room-item">
+                  <div className="other-item">
+                    <div
+                      className="attraction_column"
+                      style={{ backgroundImage: "url('/homepage-deluxe.jpg')" }}
+                    >
+                      <a href="/room-suits/deluxe-room">
+                        <div className="attraction_column_title otherroom_title">
+                          <h3>DELUXE ROOM</h3>
+                        </div>
+                      </a>
+                    </div>
                   </div>
-                </div>
                 </div>
                 <div className="single-room-item">
-                <div className="other-item">
-                  <div
-                    className="attraction_column"
-                    style={{ backgroundImage: "url('/homepage-executive.jpg')" }}
-                  >
-                    <a href="/room-suits/executive-room">
-                      <div className="attraction_column_title otherroom_title">
-                        <h3>EXECUTIVE ROOM</h3>
-                      </div>
-                    </a>
+                  <div className="other-item">
+                    <div
+                      className="attraction_column"
+                      style={{
+                        backgroundImage: "url('/homepage-executive.jpg')",
+                      }}
+                    >
+                      <a href="/room-suits/executive-room">
+                        <div className="attraction_column_title otherroom_title">
+                          <h3>EXECUTIVE ROOM</h3>
+                        </div>
+                      </a>
+                    </div>
                   </div>
-                </div>
                 </div>
                 <div className="single-room-item">
-                <div className="other-item">
-                  <div
-                    className="attraction_column"
-                    style={{ backgroundImage: "url('/homepage-luxury.jpg')" }}
-                  >
-                    <a href="/room-suits/luxury-room">
-                      <div className="attraction_column_title otherroom_title">
-                        <h3>LUXURY SUITE</h3>
-                      </div>
-                    </a>
+                  <div className="other-item">
+                    <div
+                      className="attraction_column"
+                      style={{ backgroundImage: "url('/homepage-luxury.jpg')" }}
+                    >
+                      <a href="/room-suits/luxury-room">
+                        <div className="attraction_column_title otherroom_title">
+                          <h3>LUXURY SUITE</h3>
+                        </div>
+                      </a>
+                    </div>
                   </div>
-                </div>
                 </div>
               </OwlCarousel>
             </div>
