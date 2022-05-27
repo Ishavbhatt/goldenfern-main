@@ -35,7 +35,7 @@ function Healthsafety() {
         <section className="safety_section common_padding">
           <div className="container">
             <div className="row">
-              <Fade left>
+              <Fade bottom>
               <div className="col-md-6 col-sm-12 safety_section_text">
                 <h2 className="white">Mandatory Use of Safety Gears</h2>
                 <ul>
@@ -65,7 +65,7 @@ function Healthsafety() {
         <section className="safety_section common_padding">
           <div className="container">
             <div className="row">
-            <Fade right>
+            <Fade bottom>
               <div className="col-md-6 col-sm-12 safety_section_text">
                 <h2 className="white">Proper Sanitation</h2>
                 <ul>
@@ -100,7 +100,7 @@ function Healthsafety() {
         <section className="safety_section common_padding">
           <div className="container">
             <div className="row">
-            <Fade left>
+            <Fade bottom>
               <div className="col-md-6 col-sm-12 safety_section_text">
                 <h2 className="white">Food & Hygiene</h2>
                 <ul>
@@ -135,7 +135,7 @@ function Healthsafety() {
         <section className="safety_section common_padding">
           <div className="container">
             <div className="row">
-              <Fade right>
+              <Fade bottom>
               <div className="col-md-6 col-sm-12 safety_section_text">
                 <h2 className="white">Contact Free Interaction</h2>
                 <ul>

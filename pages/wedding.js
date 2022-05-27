@@ -365,7 +365,7 @@ function Wedding() {
                           backgroundImage: "url('/new-images/engagement.jpg')",
                         }}
                       >
-                        <div className="attraction_column_title">
+                        <div className="attraction_column_title otherroom_title">
                           <h3>Engagement</h3>
                         </div>
                       </div>
@@ -380,7 +380,7 @@ function Wedding() {
                           backgroundImage: "url('/new-images/pre-wed.jpg')",
                         }}
                       >
-                        <div className="attraction_column_title">
+                        <div className="attraction_column_title otherroom_title">
                           <h3>Pre Wedding Shoots</h3>
                         </div>
                       </div>

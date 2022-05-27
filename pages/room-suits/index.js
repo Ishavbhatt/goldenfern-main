@@ -204,7 +204,6 @@ function roomsuits() {
                 </div>
               </div>
             </div>
-            {/* <div className="empty_div">&nbsp;</div> */}
           </div>
         </div>
       </section>

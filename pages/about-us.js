@@ -29,6 +29,7 @@ function Aboutus() {
           </div>
         </div>
       </section>
+      
       <section className="scrollspy-example common_padding w-100">
         <div className="about-section-col spy_section">
           <div className="container">

@@ -20,11 +20,11 @@
   margin: 0px auto;
   right: 0; */
 
-    bottom: 0px;
-    float: right;
-    max-width: 170px;
-    /* margin: 0px auto; */
-    /* right: 0; */
+  bottom: 0px;
+  float: right;
+  max-width: 170px;
+  /* margin: 0px auto; */
+  /* right: 0; */
 }
 body .booked-wzsp-prime-data .booked-wzsp-day-number .plus {
   font-size: 30px;
@@ -237,7 +237,8 @@ section {
   transform: rotate(-45deg);
 }
 .common_arrow:hover::after,
-.book_appointment:hover .common_arrow::after, .res_link_btn:hover .common_arrow::after {
+.book_appointment:hover .common_arrow::after,
+.res_link_btn:hover .common_arrow::after {
   transform: none;
 }
 .no_padding {
@@ -288,8 +289,15 @@ section {
   padding: 30px 0;
 }
 
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.no-js #loader {
+  display: none;
+}
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
 .se-pre-con {
   position: fixed;
   left: 0px;
@@ -366,8 +374,8 @@ body .header .navbar-collapse {
 .header .navbar:hover .header_toggle {
   transform: translateX(100%);
 }
-.header_toggle_open .navbar{
-  opacity:  1;
+.header_toggle_open .navbar {
+  opacity: 1;
   transform: translateX(0px);
 }
 .header_toggle.header_toggle_btn {
@@ -405,8 +413,8 @@ body .header .navbar-collapse {
 .header_toggle img {
   max-width: 30px;
 }
-.res-header-links ul{
-padding: 0;
+.res-header-links ul {
+  padding: 0;
 }
 #bs-example-navbar-collapse-1 {
   display: block;
@@ -444,7 +452,7 @@ padding: 0;
   display: block;
   width: 54px !important;
   position: absolute;
-   right: 10px;
+  right: 10px;
 }
 .navbar-toggler::before {
   height: 2px;
@@ -468,7 +476,7 @@ padding: 0;
   margin: 0px auto;
   bottom: 8px;
 }
- .navbar-toggler.toggle_btn span {
+.navbar-toggler.toggle_btn span {
   transform: translateX(-1000%);
 }
 .navbar-toggler.toggle_btn::before {
@@ -495,7 +503,7 @@ padding: 0;
   transition: all ease-in-out 0.5s;
   text-transform: capitalize;
 }
-.book_appointment .common_arrow, 
+.book_appointment .common_arrow,
 .res_link_btn .common_arrow {
   display: inline-flex;
   position: relative;
@@ -507,7 +515,7 @@ padding: 0;
 .res_link_btn .common_arrow img {
   max-width: 43px;
 }
-.book_appointment .common_arrow::after, 
+.book_appointment .common_arrow::after,
 .res_link_btn .common_arrow::after {
   height: 20px;
   width: 20px;
@@ -601,8 +609,8 @@ padding: 0;
 .pick-dates .common_arrow {
   align-self: center;
 }
- .vr-left-rigth::before {
-  content:'';
+.vr-left-rigth::before {
+  content: "";
   position: absolute;
   background-color: rgb(219, 210, 210);
   width: 2px;
@@ -687,10 +695,13 @@ padding: 0;
 .about_hotel {
   padding: 100px 0;
 }
-.spy_section .about_hotel, .spy_section .wedding_col, .spy_section .restaurant_col {
+.spy_section .about_hotel,
+.spy_section .wedding_col,
+.spy_section .restaurant_col {
   padding: 50px 0;
 }
-.about_hotel_text h2, .about-page-text h3 {
+.about_hotel_text h2,
+.about-page-text h3 {
   font-size: 54px;
   color: #fff;
   text-align: left;
@@ -707,13 +718,17 @@ padding: 0;
   width: 100%;
   display: block;
 }
-.about_hotel_image, .wedding_services_image, .restaurant_image {
+.about_hotel_image,
+.wedding_services_image,
+.restaurant_image {
   max-width: 670px;
   height: 430px;
   background-size: cover;
   position: relative;
 }
-.about_hotel_image::before, .wedding_services_image::before, .restaurant_image::before {
+.about_hotel_image::before,
+.wedding_services_image::before,
+.restaurant_image::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -1179,7 +1194,7 @@ padding: 0;
   background-image: url("/new-images/health-banner.jpeg");
 }
 .attraction_page_banner {
-background-image: url("/new-images/attraction-banner.jpeg");
+  background-image: url("/new-images/attraction-banner.jpeg");
 }
 .gallery_page_banner {
   background-image: url("/gallery-banner.jpeg");
@@ -1191,7 +1206,7 @@ background-image: url("/new-images/attraction-banner.jpeg");
   background-image: url("/new-images/restaurant-banner.jpeg");
 }
 .menu_page_banner {
-background-image: url("/new-images/menu-banner.jpg");
+  background-image: url("/new-images/menu-banner.jpg");
 }
 .wedding_page_banner {
   background-image: url("/new-images/wedding-banner.jpg");
@@ -1289,7 +1304,8 @@ background-image: url("/new-images/menu-banner.jpg");
   );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e29554', endColorstr='#e29554',GradientType=0 );
 }
-.attraction_column::before, .restaurant_column::before {
+.attraction_column::before,
+.restaurant_column::before {
   content: "";
   height: 90%;
   width: 90%;
@@ -1342,7 +1358,7 @@ background-image: url("/new-images/menu-banner.jpg");
 }
 .single-room-sec .owl-nav {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   position: absolute;
   width: 100%;
   background: transparent;
@@ -1364,7 +1380,8 @@ background-image: url("/new-images/menu-banner.jpg");
 .gallery-sec .owl-nav button.owl-next {
   background-image: url("/right-arrows.png") !important;
 } */
-.single-room-sec .owl-nav button, .wedding_gallery .owl-nav button {
+.single-room-sec .owl-nav button,
+.wedding_gallery .owl-nav button {
   background-image: url("/new-images/arrow-white-left.svg") !important;
   background-repeat: no-repeat !important;
   width: 40px;
@@ -1375,7 +1392,8 @@ background-image: url("/new-images/menu-banner.jpg");
   background-color: transparent !important;
   outline: none !important;
 }
-.single-room-sec .owl-nav button.owl-next, .wedding_gallery .owl-nav button.owl-next {
+.single-room-sec .owl-nav button.owl-next,
+.wedding_gallery .owl-nav button.owl-next {
   background-image: url("/new-images/arrow-white-right.svg") !important;
 }
 .single-room-sec .owl-nav button span,
@@ -1449,7 +1467,6 @@ background-image: url("/new-images/menu-banner.jpg");
   opacity: 1;
 }
 .contact_form_section {
-  background-image: url("/leaf_gold.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1528,7 +1545,6 @@ background-image: url("/new-images/menu-banner.jpg");
 .contact_form form .form-group:nth-child(5) input {
   /* border-top: none;
   border-bottom: none; */
-  
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -1536,7 +1552,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 .contact_form form .form-group:nth-child(5) input {
@@ -1573,7 +1589,8 @@ input[type=number] {
   font-size: 28px;
   margin-bottom: 25px !important;
 }
-.safety_section_text ul, .privacy_column ul  {
+.safety_section_text ul,
+.privacy_column ul {
   padding: 0;
 }
 .safety_section_text ul li {
@@ -1620,14 +1637,17 @@ input[type=number] {
   top: 0;
   margin-top: 30px;
 }
-.scrollspy-example .about_hotel_image, .scrollspy-example .wedding_services_image, 
+.scrollspy-example .about_hotel_image,
+.scrollspy-example .wedding_services_image,
 .scrollspy-example .restaurant_image {
   max-width: 670px;
   height: 430px;
   background-size: cover;
   position: relative;
 }
-.scrollspy-example .about_hotel_image::before, .scrollspy-example .wedding_services_image::before, .scrollspy-example .restaurant_image::before {
+.scrollspy-example .about_hotel_image::before,
+.scrollspy-example .wedding_services_image::before,
+.scrollspy-example .restaurant_image::before {
   left: -20px;
   bottom: -20px;
 }
@@ -1640,7 +1660,9 @@ input[type=number] {
   order: -1;
 }
 .scrollspy-example .spy_section:nth-child(2n + 2) .about_hotel_image::before,
-.scrollspy-example .spy_section:nth-child(2n + 2) .wedding_services_image::before,
+.scrollspy-example
+  .spy_section:nth-child(2n + 2)
+  .wedding_services_image::before,
 .scrollspy-example .spy_section:nth-child(2n + 2) .restaurant_image::before {
   right: -20px;
   bottom: -20px;
@@ -1790,11 +1812,12 @@ input[type=number] {
 .facilities_column {
   margin-top: 30px;
 }
-.facilities_column p, .wedding_highlights_col p {
+.facilities_column p,
+.wedding_highlights_col p {
   color: #fff;
 }
 
-.facilities_column span{
+.facilities_column span {
   display: flex;
   width: 100px;
   height: 100px;
@@ -1985,7 +2008,6 @@ div.wpcf7 .ajax-loader {
 .list-absolute {
   position: absolute;
   top: 50%;
-  
 }
 .list_fixed {
   position: fixed;
@@ -2011,16 +2033,16 @@ div.wpcf7 .ajax-loader {
 .deluxe {
   background-image: url("/deluxe-room.jpg");
 }
-.executive_slider_image{
+.executive_slider_image {
   background-image: url("/homepage-executive.jpg");
 }
-.classic_room_slider{
+.classic_room_slider {
   background-image: url("/homepage-classic.jpeg");
 }
-.luxury_room_slider{
+.luxury_room_slider {
   background-image: url("/homepage-luxury.jpg");
 }
-.deluxe_room_slider{
+.deluxe_room_slider {
   background-image: url("/homepage-deluxe.jpg");
 }
 .post_column_image {
@@ -2349,7 +2371,7 @@ div.wpcf7 .ajax-loader {
 }
 
 /* Menu Css */
-.menu_section_image div{
+.menu_section_image div {
   height: 100%;
   max-width: 570px;
   background-position: center;
@@ -2357,13 +2379,13 @@ div.wpcf7 .ajax-loader {
   background-repeat: no-repeat;
 }
 .menu_image_1 {
-  background-image: url('/menu-1.jpg');
+  background-image: url("/menu-1.jpg");
 }
 .menu_image_2 {
-  background-image: url('/menu-2.jpg');
+  background-image: url("/menu-2.jpg");
 }
 .menu_image_3 {
-  background-image: url('/menu-3.jpg');
+  background-image: url("/menu-3.jpg");
 }
 .menu_title {
   color: #e29554;
@@ -2371,20 +2393,19 @@ div.wpcf7 .ajax-loader {
   padding-bottom: 10px;
 }
 .menu_list_items {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   padding-bottom: 4px;
   margin-bottom: 15px;
   border-bottom: 0.1em solid white;
 }
-.menu-ul{
+.menu-ul {
   padding: 0 !important;
 }
 .menu_item_left {
   font-size: 16px;
   color: #fff;
   line-height: 26px !important;
-
 }
 .menu_item_right {
   color: white;
@@ -2434,11 +2455,11 @@ div.wpcf7 .ajax-loader {
 
 .res_link_btn a {
   font-size: 16px;
-    color: #fff !important;
-    transition: all ease-in-out 0.5s;
-    text-transform: capitalize;
+  color: #fff !important;
+  transition: all ease-in-out 0.5s;
+  text-transform: capitalize;
 }
-.res_link_btn .common_arrow{
+.res_link_btn .common_arrow {
   display: inline-flex;
   position: relative;
   transition: all ease-in-out 0.4s;
@@ -2451,7 +2472,7 @@ div.wpcf7 .ajax-loader {
   top: -3px;
   right: -5px;
 }
-.res_link_btn a:hover{
+.res_link_btn a:hover {
   color: white;
 }
 
@@ -2459,11 +2480,11 @@ div.wpcf7 .ajax-loader {
 .wedding_gallery .owl-nav {
   display: flex;
   justify-content: center;
-    position: absolute;
-    width: 100%;
-    bottom: 20px;
-    margin: 0px !important;
-    z-index: 9;
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  margin: 0px !important;
+  z-index: 9;
 }
 /* Insta Gallery */
 .insta-gallery-img {
@@ -2488,4 +2509,7 @@ div.wpcf7 .ajax-loader {
 .insta_gallery_spinner {
   height: auto !important;
   width: 200px !important;
+}
+.insta_gallery_section .owl-carousel .owl-item img {
+  border-radius: 3%;
 }

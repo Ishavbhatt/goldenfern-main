@@ -303,8 +303,8 @@ const Home = ({ token, ...props }) => {
       <section className="testimonials_section room_suites padding-t-b-40">
         <div className="container">
           <div className="row">
-            <Fade right big>
-              <div className="col-md-6 col-sm-12">
+            <Fade bottom>
+              <div className="col-md-12 col-sm-12 text-center">
                 <h2 className="common_title ">Rooms & Suites</h2>
                 <p className="rooms-para">
                   All rooms and suites are elegantly appointed and reflect
@@ -589,7 +589,6 @@ const Home = ({ token, ...props }) => {
             <Link href="https://instagram.com/goldenfernresort_">
               <a target="_blank" className="insta-gallery-link">@goldenfernresort_</a>
             </Link>
-
             {isLoading ? (
               <div className="text-center">
               <img className="insta_gallery_spinner" src="/spinner.svg" alt="Loading..." />

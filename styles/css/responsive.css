@@ -56,9 +56,9 @@
   .banner-book-btn .common_arrow {
     margin-left: 0;
   }
-.rooms-para {
-  text-align: center;
-}
+  .rooms-para {
+    text-align: center;
+  }
   .room_suit_left.fixed {
     position: relative;
   }
@@ -165,7 +165,7 @@
     color: #000;
   }
   .header .navbar:hover .header_toggle {
-    transform: translateX(0%)
+    transform: translateX(0%);
   }
   .book_appointment {
     float: none;
@@ -185,7 +185,9 @@
   .banner_text h1 {
     font-size: 24px;
   }
-  .about_hotel, .wedding_col, .restaurant_col {
+  .about_hotel,
+  .wedding_col,
+  .restaurant_col {
     padding: 30px 0;
   }
   .about_hotel_text .common_arrow {
@@ -194,10 +196,13 @@
   .menu_title {
     font-size: 24px;
   }
-  .menu_item_left, .menu_item_right {
+  .menu_item_left,
+  .menu_item_right {
     font-size: 16px;
   }
-  .about_hotel_image, .restaurant_image, .wedding_services_image {
+  .about_hotel_image,
+  .restaurant_image,
+  .wedding_services_image {
     max-width: 270px;
     height: 250px;
     background-size: cover;
@@ -206,14 +211,21 @@
     background-position: center;
     margin: 25px auto 0;
   }
-  .about_hotel_image::before, .restaurant_image::before, .wedding_services_image::before {
+  .about_hotel_image::before,
+  .restaurant_image::before,
+  .wedding_services_image::before {
     bottom: -18px;
     right: -18px;
   }
   #testimonials_slider {
     margin-top: 20px;
   }
-  .rooms-subtitle, .attr-subtitle, .gallery-subtitle, .health-subtitle, .contact-subtitle, .about-subtitle {
+  .rooms-subtitle,
+  .attr-subtitle,
+  .gallery-subtitle,
+  .health-subtitle,
+  .contact-subtitle,
+  .about-subtitle {
     text-align: center;
   }
   .rooms_slider_column {
@@ -391,7 +403,8 @@
   .gallery_slider_column {
     height: 350px;
   }
-  .safety_section .safety_section_text, .safety_section .menu_section_text {
+  .safety_section .safety_section_text,
+  .safety_section .menu_section_text {
     order: 2;
   }
   .safety_section {
@@ -413,24 +426,28 @@
     font-size: 22px;
     margin-bottom: 0 !important;
   }
-  .about_hotel_right, .wedding_services_right {
+  .about_hotel_right,
+  .wedding_services_right {
     order: 2;
   }
   .about_hotel_text h2 {
     font-size: 30px;
   }
- 
-  .spy_section .about_hotel .container, .spy_section .wedding_col .container,
+
+  .spy_section .about_hotel .container,
+  .spy_section .wedding_col .container,
   .spy_section .restaurant_col .container {
     padding: 0px;
   }
-  .spy_section .about_hotel, .spy_section .wedding_col, .spy_section .restaurant_col {
+  .spy_section .about_hotel,
+  .spy_section .wedding_col,
+  .spy_section .restaurant_col {
     padding: 30px 0;
   }
   .scrollspy-example {
     padding-bottom: 20px;
   }
-  .scrollspy-example .about_hotel_image::before, 
+  .scrollspy-example .about_hotel_image::before,
   .scrollspy-example .restaurant_image::before,
   .scrollspy-example .wedding_services_image::before {
     left: -10px;
@@ -438,7 +455,9 @@
   }
   .scrollspy-example .spy_section:nth-child(2n + 2) .about_hotel_image::before,
   .scrollspy-example .spy_section:nth-child(2n + 2) .restaurant_image::before,
-  .scrollspy-example .spy_section:nth-child(2n + 2) .wedding_services_image::before {
+  .scrollspy-example
+    .spy_section:nth-child(2n + 2)
+    .wedding_services_image::before {
     right: -10px;
     bottom: -10px;
     left: auto;
@@ -465,7 +484,8 @@
   .facilities_section .common_title {
     font-size: 30px;
   }
-  .facilities_section .col-sm-6 , .wedding_highlights .col-sm-6{
+  .facilities_section .col-sm-6,
+  .wedding_highlights .col-sm-6 {
     width: 50%;
   }
   .wedding_highlights_col {
@@ -564,7 +584,9 @@
   .banner_text h1 {
     font-size: 58px;
   }
-  .about_hotel_image, .restaurant_image, .wedding_services_image{
+  .about_hotel_image,
+  .restaurant_image,
+  .wedding_services_image {
     height: 380px;
   }
   .about_hotel_text h2 {
@@ -587,7 +609,9 @@
   .footer_bottom_column li {
     margin-right: 10px;
   }
-  .about_hotel_image::before, .restaurant_image::before, .wedding_services_image::before {
+  .about_hotel_image::before,
+  .restaurant_image::before,
+  .wedding_services_image::before {
     bottom: -10px;
     right: -10px;
     z-index: -1;
@@ -614,7 +638,9 @@
     font-size: 26px;
   }
 
-  .about_hotel, .wedding_col, .restaurant_col {
+  .about_hotel,
+  .wedding_col,
+  .restaurant_col {
     padding-bottom: 70px;
   }
   .menu-btn,
