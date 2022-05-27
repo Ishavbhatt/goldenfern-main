@@ -44,7 +44,10 @@ const Home = ({ token, ...props }) => {
   const long = 77.1734;
   const weatherapiKey = process.env.API_KEY;
   const weatherapiLink = process.env.API_LINK;
+  const instagramLink = process.env.INSTA_LINK;
+  const instagramToken = process.env.INSTA_TOKEN;
   const weatherapiUrl = `${weatherapiLink}/?lat=${lat}&lon=${long}&units=metric&APPID=${weatherapiKey}`;
+  const instagramUrl = `${instagramLink}${instagramToken}`
 
   const rooms = {
     items: 1,
@@ -160,9 +163,7 @@ const Home = ({ token, ...props }) => {
   useEffect(() => {
     const fetchFeeds = () => {
       axios
-        .get(
-          "https://graph.instagram.com/me/media?fields=id,media_type,media_url,caption&limit=12&access_token=IGQVJVRzNBY3JhMVpJOThLQkYzcHMyMG05UDRWbGpxRTJpUVZANOFg0dElnMERCYzdLUk9WTEt1c0pTbDlqRE9RLTlhRk1qWDNJcVJHeHo2R3FRbEFaaTNOaVNDRVdVcnZAvN1djWWVn"
-        )
+        .get(instagramUrl)
         .then((res) => {
           setFeeds(res.data.data);
           setIsLoading(false);
@@ -590,7 +591,9 @@ const Home = ({ token, ...props }) => {
             </Link>
 
             {isLoading ? (
-              <img src="/spinner.svg" alt="Loading..." />
+              <div className="text-center">
+              <img className="insta_gallery_spinner" src="/spinner.svg" alt="Loading..." />
+              </div>
             ) : (
               <OwlCarousel {...instaGallery}>
                 {feeds.map((feed) => (

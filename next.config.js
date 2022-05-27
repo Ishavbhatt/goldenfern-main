@@ -4,6 +4,7 @@ module.exports = {
   env: {
     API_KEY: process.env.API_KEY,
     API_LINK: process.env.API_LINK,
+    INSTA_LINK: process.env.INSTA_LINK,
     INSTA_TOKEN: process.env.INSTA_TOKEN,
   },
   future: {

@@ -2485,3 +2485,7 @@ div.wpcf7 .ajax-loader {
 .insta_gallery_section {
   background: white;
 }
+.insta_gallery_spinner {
+  height: auto !important;
+  width: 200px !important;
+}
