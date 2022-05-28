@@ -34,11 +34,9 @@ function Aboutus() {
         <div className="about-section-col spy_section">
           <div className="container">
             <div className="row">
-            <Slide left>
               <div className="col-md-6 col-sm-12 wedding_services_right">
                 <div className="wedding_services_image who-we-are"></div>
               </div>
-            </Slide>
             <Slide right>
               <div className="col-md-6 col-sm-12 about_hotel_text">
                 <h3 className="common_title">
@@ -95,11 +93,11 @@ function Aboutus() {
                 </p>
               </div>
               </Slide>
-              <Slide right>
+              {/* <Slide right> */}
               <div className="col-md-6 col-sm-12 wedding_services_right">
                 <div className="about_hotel_image shimla-hill-station"></div>
               </div>
-              </Slide>
+              {/* </Slide> */}
             </div>
           </div>
         </div>

@@ -4,7 +4,6 @@ import Head from "next/head";
 import Scrollspy from "react-scrollspy";
 import Fade from "react-reveal/Fade";
 
-
 function roomsuits() {
   const [scroll, setScroll] = useState(false);
 
@@ -76,29 +75,31 @@ function roomsuits() {
                 <div className="about_hotel">
                   <div className="container">
                     <div className="row">
-                      <div className="col-lg-7 col-md-7 col-sm-12 about_hotel_right text-center">
-                        <div className="about_hotel_image executive"></div>
-                      </div>
-                      <Fade right>
-                      <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
-                        <h2 className="common_title">
-                          <span className="golden_color">EXECUTIVE</span>ROOM
-                        </h2>
-                        <p>
-                          Designed to the highest specifications and situated on
-                          all floors, with a private balcony and city view the
-                          executive rooms are spacious with all modern amenities
-                          and furnishing to meet the desired level of the
-                          satisfaction of the esteemed guests at Golden Fern
-                          Resort Shimla.
-                        </p>
-                        <a
-                          className="common_arrow"
-                          href="/room-suits/executive-room"
-                        >
-                          <img src="/arrow.svg" alt="Icon" />
-                        </a>
-                      </div>
+                      <Fade bottom>
+                        <div className="col-lg-7 col-md-7 col-sm-12 about_hotel_right text-center">
+                          <div className="about_hotel_image executive"></div>
+                        </div>
+                      </Fade>
+                      <Fade top>
+                        <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
+                          <h2 className="common_title">
+                            <span className="golden_color">EXECUTIVE</span>ROOM
+                          </h2>
+                          <p>
+                            Designed to the highest specifications and situated
+                            on all floors, with a private balcony and city view
+                            the executive rooms are spacious with all modern
+                            amenities and furnishing to meet the desired level
+                            of the satisfaction of the esteemed guests at Golden
+                            Fern Resort Shimla.
+                          </p>
+                          <a
+                            className="common_arrow"
+                            href="/room-suits/executive-room"
+                          >
+                            <img src="/arrow.svg" alt="Icon" />
+                          </a>
+                        </div>
                       </Fade>
                     </div>
                   </div>
@@ -109,29 +110,31 @@ function roomsuits() {
                 <div className="about_hotel">
                   <div className="container">
                     <div className="row">
-                      <div className="col-lg-7 col-md-7 col-sm-12 about_hotel_right text-center">
-                        <div className="about_hotel_image classic"></div>
-                      </div>
-                      <Fade left>
-                      <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
-                        <h2 className="common_title">
-                          <span className="golden_color">CLASSIC</span>ROOM
-                        </h2>
-                        <p>
-                          Designed to the highest specifications and situated on
-                          all floors, with a private balcony and city view the
-                          executive rooms are spacious with all modern amenities
-                          and furnishing to meet the desired level of the
-                          satisfaction of the esteemed guests at Golden Fern
-                          Resort Shimla.
-                        </p>
-                        <a
-                          className="common_arrow"
-                          href="/room-suits/classic-room"
-                        >
-                          <img src="/arrow.svg" alt="Icon" />
-                        </a>
-                      </div>
+                      <Fade bottom>
+                        <div className="col-lg-7 col-md-7 col-sm-12 about_hotel_right text-center">
+                          <div className="about_hotel_image classic"></div>
+                        </div>
+                      </Fade>
+                      <Fade top>
+                        <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
+                          <h2 className="common_title">
+                            <span className="golden_color">CLASSIC</span>ROOM
+                          </h2>
+                          <p>
+                            Designed to the highest specifications and situated
+                            on all floors, with a private balcony and city view
+                            the executive rooms are spacious with all modern
+                            amenities and furnishing to meet the desired level
+                            of the satisfaction of the esteemed guests at Golden
+                            Fern Resort Shimla.
+                          </p>
+                          <a
+                            className="common_arrow"
+                            href="/room-suits/classic-room"
+                          >
+                            <img src="/arrow.svg" alt="Icon" />
+                          </a>
+                        </div>
                       </Fade>
                     </div>
                   </div>
@@ -142,29 +145,31 @@ function roomsuits() {
                 <div className="about_hotel">
                   <div className="container">
                     <div className="row">
-                      <div className="col-lg-7 col-md-7 col-sm-12 about_hotel_right text-center">
-                        <div className="about_hotel_image luxury"></div>
-                      </div>
-                      <Fade right>
-                      <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
-                        <h2 className="common_title">
-                          <span className="golden_color">LUXURY</span>ROOM
-                        </h2>
-                        <p>
-                          Designed to the highest specifications and situated on
-                          all floors, with a private balcony and city view the
-                          executive rooms are spacious with all modern amenities
-                          and furnishing to meet the desired level of the
-                          satisfaction of the esteemed guests at Golden Fern
-                          Resort Shimla.
-                        </p>
-                        <a
-                          className="common_arrow"
-                          href="/room-suits/luxury-room"
-                        >
-                          <img src="images/arrow.svg" alt="Icon" />
-                        </a>
-                      </div>
+                      <Fade bottom>
+                        <div className="col-lg-7 col-md-7 col-sm-12 about_hotel_right text-center">
+                          <div className="about_hotel_image luxury"></div>
+                        </div>
+                      </Fade>
+                      <Fade top>
+                        <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
+                          <h2 className="common_title">
+                            <span className="golden_color">LUXURY</span>ROOM
+                          </h2>
+                          <p>
+                            Designed to the highest specifications and situated
+                            on all floors, with a private balcony and city view
+                            the executive rooms are spacious with all modern
+                            amenities and furnishing to meet the desired level
+                            of the satisfaction of the esteemed guests at Golden
+                            Fern Resort Shimla.
+                          </p>
+                          <a
+                            className="common_arrow"
+                            href="/room-suits/luxury-room"
+                          >
+                            <img src="images/arrow.svg" alt="Icon" />
+                          </a>
+                        </div>
                       </Fade>
                     </div>
                   </div>
@@ -175,29 +180,31 @@ function roomsuits() {
                 <div className="about_hotel">
                   <div className="container">
                     <div className="row">
-                      <div className="col-lg-7 col-md-7 col-sm-12 about_hotel_right text-center">
-                        <div className="about_hotel_image deluxe"></div>
-                      </div>
-                      <Fade left>
-                      <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
-                        <h2 className="common_title">
-                          <span className="golden_color">DELUXE</span>ROOM
-                        </h2>
-                        <p>
-                          Designed to the highest specifications and situated on
-                          all floors, with a private balcony and city view the
-                          executive rooms are spacious with all modern amenities
-                          and furnishing to meet the desired level of the
-                          satisfaction of the esteemed guests at Golden Fern
-                          Resort Shimla.
-                        </p>
-                        <a
-                          className="common_arrow"
-                          href="/room-suits/deluxe-room"
-                        >
-                          <img src="images/arrow.svg" alt="Icon" />
-                        </a>
-                      </div>
+                      <Fade bottom>
+                        <div className="col-lg-7 col-md-7 col-sm-12 about_hotel_right text-center">
+                          <div className="about_hotel_image deluxe"></div>
+                        </div>
+                      </Fade>
+                      <Fade top>
+                        <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
+                          <h2 className="common_title">
+                            <span className="golden_color">DELUXE</span>ROOM
+                          </h2>
+                          <p>
+                            Designed to the highest specifications and situated
+                            on all floors, with a private balcony and city view
+                            the executive rooms are spacious with all modern
+                            amenities and furnishing to meet the desired level
+                            of the satisfaction of the esteemed guests at Golden
+                            Fern Resort Shimla.
+                          </p>
+                          <a
+                            className="common_arrow"
+                            href="/room-suits/deluxe-room"
+                          >
+                            <img src="images/arrow.svg" alt="Icon" />
+                          </a>
+                        </div>
                       </Fade>
                     </div>
                   </div>

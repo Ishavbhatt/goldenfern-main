@@ -76,7 +76,7 @@ function Wedding() {
         <div className="Wedding_section">
           <div className="container">
             <div className="row">
-              <Fade left>
+              <Fade top>
                 <div className="col-md-6 col-sm-12 about_hotel_text about-text">
                   <h3 className="common_title">
                     <span className="golden_color">
@@ -95,7 +95,7 @@ function Wedding() {
                   </button>
                 </div>
               </Fade>
-              <Fade right>
+              <Fade bottom>
                 <div className="col-md-6 col-sm-12">
                   <div className="wedding_video">
                     <iframe

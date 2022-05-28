@@ -274,7 +274,7 @@ const Home = ({ token, ...props }) => {
       <section className="about_hotel">
         <div className="container">
           <div className="row">
-            <Fade left>
+            <Fade top>
               <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
                 <h2 className="common_title">
                   <span className="golden_color">Golden Fern</span>Shimla
@@ -291,7 +291,7 @@ const Home = ({ token, ...props }) => {
                 </p>
               </div>
             </Fade>
-            <Fade right>
+            <Fade bottom>
               <div className="col-lg-7 col-md-7 col-sm-12 about_hotel_right text-center">
                 <div className="about_hotel_image"></div>
               </div>
@@ -533,7 +533,7 @@ const Home = ({ token, ...props }) => {
       <section className="posts_section common_padding">
         <div className="container">
           <div className="row">
-            <Fade right big>
+            <Fade top big>
               <h2 className="common_title">
                 Stay Update with <br /> Golden Fern
               </h2>

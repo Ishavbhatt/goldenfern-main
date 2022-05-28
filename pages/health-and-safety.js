@@ -62,6 +62,7 @@ function Healthsafety() {
             </div>
           </div>
         </section>
+        
         <section className="safety_section common_padding">
           <div className="container">
             <div className="row">

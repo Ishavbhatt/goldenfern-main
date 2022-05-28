@@ -72,10 +72,12 @@ function Restaurant() {
               <div className="restaurant_col">
                 <div className="container">
                   <div className="row">
+                  <Fade bottom>
                     <div className="col-md-6 col-sm-12 wedding_services_right">
                       <div className="restaurant_image res-img-1"></div>
                     </div>
-                    <Fade right>
+                    </Fade>
+                    <Fade top>
                       <div className="col-md-6 col-sm-12 about_hotel_text">
                         <h3 className="common_title">
                           <span className="golden_color">
@@ -108,10 +110,12 @@ function Restaurant() {
               <div className="restaurant_col">
                 <div className="container">
                   <div className="row">
+                  <Fade bottom>
                     <div className="col-md-6 col-sm-12 wedding_services_right">
                       <div className="restaurant_image res-img-2"></div>
                     </div>
-                    <Fade left>
+                    </Fade>
+                    <Fade top>
                       <div className="col-md-6 col-sm-12 about_hotel_text">
                         <h3 className="common_title">
                           <span className="golden_color">
