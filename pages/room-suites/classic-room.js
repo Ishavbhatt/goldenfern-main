@@ -68,9 +68,9 @@ function ClassicRoom() {
                 <h2>₹ 5000 /</h2>
                 <span>per night + 12% Tax</span>
               </div>
-              <h2>
+              <h1>
                 <span className="golden_color">Classic </span>Room
-              </h2>
+              </h1>
               <p>
                 Designed to the highest specifications and situated on all
                 floors, with a private balcony and city view the executive rooms

@@ -13,10 +13,12 @@ const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
 
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+
+import Link from "next/link";
 import Head from "next/head";
 
-function ExecutiveRoom() {
-  const executive = {
+function DeluxeRoom() {
+  const deluxe = {
     items: 1,
     dots: false,
   };
@@ -45,19 +47,19 @@ function ExecutiveRoom() {
   return (
     <>
       <Head>
-        <title>Executive Room On Budget | Golden Fern Resort</title>
+        <title>Deluxe Rooms At Low Price | Golden Fern Resort</title>
         <link rel="icon" href="/favicon.png" />
         <meta
           property="og:title"
-          content="Executive Room On Budget | Golden Fern Resort"
+          content="Deluxe Rooms At Low Price | Golden Fern Resort"
         />
         <meta
           property="og:description"
-          content="Designed to the highest specifications and situated on all floors, with a private balcony and city view the executive rooms are | Golden Fern Resort"
+          content="Deluxe Rooms have been designed elegantly as per the requirement of the guests. The average size of the room is 350 Sq. feet | Golden Fern Resort"
         />
       </Head>
 
-      <div className="single-room-banner exec-singleroom-banner"></div>
+      <div className="single-room-banner del-singleroom-banner"></div>
 
       <section className="about_hotel room_page_desc common_padding pb-0">
         <div className="container">
@@ -65,22 +67,20 @@ function ExecutiveRoom() {
             <div className="col-lg-5 col-md-5 col-sm-12 about_hotel_text">
               <div className="room_price">
                 <p>rates from</p>
-                <h2>₹ 6500 /</h2>
+                <h2>₹ 5500 /</h2>
                 <span>per night + 12% Tax</span>
               </div>
-              <h2>
-                <span className="golden_color">Executive </span>Room
-              </h2>
+              <h1>
+                <span className="golden_color">Deluxe</span> Room
+              </h1>
               <p>
-                Designed to the highest specifications and situated on all
-                floors, with a private balcony and city view the executive rooms
-                are spacious with all modern amenities and furnishing to meet
-                the desired level of the satisfaction of the esteemed guests at
-                Golden Fern Resort Shimla. The average size of the executive
-                rooms is 375 sq. feet excluding the bathroom and Balcony area.
-                All Executive rooms come with Extra large rooms for additional
-                space, a King-sized double bed, and Large comfortable seating or
-                sofa area.
+                Deluxe Rooms have been designed elegantly as per the requirement
+                of the guests. The average size of the room is 350 Sq. feet. The
+                rooms are equipped with all modern amenities 42 Inch LED TV, 10
+                Inch Mattress, Clean Lenin, study table, tea coffee makers in
+                each room with electronic safe, and Min Bar. All Deluxe rooms
+                come with Private Balcony with a Valley view overlooking the
+                city.
               </p>
               <button className="singlepage-bookbtn">Book Now</button>
             </div>
@@ -161,17 +161,17 @@ function ExecutiveRoom() {
       <section className="single-room-sec other_room_section single-room">
         <div className="container">
           <div className="row">
-            <div className="executive-room-section">
+            <div id="" className="executive-room-section">
               <OwlCarousel
                 className="gallery-owl-theme owl-theme"
                 nav
-                {...executive}
+                {...deluxe}
               >
                 <div className="executive-item">
                   <div
                     className="singleroom_slider_col"
                     style={{
-                      backgroundImage: "url('/all-rooms/Executive/exe-1.jpg')",
+                      backgroundImage: "url('/all-rooms/Deluxe/deluxe-1.jpg')",
                     }}
                   ></div>
                 </div>
@@ -179,16 +179,7 @@ function ExecutiveRoom() {
                   <div
                     className="singleroom_slider_col"
                     style={{
-                      backgroundImage: "url('/all-rooms/Executive/exe-2.jpg')",
-                    }}
-                  ></div>
-                </div>
-
-                <div className="executive-item">
-                  <div
-                    className="singleroom_slider_col"
-                    style={{
-                      backgroundImage: "url('/all-rooms/Executive/exe-3.jpg')",
+                      backgroundImage: "url('/all-rooms/Deluxe/deluxe-2.jpg')",
                     }}
                   ></div>
                 </div>
@@ -196,7 +187,7 @@ function ExecutiveRoom() {
                   <div
                     className="singleroom_slider_col"
                     style={{
-                      backgroundImage: "url('/all-rooms/Executive/exe-4.jpg')",
+                      backgroundImage: "url('/Washroom/washroom-1.jpg')",
                     }}
                   ></div>
                 </div>
@@ -204,7 +195,7 @@ function ExecutiveRoom() {
                   <div
                     className="singleroom_slider_col"
                     style={{
-                      backgroundImage: "url('/Washroom/washroom-3.jpg')",
+                      backgroundImage: "url('/Washroom/washroom-2.jpg')",
                     }}
                   ></div>
                 </div>
@@ -212,15 +203,7 @@ function ExecutiveRoom() {
                   <div
                     className="singleroom_slider_col"
                     style={{
-                      backgroundImage: "url('/Washroom/washroom-4.jpg')",
-                    }}
-                  ></div>
-                </div>
-                <div className="executive-item">
-                  <div
-                    className="singleroom_slider_col"
-                    style={{
-                      backgroundImage: "url('/Washroom/washroom-5.jpg')",
+                      backgroundImage: "url('/Washroom/washroom-6.jpg')",
                     }}
                   ></div>
                 </div>
@@ -247,11 +230,28 @@ function ExecutiveRoom() {
                   <div className="other-item">
                     <div
                       className="attraction_column"
-                      style={{ backgroundImage: "url('/homepage-deluxe.jpg')" }}
+                      style={{ backgroundImage: "url('/homepage-luxury.jpg')" }}
                     >
-                      <a href="/room-suits/deluxe-room">
+                      <a href="/room-suits/luxury-room">
                         <div className="attraction_column_title otherroom_title">
-                          <h3>DELUXE ROOM</h3>
+                          <h3>LUXURY SUITE</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="single-room-item">
+                  <div className="other-item">
+                    <div
+                      className="attraction_column"
+                      style={{
+                        backgroundImage: "url('/homepage-executive.jpg')",
+                      }}
+                    >
+                      <a href="/room-suits/executive-room">
+                        <div className="attraction_column_title otherroom_title">
+                          <h3>EXECUTIVE ROOM</h3>
                         </div>
                       </a>
                     </div>
@@ -274,21 +274,6 @@ function ExecutiveRoom() {
                     </div>
                   </div>
                 </div>
-
-                <div className="single-room-item">
-                  <div className="other-item">
-                    <div
-                      className="attraction_column"
-                      style={{ backgroundImage: "url('/homepage-luxury.jpg')" }}
-                    >
-                      <a href="/room-suits/luxury-room">
-                        <div className="attraction_column_title otherroom_title">
-                          <h3>LUXURY SUITE</h3>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
               </OwlCarousel>
             </div>
           </div>
@@ -298,4 +283,4 @@ function ExecutiveRoom() {
   );
 }
 
-export default ExecutiveRoom;
+export default DeluxeRoom;

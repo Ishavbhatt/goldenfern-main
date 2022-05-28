@@ -47,7 +47,7 @@ const Home = ({ token, ...props }) => {
   const instagramLink = process.env.INSTA_LINK;
   const instagramToken = process.env.INSTA_TOKEN;
   const weatherapiUrl = `${weatherapiLink}/?lat=${lat}&lon=${long}&units=metric&APPID=${weatherapiKey}`;
-  const instagramUrl = `${instagramLink}${instagramToken}`
+  const instagramUrl = `${instagramLink}${instagramToken}`;
 
   const rooms = {
     items: 1,
@@ -258,11 +258,11 @@ const Home = ({ token, ...props }) => {
                 <h4 className="weather-status">
                   {data.weather[0].description}
                 </h4>
-                <h1 className="weather-temp">
+                <h3 className="weather-temp">
                   {data.main.temp}
                   <span>&#176;</span>
                   <span>C</span>
-                </h1>
+                </h3>
                 <h6 className="weather-name">{data.name}, India</h6>
               </div>
             )}
@@ -308,8 +308,7 @@ const Home = ({ token, ...props }) => {
                 <h2 className="common_title ">Rooms & Suites</h2>
                 <p className="rooms-para">
                   All rooms and suites are elegantly appointed and reflect
-                  unpretentious luxury and stylish className with wooden
-                  flooring.
+                  unpretentious luxury and stylish class with wooden flooring.
                 </p>
               </div>
             </Fade>
@@ -342,7 +341,7 @@ const Home = ({ token, ...props }) => {
                         </p>
                         <a
                           className="common_arrow"
-                          href="/room-suits/executive-room"
+                          href="/room-suites/executive-room"
                         >
                           <img src="/arrow.svg" alt="Icon" />
                         </a>
@@ -365,18 +364,17 @@ const Home = ({ token, ...props }) => {
                       <div className="rooms_slider_text">
                         <h4>Classic Room</h4>
                         <p>
-                          Designed to the highest specifications and situated on
-                          all floors, with a private balcony and city view the
-                          executive rooms are spacious with all modern amenities
-                          and furnishing to meet the desired level of the
-                          satisfaction of the esteemed guests at Golden Fern
-                          Resort Shimla. All Executive rooms come with Extra
+                          Designed to the highest specifications , with all
+                          modern amenities and furnishing to meet the desired
+                          level of the satisfaction of the esteemed guests at
+                          Golden Fern Resort Shimla. The average size of the
+                          room is 240 Sq. feet All Classic rooms come with Extra
                           large rooms for additional space, a King-sized double
                           bed, and Large comfortable seating or sofa area.
                         </p>
                         <a
                           className="common_arrow"
-                          href="/room-suits/classic-room"
+                          href="/room-suites/classic-room"
                         >
                           <img src="/arrow.svg" alt="Icon" />
                         </a>
@@ -410,7 +408,7 @@ const Home = ({ token, ...props }) => {
                         </p>
                         <a
                           className="common_arrow"
-                          href="/room-suits/luxury-room"
+                          href="/room-suites/luxury-room"
                         >
                           <img src="/arrow.svg" alt="Icon" />
                         </a>
@@ -444,7 +442,7 @@ const Home = ({ token, ...props }) => {
                         </p>
                         <a
                           className="common_arrow"
-                          href="/room-suits/deluxe-room"
+                          href="/room-suites/deluxe-room"
                         >
                           <img src="/arrow.svg" alt="Icon" />
                         </a>
@@ -587,11 +585,17 @@ const Home = ({ token, ...props }) => {
               <h2 className="text-center">Follow Us On Instagram</h2>
             </Slide>
             <Link href="https://instagram.com/goldenfernresort_">
-              <a target="_blank" className="insta-gallery-link">@goldenfernresort_</a>
+              <a target="_blank" className="insta-gallery-link">
+                @goldenfernresort_
+              </a>
             </Link>
             {isLoading ? (
               <div className="text-center">
-              <img className="insta_gallery_spinner" src="/spinner.svg" alt="Loading..." />
+                <img
+                  className="insta_gallery_spinner"
+                  src="/spinner.svg"
+                  alt="Loading..."
+                />
               </div>
             ) : (
               <OwlCarousel {...instaGallery}>

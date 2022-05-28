@@ -4,7 +4,7 @@ import Head from "next/head";
 import Scrollspy from "react-scrollspy";
 import Fade from "react-reveal/Fade";
 
-function roomsuits() {
+function roomsuites() {
   const [scroll, setScroll] = useState(false);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ function roomsuits() {
         <div className="container">
           <div className="row">
             <div className="col-lg-10 col-md-10 col-sm-12 common_page_header_title pages-info">
-              <h1 className="common_title white">Rooms & Suits</h1>
+              <h1 className="common_title white">Rooms & Suites</h1>
               <p className="rooms-subtitle">
                 The rooms at Golden Fern are designed with simple, timeless
                 lines. Here you may find all the commodities needed for a
@@ -91,11 +91,16 @@ function roomsuits() {
                             the executive rooms are spacious with all modern
                             amenities and furnishing to meet the desired level
                             of the satisfaction of the esteemed guests at Golden
-                            Fern Resort Shimla.
+                            Fern Resort Shimla. The average size of the
+                            executive rooms is 375 sq. feet excluding the
+                            bathroom and Balcony area. All Executive rooms come
+                            with Extra large rooms for additional space, a
+                            King-sized double bed, and Large comfortable seating
+                            or sofa area.
                           </p>
                           <a
                             className="common_arrow"
-                            href="/room-suits/executive-room"
+                            href="/room-suites/executive-room"
                           >
                             <img src="/arrow.svg" alt="Icon" />
                           </a>
@@ -121,16 +126,18 @@ function roomsuits() {
                             <span className="golden_color">CLASSIC</span>ROOM
                           </h2>
                           <p>
-                            Designed to the highest specifications and situated
-                            on all floors, with a private balcony and city view
-                            the executive rooms are spacious with all modern
-                            amenities and furnishing to meet the desired level
-                            of the satisfaction of the esteemed guests at Golden
-                            Fern Resort Shimla.
+                            Designed to the highest specifications , with all
+                            modern amenities and furnishing to meet the desired
+                            level of the satisfaction of the esteemed guests at
+                            Golden Fern Resort Shimla. The average size of the
+                            room is 240 Sq. feet All Classic rooms come with
+                            Extra large rooms for additional space, a King-sized
+                            double bed, and Large comfortable seating or sofa
+                            area.
                           </p>
                           <a
                             className="common_arrow"
-                            href="/room-suits/classic-room"
+                            href="/room-suites/classic-room"
                           >
                             <img src="/arrow.svg" alt="Icon" />
                           </a>
@@ -156,16 +163,18 @@ function roomsuits() {
                             <span className="golden_color">LUXURY</span>ROOM
                           </h2>
                           <p>
-                            Designed to the highest specifications and situated
-                            on all floors, with a private balcony and city view
-                            the executive rooms are spacious with all modern
-                            amenities and furnishing to meet the desired level
-                            of the satisfaction of the esteemed guests at Golden
-                            Fern Resort Shimla.
+                            Luxury Suites at Golden Fern Resort Shimla cover 750
+                            square feet area and consist of two bedrooms both
+                            with King size beds, a comfortable sitting area, an
+                            en suite marble bathroom with shower cubical
+                            hairdryer, and all modern fittings along with a
+                            separate bathroom with WC. These family suites offer
+                            plenty of space and luxury for four guests while
+                            allowing them equal amounts of privacy and comfort.
                           </p>
                           <a
                             className="common_arrow"
-                            href="/room-suits/luxury-room"
+                            href="/room-suites/luxury-room"
                           >
                             <img src="images/arrow.svg" alt="Icon" />
                           </a>
@@ -191,16 +200,18 @@ function roomsuits() {
                             <span className="golden_color">DELUXE</span>ROOM
                           </h2>
                           <p>
-                            Designed to the highest specifications and situated
-                            on all floors, with a private balcony and city view
-                            the executive rooms are spacious with all modern
-                            amenities and furnishing to meet the desired level
-                            of the satisfaction of the esteemed guests at Golden
-                            Fern Resort Shimla.
+                            Deluxe Rooms have been designed elegantly as per the
+                            requirement of the guests. The average size of the
+                            room is 350 Sq. feet. The rooms are equipped with
+                            all modern amenities 42 Inch LED TV, 10 Inch
+                            Mattress, Clean Lenin, study table, tea coffee
+                            makers in each room with electronic safe, and Min
+                            Bar. All Deluxe rooms come with Private Balcony with
+                            a Valley view overlooking the city.
                           </p>
                           <a
                             className="common_arrow"
-                            href="/room-suits/deluxe-room"
+                            href="/room-suites/deluxe-room"
                           >
                             <img src="images/arrow.svg" alt="Icon" />
                           </a>
@@ -218,4 +229,4 @@ function roomsuits() {
   );
 }
 
-export default roomsuits;
+export default roomsuites;

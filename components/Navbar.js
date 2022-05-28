@@ -18,7 +18,7 @@ const Navbar = () => {
                 <div className="col-lg-3 col-md-3 col-sm-12 logo">
                   <Link className="navbar-brand" href="/">
                     <img
-                      src="/logo.png"
+                      src="/golden-fern-logo-white.svg"
                       alt="Logo"
                       className="logo img-fluid"
                     />
@@ -36,7 +36,7 @@ const Navbar = () => {
                             <Link href="/about-us">about us</Link>
                           </li>
                           <li>
-                            <Link href="/room-suits">room & suits</Link>
+                            <Link href="/room-suites">room & suits</Link>
                           </li>
                           <li>
                             <Link href="/attractions-and-activities">
@@ -145,16 +145,6 @@ const Navbar = () => {
                             className="mobile-view-lists-clr"
                           >
                             Attraction & Activities
-                          </a>
-                        </Link>
-                      </li>
-                      <li className="mobile-view-lists">
-                        <Link href="/health-and-safety">
-                          <a
-                            onClick={handleIsActive}
-                            className="mobile-view-lists-clr"
-                          >
-                            Health & Safety
                           </a>
                         </Link>
                       </li>

@@ -68,9 +68,9 @@ function LuxuryRoom() {
                 <h2>₹ 7400 /</h2>
                 <span>per night + 12% Tax</span>
               </div>
-              <h2>
+              <h1>
                 <span className="golden_color">Luxury</span> Room
-              </h2>
+              </h1>
               <p>
                 Luxury Suites at Golden Fern Resort Shimla cover 750 square feet
                 area and consist of two bedrooms both with King size beds, a
