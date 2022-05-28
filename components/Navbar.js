@@ -18,7 +18,7 @@ const Navbar = () => {
                 <div className="col-lg-3 col-md-3 col-sm-12 logo">
                   <Link className="navbar-brand" href="/">
                     <img
-                      src="/golden-fern-logo-white.svg"
+                      src="/header-logo.png"
                       alt="Logo"
                       className="logo img-fluid"
                     />

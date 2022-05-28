@@ -297,8 +297,8 @@
   .f_newsletter {
     margin: 30px 0;
   }
-  .f_logo {
-    width: 180px;
+  .f_logo img {
+    max-width: 180px;
   }
   .footer_address_left,
   .footer_address_right {
@@ -601,8 +601,8 @@
   .post_column_image {
     width: 100%;
   }
-  .f_logo {
-    width: 190px;
+  .f_logo img {
+    max-width: 190px;
   }
   .footer_address_left,
   .footer_address_right {

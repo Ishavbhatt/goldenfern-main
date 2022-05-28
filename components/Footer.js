@@ -24,7 +24,7 @@ function Footer() {
               <div className="col-md-4 col-sm-4 col-xs-12 footer_address_left">
                 <div className="footer_address_left_inner">
                   <div className="f_logo">
-                    <img src="/golden-fern-logo.svg" alt="logo" />
+                    <img src="/footer-logo.png" alt="logo" />
                   </div>
                   <div className="f_newsletter">
                     <h4 className="text-uppercase">SUBSCRIBE OUR NEWSLETTER</h4>
