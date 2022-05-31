@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Head from "next/head";
 import DatePicker from "react-datepicker";
 import axios from "axios";
 import Link from "next/link";
@@ -31,7 +32,6 @@ let curruntDate = new Date().toLocaleDateString("en-us", {
   year: "numeric",
 });
 
-import Head from "next/head";
 
 const Home = ({ token, ...props }) => {
   const [people, setPeople] = useState(1);
