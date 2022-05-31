@@ -96,7 +96,7 @@ function ClassicRoom() {
                       <img src="/ketttle.svg" alt="Icon" />
                     </Zoom>
                   </span>
-                  <p>BOOK NOW</p>
+                  <p>Kettle</p>
                 </div>
               </div>
 

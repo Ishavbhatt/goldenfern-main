@@ -72,10 +72,11 @@ const Navbar = () => {
                       href="https://goldenfernresort.bookingjini.com/property"
                     >
                      <a target="_blank">Book Now</a>
-                    </Link>
+                    
                     <div className="common_arrow">
                       <img src="/images/arrow.svg" alt="Icon" />
                     </div>
+                    </Link>
                   </div>
                 </div>
                 {/* <div className="menu-btn">
