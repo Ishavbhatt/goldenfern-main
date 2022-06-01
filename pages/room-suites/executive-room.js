@@ -68,9 +68,9 @@ function ExecutiveRoom() {
                 <h2>₹ 6500 /</h2>
                 <span>per night + 12% Tax</span>
               </div>
-              <h1>
+              <h2>
                 <span className="golden_color">Executive </span>Room
-              </h1>
+              </h2>
               <p>
                 Designed to the highest specifications and situated on all
                 floors, with a private balcony and city view the executive rooms
@@ -249,7 +249,7 @@ function ExecutiveRoom() {
                       className="attraction_column"
                       style={{ backgroundImage: "url('/homepage-deluxe.jpg')" }}
                     >
-                      <a href="/room-suits/deluxe-room">
+                      <a href="/room-suites/deluxe-room">
                         <div className="attraction_column_title otherroom_title">
                           <h3>DELUXE ROOM</h3>
                         </div>
@@ -266,7 +266,7 @@ function ExecutiveRoom() {
                         backgroundImage: "url('/homepage-classic.jpeg')",
                       }}
                     >
-                      <a href="/room-suits/classic-room">
+                      <a href="/room-suites/classic-room">
                         <div className="attraction_column_title otherroom_title">
                           <h3>CLASSIC ROOM</h3>
                         </div>
@@ -281,7 +281,7 @@ function ExecutiveRoom() {
                       className="attraction_column"
                       style={{ backgroundImage: "url('/homepage-luxury.jpg')" }}
                     >
-                      <a href="/room-suits/luxury-room">
+                      <a href="/room-suites/luxury-room">
                         <div className="attraction_column_title otherroom_title">
                           <h3>LUXURY SUITE</h3>
                         </div>

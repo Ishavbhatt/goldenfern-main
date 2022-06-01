@@ -70,9 +70,9 @@ function DeluxeRoom() {
                 <h2>₹ 5500 /</h2>
                 <span>per night + 12% Tax</span>
               </div>
-              <h1>
+              <h2>
                 <span className="golden_color">Deluxe</span> Room
-              </h1>
+              </h2>
               <p>
                 Deluxe Rooms have been designed elegantly as per the requirement
                 of the guests. The average size of the room is 350 Sq. feet. The
@@ -232,7 +232,7 @@ function DeluxeRoom() {
                       className="attraction_column"
                       style={{ backgroundImage: "url('/homepage-luxury.jpg')" }}
                     >
-                      <a href="/room-suits/luxury-room">
+                      <a href="/room-suites/luxury-room">
                         <div className="attraction_column_title otherroom_title">
                           <h3>LUXURY SUITE</h3>
                         </div>
@@ -249,7 +249,7 @@ function DeluxeRoom() {
                         backgroundImage: "url('/homepage-executive.jpg')",
                       }}
                     >
-                      <a href="/room-suits/executive-room">
+                      <a href="/room-suites/executive-room">
                         <div className="attraction_column_title otherroom_title">
                           <h3>EXECUTIVE ROOM</h3>
                         </div>
@@ -266,7 +266,7 @@ function DeluxeRoom() {
                         backgroundImage: "url('/homepage-classic.jpeg')",
                       }}
                     >
-                      <a href="/room-suits/classic-room">
+                      <a href="/room-suites/classic-room">
                         <div className="attraction_column_title otherroom_title">
                           <h3>CLASSIC ROOM</h3>
                         </div>

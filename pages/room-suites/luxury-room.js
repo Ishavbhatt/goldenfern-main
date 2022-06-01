@@ -68,9 +68,9 @@ function LuxuryRoom() {
                 <h2>₹ 7400 /</h2>
                 <span>per night + 12% Tax</span>
               </div>
-              <h1>
+              <h2>
                 <span className="golden_color">Luxury</span> Room
-              </h1>
+              </h2>
               <p>
                 Luxury Suites at Golden Fern Resort Shimla cover 750 square feet
                 area and consist of two bedrooms both with King size beds, a
@@ -240,7 +240,7 @@ function LuxuryRoom() {
                       className="attraction_column"
                       style={{ backgroundImage: "url('/homepage-deluxe.jpg')" }}
                     >
-                      <a href="/room-suits/deluxe-room">
+                      <a href="/room-suites/deluxe-room">
                         <div className="attraction_column_title otherroom_title">
                           <h3>DELUXE ROOM</h3>
                         </div>
@@ -256,7 +256,7 @@ function LuxuryRoom() {
                         backgroundImage: "url('/homepage-executive.jpg')",
                       }}
                     >
-                      <a href="/room-suits/executive-room">
+                      <a href="/room-suites/executive-room">
                         <div className="attraction_column_title otherroom_title">
                           <h3>EXECUTIVE ROOM</h3>
                         </div>
@@ -272,7 +272,7 @@ function LuxuryRoom() {
                         backgroundImage: "url('/homepage-classic.jpeg')",
                       }}
                     >
-                      <a href="/room-suits/classic-room">
+                      <a href="/room-suites/classic-room">
                         <div className="attraction_column_title otherroom_title">
                           <h3>CLASSIC ROOM</h3>
                         </div>
