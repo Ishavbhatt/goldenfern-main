@@ -109,7 +109,7 @@ const Home = ({ token, ...props }) => {
   const instaGallery = {
     stagePadding: 50,
     loop: true,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 2000,
     autoplayHoverPause: true,
     margin: 10,
@@ -584,9 +584,9 @@ const Home = ({ token, ...props }) => {
             <Slide bottom>
               <h2 className="text-center">Follow Us On Instagram</h2>
             </Slide>
-            <Link href="https://instagram.com/goldenfernresort_">
+            <Link href="https://instagram.com/hotelwoodrina"> 
               <a target="_blank" className="insta-gallery-link">
-                @goldenfernresort_
+                @hotelwoodrina
               </a>
             </Link>
             {isLoading ? (
