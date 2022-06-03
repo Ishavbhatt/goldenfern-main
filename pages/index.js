@@ -584,9 +584,9 @@ const Home = ({ token, ...props }) => {
             <Slide bottom>
               <h2 className="text-center">Follow Us On Instagram</h2>
             </Slide>
-            <Link href="https://instagram.com/hotelwoodrina"> 
+            <Link href="https://instagram.com/goldenferresort_"> 
               <a target="_blank" className="insta-gallery-link">
-                @hotelwoodrina
+                @goldenfernresort_
               </a>
             </Link>
             {isLoading ? (
